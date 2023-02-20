@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="uri:wu.com:ra3map" targetNamespace="uri:wu.com:ra3map" elementFormDefault="qualified">
+    <xs:include schemaLocation="scriptContent.xsd"/>
+    <xs:element name="Ra3Map" type="Ra3Map"/>
+    <xs:complexType name="Ra3Map">
+        <xs:choice>
+            <xs:element name="MapScript" type="MapScript" maxOccurs="1" minOccurs="1"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="MapScript">
+        <xs:annotation>
+            <xs:documentation>
+                 地图脚本
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ScriptList" type="ScriptList" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="ScriptList">
+        <xs:annotation>
+            <xs:documentation>
+                玩家脚本文件夹
+            </xs:documentation>
+        </xs:annotation>
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="Script" type="Script" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="ScriptGroup" type="ScriptGroup" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:choice>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Script">
+        <xs:annotation>
+            <xs:documentation>
+                脚本
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="If" type="If" maxOccurs="1" minOccurs="1"/>
+            <xs:element name="Then" type="Action" maxOccurs="1" minOccurs="1"/>
+            <xs:element name="Else" type="Action" maxOccurs="1" minOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="Name" type="xs:string" use="required"/>
+        <xs:attribute name="Conmment" type="xs:string" use="optional" default=""/>
+        <xs:attribute name="ConditionComment" type="xs:string" use="optional" default=""/>
+        <xs:attribute name="ActionComment" type="xs:string" use="optional" default=""/>
+        <xs:attribute name="IsSubroutine" type="xs:boolean" use="optional" default="false"/>
+        <xs:attribute name="isActive" type="xs:boolean" use="optional" default="true"/>
+        <xs:attribute name="DeactivateUponSuccess" type="xs:boolean" use="optional" default="true"/>
+        <xs:attribute name="ActiveInEasy" type="xs:boolean" use="optional" default="true"/>
+        <xs:attribute name="ActiveInMedium" type="xs:boolean" use="optional" default="true"/>
+        <xs:attribute name="ActiveInHard" type="xs:boolean" use="optional" default="true"/>
+        <xs:attribute name="EvaluationInterval" type="xs:int" use="optional" default="0"/>
+        <xs:attribute name="ActionsFireSequentially" type="xs:boolean" use="optional" default="false"/>
+        <xs:attribute name="LoopActions" type="xs:boolean" use="optional" default="false"/>
+        <xs:attribute name="LoopCount" type="xs:int" use="optional" default="0"/>
+        <xs:attribute name="SequentialTargetType" type="xs:byte" use="optional" default="1"/>
+        <xs:attribute name="SequentialTargetName" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+    
+    <xs:complexType name="ScriptGroup">
+        <xs:annotation>
+            <xs:documentation>
+                脚本文件夹
+            </xs:documentation>
+        </xs:annotation>
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="Script" type="Script" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="ScriptGroup" type="ScriptGroup" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:choice>
+        <xs:attribute name="Name" type="xs:string" use="required" />
+        <xs:attribute name="IsActive" type="xs:boolean" use="optional" default="true"/>
+        <xs:attribute name="IsSubroutine" type="xs:boolean" use="optional" default="false"/>
+    </xs:complexType>
+
+    <xs:complexType name="If">
+        <xs:annotation>
+            <xs:documentation>
+                条件
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="OrCondition" type="OrCondition" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
