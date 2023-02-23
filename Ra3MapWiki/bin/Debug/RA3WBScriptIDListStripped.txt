@@ -1,0 +1,3614 @@
+!ACTION: CONDITION_FALSE
+!NAME: Unused or Obsolete/False.
+!DESC:
+!ARG: False.
+
+!ACTION: COUNTER
+!NAME: Scripting/Counter compared to a value.
+!DESC:
+!ARG: Counter ~ IS ~ 
+
+!ACTION: COUNTER_SECONDS
+!NAME: Scripting/Counter compared to time in seconds.
+!DESC:
+!ARG: Counter ~ IS ~ time ~ secs. 
+
+!ACTION: COUNTER_COUNTER
+!NAME: Scripting/Counter compared to another Counter.
+!DESC:
+!ARG: Counter ~ IS ~ counter 
+
+!ACTION: DISTANCE_BETWEEN_OBJ
+!NAME: Scripting/Compare distance between 2 named objects.
+!DESC:
+!ARG: Distance between ~ and ~ is ~ ~.
+
+!ACTION: DISTANCE_BETWEEN_TEAM
+!NAME: Scripting/Compare distance between 2 teams.
+!DESC:
+!ARG: Distance between ~ and ~ is ~ ~.
+
+!ACTION: UNIT_HEALTH
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object's health % compared to a value.
+!DESC:Compares the unit's current health relative to the initial health (which may be modified in World Builder) to the value.
+!ARG:  ~ health is ~ ~ percent.
+
+!ACTION: FLAG
+!NAME: Scripting/Flag compared to a value.
+!DESC:
+!ARG:  ~ is 
+
+!ACTION: CONDITION_TRUE
+!NAME: Scripting/True.
+!DESC:
+!ARG: True.
+
+!ACTION: TIMER_EXPIRED
+!NAME: Scripting/Timer expired.
+!DESC:
+!ARG: Timer ~ has expired.
+
+!ACTION: TEAM_INSIDE_AREA_PARTIALLY
+!NAME: Team/Area or Path/Team has units in an area.
+!DESC:
+!ARG:  ~ has one or more units in ~ (~).
+
+!ACTION: TEAM_DESTROYED
+!NAME: Team/Attacked, Destroyed, or Exists/Team is destroyed.
+!DESC:This condition is only true for the single logic frame when the team dies.
+!ARG:  ~ has been destroyed.
+
+!ACTION: TEAM_HAS_FEWER_THAN_X_UNITS_WITH_KINDOF
+!NAME: Team/Attacked, Destroyed, or Exists/Team has fewer than X units left of KindOf.
+!DESC:
+!ARG:  ~ has fewer than ~ units left of type ~.
+
+!ACTION: NAMED_RANK_LEVEL
+!NAME: Unused or Obsolete/Named object is rank level or above.
+!DESC:
+!ARG:  ~ is veterancy ~ or above.
+
+!ACTION: NAMED_DESTROYED
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object is destroyed.
+!DESC:This will return true if the unit is dead or does not exist.  It will also return true if the unit doesn
+!ARG:  ~ has been destroyed.
+
+!ACTION: NAMED_DYING
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object is dying. (Cinematic)
+!DESC:Returns true if the unit is currently dead, if the unit doesn
+!ARG:  ~ has been killed, but is still on screen.
+
+!ACTION: NAMED_TOTALLY_DEAD
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object is finished dying. (Cinematic)
+!DESC:This will return true if the unit no longer exists but did in the past.  If the unit currently exists it will return false.
+!ARG:  ~ has been killed, and is finished dying.
+
+!ACTION: NAMED_NOT_DESTROYED
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object exists and is alive.
+!DESC:This checks to see if the object exists on the level, and is not effectively dead.  This means it will fire if the unit is around and not dead, a unit in its slow death will cause this to return false.
+!ARG:  ~ exists and is alive.
+
+!ACTION: TEAM_HAS_UNITS
+!NAME: Team/Attacked, Destroyed, or Exists/Team has units.
+!DESC:
+!ARG:  ~ has one or more units.
+
+!ACTION: CAMERA_MOVEMENT_FINISHED
+!NAME: Camera/Camera movement finished.
+!DESC:
+!ARG: The camera movement has finished.
+
+!ACTION: CAMERA_SCROLL_DISTANCE
+!NAME: Tutorial/Camera/Camera scroll distance.
+!DESC:
+!ARG: Player has scrolled camera ~ units.
+
+!ACTION: CAMERA_ROTATE_DISTANCE
+!NAME: Tutorial/Camera/Camera rotate distance.
+!DESC:
+!ARG: Player has rotated camera ~ degrees.
+
+!ACTION: CAMERA_ZOOM_DISTANCE
+!NAME: Tutorial/Camera/Camera zoom distance.
+!DESC:
+!ARG: Player has zoomed camera ~ units.
+
+!ACTION: CAMERA_RESET
+!NAME: Tutorial/Camera/Camera reset.
+!DESC:
+!ARG: Player has reset camera
+
+!ACTION: NAMED_INSIDE_AREA
+!NAME: Object Type/Area or Path/Named object is inside an area.
+!DESC:
+!ARG:  ~ is inside 
+
+!ACTION: NAMED_OUTSIDE_AREA
+!NAME: Object Type/Area or Path/Named object is outside an area.
+!DESC:
+!ARG:  ~ is outside 
+
+!ACTION: TEAM_INSIDE_AREA_ENTIRELY
+!NAME: Team/Area or Path/Team is completely inside an area.
+!DESC:
+!ARG:  ~ is all inside ~ (~).
+
+!ACTION: TEAM_OUTSIDE_AREA_ENTIRELY
+!NAME: Team/Area or Path/Team is completely outside an area.
+!DESC:
+!ARG:  ~ is completely outside ~ (~).
+
+!ACTION: NAMED_ATTACKED_BY_OBJECTTYPE
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object is attacked by a specific object type.
+!DESC:
+!ARG:  ~ has been attacked by a(n) 
+
+!ACTION: TEAM_ATTACKED_BY_OBJECTTYPE
+!NAME: Team/Attacked, Destroyed, or Exists/Team is attacked by a specific object type.
+!DESC:
+!ARG:  ~ has been attacked by a(n) 
+
+!ACTION: TEAM_COMPARE_NUM_MEMBERS
+!NAME: Team/Attacked, Destroyed, or Exists/Team has (comparison) number of objects.
+!DESC:Compares the number of objects in a team to the passed in comparison values.  Note that this script does not count dead, under construction, projectiles, or units with the IGNORE_FOR_VICTORY kind of.
+!ARG:  ~ has~ ~ members.
+
+!ACTION: NAMED_ATTACKED_BY_PLAYER
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object has been attacked by Player.
+!DESC:
+!ARG:  ~ has been attacked by 
+
+!ACTION: TEAM_ATTACKED_BY_PLAYER
+!NAME: Team/Attacked, Destroyed, or Exists/Team has been attacked by Player.
+!DESC:
+!ARG:  ~ has been attacked by 
+
+!ACTION: BUILT_BY_PLAYER
+!NAME: Player/Owns/Player has built an object type.
+!DESC:
+!ARG:  ~ has been built by 
+
+!ACTION: NAMED_CREATED
+!NAME: Unused or Obsolete/Unit has been created.
+!DESC:
+!ARG:  ~ has been created.
+
+!ACTION: TEAM_CREATED
+!NAME: Team/Attacked, Destroyed, or Exists/Team has been created.
+!DESC:
+!ARG:  ~ has been created.
+
+!ACTION: PLAYER_HAS_CREDITS
+!NAME: Player/Owns/Player has (comparison) number of credits.
+!DESC:
+!ARG:  ~ has ~ ~ credits.
+
+!ACTION: NAMED_DISCOVERED
+!NAME: Player/Sighted/Player has sighted named object.
+!DESC:
+!ARG:  ~ has seen 
+
+!ACTION: NAMED_BUILDING_IS_EMPTY
+!NAME: Object Type/Garrisoned/A specific building is empty.
+!DESC:
+!ARG:  ~ is empty.
+
+!ACTION: BUILDING_ENTERED_BY_PLAYER
+!NAME: Player/Garrisoned/Player has garrisoned a specific building.
+!DESC:
+!ARG:  ~ has garrisoned building named 
+
+!ACTION: ENEMY_SIGHTED
+!NAME: Object Type/Sighted/Unit has sighted a friendly, neutral, or enemy unit belonging to Player.
+!DESC:
+!ARG:  ~ sees a(n) ~ unit belonging to ~.
+
+!ACTION: ENEMY_SIGHTED_BY_TEAM
+!NAME: Team/Sighted/Team has sighted a friendly, neutral, or enemy unit belonging to Player.
+!DESC:
+!ARG:  ~ sees a(n) ~ unit belonging to ~.
+
+!ACTION: TYPE_SIGHTED
+!NAME: Object Type/Sighted/Named object has sighted a type of object belonging to Player.
+!DESC:
+!ARG:  ~ sees a(n) ~ belonging to ~.
+
+!ACTION: TEAM_DISCOVERED
+!NAME: Player/Sighted/Player has sighted Team.
+!DESC:
+!ARG:  ~ has seen ~.
+
+!ACTION: NAMED_OWNED_BY_PLAYER
+!NAME: Player/Owns/Player owns Unit.
+!DESC:
+!ARG:  ~ owns ~.
+
+!ACTION: TEAM_OWNED_BY_PLAYER
+!NAME: Player/Owns/Player owns Team.
+!DESC:
+!ARG:  ~ is owned by ~.
+
+!ACTION: PLAYER_HAS_N_OR_FEWER_BASES
+!NAME: Unused or Obsolete/Player currently controls N or fewer bases.
+!DESC:
+!ARG:  ~ currently controls ~ or fewer bases.
+
+!ACTION: PLAYER_HAS_POWER
+!NAME: Player/Power/Player's base currently has power.
+!DESC:
+!ARG:  ~ buildings are powered.
+
+!ACTION: PLAYER_HAS_NO_POWER
+!NAME: Player/Power/Player's base currently has no power.
+!DESC:
+!ARG:  ~ buildings are not powered.
+
+!ACTION: NAMED_REACHED_WAYPOINTS_END
+!NAME: Object Type/Area or Path/Named object has reached the end of a specific waypoint path. (Unreliable)
+!DESC:
+!ARG:  ~ has reached the end of 
+
+!ACTION: TEAM_REACHED_WAYPOINTS_END
+!NAME: Team/Area or Path/Team has reached the end of a specific waypoint path. (Unreliable)
+!DESC:
+!ARG:  ~ has reached the end of 
+
+!ACTION: NAMED_SELECTED
+!NAME: Object Type/Selected/Named object is currently selected.
+!DESC:
+!ARG:  ~ is currently selected.
+
+!ACTION: TYPE_SELECTED
+!NAME: Object Type/Selected/Object Type is currently selected.
+!DESC:
+!ARG:  ~ is currently selected.
+
+!ACTION: NAMED_ENTERED_AREA
+!NAME: Unused or Obsolete/Unit enters an area.
+!DESC:
+!ARG:  ~ enters 
+
+!ACTION: NAMED_EXITED_AREA
+!NAME: Object Type/Area or Path/Named object exits an area.
+!DESC:
+!ARG:  ~ exits 
+
+!ACTION: TEAM_ENTERED_AREA_ENTIRELY
+!NAME: Unused or Obsolete/Team entirely enters an area.
+!DESC:
+!ARG:  ~ all enter ~ (~).
+
+!ACTION: TEAM_ENTERED_AREA_PARTIALLY
+!NAME: Team/Area or Path/One unit from team enters an area.
+!DESC:
+!ARG: One unit from ~ enters ~ (~).
+
+!ACTION: TEAM_EXITED_AREA_ENTIRELY
+!NAME: Team/Area or Path/Team entirely exits an area.
+!DESC:
+!ARG:  ~ has completely exited ~ (~).
+
+!ACTION: TEAM_EXITED_AREA_PARTIALLY
+!NAME: Team/Area or Path/One unit from team exits an area.
+!DESC:
+!ARG: One unit from ~ exits ~ (~).
+
+!ACTION: MULTIPLAYER_ALLIED_VICTORY
+!NAME: Unused or Obsolete/Multiplayer allied victory.
+!DESC:
+!ARG: The multiplayer game has ended in victory for the local player and his allies.
+
+!ACTION: MULTIPLAYER_ALLIED_DEFEAT
+!NAME: Unused or Obsolete/Multiplayer allied defeat.
+!DESC:
+!ARG: The multiplayer game has ended in defeat for the local player and his allies.
+
+!ACTION: MULTIPLAYER_PLAYER_DEFEAT
+!NAME: Player/Win & Loss/Multiplayer local player defeat check.
+!DESC:
+!ARG: Everything belonging to the local player has been destroyed, but his allies may or may not have been defeated.
+
+!ACTION: HAS_FINISHED_VIDEO
+!NAME: Movie/Movie in the radar has completed playing.
+!DESC:
+!ARG: Movie ~ has completed playing.
+
+!ACTION: HAS_FINISHED_SPEECH
+!NAME: Unused or Obsolete/Speech has completed playing.
+!DESC:
+!ARG:  ~ has completed playing.
+
+!ACTION: HAS_FINISHED_AUDIO
+!NAME: Audio/Sound has completed playing.
+!DESC:
+!ARG:  ~ has completed playing.
+
+!ACTION: PLAYER_TRIGGERED_SPECIAL_POWER
+!NAME: Player/Special Power/Player starts using a special power.
+!DESC:
+!ARG:  ~ starts using ~.
+
+!ACTION: PLAYER_TRIGGERED_SPECIAL_POWER_FROM_NAMED
+!NAME: Player/Special Power/Player start using a special power from a named object.
+!DESC:
+!ARG:  ~ starts using ~ from ~.
+
+!ACTION: PLAYER_COMPLETED_SPECIAL_POWER
+!NAME: Player/Special Power/Player completed using a special power.
+!DESC:
+!ARG:  ~ completed using ~.
+
+!ACTION: PLAYER_BUILT_UPGRADE
+!NAME: Player/Upgrades and Sciences/Player built an Upgrade.
+!DESC:
+!ARG:  ~ has built ~.
+
+!ACTION: PLAYER_DESTROYED_N_BUILDINGS_PLAYER
+!NAME: Player/Attacked or Destroyed/Player destroyed N or more of an opponent's buildings.
+!DESC:
+!ARG:  ~ has destroyed ~ or more buildings owned by ~.
+
+!ACTION: PLAYER_HAS_OBJECT_COMPARISON
+!NAME: Player/Owns/Player has (comparison) object type.
+!DESC:
+!ARG:  ~ has ~ ~ object of type ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_WITH_UPGRADE
+!NAME: Player/Area/Player has (comparison) object type in an area with a specified upgrade.
+!DESC:
+!ARG:  ~ has ~ ~ object of type with ~ in the ~ with ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA
+!NAME: Player/Area/Player has (comparison) object type in an area.
+!DESC:
+!ARG:  ~ has ~ ~ object of type ~ in the ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_COMPLETELY_BUILT
+!NAME: Player/Area/Player has (comparison) completely built unit types in an area.
+!DESC:
+!ARG:  ~ has ~ ~ completely built objects of type ~ in the ~.
+
+!ACTION: PLAYER_ISSUED_FORMATION_ORDER
+!NAME: Tutorial/Player/Player has issued a formation order.
+!DESC:
+!ARG: Player has issued formation order
+
+!ACTION: PLAYER_HAS_NUMBER_OBJECTS_WITH_MODELCONDITION
+!NAME: Player/Owns/Player has (comparison) objects with a model condition.
+!DESC:
+!ARG:  ~ has ~ ~ objects with ~.
+
+!ACTION: PLAYER_HAS_NUMBER_UNITS_DISTANCE_FROM_OBJECT
+!NAME: Player/Owns/Player has (comparison) obejcts more than x distance from named object.
+!DESC:
+!ARG:  Player ~ has ~ ~ objects at least ~ feet from ~.
+
+!ACTION: COMPARISON_TREES_IN_TRIGGER_AREA
+!NAME: Unused or Obsolete/There are (comparison) trees in an area.
+!DESC:
+!ARG: There are ~ ~ trees in the ~ .
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_KIND
+!NAME: Player/Owns/Player has (comparison) object types with kindof.
+!DESC:
+!ARG:  ~ has ~ ~ objects with ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_KIND_IN_TRIGGER_AREA
+!NAME: Player/Area/Player has (comparison) object types with kindof in an area.
+!DESC:
+!ARG:  ~ has ~ ~ objects with ~ in the ~.
+
+!ACTION: PLAYER_POWER_COMPARE_PERCENT
+!NAME: Player/Power/Player has (comparison) percent power supply to consumption.
+!DESC:
+!ARG:  ~ has ~ ~ percent power supply ratio.
+
+!ACTION: PLAYER_EXCESS_POWER_COMPARE_VALUE
+!NAME: Player/Power/Player has (comparison) kilowatts excess power supply.
+!DESC:
+!ARG:  ~ has ~ ~ excess kilowatts power supply.
+
+!ACTION: SKIRMISH_SPECIAL_POWER_READY
+!NAME: Player/Special Power/Player's special power is ready to fire.
+!DESC:
+!ARG:  ~ is ready to fire ~.
+
+!ACTION: SKIRMISH_FIRE_SPECIAL_POWER_ON_TEAM
+!NAME: Player/Special Power/Player can perform special power on team location.
+!DESC:
+!ARG:  ~ can perform ~ at ~'s location.
+
+!ACTION: UNIT_HAS_OBJECT_STATUS
+!NAME: Object Type/Object Status/Named object has object status.
+!DESC:
+!ARG:  ~ has 
+
+!ACTION: UNIT_HAS_MODELCONDITION
+!NAME: Object Type/Settings/Named object has model condition.
+!DESC:
+!ARG:  ~ has 
+
+!ACTION: UNIT_USING_STANCE
+!NAME: Object Type/Stance/Named object is using stance.
+!DESC:
+!ARG: Is ~ in the ~.
+
+!ACTION: TEAM_ALL_HAS_OBJECT_STATUS
+!NAME: Team/Object Status/Team has object status - all.
+!DESC: (all applicable members).
+!ARG:  ~ has 
+
+!ACTION: TEAM_SOME_HAVE_OBJECT_STATUS
+!NAME: Team/Object Status/Team has object status - partial.
+!DESC: (at least one member).
+!ARG:  ~ has 
+
+!ACTION: SKIRMISH_VALUE_IN_AREA
+!NAME: Unused or Obsolete/Player has (comparison) threat level in area.
+!DESC:
+!ARG:  ~ has ~ ~ threat within area 
+
+!ACTION: SKIRMISH_PLAYER_FACTION
+!NAME: Player/Faction and Start Position/Player is faction.
+!DESC:
+!ARG:  ~ is 
+
+!ACTION: SKIRMISH_SUPPLIES_VALUE_WITHIN_DISTANCE
+!NAME: Unused or Obsolete/Supplies are within specified distance.
+!DESC:
+!ARG:  ~ has supplies within ~ of ~ worth at least 
+
+!ACTION: SKIRMISH_COMMAND_BUTTON_READY_ALL
+!NAME: Team/CommandButton/Team's CommandButton ability is ready - all.
+!DESC:
+!ARG:  ~'s ~ are ready to use ~ (all applicable members).
+
+!ACTION: SKIRMISH_COMMAND_BUTTON_READY_PARTIAL
+!NAME: Team/CommandButton/Team's CommandButton ability is ready - partial
+!DESC:
+!ARG:  ~'s ~ are ready to use ~ (at least one member).
+
+!ACTION: SKIRMISH_UNOWNED_FACTION_UNIT_EXISTS
+!NAME: Object Type/Unowned/There are (comparison) unowned faction objects.
+!DESC:
+!ARG:  ~. There are ~ ~ unowned faction objects.
+
+!ACTION: SKIRMISH_PLAYER_HAS_COMPARISON_GARRISONED
+!NAME: Player/Garrisoned/Player has (comparison) garrisoned buildings.
+!DESC:
+!ARG:  ~ has ~ ~ garrisoned buildings.
+
+!ACTION: SKIRMISH_PLAYER_HAS_UNITS_IN_AREA
+!NAME: Player/Area/Player has units in an area
+!DESC:
+!ARG:  ~ has units in ~.
+
+!ACTION: SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER
+!NAME: Player/Attacked or Destroyed/Player has been attacked by Player.
+!DESC:
+!ARG:  ~ has been attacked by ~.
+
+!ACTION: SKIRMISH_PLAYER_IS_OUTSIDE_AREA
+!NAME: Unused or Obsolete/Player doesn't have units in an area.
+!DESC:
+!ARG:  ~ has doesn't have units in ~.
+
+!ACTION: SKIRMISH_PLAYER_HAS_DISCOVERED_PLAYER
+!NAME: Player/Sighted/Player has sighted another player.
+!DESC:
+!ARG:  ~ has seen ~.
+
+!ACTION: SUPPLY_SOURCE_SAFE
+!NAME: Unused or Obsolete/Supply source is safe.
+!DESC:
+!ARG:  ~ closest supply src with at least ~ available resources is SAFE from enemy influence.
+
+!ACTION: SUPPLY_SOURCE_ATTACKED
+!NAME: Unused or Obsolete/Supply source is attacked.
+!DESC:
+!ARG:  ~ supply source is under attack.
+
+!ACTION: START_POSITION_IS
+!NAME: Player/Faction and Start Position/Start Position.
+!DESC:
+!ARG:  ~ starting position is ~ .
+
+!ACTION: PLAYER_LOST_OBJECT_TYPE
+!NAME: Player/Owns/Player has lost an object of type.
+!DESC:
+!ARG:  ~ has lost an object of type ~.
+
+!ACTION: CAMERA_HIT_SPECIFIC_SPLINE_WAYPOINT
+!NAME: Camera/Camera following spline path hits specified waypoint.
+!DESC:
+!ARG:  Camera following spline path hits ~.
+
+!ACTION: CAMERA_ENTERED_AREA
+!NAME: Camera/Camera entered trigger area.
+!DESC:
+!ARG: Camera enters ~.
+
+!ACTION: HAS_COMMAND_POINTS_TO_BUILD_TEAM
+!NAME: Player/CommandPoints/Player has enough command points to build a team. (May be broken. -JB)
+!DESC:
+!ARG:  ~ has enough command points to build ~.
+
+!ACTION: HAS_COMMAND_POINTS_TO_BUILD_UNIT
+!NAME: Player/CommandPoints/Player has enough command points to build object type.
+!DESC:
+!ARG:  ~ has enough command points to build ~.
+
+!ACTION: PLAYER_HAS_KILLED_KINDOF_UNITS
+!NAME: Player/Attacked or Destroyed/Player has destroyed N or more objects of kindof.
+!DESC:
+!ARG:  ~ has killed ~ or more objects of ~.
+
+!ACTION: PLAYER_HAS_KILLED_TYPE_UNITS
+!NAME: Player/Attacked or Destroyed/Player has destroyed N or more objects of type.
+!DESC:
+!ARG:  ~ has killed ~ or more ~.
+
+!ACTION: PLAYER_HAS_KILLED_NAMED_UNIT
+!NAME: Player/Attacked or Destroyed/Player has killed Named Unit
+!DESC:
+!ARG:  ~ has killed object named: 
+
+!ACTION: NAMED_DESTROYED_BY_OBJECTTYPE
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object is destroyed by a specific object type.
+!DESC:
+!ARG:  ~ has been destroyed by a(n) 
+
+!ACTION: GATE_IS_OPEN
+!NAME: Unused or Obsolete/Check if a gate is open. (False, if not a gate, or closed)
+!DESC:
+!ARG:  The unit (presumed a gate) referenced as~ is OPEN.
+
+!ACTION: MUSIC_IS_PLAYING_FROM_SCRIPT
+!NAME: Audio/Music/Playing Music is from Script
+!DESC:
+!ARG:  The music scripting system is on.
+
+!ACTION: UNIT_CAN_PATH_TO_WAYPOINT
+!NAME: Object Type/Area or Path/Named object can path to waypoint.
+!DESC:
+!ARG:  ~ can path to ~.
+
+!ACTION: UNIT_CAN_PATH_TO_OBJECT
+!NAME: Object Type/Area or Path/Named object can path to named object.
+!DESC:
+!ARG:  ~ can path to ~.
+
+!ACTION: TEAM_CAN_PATH_TO_WAYPOINT
+!NAME: Team/Area or Path/Team can path to waypoint.
+!DESC:
+!ARG: The first unit of ~ can path to ~.
+
+!ACTION: TEAM_CAN_PATH_TO_OBJECT
+!NAME: Team/Area or Path/Team can path to named object.
+!DESC:
+!ARG: The first unit of ~ can path to ~.
+
+!ACTION: UNIT_CAN_PATH_INTO_PLAYERS_NEAREST_BASE
+!NAME: Unused or Obsolete/Named object can path into (Player's) nearest base or is already inside it.
+!DESC:
+!ARG:  ~ is inside, or can path into the nearest base owned by player, 
+
+!ACTION: TEAM_CAN_PATH_INTO_PLAYERS_NEAREST_BASE
+!NAME: Unused or Obsolete/Team can path into (Player's) nearest base or is already inside it.
+!DESC:
+!ARG: The first unit of team ~ is inside, or can path into the nearest base owned by player, 
+
+!ACTION: UNIT_COMPARE_RANK
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object's veterancy level compared to a value.
+!DESC:
+!ARG: Does ~ have veterancy level ~ ~.
+
+!ACTION: EVAL_TEAM_HEALTH
+!NAME: Team/Health/Team health level compared to a value.
+!DESC:
+!ARG: Does ~ have ~ ~ percent health.
+
+!ACTION: UNIT_HAS_GAINED_LEVEL
+!NAME: Object Type/Experience/Named object has gained experience level.
+!DESC:
+!ARG:  ~ has gained a level.
+
+!ACTION: UNIT_IS_AT_LEVEL
+!NAME: Unused or Obsolete/Experience/Named object is at experience level.
+!DESC:
+!ARG:  ~ is at experience level 
+
+!ACTION: PLAYER_HAS_OBJECT_OF_VETERANCY
+!NAME: Player/Experience/Player has object of veterancy level compared to a value.
+!DESC:
+!ARG:  ~ has ~ with veterancy level ~ ~.
+
+!ACTION: UNIT_HAS_PASSENGER
+!NAME: Object Type/Garrison/Evaluates if named object is currently holding passengers.
+!DESC:
+!ARG:  Evaluate if ~ is containing any passengers.
+
+!ACTION: UNIT_IS_ATTACKED_AND_CANNOT_RETALIATE
+!NAME: Object Type/Attacked, Destroyed, or Exists/Evaluate if a named object is being attacked but cannot retaliate
+!DESC:
+!ARG:  Evaluate if ~ is being attacked and cannot retaliate.
+
+!ACTION: TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ANY
+!NAME: Team/Attacked, Destroyed, or Exists/Evaluate if any member of a team is being attacked but cannot retaliate
+!DESC:
+!ARG:  Evaluate if any team member of ~ is being attacked and cannot retaliate.
+
+!ACTION: TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ALL
+!NAME: Team/Attacked, Destroyed, or Exists/Evaluate if all members of a team being attacked cannot retaliate
+!DESC:
+!ARG:  Evaluate if all team members of ~ are being attacked and cannot retaliate.
+
+!ACTION: IS_GAME_IN_SKIRMISH_OR_MULTIPLAYER
+!NAME: Unused or Obsolete/Is game in a skirmish or multiplayer game.
+!DESC:
+!ARG:  Is the game in a skirmish or multiplayer mode == 
+
+!ACTION: COMPARE_NUM_PLAYERS_IN_GAME
+!NAME: Game Type/Compares the number of players in game to a value.
+!DESC:
+!ARG:  Is this a ~ ~ player game.
+
+!ACTION: IS_UNIT_WEBBED
+!NAME: Unused or Obsolete/Check unit Webbed Status.
+!DESC:
+!ARG:  Is webbed status of ~ == 
+
+!ACTION: NUM_UNITS_LEVELED_UP
+!NAME: Player/Owns/Num objects leveled up during game.
+!DESC:
+!ARG: Does ~ have ~ objects that have gained veterancy this game.
+
+!ACTION: PLAYER_HAS_NUM_UNITS_WITH_UPGRADE
+!NAME: Player/Owns/Num objects has specified upgrade.
+!DESC:
+!ARG:  Does ~ have ~ units that have ~.
+
+!ACTION: PLAYER_HAS_NUM_UNITS_LOADED_WITH_OBJECT
+!NAME: Player/Owns/Num objects of type loaded on transport.
+!DESC:
+!ARG:  Does ~ have ~ objects of type ~ loaded on transport of type ~.
+
+!ACTION: UNIT_HAS_TOGGLED_WEAPON
+!NAME: Player/Owns/Does Player have objects that have Toggled Weapon sets.
+!DESC:
+!ARG:  Does ~ have ~ that have toggled weapon sets.
+
+!ACTION: UNIT_IN_ALT_FORMATION
+!NAME: Unused or Obsolete/Does Player have Units that are in alternate formation.
+!DESC:
+!ARG:  Does ~ have ~ that is currently in alternate formation.
+
+!ACTION: UNIT_USING_AUTOPICKUP
+!NAME: Unused or Obsolete/Does Player have Units that have triggered auto pickup.
+!DESC:
+!ARG:  Does ~ have ~ that has triggered auto pickup.
+
+!ACTION: HAS_EVA_EVENT_PLAYED_IN_LAST_N_SECONDS
+!NAME: Player/Eva/Has EVA event played recently.
+!DESC:
+!ARG:  Has ~ played with in the last ~ seconds.
+
+!ACTION: IS_NUM_OF_UNITS_BELONGING_TO_PLAYER_NEAR_EVA_EVENT_LAST_PLAYED_LOCATION_COMPARISON_INT
+!NAME: Unused or Obsolete/Is number of units belonging to player near EVA event's last played location greater than, less than, or equal to a fixed value.
+!DESC:
+!ARG:  Is the number of units belong to ~ within ~ feet of the location where ~ last played ~ 
+
+!ACTION: UNIT_TEST_OBJECT_PANEL_FLAGS
+!NAME: Object Type/Settings/Test object flags.
+!DESC:
+!ARG: Test the value of ~ for ~.
+
+!ACTION: TEST_CAMPAIGN_FLAG
+!NAME: Campaign/Test a campaign flag.
+!DESC:
+!ARG: Test the value of campaign flag ~.
+
+!ACTION: UNIT_HAS_UPGRADE
+!NAME: Object Type/Upgrades/Unit has upgrade.
+!DESC:
+!ARG:  ~ has ~.
+
+!ACTION: UNIT_SPECIAL_POWER_READY
+!NAME: Object Type/Special Power/Unit's special power is ready to fire.
+!DESC:
+!ARG:  ~ is ready to fire ~.
+
+!ACTION: PLAYER_HAS_NUMBER_OBJECTS_WITH_OBJECT_STATUS
+!NAME: Player/Owns/Player has (comparison) objects with object status
+!DESC:
+!ARG:  ~ has ~ ~ with ~.
+
+!ACTION: PLAYER_TRIGGERED_SCRIPT_EVENT
+!NAME: Player/Player has triggered game event
+!DESC:
+!ARG:  ~ has triggered ~.
+
+!ACTION: BUILDING_GARRISONNED_BY_OBJECT_TYPE
+!NAME: Object Type/Garrison/Named building is garrisoned by object type owned by specific player.
+!DESC:
+!ARG:  ~ is garrisoned by object type ~ owned by ~.
+
+!ACTION: PLAYER_TRIGGERED_SPECIAL_POWER_IN_AREA
+!NAME: Player/Special Power/Player starts using a special power in trigger area.
+!DESC:
+!ARG:  ~ starts using ~ in ~.
+
+!ACTION: MISSION_HOT_SPOT_ACTIVE
+!NAME: Interface/Mission Hot-Spot/Mission hot-spot has been activated.
+!DESC:
+!ARG:  Mission hot-spot ~ has been activated.
+
+!ACTION: PLAYER_RED_ALERT_ACTIVATED
+!NAME: Player/Red Alerts/Player activated their Red Alert.
+!DESC:
+!ARG: Player has activated their Red Alert.
+
+!ACTION: PLAYER_IS_HUMAN_OR_AI_PERSONALITY
+!NAME: Player/Controlled By/Is player controlled by human or AI Personality.
+!DESC:
+!ARG:  ~ is controlled by 
+
+!ACTION: NAMED_HAS_KILLED_COMPARISON_UNIT_TYPE
+!NAME: Object Type/Attacked, Destroyed, or Exists/Named object has killed (comparison) number of object type or type list.
+!DESC:Script will compare if a unit has killed (x) number of object type(s).
+!ARG:  ~ has killed  ~ ~ 
+
+!ACTION: PLAYER_HAS_COMPARISON_POWER_POINTS
+!NAME: Player/Special Power/Player has <comparison><n> power points.
+!DESC:Determines if a player has x amount of player power points.
+!ARG:  ~ has ~ ~ power points.
+
+!ACTION: PLAYER_HAS_PLAYER_TECH
+!NAME: Player/Special Power/Player has player tech.
+!DESC:Determines if a player has purchased a player tech.
+!ARG:  ~ has ~ player tech.
+
+!ACTION: UI_STATE_PROPOSITION_STATE
+!NAME: Tutorial/UI state proposition is true.
+!DESC:The condition is only guaranteed to work correctly in a tutorial game
+!ARG:  ~ is true.
+
+!ACTION: CURRENT_PLATFORM
+!NAME: Platform/Is game running on platform.
+!DESC:Returns true if running on the chosen platform.  Current options are PC/360/PS3
+!ARG: Is game running on 
+
+!ACTION: DEBUG_MESSAGE_BOX
+!NAME: Scripting/Debug/Display message and pause
+!DESC:
+!ARG: Show debug string and pause: 
+
+!ACTION: DEBUG_STRING
+!NAME: Scripting/Debug/Display string
+!DESC:
+!ARG: Show debug string without pausing: 
+
+!ACTION: DEBUG_CRASH_BOX
+!NAME: Scripting/Debug/Display a crash box (debug|internal builds only).
+!DESC:
+!ARG: Display a crash box with the text: 
+
+!ACTION: SET_FLAG
+!NAME: Scripting/Flags/Set flag to value.
+!DESC:
+!ARG: Set ~ to 
+
+!ACTION: SET_FLAG_TO_FLAG
+!NAME: Scripting/Flags/Set flag to another flag.
+!DESC:
+!ARG: Set ~ to 
+
+!ACTION: SET_COUNTER
+!NAME: Scripting/Counters/Set counter to a value.
+!DESC:
+!ARG: Set ~ to 
+
+!ACTION: SET_COUNTER_TO_COUNTER
+!NAME: Scripting/Counters/Set counter to another counter.
+!DESC:
+!ARG: Set ~ to 
+
+!ACTION: SET_RANDOM_COUNTER
+!NAME: Scripting/Counters/Set a random counter.
+!DESC:
+!ARG: Set ~ randomly between ~ and ~.
+
+!ACTION: SET_COUNTER_IN_SECONDS
+!NAME: Scripting/Counters/Set counter to a time in seconds.
+!DESC:
+!ARG: Set ~ to ~ seconds. 
+
+!ACTION: SET_RANDOM_COUNTER_IN_SECONDS
+!NAME: Scripting/Counters/Set a random counter in seconds.
+!DESC:
+!ARG: Set ~ randomly between ~ and ~ seconds.
+
+!ACTION: SET_CAMERA_CLIP_DEPTH_MULTIPLIER
+!NAME: Cinematics/Camera/Change the camera depth of field.
+!DESC:
+!ARG: Modify normal depth of Frustrum by ~ (1.0 = normal, < 1.0 shortens frustrum, > 1.0 lengthens.)
+
+!ACTION: QUICKVICTORY
+!NAME: Win & Loss/Announce quick win
+!DESC:
+!ARG: End game in victory immediately.
+
+!ACTION: VICTORY_SCREEN
+!NAME: Win & Loss/ Show Victory Screen
+!DESC:
+!ARG: Shows the victory screen, but does not behave as a victory.
+
+!ACTION: NO_OP
+!NAME: Scripting/Debug/Null operation.
+!DESC:
+!ARG: Null operation. (Does nothing.)
+
+!ACTION: SET_TIMER
+!NAME: Scripting/Timer/Frame countdown timer -- set.
+!DESC:
+!ARG: Set ~ to expire in ~ frames.
+
+!ACTION: SET_RANDOM_TIMER
+!NAME: Scripting/Timer/Frame countdown timer -- set random.
+!DESC:
+!ARG: Set ~ to expire between ~ and ~ frames.
+
+!ACTION: STOP_TIMER
+!NAME: Scripting/Timer/Timer -- stop.
+!DESC:
+!ARG: Stop 
+
+!ACTION: RESTART_TIMER
+!NAME: Scripting/Timer/Timer -- restart stopped.
+!DESC:
+!ARG: Restart 
+
+!ACTION: PLAY_SOUND_EFFECT
+!NAME: Media/Audio/Sound Effect/Play 2D sound effect.
+!DESC:
+!ARG: Play ~ as though it was a 2D sound (NOT RECOMMENDED for 3D sounds).
+
+!ACTION: ENABLE_SCRIPT
+!NAME: Scripting/Enable Script.
+!DESC:
+!ARG: Enable ~.
+
+!ACTION: DISABLE_SCRIPT
+!NAME: Scripting/Disable script.
+!DESC:
+!ARG: Disable ~.
+
+!ACTION: CALL_SUBROUTINE
+!NAME: Scripting/Run subroutine script.
+!DESC:
+!ARG: Run ~.
+
+!ACTION: PLAY_SOUND_EFFECT_AT
+!NAME: Media/Audio/Sound Effect/Play sound effect at waypoint.
+!DESC:
+!ARG: Play ~ at ~.
+
+!ACTION: DAMAGE_MEMBERS_OF_TEAM
+!NAME: Team/Damage or Remove/Damage the members of Team.
+!DESC:
+!ARG: Damage ~, amount=~ (-1==kill).
+
+!ACTION: TEAM_SET_HEALTH
+!NAME: Team/Damage or Remove/Set the health of the team members (in percentage).
+!DESC:
+!ARG: Set health of ~ to percentage (0.0 - 100.0) 
+
+!ACTION: MOVE_TEAM_TO
+!NAME: Team/Move/Set team to move to a location.
+!DESC:
+!ARG: Move ~ to ~.
+
+!ACTION: ATTACK_MOVE_TEAM_TO
+!NAME: Team/Attack/Set team to attack-move to a location.
+!DESC:
+!ARG: AttackMove ~ to ~.
+
+!ACTION: ATTACK_MOVE_TEAM_TO_NAMED_OBJECT
+!NAME: Team/Attack/Attack move a team to a named object.
+!DESC:
+!ARG: AttackMove ~ to ~.
+
+!ACTION: MOVE_TEAM_HOME
+!NAME: Team/Move/Set team to move to home position (designated in team template).
+!DESC:
+!ARG: Move ~ Home. 
+
+!ACTION: TEAM_FOLLOW_WAYPOINTS
+!NAME: Team/Move/Set team to follow a waypoint path.
+!DESC:
+!ARG: Have ~ follow ~ , as a team is ~ , in formation is 
+
+!ACTION: TEAM_ATTACK_MOVE_FOLLOW_WAYPOINTS
+!NAME: Team/Attack/Set team to attack-move along a waypoint path.
+!DESC:
+!ARG: Have ~ AttackMove along ~ , as a team is ~ , in formation is 
+
+!ACTION: TEAM_FOLLOW_WAYPOINTS_EXACT
+!NAME: Team/Move/Set to EXACTLY follow a waypoint path.
+!DESC:
+!ARG: Have ~ EXACTLY follow ~ , as a team is 
+
+!ACTION: TEAM_WANDER_IN_PLACE
+!NAME: Team/Move/Set to wander around current location.
+!DESC:
+!ARG: Have ~ wander around it's current location.
+
+!ACTION: TEAM_INCREASE_PRIORITY
+!NAME: Unused or Obsolete/Team/Spawn, Build, or Merge/Change priority by Success Priority Increase amount.
+!DESC:
+!ARG: Increase the AI priority for~  by its Success Priority Increase amount.
+
+!ACTION: TEAM_INCREASE_PRIORITY_BY_VALUE
+!NAME: Team/Spawn, Build, or Merge/Increase priority by specific amount.
+!DESC:
+!ARG: Increase the build priority for ~  by ~ .
+
+!ACTION: TEAM_DECREASE_PRIORITY
+!NAME: Unused or Obsolete/Team/Spawn, Build, or Merge/Change priority by Failure Priority Decrease amount.
+!DESC:
+!ARG: Reduce the AI priority for~  by its Failure Priority Decrease amount.
+
+!ACTION: TEAM_DECREASE_PRIORITY_BY_VALUE
+!NAME: Team/Spawn, Build, or Merge/Decrease priority by specific amount.
+!DESC:
+!ARG: Decrease the build priority for ~  by ~ .
+
+!ACTION: TEAM_WANDER
+!NAME: Team/Move/Follow a waypoint path -- wander.
+!DESC:
+!ARG: Have ~ wander along 
+
+!ACTION: TEAM_PANIC
+!NAME: Cinematics/Force Emotion/Follow a waypoint path -- panic.
+!DESC:
+!ARG: Have ~ move in panic along 
+
+!ACTION: MOVE_NAMED_UNIT_TO
+!NAME: Object Type/Move/Named object move to a location.
+!DESC:
+!ARG: Move ~ to ~.
+
+!ACTION: ATTACK_MOVE_NAMED_UNIT_TO
+!NAME: Object Type/Attack/Named object attack-move to a location.
+!DESC:
+!ARG: AttackMove ~ to ~.
+
+!ACTION: CREATE_REINFORCEMENT_TEAM
+!NAME: Team/Spawn, Build, or Merge/Spawn a reinforcement team at location.
+!DESC:
+!ARG: Spawn an instance of ~ at ~.
+
+!ACTION: CREATE_REINFORCEMENT_TEAM_AT_UNIT_POSITION
+!NAME: Team/Spawn, Build, or Merge/Spawn a reinforcement team at named object's position.
+!DESC:
+!ARG: Spawn an instance of ~ at ~.
+
+!ACTION: UNIT_SET_TEAM
+!NAME: Object Type/Allegiance/Force named object to join team.
+!DESC:
+!ARG:  ~ will join ~.
+
+!ACTION: TEAM_GUARD_SUPPLY_CENTER
+!NAME: Team/Guard/Guard a supply source.
+!DESC:
+!ARG: Have ~ guard attacked or closest supply source with at least ~ available resources
+
+!ACTION: AI_PLAYER_BUILD_UPGRADE
+!NAME: Unused or Obsolete/Player/Upgrades and Sciences/AI Player build an Upgrade.
+!DESC:
+!ARG: Have AI ~ build this upgrade: 
+
+!ACTION: GIVE_PLAYER_UPGRADE
+!NAME: Player/Upgrades and Sciences/Give Player an Upgrade.
+!DESC:
+!ARG: Give ~ this upgrade: 
+
+!ACTION: REMOVE_PLAYER_UPGRADE
+!NAME: Player/Upgrades and Sciences/Remove upgrade from Player.
+!DESC:
+!ARG: Remove ~ from 
+
+!ACTION: SKIRMISH_FOLLOW_APPROACH_PATH
+!NAME: Unused or Obsolete/Team/Move/Team follow approach path.
+!DESC:
+!ARG: Have ~ approach the enemy using path ~, as a team is 
+
+!ACTION: SKIRMISH_MOVE_TO_APPROACH_PATH
+!NAME: Unused or Obsolete/Team/Move/Team move to approach path.
+!DESC:
+!ARG: Have ~ move to the start of enemy path ~.
+
+!ACTION: RECRUIT_TEAM
+!NAME: Unused or Obsolete/Team/Spawn, Build, or Merge/Recruit Team.
+!DESC:
+!ARG: Recruit an instance of ~, maximum recruiting distance (feet):~.
+
+!ACTION: RECRUIT_TEAM_AT_TEAM
+!NAME: Unused or Obsolete/Team/Spawn, Build, or Merge/Recruit Team at location of another team.
+!DESC:
+!ARG: Recruit an instance of ~, maximum recruiting distance (feet):~ from the team ~.
+
+!ACTION: MOVE_CAMERA_TO
+!NAME: Cinematics/Camera/Move the camera to a location.
+!DESC:
+!ARG: Move camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: MOVE_CAMERA_TO_NAMED
+!NAME: Cinematics/Camera/Move the camera to a named object's location.
+!DESC:
+!ARG: Move camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: PLAYER_CAMERA_MOVE_TO
+!NAME: Cinematics/Camera/Move the camera for player to a location.
+!DESC:
+!ARG: Move ~ camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: PLAYER_CAMERA_MOVE_TO_NAMED
+!NAME: Cinematics/Camera/Move the camera for player to a named object's location.
+!DESC:
+!ARG: Move ~ camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: CAMERA_RESTRICT_TO_AREA
+!NAME: Cinematics/Camera/Restrict camera movement to area.
+!DESC:
+!ARG: Restrict camera movement to ~.
+
+!ACTION: CAMERA_REMOVE_AREA_RESTRICTION
+!NAME: Unused or Obsolete/Camera/Move/Restrict camera movement to area -- REMOVE.
+!DESC:
+!ARG: Restrict camera movement to area -- REMOVE.
+
+!ACTION: ZOOM_CAMERA
+!NAME: Cinematics/Camera/Change the camera zoom.
+!DESC:
+!ARG: Change camera zoom to ~ in ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: FOCAL_LENGTH_CAMERA
+!NAME: Cinematics/Camera/Change the camera's focal length (mm).
+!DESC: seconds.
+!ARG: Typical values range from 10mm (wide) to 400mm (extreme zoom). Normal camera is 25mm
+
+!ACTION: CAMERA_FADE_ADD
+!NAME: Unused or Obsolete/Cinematics/Fade/Fade using an add blend to white.
+!DESC:Unused or Obsolete/Cinematics/Fade/Fade using a subtractive blend to black.
+!ARG: CAMERA_FADE_SUBTRACT
+
+!ACTION: CAMERA_FADE_MULTIPLY
+!NAME: Unused or Obsolete/Cinematics/Fade/Fade using a multiply blend to black.
+!DESC:Unused or Obsolete/Cinematics/Fade/Fade using a saturate blend.
+!ARG: CAMERA_FADE_SATURATE
+
+!ACTION: PITCH_CAMERA
+!NAME: Cinematics/Camera/Change the camera pitch.
+!DESC:
+!ARG: Change camera pitch to ~ in ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: ROLL_CAMERA
+!NAME: Cinematics/Camera/Change the camera roll.
+!DESC:
+!ARG: Change camera roll to ~ degrees in ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: CAMERA_FOLLOW_NAMED
+!NAME: Cinematics/Camera/Follow a specific unit.
+!DESC:
+!ARG: Have the camera follow ~. Snap camera to object is ~. Camera will be ~ higher than the unit.
+
+!ACTION: CAMERA_STOP_FOLLOW
+!NAME: Cinematics/Camera/Stop following any units.
+!DESC:
+!ARG: Stop following any units.
+
+!ACTION: SETUP_CAMERA
+!NAME: Cinematics/Camera/Set up the camera.
+!DESC:
+!ARG: Position camera at ~, zoom = ~(0.0 to 1.0), pitch = ~(1.0==default), looking towards ~.
+
+!ACTION: INCREMENT_COUNTER
+!NAME: Scripting/Counters/Increment counter.
+!DESC:
+!ARG: Add ~ to 
+
+!ACTION: DECREMENT_COUNTER
+!NAME: Scripting/Counters/Decrement counter.
+!DESC:
+!ARG: Subtract ~ from 
+
+!ACTION: MOVE_CAMERA_BY_ANIMATION
+!NAME: Cinematics/Camera/Move using camera animation.
+!DESC:
+!ARG: Move using ~.
+
+!ACTION: MOVE_CAMERA_ALONG_SPLINE_PATH
+!NAME: Cinematics/Camera/Move along a spline path.
+!DESC:
+!ARG: Move along ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds, delay start ~ seconds. 
+
+!ACTION: MOVE_CAMERA_LOCATOR_ALONG_SPLINE_PATH
+!NAME: Cinematics/Camera/Order camera's locator to follow a spline path.
+!DESC:
+!ARG: Look at point moving along ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds, delay start ~ seconds. 
+
+!ACTION: ROTATE_CAMERA
+!NAME: Cinematics/Camera/Rotate around the current viewpoint.
+!DESC:
+!ARG: Rotate ~ times, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: ROTATE_CAMERA_TO_ANGLE
+!NAME: Cinematics/Camera/Rotate to a specific view angle.
+!DESC:
+!ARG: Rotate camera view to ~ degrees, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: ROTATE_CAMERA_LOCKED
+!NAME: Cinematics/Camera/Rotate the camera in place.
+!DESC:
+!ARG: Rotate in place ~ times, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: RESET_CAMERA
+!NAME: Cinematics/Camera/Reset to the default view.
+!DESC:
+!ARG: Reset to ~, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: RESET_CAMERA_TUTORIAL_STATE
+!NAME: Tutorial/Reset camera tutorial state.
+!DESC:Reset camera tutorial state.
+!ARG: Makes it so that script commands that try to detect camera rotation, etc can be accurate from this point.
+
+!ACTION: MOVE_CAMERA_TO_SELECTION
+!NAME: Cinematics/Camera/End movement at selected unit.
+!DESC:
+!ARG: End movement at selected unit.
+
+!ACTION: SET_MILLISECOND_TIMER
+!NAME: Scripting/Timer/Seconds countdown timer -- set.
+!DESC:
+!ARG: Set ~ to expire in ~ seconds.
+
+!ACTION: SET_RANDOM_MSEC_TIMER
+!NAME: Scripting/Timer/Seconds countdown timer -- set random.
+!DESC:
+!ARG: Set ~ to expire between ~ and ~ seconds.
+
+!ACTION: ADD_TO_MSEC_TIMER
+!NAME: Scripting/Timer/Seconds countdown timer -- add seconds.
+!DESC:
+!ARG: Add ~ seconds to ~ .
+
+!ACTION: SUB_FROM_MSEC_TIMER
+!NAME: Scripting/Timer/Seconds countdown timer -- subtract seconds.
+!DESC:
+!ARG: Subtract ~ seconds from ~ .
+
+!ACTION: CAMERA_MOD_FREEZE_TIME
+!NAME: Cinematics/Settings/Freeze time during the camera movement.
+!DESC:
+!ARG: Freeze time during the camera movement.
+
+!ACTION: SUSPEND_BACKGROUND_SOUNDS
+!NAME: Media/Audio/All Sounds/Suspend all sounds.
+!DESC:
+!ARG: Suspend background sounds.
+
+!ACTION: RESUME_BACKGROUND_SOUNDS
+!NAME: Media/Audio/All Sounds/Resume all sounds.
+!DESC:
+!ARG: Resume background sounds.
+
+!ACTION: CAMERA_MOD_SET_FINAL_ZOOM
+!NAME: Cinematics/Camera/Set Final zoom for camera movement.
+!DESC:
+!ARG: Adjust zoom to ~ (1.0==max height, 0.0==in the ground) ~ ease-in ~ ease-out.
+
+!ACTION: CAMERA_MOD_SET_FINAL_PITCH
+!NAME: Cinematics/Camera/Set Final pitch for camera movement.
+!DESC:
+!ARG: Adjust pitch to ~ (1.0==default, 0.0==toward horizon, >1 = toward ground) ~ ease-in ~ ease-out.
+
+!ACTION: CAMERA_MOD_LOOK_TOWARD
+!NAME: Cinematics/Camera/Camera look toward point while moving.
+!DESC:
+!ARG: Look toward ~ during the camera movement.
+
+!ACTION: CREATE_OBJECT
+!NAME: Unused or Obsolete/Object Type/Spawn/Spawn object.
+!DESC:
+!ARG: Spawn object ~ in ~ at position (~), rotated ~ .
+
+!ACTION: TEAM_ATTACK_TEAM
+!NAME: Team/Attack/Set team to attack another team.
+!DESC:
+!ARG:  ~ begin attack on 
+
+!ACTION: NAMED_ATTACK_NAMED
+!NAME: Object Type/Attack/Set unit to attack another unit.
+!DESC:
+!ARG:  ~ begin attack on 
+
+!ACTION: CREATE_NAMED_ON_TEAM_AT_WAYPOINT
+!NAME: Object Type/Spawn/Spawn a named object on a team at a waypoint.
+!DESC:
+!ARG: Spawn ~ of type ~ on ~ at 
+
+!ACTION: CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION
+!NAME: Object Type/Spawn/Spawn a named object on a team at a waypoint with an orientation.
+!DESC:
+!ARG: Spawn ~ of type ~ on ~ at ~, rotated ~.
+
+!ACTION: CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT
+!NAME: Object Type/Spawn/Spawn an unnamed object on a team at a waypoint.
+!DESC:
+!ARG: Spawn unit of type ~ on ~ at 
+
+!ACTION: CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION
+!NAME: Object Type/Spawn/Spawn an unnamed object on a team at a waypoint with an orientation.
+!DESC:
+!ARG: Spawn unit of type ~ on ~ at ~, rotated ~.
+
+!ACTION: NAMED_APPLY_ATTACK_PRIORITY_SET
+!NAME: Scripting/Attack Priority Set/Apply named object's attack priority set.
+!DESC:
+!ARG: Have ~ use ~.
+
+!ACTION: TEAM_APPLY_ATTACK_PRIORITY_SET
+!NAME: Scripting/Attack Priority Set/Apply a team's attack priority set.
+!DESC:
+!ARG: Have ~ use ~.
+
+!ACTION: SET_ATTACK_PRIORITY_THING
+!NAME: Scripting/Attack Priority Set/Modify a set's priority for a single object type.
+!DESC:
+!ARG: For ~ set the priority of object type ~ to 
+
+!ACTION: SET_ATTACK_PRIORITY_KIND_OF
+!NAME: Scripting/Attack Priority Set/Modify a set's priorities for all of a kind.
+!DESC:
+!ARG: For ~ set the priority of object type ~ to 
+
+!ACTION: SET_DEFAULT_ATTACK_PRIORITY
+!NAME: Scripting/Attack Priority Set/Specify the set's default priority.
+!DESC:
+!ARG: For ~ set the default priority to 
+
+!ACTION: SET_BASE_CONSTRUCTION_SPEED
+!NAME: Player/Build/Set the delay between building teams.
+!DESC: seconds between building teams.
+!ARG:  ~ will delay 
+
+!ACTION: NAMED_SET_SLEEP_STATUS
+!NAME: Unused or Obsolete/Object Type/Settings/Set the sleep status of a specific unit.
+!DESC:
+!ARG:  ~ changes his sleep status to 
+
+!ACTION: TEAM_SET_SLEEP_STATUS
+!NAME: Unused or Obsolete/Team/Settings/Set the Sleep status of Team.
+!DESC:
+!ARG:  ~ change their sleep status to 
+
+!ACTION: NAMED_ATTACK_AREA
+!NAME: Object Type/Attack/Named object attacks an area.
+!DESC:
+!ARG:  ~ attacks anything in 
+
+!ACTION: NAMED_ATTACK_AREA_FOR_SECONDS
+!NAME: Object Type/Attack/Named object attacks an area for a given number of seconds.
+!DESC:
+!ARG:  ~ attacks anything in ~ for ~ seconds.
+
+!ACTION: NAMED_ATTACK_TEAM
+!NAME: Object Type/Attack/Named object attacks Team.
+!DESC:
+!ARG:  ~ attacks 
+
+!ACTION: TEAM_ATTACK_NAMED
+!NAME: Team/Attack/Team attacks a named object.
+!DESC:
+!ARG:  ~ attacks 
+
+!ACTION: TEAM_LOAD_TRANSPORTS
+!NAME: Unused or Obsolete/Team/Transport/Transport -- automatically load.
+!DESC:
+!ARG:  ~ load into transports.
+
+!ACTION: NAMED_ENTER_NAMED
+!NAME: Unused or Obsolete/Object Type/Transport/Transport -- load unit into specific.
+!DESC:
+!ARG:  ~ loads into 
+
+!ACTION: TEAM_ENTER_NAMED
+!NAME: Unused or Obsolete/Team/Transport/Transport -- load team into specific.
+!DESC:
+!ARG:  ~ attempt to load into 
+
+!ACTION: NAMED_EXIT_ALL
+!NAME: Unused or Obsolete/Object Type/Transport/Transport -- unload units from specific.
+!DESC:
+!ARG:  ~ unloads.
+
+!ACTION: TEAM_EXIT_ALL
+!NAME: Unused or Obsolete/Team/Transport/Transport -- unload team from all.
+!DESC:
+!ARG:  ~ unload.
+
+!ACTION: NAMED_FOLLOW_WAYPOINTS
+!NAME: Object Type/Move/Named object follow a waypoint path.
+!DESC:
+!ARG:  ~ follow 
+
+!ACTION: NAMED_ATTACK_FOLLOW_WAYPOINTS
+!NAME: Object Type/Attack/Named object attack-move along a waypoint path.
+!DESC:
+!ARG:  ~ AttackMove follows waypoints, beginning at 
+
+!ACTION: NAMED_FOLLOW_WAYPOINTS_EXACT
+!NAME: Object Type/Move/Named object follow a waypoint path -- exactly.
+!DESC:
+!ARG:  ~ EXACTLY follow 
+
+!ACTION: NAMED_GUARD
+!NAME: Object Type/Guard/Named object guards.
+!DESC:
+!ARG:  ~ begins guarding.
+
+!ACTION: UNIT_GUARD_NEAREST_KINDOF
+!NAME: Object Type/Guard/Named object guards nearest kindof.
+!DESC:
+!ARG:  ~ begins guarding nearest 
+
+!ACTION: TEAM_GUARD
+!NAME: Team/Guard/Team guard current location.
+!DESC:
+!ARG:  ~ begins guarding.
+
+!ACTION: TEAM_GUARD_POSITION
+!NAME: Team/Guard/Team guard at location.
+!DESC:
+!ARG:  ~ begins guarding at 
+
+!ACTION: TEAM_GUARD_OBJECT
+!NAME: Team/Guard/Team guard a named object.
+!DESC:
+!ARG:  ~ begins guarding 
+
+!ACTION: TEAM_GUARD_TEAM
+!NAME: Team/Guard/Team guard a specific team.
+!DESC:
+!ARG:  ~ begins guarding 
+
+!ACTION: TEAM_GUARD_AREA
+!NAME: Team/Guard/Team guard an area.
+!DESC:Please note that units guarding an area that is fogged will not be able to see a unit that enters the area and thus not attack so be sure that the area they are guarding is not fogged.
+!ARG:  ~ begins guarding 
+
+!ACTION: TEAM_GUARD_AREA_FROM_POSITION
+!NAME: Team/Guard/Team guard an area from a location.
+!DESC:Please note that units guarding an area that is fogged will not be able to see a unit that enters the area and thus not attack so be sure that the area they are guarding is not fogged.
+!ARG:  ~ begins guarding ~ from 
+
+!ACTION: TEAM_GUARD_NEAREST_KINDOF
+!NAME: Team/Guard/Team guard nearest kindof.
+!DESC:
+!ARG:  ~ begins guarding nearest 
+
+!ACTION: UNIT_GUARD_POSITION
+!NAME: Object Type/Guard/Named object guard at location.
+!DESC:
+!ARG:  ~ begins guarding at 
+
+!ACTION: UNIT_GUARD_OBJECT
+!NAME: Object Type/Guard/Named object guard another named object.
+!DESC:
+!ARG:  ~ begins guarding 
+
+!ACTION: UNIT_GUARD_AREA
+!NAME: Object Type/Guard/Named object guard area.
+!DESC:
+!ARG:  ~ begins guarding 
+
+!ACTION: UNIT_GUARD_AREA_FROM_POSITION
+!NAME: Object Type/Guard/Named object guard an area from a location.
+!DESC:
+!ARG:  ~ begins guarding ~ from 
+
+!ACTION: NAMED_HUNT
+!NAME: Object Type/Attack/Hunt (choose enemy target, move towards it, and attack when within range).
+!DESC:
+!ARG:  ~ begins hunting.
+
+!ACTION: TEAM_HUNT
+!NAME: Team/Attack/Hunt (choose enemy target, move towards it, and attack when within range).
+!DESC:
+!ARG:  ~ begins hunting.
+
+!ACTION: TEAM_HARVEST
+!NAME: Unused or Obsolete/Team/Attack/Harvest around waypoint.
+!DESC:
+!ARG:  ~ begins harvesting around ~.
+
+!ACTION: PLAYER_DISABLE_BASE_CONSTRUCTION
+!NAME: Player/Build/Permissions/Player is not allowed to build buildings.
+!DESC:
+!ARG:  ~ is not allowed to build buildings.
+
+!ACTION: PLAYER_DISABLE_FACTORIES
+!NAME: Player/Build/Player cannot build from an object type.
+!DESC:
+!ARG:  ~ is not allowed to build from 
+
+!ACTION: PLAYER_SET_ALLY_BUILDABILITY
+!NAME: Player/Build/Player cannot build in a specific ally's buildability radii (ground control).
+!DESC:
+!ARG:  ~ is allowed to build in ~ controlled territory: 
+
+!ACTION: PLAYER_DISABLE_UNIT_CONSTRUCTION
+!NAME: Player/Build/Permissions/Player is not allowed to build units.
+!DESC:
+!ARG:  ~ is not allowed to build units.
+
+!ACTION: PLAYER_ENABLE_BASE_CONSTRUCTION
+!NAME: Player/Build/Permissions/Player is allowed to build buildings.
+!DESC:
+!ARG:  ~ is allowed to build buildings.
+
+!ACTION: PLAYER_ENABLE_FACTORIES
+!NAME: Player/Build/Player can build from an object type.
+!DESC:
+!ARG:  ~ is allowed to build from 
+
+!ACTION: PLAYER_ENABLE_UNIT_CONSTRUCTION
+!NAME: Player/Build/Permissions/Player is allowed to build units.
+!DESC:
+!ARG:  ~ is able to build units.
+
+!ACTION: BUILD_TEAM
+!NAME: Team/Spawn, Build, or Merge/Start building Team.
+!DESC:
+!ARG: Start building 
+
+!ACTION: NAMED_DAMAGE
+!NAME: Object Type/Damage or Remove/Deal damage to a named object.
+!DESC:
+!ARG:  ~ takes ~ points of damage.
+
+!ACTION: KILL_HORDE_MEMBERS
+!NAME: Unused or Obsolete/Object Type/Damage or Remove/Kill off a percentage of the Horde
+!DESC:
+!ARG:  Horde ~ kill off  ~ percent. 
+
+!ACTION: NAMED_DELETE
+!NAME: Object Type/Damage or Remove/Delete a named object.
+!DESC:
+!ARG:  ~ is removed from the world.
+
+!ACTION: TEAM_DELETE
+!NAME: Team/Damage or Remove/Delete Team.
+!DESC:
+!ARG:  ~ is removed from the world.
+
+!ACTION: TEAM_DELETE_LIVING
+!NAME: Team/Damage or Remove/Delete Team, but ignore dead guys.
+!DESC:
+!ARG: Each living member of ~ is removed from the world. (Dead or dying members will remain)
+
+!ACTION: NAMED_SHOCK
+!NAME: Unused or Obsolete/Object Type/Damage or Remove/Shock a specific unit.
+!DESC:
+!ARG:  ~ will be shocked dir (0-360) ~, force ~, zMult ~, with FX named ~ .
+
+!ACTION: NAMED_KILL
+!NAME: Object Type/Damage or Remove/Kill a named object.
+!DESC:
+!ARG:  ~is dealt a lethal amount of damage.
+
+!ACTION: TEAM_KILL
+!NAME: Team/Damage or Remove/Kill an entire team.
+!DESC:
+!ARG:  ~ is dealt a lethal amount of damage.
+
+!ACTION: PLAYER_KILL
+!NAME: Player/Remove, Sell, or Transfer All/Kill Player.
+!DESC:
+!ARG: All of ~'s buildings and units are dealt a lethal amount of damage.
+
+!ACTION: NAMED_OUTLINE
+!NAME: Object Type/Flash or Color/Outline a specific unit with an outline type.
+!DESC:
+!ARG:  ~ is set to ~ outline type.
+
+!ACTION: NAMED_FLASH
+!NAME: Object Type/Flash or Color/Flash a specific unit for a specified amount of time.
+!DESC:
+!ARG:  ~ flashes for ~ seconds.
+
+!ACTION: TEAM_FLASH
+!NAME: Team/Flash/Flash Team for a specified amount of time.
+!DESC:
+!ARG:  ~ flashes for ~ seconds.
+
+!ACTION: NAMED_CUSTOM_COLOR
+!NAME: Object Type/Flash or Color/Set a named object to use a special indicator color.
+!DESC:
+!ARG:  ~ uses the color ~ .
+
+!ACTION: NAMED_FLASH_WHITE
+!NAME: Object Type/Flash or Color/Flash a named object white for a specified amount of time.
+!DESC:
+!ARG:  ~ flashes white for ~ seconds.
+
+!ACTION: TEAM_FLASH_WHITE
+!NAME: Team/Flash/Flash Team white for a specified amount of time.
+!DESC:
+!ARG:  ~ flashes white for ~ seconds.
+
+!ACTION: MOVIE_PLAY_FULLSCREEN
+!NAME: Media/Video/Play a movie in fullscreen mode.
+!DESC:
+!ARG:  ~ plays fullscreen but doesn't play for low detail ( ~ )
+
+!ACTION: MOVIE_PLAY_RADAR
+!NAME: Media/Video/Play a movie in the radar.
+!DESC:
+!ARG:  ~ plays in the radar window.
+
+!ACTION: SOUND_PLAY_NAMED
+!NAME: Media/Audio/Sound Effect/Play a sound as though coming from a named object.
+!DESC:
+!ARG:  ~ plays as though coming from 
+
+!ACTION: SPEECH_PLAY
+!NAME: Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file.
+!DESC:
+!ARG:  ~ plays, allowing overlap ~ (true to allow, false to disallow).
+
+!ACTION: PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT
+!NAME: Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file as if it were an EVA event.
+!DESC:
+!ARG:  ~ plays as if it was an EVA event
+
+!ACTION: PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE
+!NAME: Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file as if it were an EVA event, and subtitle it.
+!DESC:
+!ARG:  ~ plays as if it was an EVA event, while displaying military briefing ~ for ~ seconds.
+
+!ACTION: PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT
+!NAME: Media/Audio/EVA/Play a sound effect as if it were an EVA event.
+!DESC:
+!ARG:  ~ plays as if it was an EVA event
+
+!ACTION: PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE
+!NAME: Media/Audio/EVA/Play a sound effect as if it were an EVA event, and subtitle it.
+!DESC:
+!ARG:  ~ plays as if it was an EVA event, while displaying ~ for ~ seconds.
+
+!ACTION: PLAY_SOUND_AS_AI_COCOMMANDER_DIALOG
+!NAME: Media/Audio/EVA/Play a sound effect as AI co-commander dialog.
+!DESC:
+!ARG:  ~ plays as AI co-commander dialog
+
+!ACTION: PLAY_SOUND_AS_AI_COCOMMANDER_DIALOG_WITH_SUBTITLE
+!NAME: Media/Audio/EVA/Play a sound effect as AI co-commander dialog, and subtitle it.
+!DESC:
+!ARG:  ~ plays as AI co-commander dialog, while displaying ~ for ~ seconds.
+
+!ACTION: PLAYER_TRANSFER_OWNERSHIP_PLAYER
+!NAME: Player/Remove, Sell, or Transfer All/Transfer assets from one player to another player.
+!DESC:
+!ARG: All assets of ~ are transferred to 
+
+!ACTION: NAMED_TRANSFER_OWNERSHIP_PLAYER
+!NAME: Object Type/Allegiance/Transfer a named object to the control of a Player.
+!DESC:
+!ARG:  ~ is transferred to the command of 
+
+!ACTION: PLAYER_EXCLUDE_FROM_SCORE_SCREEN
+!NAME: Player/Scoring/Exclude this player from the score screen.
+!DESC:
+!ARG: Exclude ~ from the score screen.
+
+!ACTION: ENABLE_SCORING
+!NAME: Unused or Obsolete/Map/Gameplay/Turn on scoring.
+!DESC:
+!ARG: Turn on scoring.
+
+!ACTION: DISABLE_SCORING
+!NAME: Unused or Obsolete/Map/Gameplay/Turn off scoring.
+!DESC:
+!ARG: Turn off scoring.
+
+!ACTION: PLAYER_RELATES_PLAYER
+!NAME: Player/Allegiance/Change how Player relates to another player.
+!DESC:
+!ARG:  ~ considers ~ to be 
+
+!ACTION: OPTIONAL_VICTORY
+!NAME: Unused or Obsolete/Win & Loss/End the mission in victory if the user chooses to
+!DESC:
+!ARG: End game in victory if the user indicates that they wish to.
+
+!ACTION: RADAR_CREATE_EVENT
+!NAME: Interface/Radar/Create a radar event at a specified location.
+!DESC:
+!ARG: A radar event occurs at ~ of type 
+
+!ACTION: OBJECT_CREATE_RADAR_EVENT
+!NAME: Interface/Radar/Create a radar event at a named object.
+!DESC:
+!ARG: A radar event occurs at ~ of type 
+
+!ACTION: TEAM_CREATE_RADAR_EVENT
+!NAME: Interface/Radar/Create a radar event at a Team.
+!DESC:
+!ARG: A radar event occurs at ~ of type 
+
+!ACTION: NAMED_SET_CAMERA_FADING
+!NAME: Unused or Obsolete/Object Type/Settings/Camera fading -- enable or disable.
+!DESC:
+!ARG: Set ~ camera fading to ~.
+
+!ACTION: NAMED_SET_STEALTH_ENABLED
+!NAME: Object Type/Settings/Stealth -- enable or disable.
+!DESC:
+!ARG: Set ~ stealth ability to ~.
+
+!ACTION: NAMED_SET_DISABLED
+!NAME: Object Type/Settings/Disable -- enable or disable.
+!DESC:Enable/Disable a unit by type.  The types you should most be interested in are UNMANNED(pilot sniped), HELD(Standard disable), EMP(No Power).  The others can be used but the ones listed here are probably the most popular.
+!ARG: Set  ~ ~ to ~.
+
+!ACTION: NAMED_SET_STRICT_CONTROL_ENABLED
+!NAME: Unused or Obsolete/Object Type/Settings/Strict control -- enable or disable.
+!DESC:
+!ARG: Set ~ strict control to ~.
+
+!ACTION: TEAM_SET_STRICT_CONTROL_ENABLED
+!NAME: Unused or Obsolete/Team/Status/Strict Control set enabled or disabled.
+!DESC:
+!ARG: Set ~ strict control to ~.
+
+!ACTION: MAP_REVEAL_AT_WAYPOINT
+!NAME: Map/Fog or Reveal/Reveal map at waypoint -- fog.
+!DESC:
+!ARG: The map is revealed at ~ with a radius of ~ feet for ~.
+
+!ACTION: MAP_REVEAL_IN_TRIGGER
+!NAME: Map/Fog or Reveal/Reveal map in trigger -- fog.
+!DESC:
+!ARG: The map is revealed inside ~ for ~.
+
+!ACTION: MAP_REVEAL_ALL
+!NAME: Unused or Obsolete/Map/Shroud or Reveal/Reveal the entire map for Player.
+!DESC:
+!ARG: The world is revealed for ~.
+
+!ACTION: MAP_REVEAL_ALL_PERM
+!NAME: Map/Fog or Reveal/Reveal the entire map permanently for Player.
+!DESC:
+!ARG: The world is revealed permanently for ~.
+
+!ACTION: MAP_REVEAL_ALL_UNDO_PERM
+!NAME: Map/Fog or Reveal/Un-Reveal the entire map permanently for Player.
+!DESC:
+!ARG: Undo the permanent reveal for ~.  This will mess things up badly if called when there has been no permanent reveal.
+
+!ACTION: MAP_SHROUD_ALL
+!NAME: Unused or Obsolete/Map/Shroud or Reveal/Shroud the entire map for Player.
+!DESC:
+!ARG: The world is shrouded for ~.
+
+!ACTION: DISABLE_BORDER_SHROUD
+!NAME: Map/Fog or Reveal/Border Shroud is turned off.
+!DESC:
+!ARG: Shroud off the map edges is turned off.
+
+!ACTION: ENABLE_BORDER_SHROUD
+!NAME: Map/Fog or Reveal/Border Shroud is turned on.
+!DESC:
+!ARG: Shroud off the map edges is turned on.
+
+!ACTION: MAP_SHROUD_SET_RESHROUD_TIME
+!NAME: Map/Fog or Reveal/Set Re-Fog delay.
+!DESC:This will set the length of time it takes for the fog of war to come back after a unit leaves the area.  Defined in seconds, can use decimals like .5 for half a second.
+!ARG: Set Fog Delay(In Seconds) to 
+
+!ACTION: TEAM_GARRISON_SPECIFIC_BUILDING
+!NAME: Team/Garrison/Garrison a named object with Team.
+!DESC:
+!ARG:  ~ enters into 
+
+!ACTION: EXIT_SPECIFIC_BUILDING
+!NAME: Object Type/Garrison/Empty a named object.
+!DESC:
+!ARG:  ~ empties.
+
+!ACTION: TEAM_GARRISON_NEAREST_BUILDING
+!NAME: Team/Garrison/Garrison a nearby structure with Team.
+!DESC:
+!ARG:  ~ garrison a nearby object.
+
+!ACTION: TEAM_EXIT_ALL_BUILDINGS
+!NAME: Team/Garrison/Exit all objects a team is in.
+!DESC:
+!ARG:  ~ exits all objects.
+
+!ACTION: NAMED_GARRISON_SPECIFIC_BUILDING
+!NAME: Object Type/Garrison/Garrison a named object with a named object.
+!DESC:
+!ARG:  ~ garrison 
+
+!ACTION: NAMED_GARRISON_SPECIFIC_BUILDING_INSTANTLY
+!NAME: Object Type/Garrison/Garrison a named object instantly with a named object.
+!DESC:Note that this Script will not do any proper checks to make sure the objects container is valid for the unit entering it.  If you add a unit that is not valid for the container the behavior thereafter is undefined and could possibly crash.
+!ARG:  ~ garrison's ~ instantly.
+
+!ACTION: TEAM_GARRISON_SPECIFIC_BUILDING_INSTANTLY
+!NAME: Team/Garrison/Garrison a named object instantly with a team.
+!DESC:Note that this Script will not do any proper checks to make sure the objects container is valid for the unit entering it.  If you add a unit that is not valid for the container the behavior thereafter is undefined and could possibly crash.
+!ARG:  ~ garrison's ~ instantly.
+
+!ACTION: TEAM_GARRISON_TEAM_INSTANTLY
+!NAME: Team/Garrison/Garrison a team instantly with a team.
+!DESC:Note that this Script will not do any proper checks to make sure the objects container is valid for the unit entering it.  If you add a unit that is not valid for the container the behavior thereafter is undefined and could possibly crash.
+!ARG:  ~ garrison's ~ instantly.
+
+!ACTION: NAMED_GARRISON_NEAREST_BUILDING
+!NAME: Object Type/Garrison/Garrison a nearby structure with a named object.
+!DESC:
+!ARG:  ~ garrison a nearby structure.
+
+!ACTION: NAMED_EXIT_BUILDING
+!NAME: Object Type/Garrison/Named object exit whatever object it's in.
+!DESC:
+!ARG:  ~ leaves it's garrison.
+
+!ACTION: PLAYER_EXIT_ALL_BUILDINGS
+!NAME: Player/Garrison/All of Player's units leave their garrisons.
+!DESC:
+!ARG: All of ~ units leave their garrisons.
+
+!ACTION: TEAM_MERGE_INTO_TEAM
+!NAME: Team/Spawn, Build, or Merge/Merge Team into another team.
+!DESC:
+!ARG:  ~ merges onto 
+
+!ACTION: IDLE_ALL_UNITS
+!NAME: Cinematics/Force Emotion/Idle all units for all players.
+!DESC:
+!ARG: Idle all units for all players.
+
+!ACTION: DISABLE_INPUT
+!NAME: Interface/Input/User input -- disable.
+!DESC:
+!ARG: Disable mouse and keyboard input.
+
+!ACTION: ENABLE_INPUT
+!NAME: Interface/Input/User input -- enable.
+!DESC:
+!ARG: Enable mouse and keyboard input.
+
+!ACTION: SOUND_AMBIENT_PAUSE
+!NAME: Media/Audio/Sound Effect/Suspend the ambient sounds.
+!DESC:
+!ARG: Pause the ambient sounds.
+
+!ACTION: SOUND_AMBIENT_RESUME
+!NAME: Media/Audio/Sound Effect/Resume the ambient sounds.
+!DESC:
+!ARG: Resume the ambient sounds.
+
+!ACTION: MUSIC_SET_TRACK
+!NAME: Media/Audio/Music/Play a music track.
+!DESC:
+!ARG: Play ~ using fadeout (~) and fadein (~).
+
+!ACTION: AUDIO_PUSH_MUSIC
+!NAME: Media/Audio/Music/Push music track.
+!DESC:).
+!ARG: Undone by Pop music track.
+
+!ACTION: AUDIO_POP_MUSIC
+!NAME: Media/Audio/Music/Pop music track.
+!DESC:
+!ARG: Pop the current music track off the stack using fadeout (~) and fadein (~).
+
+!ACTION: MUSIC_PLAY_TRACK_FINITE_TIMES
+!NAME: Media/Audio/Music/Play a music track a certain number of times.
+!DESC:
+!ARG: Play ~ ~ times using fadeout (~) and fadein (~).
+
+!ACTION: MUSIC_PLAY_TRACK_FINITE_TIMES_AND_NOTIFY
+!NAME: Media/Audio/Music/Play a music track a certain number of times, then set a flag.
+!DESC:
+!ARG: Play ~ ~ times using fadeout (~) and fadein (~), then set ~ to true.
+
+!ACTION: MUSIC_PLAY_TRACK_FINITE_TIMES_AS_SPECIAL_END_OF_LEVEL_MUSIC
+!NAME: Media/Audio/Music/Play SPECIAL END-OF-LEVEL music a certain number of times.
+!DESC:
+!ARG: Play ~ as SPECIAL END-OF-LEVEL MUSIC ~ times using fadeout (~) and fadein (~).
+
+!ACTION: MUSIC_PUSH_TRACK_FINITE_TIMES
+!NAME: Media/Audio/Music/Push music track and play it a certain number of times.
+!DESC:
+!ARG: Push (stack) ~ atop the current music track and play it ~ times using fadeout (~) and fadein (~). (Does NOT pop the music off the stack upon completion.) 
+
+!ACTION: MUSIC_PUSH_TRACK_FINITE_TIMES_AND_NOTIFY
+!NAME: Media/Audio/Music/Push music track, play it a certain number of times, then set a flag.
+!DESC:
+!ARG: Push (stack) ~ atop the current music track and play it ~ times using fadeout (~) and fadein (~), then set ~ to true. (Does NOT pop the music off the stack upon completion.) 
+
+!ACTION: MUSIC_TURN_OFF_MUSIC_SCRIPTING
+!NAME: Unused or Obsolete/Media/Audio/Music/Turn off music scripting.
+!DESC:
+!ARG: Turn off the music scripting system, fading out (~) the music scripting system's current music.
+
+!ACTION: MUSIC_RETURN_TO_MUSIC_SCRIPTING
+!NAME: Unused or Obsolete/Media/Audio/Music/Return to music scripting.
+!DESC:
+!ARG: Resume use of (turn on) the music scripting system, fading out (~) the current music track and fading in (~) the music scripting system's music.
+
+!ACTION: MUSIC_RESET_MUSIC_SCRIPTING_SYSTEM
+!NAME: Unused or Obsolete/Media/Audio/Music/Reset music scripting system.
+!DESC:
+!ARG: Reset the music scripting system, as if the level had just started, fading out (~) the music scripting system's current music.
+
+!ACTION: PATH_MUSIC_PLAY_EVENT
+!NAME: Media/Audio/PathfinderMusic/Play Event.
+!DESC:
+!ARG: Play a specific Path Music Event(~), also Suspends Dynamic State System( if running ).
+
+!ACTION: PATH_MUSIC_DISABLE_DYNAMIC_SYSTEM
+!NAME: Media/Audio/PathfinderMusic/Disable Dynamic System.
+!DESC:
+!ARG: Disable the Path Music Dynamic State System
+
+!ACTION: PATH_MUSIC_ENABLE_DYNAMIC_SYSTEM
+!NAME: Media/Audio/PathfinderMusic/Enable Standard Dynamic System.
+!DESC:
+!ARG: Enable the Standard Path Music Dynamic State System
+
+!ACTION: PATH_MUSIC_ENABLE_SPECIFIC_DYNAMIC_SYSTEM
+!NAME: Media/Audio/PathfinderMusic/Enable Specific Dynamic System.
+!DESC:
+!ARG: Enables a specific Path Music Dynamic State System(~)
+
+!ACTION: PATH_MUSIC_ENABLE_RESUME_SYSTEM
+!NAME: Media/Audio/PathfinderMusic/Resume Dynamic System.
+!DESC:
+!ARG: Resume a Suspended Path Music Dynamic State System
+
+!ACTION: PATH_MUSIC_STOP_MUSIC
+!NAME: Media/Audio/PathfinderMusic/Stop Music.
+!DESC:
+!ARG: Stop any Path Music currently playing.
+
+!ACTION: PATH_MUSIC_FADE_OUT_MUSIC
+!NAME: Media/Audio/PathfinderMusic/Fade Out Music.
+!DESC:
+!ARG: Fade Out Path Music Volume( Stop Music after fade ) over (~) seconds.
+
+!ACTION: PATH_MUSIC_FADE_IN_MUSIC
+!NAME: Media/Audio/PathfinderMusic/Fade In Music.
+!DESC:
+!ARG: Fade In Path Music Volume over (~) seconds.
+
+!ACTION: CAMERA_LETTERBOX_BEGIN
+!NAME: Cinematics/Settings/Start letterbox mode.
+!DESC:This will hide ALL UI elements including the radar.
+!ARG: Start letterbox mode (hide UI, add border).
+
+!ACTION: CAMERA_LETTERBOX_BEGIN_WITH_RADAR
+!NAME: Cinematics/Settings/Start letterbox mode(shows radar).
+!DESC:This will display letterbox mode and leave the radar up.
+!ARG: Start letterbox mode (hide UI, add border), but keep the Radar visible.
+
+!ACTION: CAMERA_LETTERBOX_END
+!NAME: Cinematics/Settings/End letterbox mode.
+!DESC:
+!ARG: End letterbox mode (show UI, remove border).
+
+!ACTION: HIDE_UI
+!NAME: Cinematics/Settings/Hide UI
+!DESC:Hide UI (like letterbox mode, but with no border).
+!ARG: Like letterbox mode, but without the borders
+
+!ACTION: SHOW_UI
+!NAME: Cinematics/Settings/Show UI
+!DESC:
+!ARG: Show UI
+
+!ACTION: FREEZE_TIME
+!NAME: Cinematics/Settings/Freeze time.
+!DESC:
+!ARG: Freeze time.
+
+!ACTION: UNFREEZE_TIME
+!NAME: Cinematics/Settings/Unfreeze time.
+!DESC:
+!ARG: Unfreeze time.
+
+!ACTION: SHOW_MILITARY_CAPTION
+!NAME: Tutorial/Show windowed text caption.
+!DESC:
+!ARG: Show ~ for ~ seconds.
+
+!ACTION: NAMED_SET_HELD
+!NAME: Unused or Obsolete/Object Type/Settings/Set unit to be held in place, ignoring Physics, Locomotors, etc.
+!DESC:
+!ARG: Set Held status for ~ to ~.
+
+!ACTION: NAMED_SET_STOPPING_DISTANCE
+!NAME: Unused or Obsolete/Object Type/Settings/Set stopping distance for current locomotor.
+!DESC:
+!ARG: Set stopping distance for ~ to ~.
+
+!ACTION: SET_STOPPING_DISTANCE
+!NAME: Unused or Obsolete/Team/Settings/Set stopping distance for each unit's current locomotor.
+!DESC:
+!ARG: Set stopping distances for ~ to ~.
+
+!ACTION: MUSIC_SET_VOLUME
+!NAME: Media/Audio/Volume/Set the current music volume.
+!DESC:
+!ARG: Set the desired music volume to ~%. (0-100)
+
+!ACTION: TEAM_TRANSFER_TO_PLAYER
+!NAME: Team/Allegiance/Transfer control of Team to Player.
+!DESC:
+!ARG: Control of ~ transfers to 
+
+!ACTION: PLAYER_SET_MONEY
+!NAME: Player/Money/Set Player's money.
+!DESC:
+!ARG: Set ~'s money to $
+
+!ACTION: PLAYER_SET_MONEY_CAP
+!NAME: Player/Money/Set player's money cap.
+!DESC:
+!ARG: Set ~'s money cap to $
+
+!ACTION: PLAYER_GIVE_MONEY
+!NAME: Player/Money/Increase or Decrease Player's money.
+!DESC:
+!ARG:  ~ gets $
+
+!ACTION: DISPLAY_COUNTER
+!NAME: Interface/Counters and Timers/Specific counter -- display.
+!DESC:
+!ARG: Show ~ with text 
+
+!ACTION: HIDE_COUNTER
+!NAME: Interface/Counters and Timers/Specific counter -- hide.
+!DESC:
+!ARG: Hide 
+
+!ACTION: DISPLAY_COUNTDOWN_TIMER
+!NAME: Interface/Counters and Timers/Specific timer -- display.
+!DESC:
+!ARG: Show ~ with text 
+
+!ACTION: HIDE_COUNTDOWN_TIMER
+!NAME: Interface/Counters and Timers/Specific timer -- hide.
+!DESC:
+!ARG: Hide 
+
+!ACTION: DISABLE_COUNTDOWN_TIMER_DISPLAY
+!NAME: Interface/Counters and Timers/All timers -- hide.
+!DESC:
+!ARG: Disables timer display.
+
+!ACTION: ENABLE_COUNTDOWN_TIMER_DISPLAY
+!NAME: Interface/Counters and Timers/All timers -- display.
+!DESC:
+!ARG: Enables timer display.
+
+!ACTION: NAMED_STOP_SPECIAL_POWER_COUNTDOWN
+!NAME: Object Type/Special Power/Countdown timer -- pause.
+!DESC:
+!ARG: Pause ~'s ~ countdown.
+
+!ACTION: NAMED_START_SPECIAL_POWER_COUNTDOWN
+!NAME: Object Type/Special Power/Countdown timer -- resume.
+!DESC:
+!ARG: Resume ~'s ~ countdown.
+
+!ACTION: NAMED_SET_SPECIAL_POWER_COUNTDOWN
+!NAME: Object Type/Special Power/Countdown timer -- set.
+!DESC:
+!ARG: Set ~'s ~ to ~ seconds.
+
+!ACTION: PLAYER_SET_SPECIAL_POWER_COUNTDOWN
+!NAME: Player/Special Power/Special power -- set countdown timer.
+!DESC:
+!ARG: Set ~'s ~ to ~ seconds.
+
+!ACTION: PLAYER_FIRE_SPECIAL_POWER_AT_WAYPOINT
+!NAME: Player/Special Power/Special power -- fire at waypoint.
+!DESC:
+!ARG:  ~ fires ~ at ~.
+
+!ACTION: SKIRMISH_FIRE_SPECIAL_POWER_AT_MOST_COST
+!NAME: Player/Special Power/Special power -- fire at enemy's highest cost area.
+!DESC:
+!ARG:  ~ fire ~ at enemy's most costly area.
+
+!ACTION: FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE
+!NAME: Player/Special Power/Special power -- fire on nearest object type to team.
+!DESC:
+!ARG:  ~ fire ~ on nearest object of ~ to 
+
+!ACTION: FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE_BY_PLAYER
+!NAME: Player/Special Power/Special power -- fire on nearest object type to team owned by player.
+!DESC:
+!ARG:  ~ fire ~ on nearest object of ~ to ~ owned by 
+
+!ACTION: FIRE_SPECIAL_POWER_ON_TEAM
+!NAME: Player/Special Power/Special power -- fire on team.
+!DESC:
+!ARG:  ~ fire ~ on 
+
+!ACTION: NAMED_FIRE_SPECIAL_POWER_AT_WAYPOINT
+!NAME: Object Type/Special Power/Special Power -- fire at location.
+!DESC:
+!ARG:  ~ fires ~ at ~.
+
+!ACTION: NAMED_STOP
+!NAME: Object Type/Move/Unit stops.
+!DESC:
+!ARG:  ~ stops.
+
+!ACTION: TEAM_STOP
+!NAME: Team/Move/Team stops.
+!DESC:
+!ARG:  ~ stops.
+
+!ACTION: TEAM_STOP_AND_DISBAND
+!NAME: Team/Move/Team stops, then disbands.
+!DESC:
+!ARG:  ~ stops, then disbands.
+
+!ACTION: TEAM_SET_OVERRIDE_RELATION_TO_TEAM
+!NAME: Team/Allegiance/Override Team's relationship to a Team.
+!DESC:
+!ARG:  ~ considers ~ to be ~ (rather than using the the player relationship).
+
+!ACTION: TEAM_REMOVE_OVERRIDE_RELATION_TO_TEAM
+!NAME: Team/Allegiance/Remove an override to Team's relationship to a Team.
+!DESC:
+!ARG:  ~ uses the player relationship to 
+
+!ACTION: TEAM_REMOVE_ALL_OVERRIDE_RELATIONS
+!NAME: Team/Allegiance/Remove all overrides to Team's relationship to Teams and Players.
+!DESC:
+!ARG:  ~ uses the player relationship to all other teams and players.
+
+!ACTION: PLAYER_CAMERA_TETHER_NAMED
+!NAME: Cinematics/Camera/Begin tether player's camera to a specific unit.
+!DESC:
+!ARG:  ~ have player camera tethered to ~.  Snap camera to object is ~.  Amount of play is ~.
+
+!ACTION: CAMERA_TETHER_NAMED
+!NAME: Cinematics/Camera/Begin tether camera to a specific unit.
+!DESC:
+!ARG: Have the camera tethered to ~.  Snap camera to object is ~.  Amount of play is ~.
+
+!ACTION: CAMERA_STOP_TETHER_NAMED
+!NAME: Cinematics/Camera/End tether to any units.
+!DESC:
+!ARG: Stop tether to any units.
+
+!ACTION: CAMERA_LOOK_TOWARD_OBJECT
+!NAME: Cinematics/Camera/Rotate toward unit.
+!DESC:
+!ARG: Rotate toward ~, taking ~ seconds and holding ~ seconds, ease-in ~ seconds, ease-out ~ seconds with z-offset of ~.
+
+!ACTION: CAMERA_LOOK_TOWARD_WAYPOINT
+!NAME: Cinematics/Camera/Rotate to look at a waypoint.
+!DESC:
+!ARG: Rotate to look at ~, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds, reverse rotation ~.
+
+!ACTION: UNIT_DESTROY_ALL_CONTAINED
+!NAME: Object Type/Damage or Remove/Kill all units contained within a specific transport or structure.
+!DESC:
+!ARG: All units inside ~ are killed.
+
+!ACTION: TEAM_SET_OVERRIDE_RELATION_TO_PLAYER
+!NAME: Team/Allegiance/Override Team's relationship to a Player.
+!DESC:
+!ARG:  ~ considers ~ to be ~ (rather than using the the player relationship).
+
+!ACTION: PLAYER_SET_OVERRIDE_RELATION_TO_TEAM
+!NAME: Player/Allegiance/Override Player's relationship to another team.
+!DESC:
+!ARG:  ~ considers ~ to be ~ (rather than using the the player relationship).
+
+!ACTION: UNIT_EXECUTE_SEQUENTIAL_SCRIPT
+!NAME: Unused or Obsolete/Object Type/SequentialScript/Set a specific unit to execute a script sequentially.
+!DESC:
+!ARG:  ~ executes ~ sequentially.
+
+!ACTION: UNIT_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING
+!NAME: Unused or Obsolete/Object Type/SequentialScript/Set a specific unit to execute a looping sequential script.
+!DESC:
+!ARG:  ~ executes ~ sequentially, ~ times. (0=forever)
+
+!ACTION: TEAM_EXECUTE_SEQUENTIAL_SCRIPT
+!NAME: Unused or Obsolete/Team/SequentialScript/Execute script sequentially -- start.
+!DESC:
+!ARG:  ~ executes ~ sequentially.
+
+!ACTION: TEAM_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING
+!NAME: Unused or Obsolete/Team/SequentialScript/Execute script sequentially -- looping.
+!DESC:
+!ARG:  ~ executes ~ sequentially, ~ times. (0=forever)
+
+!ACTION: UNIT_STOP_SEQUENTIAL_SCRIPT
+!NAME: Object Type/SequentialScript/Set a named object to stop executing a sequential script.
+!DESC:
+!ARG:  ~ stops executing.
+
+!ACTION: TEAM_STOP_SEQUENTIAL_SCRIPT
+!NAME: Team/SequentialScript/Execute script sequentially -- stop.
+!DESC:
+!ARG:  ~ stops executing.
+
+!ACTION: UNIT_GUARD_FOR_FRAMECOUNT
+!NAME: Unused or Obsolete/Object Type/SequentialScript/Set to guard for some number of frames.
+!DESC:
+!ARG:  ~ guards for ~ frames.
+
+!ACTION: UNIT_IDLE_FOR_FRAMECOUNT
+!NAME: Object Type/SequentialScript/Named object idles for some number of frames.
+!DESC:
+!ARG:  ~ idles for ~ frames.
+
+!ACTION: UNIT_GUARD_FOR_SECONDS
+!NAME: Unused or Obsolete/Object Type/SequentialScript/Set to guard for some number of seconds.
+!DESC:
+!ARG:  ~ guards for ~ seconds.
+
+!ACTION: UNIT_IDLE_FOR_SECONDS
+!NAME: Object Type/SequentialScript/Named object idles for some number of seconds.
+!DESC:
+!ARG:  ~ idles for ~ seconds.
+
+!ACTION: UNIT_SET_MODELCONDITION
+!NAME: Object Type/Settings/Change Custom Model Condition flag.
+!DESC:Sets the USER_x model state up to 10 currently on a given object.
+!ARG:  ~ sets custom model condition number (1-10) ~ to ~.
+
+!ACTION: TEAM_SET_MODELCONDITION
+!NAME: Team/Settings/Change Custom Model Condition flag - all.
+!DESC:
+!ARG:  ~ sets custom model condition number (1-4) ~ to ~.
+
+!ACTION: UNIT_SET_MODELCONDITION_FOR_DURATION
+!NAME: Object Type/Settings/Set a model condition flag on a named object for duration. % specifies # of members in horde that get this.
+!DESC:
+!ARG:  ~ sets ~ for ~ seconds. Percentage (hordes) ~.
+
+!ACTION: UNIT_SET_MODELCONDITION_GENERIC
+!NAME: Object Type/Settings/Set a model condition flag on a named object for duration(optional).
+!DESC:Sets a model state on the given object. Can optionally set the state to expire after (x) seconds, 0 sets the state permanently until manually cleared via the cleear model state script.
+!ARG:  ~ sets ~ for ~ seconds(optional). 
+
+!ACTION: UNIT_CLEAR_MODELCONDITION
+!NAME: Object Type/Settings/Clear model condition flag on a named object.
+!DESC:
+!ARG:  ~ clears ~.
+
+!ACTION: TEAM_SET_MODELCONDITION_FOR_DURATION
+!NAME: Unused or Obsolete/Team/Settings/Set a model condition flag on a team (and horde members) for duration. % specifies # of members in team that get this.
+!DESC:
+!ARG:  ~ sets model condition ~ for ~ seconds. Percentage ~.
+
+!ACTION: TEAM_CLEAR_MODELCONDITION
+!NAME: Team/Settings/Clear model condition flag on a team.
+!DESC:
+!ARG:  ~ clears model condition ~.
+
+!ACTION: UNIT_SET_FLAME_STATUS
+!NAME: Unused or Obsolete/Object Type/Settings/Ignite or quench aflame status.
+!DESC:
+!ARG:  ~ is now on fire (T-F) ~ .
+
+!ACTION: TEAM_SET_FLAME_STATUS
+!NAME: Unused or Obsolete/Team/Settings/Ignite or quench aflame status - all.
+!DESC:
+!ARG:  ~ is now on fire (T-F) ~ .
+
+!ACTION: TEAM_GUARD_FOR_FRAMECOUNT
+!NAME: Unused or Obsolete/Team/SequentialScript/Guard -- number of frames.
+!DESC:
+!ARG:  ~ guards for ~ frames.
+
+!ACTION: TEAM_IDLE_FOR_FRAMECOUNT
+!NAME: Team/SequentialScript/Idle for some number of frames.
+!DESC:
+!ARG:  ~ idles for ~ frames.
+
+!ACTION: TEAM_GUARD_FOR_SECONDS
+!NAME: Unused or Obsolete/Team/SequentialScript/Guard -- number of seconds.
+!DESC:
+!ARG:  ~ guards for ~ seconds.
+
+!ACTION: TEAM_IDLE_FOR_SECONDS
+!NAME: Team/SequentialScript/Idle for some number of seconds.
+!DESC:
+!ARG:  ~ idles for ~ seconds.
+
+!ACTION: HUMAN_IMPASSABLE_AREA
+!NAME: Map/Make area impassable for human player.
+!DESC:
+!ARG:  Make area ~ impassable for human player: 
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ABILITY
+!NAME: Object Type/CommandButton/Use commandbutton ability.
+!DESC:
+!ARG:  ~ use ~.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ABILITY_ON_NAMED
+!NAME: Object Type/CommandButton/Use commandbutton ability on a specific Unit.
+!DESC:
+!ARG:  ~ use ~ on ~.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT
+!NAME: Object Type/CommandButton/Use commandbutton ability at a waypoint.
+!DESC:
+!ARG:  ~ use ~ at ~.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT
+!NAME: Object Type/CommandButton/Use commandbutton ability at nearest enemy unit
+!DESC:
+!ARG:  ~ use ~  on nearest enemy unit.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING
+!NAME: Object Type/CommandButton/Use commandbutton ability at nearest enemy garrisoned building.
+!DESC:
+!ARG:  ~ use ~  on nearest enemy garrisoned building.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_KINDOF
+!NAME: Object Type/CommandButton/Use commandbutton ability at nearest enemy object with kind of.
+!DESC:.
+!ARG:  ~ use ~  on nearest enemy with 
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING
+!NAME: Object Type/CommandButton/Use commandbutton ability at nearest enemy building.
+!DESC:
+!ARG:  ~ use ~  on nearest enemy building.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS
+!NAME: Object Type/CommandButton/Use commandbutton ability at nearest enemy building kindof.
+!DESC:
+!ARG:  ~ use ~  on nearest enemy building with 
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE
+!NAME: Object Type/CommandButton/Use commandbutton ability at nearest object type.
+!DESC:
+!ARG:  ~ use ~ on nearest object of type ~.
+
+!ACTION: NAMED_BUILD_STRUCTURE_AT_WAYPOINT
+!NAME: Unused or Obsolete/Object Type/CommandButton/Build thing at waypoint.
+!DESC:
+!ARG:  ~ build ~ at angle ~ at ~.
+
+!ACTION: TEAM_USE_COMMANDBUTTON_ABILITY
+!NAME: Team/CommandButton/Use commandbutton ability.
+!DESC:
+!ARG:  ~ use ~.
+
+!ACTION: TEAM_USE_COMMANDBUTTON_ABILITY_ON_NAMED
+!NAME: Team/CommandButton/Use commandbutton ability on a named object.
+!DESC:
+!ARG:  ~ use ~ on ~.
+
+!ACTION: TEAM_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT
+!NAME: Team/CommandButton/Use commandbutton ability at a waypoint.
+!DESC:
+!ARG:  ~ use ~ at ~.
+
+!ACTION: MAP_SWITCH_BORDER
+!NAME: Map/Modify/Change the active border of the map.
+!DESC:
+!ARG:  ~ becomes the active border.
+
+!ACTION: MAP_CHANGE_CLOUD_SPEED
+!NAME: Unused or Obsolete/Map/Modify/Change the speed of the CloudEffect.
+!DESC:
+!ARG:  Modify the default CloudEffect speed to be ~ 
+
+!ACTION: SCREEN_SHAKE
+!NAME: Cinematics/Camera/Shake Screen.
+!DESC:
+!ARG: The screen will shake with 
+
+!ACTION: TECHTREE_MODIFY_BUILDABILITY_OBJECT
+!NAME: Player/Build/Adjust the tech tree for a specific object type.
+!DESC:
+!ARG:  ~ becomes 
+
+!ACTION: WAREHOUSE_SET_VALUE
+!NAME: Unused or Obsolete/Map/Gameplay/Supply Source -- set cash value.
+!DESC:
+!ARG: Warehouse named ~ is set to having ~ dollars worth of boxes. 
+
+!ACTION: SOUND_DISABLE_TYPE
+!NAME: Media/Audio/Sound Events/Sound Events -- disable type.
+!DESC:
+!ARG:  ~ is disabled.
+
+!ACTION: SOUND_ENABLE_TYPE
+!NAME: Media/Audio/Sound Events/Sound Events -- enable type.
+!DESC:
+!ARG:  ~ is enabled.
+
+!ACTION: SOUND_REMOVE_TYPE
+!NAME: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- remove type.
+!DESC:
+!ARG:  ~ is removed.
+
+!ACTION: SOUND_ENABLE_ALL
+!NAME: Media/Audio/Sound Events/Sound Events -- enable all.
+!DESC:
+!ARG: Enable all sound events.
+
+!ACTION: AUDIO_OVERRIDE_VOLUME_TYPE
+!NAME: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- override volume -- type.
+!DESC:
+!ARG:  ~ play at ~% of full volume.
+
+!ACTION: AUDIO_RESTORE_VOLUME_TYPE
+!NAME: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- restore volume -- type.
+!DESC:
+!ARG:  ~ play at normal volume.
+
+!ACTION: AUDIO_RESTORE_VOLUME_ALL_TYPE
+!NAME: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- restore volume -- all.
+!DESC:
+!ARG: All sound events play at normal volume.
+
+!ACTION: NAMED_SET_TOPPLE_DIRECTION
+!NAME: Object Type/Settings/Set topple direction.
+!DESC: if destroyed.
+!ARG: Topples towards the specified coordinate.
+
+!ACTION: UNIT_ATTACK_MOVE_TOWARDS_NEAREST_OBJECT_TYPE
+!NAME: Object Type/Attack/Move unit towards the nearest object of a specific type
+!DESC:
+!ARG:  ~ will AttackMove towards the nearest 
+
+!ACTION: TEAM_ATTACK_MOVE_TOWARDS_NEAREST_OBJECT_TYPE
+!NAME: Team/Attack/Move team towards the nearest object of a specific type
+!DESC:
+!ARG:  ~ will AttackMove towards the nearest 
+
+!ACTION: ATTACK_MOVE_TEAM_TO_NEAREST_OBJECT_OF_TYPE_OF_PLAYER
+!NAME: Team/Attack/Move team towards the nearest object of a specific type owned by a player
+!DESC:
+!ARG:  ~ will AttackMove towards the nearest ~ owned by 
+
+!ACTION: TEAM_SET_AI_RECRUITABLE_FLAG
+!NAME: Team/Settings/Change status of the Scripted AI Recruitable flag for team members.
+!DESC:
+!ARG: Set the Scripted AI Recruitable flag for ~ to 
+
+!ACTION: SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_ALL
+!NAME: Team/SequentialScript/Delay a sequential script until the specified command ability is ready - all.
+!DESC:
+!ARG:  ~ 's ~ all wait until ~ is ready.
+
+!ACTION: SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_PARTIAL
+!NAME: Team/SequentialScript/Delay a sequential script until the specified command ability is ready - partial.
+!DESC:
+!ARG:  ~ 's ~ wait until at least one member is ~ ready.
+
+!ACTION: CAMERA_ADD_SHAKER_AT
+!NAME: Cinematics/Camera/Add Camera Shaker Effect at.
+!DESC:
+!ARG: Add Camera Shaker Effect at waypoint ~ with Amplitude ~ Duration (seconds) ~ Radius.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT
+!NAME: Team/CommandButton/Use command ability -- all -- nearest enemy unit
+!DESC:
+!ARG:  ~ use ~  on nearest enemy unit.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING
+!NAME: Team/CommandButton/Use command ability -- all -- nearest enemy garrisoned building.
+!DESC:
+!ARG:  ~ use ~  on nearest enemy garrisoned building.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_KINDOF
+!NAME: Team/CommandButton/Use command ability -- all -- nearest enemy object with kind of.
+!DESC:.
+!ARG:  ~ use ~  on nearest enemy with 
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING
+!NAME: Team/CommandButton/Use command ability -- all -- nearest enemy building.
+!DESC:
+!ARG:  ~ use ~  on nearest enemy building.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS
+!NAME: Team/CommandButton/Use command ability -- all -- nearest enemy building kindof.
+!DESC:
+!ARG:  ~ use ~  on nearest enemy building with 
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE
+!NAME: Team/CommandButton/Use command ability -- all -- nearest object type.
+!DESC:
+!ARG:  ~ use ~ on nearest object of type ~.
+
+!ACTION: TEAM_PARTIAL_USE_COMMANDBUTTON
+!NAME: Team/CommandButton/Use command ability -- partial -- self.
+!DESC:
+!ARG:  ~% of ~ perform ~.
+
+!ACTION: TEAM_CAPTURE_NEAREST_UNOWNED_FACTION_UNIT
+!NAME: Team/Capture/Capture unowned faction unit -- nearest.
+!DESC:
+!ARG:  ~ capture the nearest unowned faction unit.
+
+!ACTION: TEAM_WAIT_FOR_NOT_CONTAINED_ALL
+!NAME: Team/SequentialScript/Delay a sequential script until the team is no longer contained - all
+!DESC:
+!ARG:  ~ all delay until they are no longer contained.
+
+!ACTION: OBJECTLIST_ADDOBJECTTYPE
+!NAME: Scripting/Object List/Add Object Type to Object List.
+!DESC:
+!ARG: Add ~ to 
+
+!ACTION: OBJECTLIST_REMOVEOBJECTTYPE
+!NAME: Scripting/Object List/Remove Object Type from Object List.
+!DESC:
+!ARG: Remove ~ from 
+
+!ACTION: MAP_REVEAL_PERMANENTLY_AT_WAYPOINT
+!NAME: Map/Fog or Reveal/Reveal map at waypoint -- permanently.
+!DESC:
+!ARG: The map is permanently revealed at ~ with a radius of ~ for ~. (Afterwards referred to as ~).
+
+!ACTION: MAP_REVEAL_PERMANENTLY_IN_TRIGGER
+!NAME: Map/Fog or Reveal/Reveal map in polytrigger -- permanently.
+!DESC:
+!ARG: The map is permanently revealed in trigger ~ for ~. (Afterwards referred to as ~).
+
+!ACTION: MAP_UNDO_REVEAL_PERMANENTLY_AT_WAYPOINT
+!NAME: Map/Fog or Reveal/Reveal map at waypoint -- undo permanently.
+!DESC:
+!ARG:  ~ is undone.
+
+!ACTION: MAP_UNDO_REVEAL_PERMANENTLY_IN_TRIGGER
+!NAME: Map/Fog or Reveal/Reveal map in polytrigger -- undo permanently.
+!DESC:
+!ARG:  ~ is undone.
+
+!ACTION: EVA_SET_ENABLED_DISABLED
+!NAME: Media/Audio/EVA/Enable or Disable EVA.
+!DESC:
+!ARG: Set EVA to be enabled ~ (False to disable.)
+
+!ACTION: OPTIONS_SET_OCCLUSION_MODE
+!NAME: Cinematics/Settings/Enable or Disable Occlusion (Drawing Behind Buildings).
+!DESC:
+!ARG: Set Occlusion to be enabled ~ (False to disable.)
+
+!ACTION: OPTIONS_SET_DRAWICON_UI_MODE
+!NAME: Cinematics/Settings/Enable or Disable Draw-icon UI.
+!DESC:
+!ARG: Set Draw-icon UI to be enabled ~ (False to disable.)
+
+!ACTION: OPTIONS_SET_PARTICLE_CAP_MODE
+!NAME: Cinematics/Settings/Enable or Disable Particle Cap.
+!DESC:
+!ARG: Set Particle Cap to be enabled ~ (False to disable.)
+
+!ACTION: UNIT_AFFECT_OBJECT_PANEL_FLAGS
+!NAME: Object Type/Settings/Change Object flags.
+!DESC:
+!ARG:  ~ changes the value of ~ to ~.
+
+!ACTION: TEAM_AFFECT_OBJECT_PANEL_FLAGS
+!NAME: Team/Settings/Change Object flags - all.
+!DESC:
+!ARG:  ~ change the value of ~ to ~.
+
+!ACTION: PLAYER_SELECT_SKILLSET
+!NAME: Unused or Obsolete/Player/Upgrades and Sciences/Set the skillset for an AI Player.
+!DESC:
+!ARG:  ~ uses skillset number ~ (1-5).
+
+!ACTION: SCRIPTING_OVERRIDE_HULK_LIFETIME
+!NAME: Object Type/Hulk set override lifetime.
+!DESC:
+!ARG: Override hulk lifetime to ~ seconds. Negative value reverts to normal behavior.
+
+!ACTION: NAMED_FACE_NAMED
+!NAME: Object Type/Move/Face another unit.
+!DESC:
+!ARG:  ~ begin facing 
+
+!ACTION: NAMED_FACE_WAYPOINT
+!NAME: Object Type/Move/Face a waypoint.
+!DESC:
+!ARG:  ~ begin facing 
+
+!ACTION: TEAM_FACE_NAMED
+!NAME: Team/Move/Face another unit.
+!DESC:
+!ARG:  ~ begin facing 
+
+!ACTION: TEAM_FACE_WAYPOINT
+!NAME: Team/Move/Face a waypoint.
+!DESC:
+!ARG:  ~ begin facing 
+
+!ACTION: OPEN_COMMAND_BAR
+!NAME: Unused or Obsolete/Tutorial/Open Command Bar Tab
+!DESC: .
+!ARG: UNIT_SPAWN_NAMED_LOCATION_ORIENTATION
+
+!ACTION: SOUND_SET_VOLUME
+!NAME: Media/Audio/Volume/Set the current sound volume.
+!DESC:
+!ARG: Set the desired sound volume to ~%. (0-100)
+
+!ACTION: SPEECH_SET_VOLUME
+!NAME: Unused or Obsolete/Media/Audio/Volume/Set the current speech volume.
+!DESC:
+!ARG: Set the desired speech volume to ~%. (0-100)
+
+!ACTION: OBJECT_ALLOW_BONUSES
+!NAME: Map/Gameplay/Adjust Object Bonuses based on difficulty.
+!DESC:
+!ARG: Enable Object Bonuses based on difficulty ~ (true to enable, false to disable).
+
+!ACTION: TEAM_GUARD_IN_TUNNEL_NETWORK
+!NAME: Unused or Obsolete/Team/Guard/Guard -- from inside tunnel network.
+!DESC:
+!ARG:  ~ Enter and guard from tunnel network.
+
+!ACTION: LOCALDEFEAT
+!NAME: Win & Loss/Announce local defeat.
+!DESC:
+!ARG: Show 'Game Over' window
+
+!ACTION: VICTORY
+!NAME: Win & Loss/Announce victory.
+!DESC:
+!ARG: Show 'Victorious' window and end game
+
+!ACTION: DEFEAT
+!NAME: Win & Loss/Announce defeat.
+!DESC:
+!ARG: Show 'Defeated' window and end game
+
+!ACTION: DELETE_ALL_UNMANNED
+!NAME: Object Type/Delete all unmanned (sniped) vehicles.
+!DESC:
+!ARG: Delete all unmanned (sniped) vehicles.
+
+!ACTION: CHOOSE_VICTIM_ALWAYS_USES_NORMAL
+!NAME: Unused or Obsolete/Map/Gameplay/Force ChooseVictim to ignore game difficulty and always use Normal setting.
+!DESC:
+!ARG: Force ChooseVictim to ignore game difficulty and always use Normal setting ~ (true to enable, false to disable).
+
+!ACTION: ENABLE_OBJECT_SOUND
+!NAME: Unused or Obsolete/Media/Audio/Sound Effect/Enable object's ambient sound
+!DESC:
+!ARG: Enable (or trigger) ~'s ambient sound.
+
+!ACTION: DISABLE_OBJECT_SOUND
+!NAME: Unused or Obsolete/Media/Audio/Sound Effect/Disable object's ambient sound
+!DESC:
+!ARG: Disable ~'s ambient sound.
+
+!ACTION: CAMERA_BLOOM_EFFECT_BEGIN
+!NAME: Cinematics/Lighting/Begin bloom lighting effect.
+!DESC:
+!ARG: Set Bloom Filter to be enabled
+
+!ACTION: CAMERA_BLOOM_EFFECT_END
+!NAME: Cinematics/Lighting/End bloom lighting effect.
+!DESC:
+!ARG: Set Bloom Filter to be disabled
+
+!ACTION: TERRAIN_RENDER_DISABLE
+!NAME: Unused or Obsolete/Camera/Terrain/Enable or Disable Terrain Render.
+!DESC:
+!ARG: Disable terrain render ~ (True to disable.)
+
+!ACTION: TEAM_GIVE_EXPERIENCE_LEVEL
+!NAME: Unused or Obsolete/Team/Experience/Gives the team an experience level.
+!DESC:
+!ARG: Gives ~ experience level ~.
+
+!ACTION: TEAM_GIVE_EXPERIENCE_POINTS
+!NAME: Team/Experience/Gives the team experience points.
+!DESC:
+!ARG: Gives ~ experience points ~.
+
+!ACTION: TEAM_SET_EXPERIENCE_POINTS
+!NAME: Team/Experience/Sets the team's experience points.
+!DESC:
+!ARG: Sets ~ experience points' to ~.
+
+!ACTION: UNIT_GIVE_EXPERIENCE_LEVEL
+!NAME: Unused or Obsolete/Object Type/Experience/Gives a unit an experience level.
+!DESC:
+!ARG: Gives ~ experience level ~.
+
+!ACTION: UNIT_GIVE_EXPERIENCE_POINTS
+!NAME: Object Type/Experience/Gives a named object experience points.
+!DESC:
+!ARG: Gives ~ experience points ~.
+
+!ACTION: UNIT_SET_EXPERIENCE_POINTS
+!NAME: Object Type/Experience/Sets a named object's experience points.
+!DESC:
+!ARG: Sets ~ experience points to ~.
+
+!ACTION: TOGGLE_AVI_CAPTURE
+!NAME: Cinematics/Toggle AVI capture
+!DESC:
+!ARG: Toggles on & off the AVI capture.
+
+!ACTION: PLAY_MOVIE_IN_GAME
+!NAME: Unused or Obsolete/PlayMovie/Plays a movie in game.
+!DESC:
+!ARG: Play Movie named ~ allow cancel ~ .
+
+!ACTION: SET_UNIT_REFERENCE
+!NAME: Unused or Obsolete/Scripting/Reference/Set reference to a unit.
+!DESC:
+!ARG: Set ~ to reference unit 
+
+!ACTION: TEAM_SET_PLAYERS_NEAREST_UNIT_OF_TYPE_TO_REFERENCE
+!NAME: Scripting/Reference/Set a reference to an object nearest-to-team, owned by player.
+!DESC:
+!ARG: Find an object matching a type in the list ~ nearest the ~ (and owned by the teams Player) and set its reference to 
+
+!ACTION: FIND_HOME_BASE_OF_PLAYER
+!NAME: Scripting/Reference/Find home base of player
+!DESC:
+!ARG: Find the home base owned by ~ and set ~ to reference it. (Building must be inside map boundaries: ~)
+
+!ACTION: GATE_OPEN
+!NAME: Unused or Obsolete/Object Type/gate/open a gate
+!DESC:
+!ARG: Open gate 
+
+!ACTION: GATE_CLOSE
+!NAME: Unused or Obsolete/Object Type/gate/ close a gate
+!DESC:
+!ARG:  Close gate.
+
+!ACTION: GATE_READY
+!NAME: Unused or Obsolete/Object Type/gate/ Delay a sequential script until the gate is ready again
+!DESC:
+!ARG:  ~ delay until it is ready again.
+
+!ACTION: SET_TEAM_REFERENCE
+!NAME: Unused or Obsolete/Scripting/Reference/Set reference to a team.
+!DESC:
+!ARG: Set ~ to reference team 
+
+!ACTION: SET_UNIT_REFERENCE_TO_REFERENCE
+!NAME: Unused or Obsolete/Scripting/Reference/Set reference to another unit reference.
+!DESC:
+!ARG: Set ~ to reference another unit reference 
+
+!ACTION: SET_TEAM_REFERENCE_TO_REFERNECE
+!NAME: Unused or Obsolete/Scripting/Reference/ Set reference to another team reference.
+!DESC:
+!ARG: Set ~ to reference another team reference 
+
+!ACTION: TEAM_GIVE_NEAREST_TEAM_UPGRADE
+!NAME: Unused or Obsolete/Team/Upgrades/Team will give nearest team upgrade (Giving Team must have upgrade)
+!DESC:
+!ARG:  ~ will give nearest team upgrade
+
+!ACTION: TEAM_GIVE_TEAM_UPGRADE
+!NAME: Unused or Obsolete/Team/Upgrades/Team will give team upgrade (Giving Team must have upgrade)
+!DESC:
+!ARG:  ~ will give ~ upgrade 
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF
+!NAME: Team/Move/Team will move to the nearest object that matches kindof specified.
+!DESC:
+!ARG:  ~ will move to the nearest object of ~.
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF_OWNED_BY_PLAYER
+!NAME: Team/Move/Team will move to the nearest object that matches both kindof and player specified.
+!DESC:
+!ARG:  ~ will move to the nearest object of ~ that is owned by the ~.
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE
+!NAME: Team/Move/Team will move to the nearest object that matches type specified.
+!DESC:
+!ARG:  ~ will move to the nearest object of type ~.
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE_OWNED_BY_PLAYER
+!NAME: Team/Move/Team will move to the nearest object that matches both type and player specified.
+!DESC:
+!ARG:  ~ will move to the nearest object of type ~ that is owned by ~.
+
+!ACTION: COUNTER_MATH_COUNTER
+!NAME: Scripting/Counters/Counter do math opertation with another Counter.
+!DESC:
+!ARG: Counter ~ , ~ with counter 
+
+!ACTION: COUNTER_MATH_VALUE
+!NAME: Scripting/Counters/Counter do math opertation with value.
+!DESC:
+!ARG: Counter ~ , ~ with value 
+
+!ACTION: TEAM_RECRUIT_UNITS
+!NAME: Unused or Obsolete/Team/Capture-Recruit/Team recruits from same player and nearby allied AI teams.
+!DESC:
+!ARG:  ~ will recruit ~ units of type ~ from nearby recruitable allied teams.
+
+!ACTION: TEAM_RECRUIT_UNITS_FROM_TEAM
+!NAME: Unused or Obsolete/Team/Capture-Recruit/Team recruits from another specific team.
+!DESC:
+!ARG:  ~ will recruit ~ units of type ~ from ~ .
+
+!ACTION: TEAM_UPGRADE
+!NAME: Team/Upgrades/Give Team the specified upgrade
+!DESC:
+!ARG: Give Team ~ the upgrade ~.
+
+!ACTION: SET_PLAYER_MONEY_TO_COUNTER
+!NAME: Scripting/Counters/Set players money to counter.
+!DESC:
+!ARG: Store amount of  ~ money to the counter 
+
+!ACTION: SET_UNIT_EXPERIENCE_TO_COUNTER
+!NAME: Scripting/Counters/Set units experience points to counter.
+!DESC:
+!ARG: Store amount of ~ experience points to the counter 
+
+!ACTION: SET_UNIT_HEALTH_PERCENTAGE_TO_COUNTER
+!NAME: Scripting/Counters/Set unit's health as percentage to counter.
+!DESC:
+!ARG: Store ~'s health as percentage to the counter 
+
+!ACTION: SET_PLAYER_COMMAND_POINTS_USED_TO_COUNTER
+!NAME: ThreeSixty/Set command points used by player to counter.
+!DESC:
+!ARG: Store amount of command points used by player ~ to the counter 
+
+!ACTION: SET_PLAYER_COMMAND_POINTS_AVAILABLE_TO_COUNTER
+!NAME: ThreeSixty/Set command points available to player to counter.
+!DESC:
+!ARG: Store amount of command points available to player ~ to the counter 
+
+!ACTION: SET_PLAYER_COMMAND_POINTS_TOTAL_TO_COUNTER
+!NAME: ThreeSixty/Set command points total of player to counter.
+!DESC:
+!ARG: Store total number of command point of player ~ to the counter 
+
+!ACTION: SET_COMMAND_POINTS_TO_BUILD_TEAM_TO_COUNTER
+!NAME: ThreeSixty/Set command points required to build team to counter.
+!DESC:
+!ARG: Store the amount of command points required to build ~ to the counter 
+
+!ACTION: SET_PLAYER_KILLS_OF_TYPE_TO_COUNTER
+!NAME: Scripting/Counters/Set number of player kills of a type to counter.
+!DESC:Now takes an object type or type list instead of just an object type.  Total amount will reflect the total number of units killed by type or by the entirety of the list.
+!ARG: Store the amount of kills by ~ of the type of object(s) ~ to 
+
+!ACTION: SET_PLAYER_KILLS_OF_KINDOF_TO_COUNTER
+!NAME: Scripting/Counters/Set number of player kills of a kindof to counter.
+!DESC:
+!ARG: Store the amount of kills by ~ of the ~ to 
+
+!ACTION: SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER
+!NAME: Scripting/Counters/Set number of object types owned by player to counter.
+!DESC:
+!ARG: Store the number of ~ owned by ~ to 
+
+!ACTION: SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER_INCLUDE_DEAD
+!NAME: Scripting/Counters/Set number of object types owned by player to a counter including dead ones.
+!DESC:
+!ARG: Store the number of objects (include dead ones)~ owned by ~ to 
+
+!ACTION: SET_COUNTER_TO_NUMBER_OBJECTS_PLAYER_OWNES_WITH_MODELCONDITION
+!NAME: Scripting/Counters/Set counter to number of objects owned by player with a model condition
+!DESC:
+!ARG: Store the number of objects owned by ~ with ~ ON to the counter 
+
+!ACTION: SET_COUNTER_TO_NUMBER_OBJECTS_PLAYER_OWNS_WITH_KINDOF
+!NAME: Scripting/Counters/Set counter to number of objects owned by player with kindof
+!DESC:
+!ARG: Store the number of objects owned by ~ of ~ to ~, count dead : ~, count under construction : 
+
+!ACTION: PLAY_SOUND_EFFECT_AT_TEAM
+!NAME: Media/Audio/Sound Effect/Play sound effect from team.
+!DESC:
+!ARG: Play ~ as though coming from a member of ~.
+
+!ACTION: AUDIO_FADE_VOLUME
+!NAME: Media/Audio/Volume/Fade all audio
+!DESC:
+!ARG: Fade (0-1) all audio from volume ~ to volume ~. Take ~ seconds to increase, hold for ~ seconds, and decrease ~ seconds.
+
+!ACTION: AUDIO_MAKE_SOUND_IMMUNE_TO_FADE
+!NAME: Media/Audio/Volume/Make sound immune to fade
+!DESC:
+!ARG: Make the ~ ignore the fade levels set by 'fade all audio.'
+
+!ACTION: AUDIO_MAKE_SOUND_SUBJECT_TO_FADE
+!NAME: Media/Audio/Volume/Make sound subject to fade
+!DESC:
+!ARG: Make the ~ subject to the fade levels set by 'fade all audio.'
+
+!ACTION: AUDIO_MAKE_ALL_SOUNDS_SUBJECT_TO_FADE
+!NAME: Media/Audio/Volume/Make all sounds subject to fade
+!DESC:
+!ARG: Make all sounds subject to the fade levels set by 'fade all audio.'
+
+!ACTION: AUDIO_SET_REVERB_ROOM_TYPE
+!NAME: Media/Audio/All Sounds/Set global reverb room type.
+!DESC:
+!ARG: Use global reverb room type 
+
+!ACTION: AUDIO_REMOVE_REVERB
+!NAME: Media/Audio/All Sounds/Remove all reverb effects
+!DESC:
+!ARG: Do not use reverb effects
+
+!ACTION: AUDIO_SET_REVERB_SUPPRESSION_POLYGON
+!NAME: Media/Audio/All Sounds/Suppress reverb within an area
+!DESC:
+!ARG: Lower reverb of all sounds in ~ to ~ of normal.
+
+!ACTION: AUDIO_REMOVE_REVERB_SUPPRESSION_POLYGON
+!NAME: Media/Audio/All Sounds/Unsuppress reverb in an area
+!DESC:
+!ARG: Return the reverb of sounds in ~ to normal.
+
+!ACTION: AUDIO_REMOVE_ALL_REVERB_SUPPRESSION_POLYGONS
+!NAME: Media/Audio/All Sounds/Unsuppress all reverb
+!DESC:
+!ARG: Remove all reverb-suppression areas.
+
+!ACTION: DIM_WORLD_LIGHTS
+!NAME: Cinematics/Lighting/Dim all global and ambient lights.
+!DESC: seconds.
+!ARG: Gradually interpolate all the scene lights to the color, red:~ green: ~. blue: ~ over 
+
+!ACTION: RESTORE_WORLD_LIGHTS
+!NAME: Cinematics/Camera/Restore (un-dim) all global and ambient lights.
+!DESC:
+!ARG: Gradually interpolate all the scene lights to normal Time-Of-Day color, over:~ seconds: 
+
+!ACTION: ALLOW_DISALLOW_ONE_BUILDING
+!NAME: Player/Build/Allow or Disallow one building of a specific type
+!DESC:
+!ARG:  ~ allowed to build ~ is ~.
+
+!ACTION: ALLOW_DISALLOW_ALL_BUILDINGS
+!NAME: Unused or Obsolete/Base/Allow or Disallow all buildings
+!DESC:
+!ARG:  ~ is allowed to build ALL buildings is ~ . 
+
+!ACTION: ALLOW_DISALLOW_ONE_UPGRADE
+!NAME: Player/Upgrades and Sciences/Allow or Disallow one upgrade
+!DESC:
+!ARG:  ~ allowed to build ~ is ~.
+
+!ACTION: TOGGLE_AUTO_BUILD
+!NAME: Unused or Obsolete/Player/Build/Turn on or off a player's structures that auto build units.  (Starts ON)
+!DESC:
+!ARG:  ~ toggle auto build 
+
+!ACTION: REPAIR_OBJECT
+!NAME: Object Type/Repair/Repair named Object.
+!DESC:This script will attempt to start or stop repair on the named object.  It should only be called on repairable objects, and will automatically deduct the cost from the player that owns the object unless specified to be free.
+!ARG: Repair named object ~ ~, and it is ~ that this should be free.
+
+!ACTION: TEAM_REPAIR_NEREST
+!NAME: Unused or Obsolete/Team/Repair/Repair nearest building that needs it.
+!DESC:
+!ARG: Have Team ~ repair the nearest building within the radius 
+
+!ACTION: TEAM_SET_AUTO_ABILITY
+!NAME: Unused or Obsolete/Team/CommandButton/Team set auto ability to on or off.
+!DESC:
+!ARG: Have Team ~ set auto ability ~ to 
+
+!ACTION: NAME_SET_AUTO_ABILITY
+!NAME: Unused or Obsolete/Object Type/CommandButton/Team set CommandButton auto ability to on or off.
+!DESC:
+!ARG: Have Team ~ set auto ability ~ to 
+
+!ACTION: SET_LOGIC_FOG_STATE
+!NAME: Unused or Obsolete/Fog or Reveal/Toggle Fog of War.
+!DESC:
+!ARG: Set presence of Fog of War to ~. (Default true.)
+
+!ACTION: NAMED_RECEIVE_UPGRADE
+!NAME: Object Type/Settings/Give upgrade to named object.
+!DESC:
+!ARG: Give ~ to ~.
+
+!ACTION: NAMED_REMOVE_UPGRADE
+!NAME: Object Type/Settings/Remove upgrade from named object.
+!DESC:
+!ARG: Remove ~ from ~.
+
+!ACTION: SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER
+!NAME: Scripting/Reference/Set reference to object type of player nearest team.
+!DESC:
+!ARG: Find ~ Owned by ~ nearest ~ and reference as 
+
+!ACTION: SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER
+!NAME: Scripting/Reference/Set reference to unnamed object owned by player 
+!DESC:
+!ARG: Find unnamed ~ Owned by ~ nearest ~ and reference as 
+
+!ACTION: MAP_EXIT
+!NAME: Map/Modify/Exit Map
+!DESC:
+!ARG: Exits map back to the main menu.
+
+!ACTION: TEAM_NEEDS_OPEN_GATE
+!NAME: Unused or Obsolete/Team/Misc/Set or clear a team-needs-gate open flag 
+!DESC:
+!ARG: Team ~ wants gate ~ open is 
+
+!ACTION: UNIT_STAND_GROUND
+!NAME: Unused or Obsolete/Object Type/Status/Unit Set Stand Ground Status.
+!DESC:
+!ARG: Set Stand Ground Status of ~ to 
+
+!ACTION: TEAM_STAND_GROUND
+!NAME: Unused or Obsolete/Object Type/Status/Team Set Stand Ground Status.
+!DESC:
+!ARG: Set Stand Ground Status of ~ to 
+
+!ACTION: UNIT_TELEPORT_TO_WAYPOINT
+!NAME: Object Type/Move/Teleport named object to waypoint.
+!DESC:
+!ARG: Teleport ~ to ~.
+
+!ACTION: TEAM_TELEPORT_TO_WAYPOINT
+!NAME: Team/Move/Teleport team to waypoint.
+!DESC:
+!ARG: Teleport ~ to ~.
+
+!ACTION: OVERRIDE_PLAYER_COMMAND_POINTS
+!NAME: ThreeSixty/Override player command points.
+!DESC:
+!ARG: Override command points for ~ to total: ~ maximum: 
+
+!ACTION: SELECT_OBJECT
+!NAME: Tutorial/Player selects object.
+!DESC:
+!ARG: For ~ select object 
+
+!ACTION: DESELECT
+!NAME: Tutorial/Deselects everything.
+!DESC:
+!ARG: Deselects everything 
+
+!ACTION: LOCK_CAMERA
+!NAME: Tutorial/Lock or unlock camera.
+!DESC:
+!ARG: Set the camera lock to ~ .
+
+!ACTION: LOCK_CAMERA_ZOOM
+!NAME: Tutorial/Lock or unlock camera zoom.
+!DESC:
+!ARG: Set the camera zoom lock to ~ .
+
+!ACTION: LOCK_CAMERA_ROTATION
+!NAME: Tutorial/Lock or unlock camera rotation.
+!DESC:
+!ARG: Set the camera rotation lock to ~ .
+
+!ACTION: LOCK_CAMERA_SCROLL
+!NAME: Tutorial/Lock or unlock camera scroll.
+!DESC:
+!ARG: Set the camera scroll lock to ~ .
+
+!ACTION: LOCK_CAMERA_RESET
+!NAME: Tutorial/Lock or unlock camera reset.
+!DESC:
+!ARG: Set the camera reset lock to ~ .
+
+!ACTION: LOCK_CAMERA_ANGLE_AND_HEIGHT
+!NAME: Tutorial/Lock or unlock camera height and angle (allow scrolling).
+!DESC:
+!ARG: Set the camera angle&  height lock to ~ .
+
+!ACTION: UNIT_ENABLE_HOUSE_COLOR
+!NAME: Object Type/Settings/Enables or disables the house color
+!DESC:
+!ARG: Enable house color for ~ to ~ .
+
+!ACTION: TEAM_ENABLE_HOUSE_COLOR
+!NAME: Team/Settings/Enables or disables the house color
+!DESC:
+!ARG: Enable the house color for ~ to ~ .
+
+!ACTION: ENABLE_HOUSE_COLOR
+!NAME: Map/Modify/Enables or disables the house color for all units
+!DESC:
+!ARG: Enable the house color for all units ~ .
+
+!ACTION: UNIT_FORCE_EMOTION
+!NAME: Cinematics/Force Emotion/Force a named object to have an emotion for duration.
+!DESC:
+!ARG: Force ~ to have ~ for ~ seconds.
+
+!ACTION: TEAM_FORCE_EMOTION
+!NAME: Cinematics/Force Emotion/Force a team to have an emotion for duration.
+!DESC:
+!ARG: Force ~ to have ~ for ~ seconds.
+
+!ACTION: PLAYER_FORCE_EMOTION
+!NAME: Cinematics/Force Emotion/Force all of player's units to have an emotion for duration.
+!DESC:
+!ARG: Force all units of ~ to have ~ for ~ seconds.
+
+!ACTION: SELL_OBJECT
+!NAME: Object Type/Damage or Remove/Sell off named Object.
+!DESC:This script will attempt to sell the named object regardless who it belongs to even if the player is a human.  Also, it should only be called on sellable objects.  Be careful!
+!ARG: Sell off 
+
+!ACTION: PLAYER_SELL_EVERYTHING
+!NAME: Player/Remove, Sell, or Transfer All/Player sells everything.
+!DESC:This script will attempt to sell all of a players structures, even if the player is a human.  Be careful!
+!ARG: Sell everything belonging to 
+
+!ACTION: UNIT_GAIN_LEVEL
+!NAME: Object Type/Experience/Named object levels up with visual FX.
+!DESC:
+!ARG:  ~ gains a level with FX turned 
+
+!ACTION: TEAM_GAIN_LEVEL
+!NAME: Team/Experience/Team levels up with visual FX.
+!DESC:
+!ARG:  ~ gains a level with FX turned 
+
+!ACTION: SHOW_MISSION_OBJECTIVE
+!NAME: Unused or Obsolete/Interface/Objectives/Show mission objective
+!DESC:
+!ARG: Make mission objective '~' visible.
+
+!ACTION: HIDE_MISSION_OBJECTIVE
+!NAME: Unused or Obsolete/Interface/Objectives/Hide mission objective
+!DESC:
+!ARG: Hide mission objective '~'.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_OBJECT
+!NAME: Interface/Objectives/Link mission objective to object
+!DESC:
+!ARG: Set mission objective '~' linked to ~ to ~.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_OBJECT_WITH_CATEGORY
+!NAME: Interface/Objectives/Link mission objective to object using icon
+!DESC:Links an objective to an object and specifies a particular icon type to display.
+!ARG: Set mission objective '~' linked to ~ to ~ using icon ~.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_OBJECT_WITH_PRESENTATION_SETTINGS
+!NAME: Unused or Obsolete/Interface/Objectives/Link mission objective to object using presentation settings
+!DESC:.
+!ARG: 
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_WAYPOINT_WITH_CATEGORY
+!NAME: Interface/Objectives/Link mission objective to waypoint using icon
+!DESC:Links an objective to a waypoint and specifies a particular icon type to display.
+!ARG: Set mission objective '~' linked to ~ to ~ using icon ~.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_WAYPOINT_WITH_PRESENTATION_SETTINGS
+!NAME: Unused or Obsolete/Interface/Objectives/Link mission objective to waypoint using presentation settings
+!DESC: 
+!ARG: 
+
+!ACTION: MARK_MISSION_OBJECTIVE_COMPLETED
+!NAME: Interface/Objectives/Mark mission objective as completed
+!DESC: 
+!ARG: Mark mission objective ~ as completed
+
+!ACTION: MARK_MISSION_OBJECTIVE_NOT_COMPLETED
+!NAME: Interface/Objectives/Mark mission objective as not completed
+!DESC:
+!ARG: Mark mission objective '~' as not completed.
+
+!ACTION: SET_MISSION_OBJECTIVE_STATUS
+!NAME: Interface/Objectives/Set mission objective status
+!DESC:
+!ARG: Set status of mission objective '~' to ~.
+
+!ACTION: SATELLITE_VIEW_PRESENTATION_FOR_OBJECTIVE
+!NAME: Unused or Obsolete/Interface/Objectives/Show satellite view presentation for specified objective
+!DESC:Unused or Obsolete/Interface/Objectives/Mark mission objective as not completed
+!ARG: SATELLITE_VIEW_PRESENTATION_FOR_ALL_OBJECTIVES
+
+!ACTION: UNIT_CHANGE_OBJECT_STATUS
+!NAME: Object Type/Settings/Change object status.
+!DESC:
+!ARG: For ~ set ~ to ~.
+
+!ACTION: TEAM_CHANGE_OBJECT_STATUS
+!NAME: Team/Settings/Change object status.
+!DESC:.
+!ARG: For all units in ~ set ~ to ~.
+
+!ACTION: ENABLE_PLANNING_MODE
+!NAME: Tutorial/Enable planning mode
+!DESC:
+!ARG: Enable planning mode.
+
+!ACTION: DISABLE_PLANNING_MODE
+!NAME: Tutorial/Disable planning mode
+!DESC:
+!ARG: Disable planning mode.
+
+!ACTION: CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE
+!NAME: Unused or Obsolete/Object Type/Spawn/Spawn -- named unit on Team at an object type.
+!DESC:
+!ARG: Spawn ~ of type ~ on ~ at type 
+
+!ACTION: CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE_WITH_ORIENTATION
+!NAME: Unused or Obsolete/Object Type/Spawn/Spawn -- named unit on Team at an object type with specified orientation.
+!DESC:
+!ARG: Spawn ~ of type ~ on ~ at type ~, rotated ~.
+
+!ACTION: UNIT_SET_MAX_LEVEL
+!NAME: Unused or Obsolete/Object Type/Experience/Sets the unit's maximum level.
+!DESC:
+!ARG: Sets ~ maximum level to ~.
+
+!ACTION: PLAYER_AI_CHANGEBASEBUILDER
+!NAME: SkirmishAI/Turn on or off AI Base Builder.
+!DESC:
+!ARG: Turn AI Base Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGEUNITBUILDER
+!NAME: SkirmishAI/Turn on or off AI Unit Builder.
+!DESC:
+!ARG: Turn AI Unit Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGETEAMBUILDER
+!NAME: SkirmishAI/Turn on or off AI Party Builder.
+!DESC:
+!ARG: Turn AI Party Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGE_ECONOMY_MANAGER
+!NAME: SkirmishAI/Turn on or off AI Economy Manager.
+!DESC:
+!ARG: Turn AI Economy Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGEWALLBUILDER
+!NAME: SkirmishAI/Turn on or off AI Wall Builder.
+!DESC:
+!ARG: Turn AI Wall Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGEUNITUPGRADER
+!NAME: SkirmishAI/Turn on or off AI Unit Upgrader.
+!DESC:
+!ARG: Turn AI Unit Upgrader for ~ 
+
+!ACTION: PLAYER_AI_CHANGESCIENCEUPGRADER
+!NAME: SkirmishAI/Turn on or off AI Science Upgrader.
+!DESC:
+!ARG: Turn AI Science Upgrader for ~ 
+
+!ACTION: PLAYER_AI_CHANGETACTICAL
+!NAME: SkirmishAI/Turn on or off Tactical AI.
+!DESC:
+!ARG: Turn Tactical AI for ~ 
+
+!ACTION: TEAM_AI_TRANSFER
+!NAME: SkirmishAI/Transfer control of Team to or from Skirmish AI.
+!DESC: 
+!ARG: Ensure you have needed components of Skirmish AI turned on.
+
+!ACTION: UNIT_AI_TRANSFER
+!NAME: SkirmishAI/Transfer control of Unit to or from Skirmish AI.
+!DESC: 
+!ARG: Ensure you have needed components of Skirmish AI turned on.
+
+!ACTION: UNIT_AI_TRANSFER_ALL
+!NAME: SkirmishAI/Transfer control of all player's units to or from Skirmish AI -- Enable Skirmish AI.
+!DESC: starting opening moves and timers.
+!ARG: Transfers control of all players objects to or from the Skirmish AI, it also starts the AI timers and opening moves(turns Skirmish AI On, if transferring to the Skirmish AI). Ensure you have needed components of Skirmish AI turned on in the player list.
+
+!ACTION: SKIRMISH_AI_TRANSFER_ALL
+!NAME: SkirmishAI/Transfer ownership of all player's units to or from Skirmish AI -- Don't Enable Skirmish AI.
+!DESC: without starting opening moves and timers.
+!ARG: Transfers control of all a players units to or from the Skirmish AI, note it does not start its timers or opening moves (doesn't turn the AI on if transferring to the AI).
+
+!ACTION: SKIRMISH_AI_START
+!NAME: SkirmishAI/Start AI Opening moves and timers(Turn on the Skirmish AI).
+!DESC: 
+!ARG: Units that have been transferred to the SkirmishAI will now start executing their opening moves and timers.  Ensure you have needed components of Skirmish AI turned on in the player list.
+
+!ACTION: SKIRMISH_AI_SET_ENEMY_PLAYER_PRIORITY
+!NAME: SkirmishAI/Enemy Target Control/Set enemy player priority
+!DESC: a target priority of 
+!ARG: AI's target heuristics will always choose a higher-priority enemy's stuff over a lower-priority enemy's stuff, if possible. Priority of zero means the target heuristics will never consider that enemy.
+
+!ACTION: SKIRMISH_AI_CLEAR_ENEMY_PLAYER_PRIORITY
+!NAME: SkirmishAI/Enemy Target Control/Clear enemy player priority
+!DESC:: Does not target enemy player 
+!ARG: AI's target heuristics will will never target this enemy's objects.
+
+!ACTION: SKIRMISH_AI_SET_ALL_ENEMY_PLAYERS_PRIORITIES
+!NAME: SkirmishAI/Enemy Target Control/Set all enemy players' priority
+!DESC:: Give all enemy players a target priority of 
+!ARG: AI's target heuristics will always choose a higher-priority enemy's stuff over a lower-priority enemy's stuff, if possible. Priority of zero means the target heuristics will never consider that enemy.
+
+!ACTION: SKIRMISH_AI_CLEAR_ALL_ENEMY_PLAYERS_PRIORITIES
+!NAME: SkirmishAI/Enemy Target Control/Clear all enemy players' priority
+!DESC:: Does not target any enemy player.
+!ARG: AI's target heuristics will not target any enemies until 'Set enemy player priority' is called 
+
+!ACTION: SKIRMISH_AI_USE_AUTOMATIC_ENEMY_PLAYER_PRIORITY_SCHEME
+!NAME: SkirmishAI/Enemy Target Control/Use automatic enemy player prioritization scheme
+!DESC:: Choose enemy players automatically using 
+!ARG: AI automatically prioritizes enemy players using the given scheme
+
+!ACTION: SKIRMISH_AI_USE_DEFAULT_AUTOMATIC_ENEMY_PLAYER_PRIORITY_SCHEME
+!NAME: SkirmishAI/Enemy Target Control/Use default automatic enemy player prioritization scheme
+!DESC:: Choose enemy players automatically using default prioritization scheme
+!ARG: AI automatically prioritizes enemy players using the default scheme for the AI's difficulty & personality
+
+!ACTION: SKIRMISH_AI_CONSIDER_ENEMY_WHEN_BUILDING
+!NAME: SkirmishAI/Build Control/Consider specific enemy when deciding what to build
+!DESC:'s units when deciding what the best or worst unit to build is.
+!ARG: AI considers the units owned by the given enemy when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. This enemy's units will be weighed the same as those of all the other enemies the AI has been told to consider. By default, the AI considers all enemies, so this is only useful after telling the AI to not consider all the enemies.
+
+!ACTION: SKIRMISH_AI_DONT_CONSIDER_ENEMY_WHEN_BUILDING
+!NAME: SkirmishAI/Build Control/Don't consider specific enemy when deciding what to build
+!DESC:'s units when deciding what the best or worst unit to build is.
+!ARG: AI does not consider the units owned by the given enemy when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. 
+
+!ACTION: SKIRMISH_AI_CONSIDER_ALL_ENEMIES_WHEN_BUILDING
+!NAME: SkirmishAI/Build Control/Consider all enemies when deciding what to build
+!DESC:: Considers all enemies' units when deciding what the best or worst unit to build is.
+!ARG: AI considers the units owned by the all its enemies equally when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. This is the default behavior.
+
+!ACTION: SKIRMISH_AI_DONT_CONSIDER_ANY_ENEMIES_WHEN_BUILDING
+!NAME: SkirmishAI/Build Control/Don't consider any enemies when deciding what to build
+!DESC:: Do not consider any enemies' units when deciding what the best or worst unit to build is.
+!ARG: AI does not consider the units owned by the any its enemies when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. Without some enemy units to consider, the AI will have no idea what to build, and will just build randomly. It is expected that you will call 'Consider specific enemy when deciding what to build' after this to give the AI something to build against.
+
+!ACTION: BUILD_LIST_MOVE_TO_TOP
+!NAME: Base Builder/Move structure to top of build list.
+!DESC:
+!ARG: Move ~ to top of build list
+
+!ACTION: BUILD_LIST_ELIMINATE_FOOTPRINT
+!NAME: Base Builder/Eliminate building footprint.
+!DESC:
+!ARG: Eliminate footprint for ~ .
+
+!ACTION: BUILD_LIST_ELIMINATE_FOOTPRINT_ALL
+!NAME: Base Builder/Eliminate all building footprints.
+!DESC:
+!ARG: Eliminate all building footprints for ~ .
+
+!ACTION: UNIT_CONTEXT_SENSITIVE_ATTACK
+!NAME: Object Type/Attack/Set named object to capture a named object.
+!DESC: begin context-sensitive attack on 
+!ARG: This script should be used to tell Engineer and Infiltration type units to capture/infiltrate another object.
+
+!ACTION: TEAM_CONTEXT_SENSITIVE_ATTACK
+!NAME: Team/Attack/Set team to capture a named object.
+!DESC: begin context-sensitive attack on 
+!ARG: This script should be used to tell a team of Engineer's and/or Infiltration type units to capture/infiltrate another object.
+
+!ACTION: SKIRMISH_AI_SET_FAVORED_ENEMY
+!NAME: SkirmishAI/Enemy Target Control/Set Skirmish AI favored enemy
+!DESC: to 
+!ARG: Sets the given enemy's priority to 10, and everyone else's priority to 0
+
+!ACTION: SKIRMISH_AI_USE_REBUILD_SYSTEM
+!NAME: SkirmishAI/Use Skirmish AI Structure Rebuilds
+!DESC:
+!ARG: Use structure rebuilds for ~: 
+
+!ACTION: SKIRMISH_AI_USE_REPAIRS
+!NAME: SkirmishAI/Skirmish AI may repair buildings
+!DESC:
+!ARG: Use structure repair for ~: 
+
+!ACTION: PLAYER_ALLOW_AI_AUTOACQUIRE
+!NAME: SkirmishAI/Allow AI Auto-Acquire for Player.
+!DESC:
+!ARG: Use AI AutoAcquire for ~: 
+
+!ACTION: TEAM_ALLOW_AI_AUTOACQUIRE
+!NAME: SkirmishAI/Allow AI Auto-Acquire for team.
+!DESC:
+!ARG: Use AI AutoAcquire for ~: 
+
+!ACTION: UNIT_ALLOW_AI_AUTOACQUIRE
+!NAME: SkirmishAI/Allow AI Auto-Acquire for named object.
+!DESC:
+!ARG: Use AI AutoAcquire for ~: 
+
+!ACTION: SET_CAMPAIGN_FLAG
+!NAME: Campaign/Set or clear a campaign flag
+!DESC:
+!ARG: Set campaign flag ~ to 
+
+!ACTION: PLAYER_SPECIAL_POWER_AVAILABILITY
+!NAME: Player/Special Power/Set special power availability.
+!DESC:This script will prevent a player from casting a player power, even if it's not locked.
+!ARG:  ~ set ~ availability to ~.
+
+!ACTION: PLAYER_LOCK_PLAYER_TECH
+!NAME: Player/Special Power/Lock or Unlock a player tech.
+!DESC:
+!ARG:  ~ set ~ locked to ~.
+
+!ACTION: PLAYER_SET_MAX_PLAYER_POWER_POINTS
+!NAME: Player/Special Power/Set maximum player power points.
+!DESC:
+!ARG:  ~ set maximum power points to ~.
+
+!ACTION: PLAYER_SET_PLAYER_POWER_POINTS
+!NAME: Player/Special Power/Set the players current power point total.
+!DESC:Sets the current total of points for this player.  Note you cannot set this value to be greater than the maximum amount of points set via script or below 0.
+!ARG:  ~ set power points to ~.
+
+!ACTION: PLAYER_UNIT_TYPE_SPECIAL_POWER_IGNORE_REQUIREMENTS
+!NAME: Player/Special Power/Player's object's special power ignores requirements.
+!DESC:
+!ARG: The ~ for ~ owned by ~ ignores requirements: ~.
+
+!ACTION: SKIRMISH_AI_MAKE_BASE
+!NAME: SkirmishAI/Create a skirmish AI base
+!DESC:
+!ARG: Player ~ has a base at ~.
+
+!ACTION: UNIT_SET_STANCE
+!NAME: Object Type/Settings/Sets a unit's current stance
+!DESC:
+!ARG: Sets ~ stance to ~.
+
+!ACTION: TEAM_SET_STANCE
+!NAME: Team/Settings/Set a Team's current stance
+!DESC:
+!ARG: Sets ~ stance to ~.
+
+!ACTION: DISPLAY_TUTORIAL_TEXT
+!NAME: Tutorial/Display tutorial text
+!DESC:
+!ARG: Show tutorial text: 
+
+!ACTION: HIDE_TUTORIAL_TEXT
+!NAME: Tutorial/Hide tutorial text
+!DESC:
+!ARG: Hide the tutorial text.
+
+!ACTION: FLASH_MOUSE_HUD_FIXED_ELEMENT
+!NAME: Tutorial/Flash PC HUD fixed element
+!DESC:
+!ARG: Set flash PC HUD fixed element ~ to ~.
+
+!ACTION: FLASH_JOYPAD_HUD_FIXED_ELEMENT
+!NAME: Tutorial/Flash console HUD fixed element
+!DESC:
+!ARG: Set flash console HUD fixed element ~ to ~.
+
+!ACTION: FLASH_UI_SUDS_ELEMENT
+!NAME: Unused or Obsolete/Tutorial/Flash UI SUDS element
+!DESC:.
+!ARG: FLASH_UI_PLAYER_POWER_BUTTON
+
+!ACTION: FLASH_UI_UNIT_ABILITY_BUTTON
+!NAME: Tutorial/Flash named object's UI user ability button
+!DESC:
+!ARG: For ~ set flash UI user ability button ~ to ~.
+
+!ACTION: FLASH_UI_BUILD_BUTTON
+!NAME: Tutorial/Flash UI build button
+!DESC:
+!ARG: Set flash UI build '~' button to ~.
+
+!ACTION: FLASH_JOYPAD_COMMANDBAR_BUTTON
+!NAME: Tutorial/Flash console command menu button
+!DESC:
+!ARG: Set flash console command menu button ~ to ~.
+
+!ACTION: DISABLE_MOUSE_HUD_FIXED_ELEMENT
+!NAME: Tutorial/Disable PC HUD fixed element
+!DESC:
+!ARG: Set disable PC HUD fixed element ~ to ~.
+
+!ACTION: DISABLE_JOYPAD_HUD_FIXED_ELEMENT
+!NAME: Tutorial/Disable console HUD fixed element
+!DESC:
+!ARG: Set disable console HUD fixed element ~ to ~.
+
+!ACTION: DISABLE_UI_PLAYER_POWER_BUTTON
+!NAME: Tutorial/Disable UI player power button
+!DESC:
+!ARG: Set disable UI player power button ~ to ~.
+
+!ACTION: DISABLE_UI_UNIT_ABILITY_BUTTON
+!NAME: Tutorial/Disable named object's UI user ability button
+!DESC:
+!ARG: For ~ set disable UI user ability button ~ to ~.
+
+!ACTION: DISABLE_UI_BUILD_BUTTON
+!NAME: Tutorial/Disable UI build button
+!DESC:
+!ARG: Set disable UI build '~' button to ~.
+
+!ACTION: DISABLE_JOYPAD_COMMANDBAR_BUTTON
+!NAME: Tutorial/Disable console command menu button
+!DESC:
+!ARG: Set disable console command menu button ~ to ~.
+
+!ACTION: UNIT_SET_HEALTH
+!NAME: Object Type/Damage or Remove/Set the health of the unit (in percentage).
+!DESC:
+!ARG: Set health of ~ to percentage (0.0 - 100.0) 
+
+!ACTION: NAMED_SET_MAX_HEALTH
+!NAME: Object Type/Settings/Set the max health of a unit.
+!DESC:Sets the maximum health of a unit to the value specified and optionally sets the units current health to this value as well. (Note if setting the max health lower than the current health the current health will automatically be set to max.
+!ARG: Set health of ~ to ~ set current health to max 
+
+!ACTION: PLAYER_SET_BASE_POWER
+!NAME: Player/Power/Set the base power for the player.
+!DESC:
+!ARG: Set base power for ~ to 
+
+!ACTION: SWITCH_TO_PRODUCTION_QUEUE_TAB
+!NAME: Tutorial/Switch to production queue tab
+!DESC:
+!ARG: Switch to ~.
+
+!ACTION: REGISTER_OBJECT_VS_OBJECT_KILL_RECORDING
+!NAME: Scripting/Data Tracking/Record object vs. object kills
+!DESC:
+!ARG: Record object type ~ belonging to ~ killed object type ~ belonging to ~.
+
+!ACTION: STORE_OBJECT_KILL_COUNT_TO_COUNTER
+!NAME: Scripting/Data Tracking/Store object vs. object kills to counter
+!DESC:
+!ARG: Store num of object type ~ belonging to ~ killed object type ~ belonging to ~ to counter ~.
+
+!ACTION: UNIT_KILL_ALL_IN_AREA
+!NAME: Object Type/Damage or Remove/Kill all units belonging to the specified player in the specified area.
+!DESC:
+!ARG: Kill all units belonging to ~ in ~.
+
+!ACTION: SKIRMISH_AI_REBUILD_SYSTEM_SCAN
+!NAME: SkirmishAI/Skirmish AI Structure Rebuilds Rescan
+!DESC:
+!ARG: Scan for new structures to rebuild for 
+
+!ACTION: LINK_MISSION_HOT_SPOT_TO_OBJECT
+!NAME: Interface/Mission Hot-Spot/Link mission hot-spot to object
+!DESC:
+!ARG: Set mission hot-spot ~ linked to object ~ to ~.
+
+!ACTION: LINK_MISSION_HOT_SPOT_TO_WAYPOINT
+!NAME: Interface/Mission Hot-Spot/Link mission hot-spot to waypoint
+!DESC:
+!ARG: Set mission hot-spot ~ linked to waypoint ~ to ~.
+
+!ACTION: SET_MISSION_HOT_SPOT_VISIBILITY
+!NAME: Interface/Mission Hot-Spot/Set visibility of mission hot-spot
+!DESC:
+!ARG: Set visibility of mission hot-spot ~ to ~.
+
+!ACTION: SET_MISSION_HOT_SPOT_ACTIVENESS
+!NAME: Interface/Mission Hot-Spot/Set mission hot-spot to be active or inactive
+!DESC:
+!ARG: Set 'active' status of mission hot-spot ~ to ~.
+
+!ACTION: FADE_OUT_TO_BLACK
+!NAME: Interface/Fade/Fade-out to black
+!DESC:
+!ARG: Fade-out the entire screen to black in ~ seconds.
+
+!ACTION: FADE_IN_FROM_BLACK
+!NAME: Interface/Fade/Fade-in from black
+!DESC:
+!ARG: Fade-in the entire screen from black in ~ seconds.
+
+!ACTION: REDALERT_DISABLE_THREAT_LEVEL_BONUS
+!NAME: Player/Red Alerts/Disable Threat Level Bonus
+!DESC: threat level bonus.
+!ARG: This will disable the attribute modifiers associated with each area of the red alert system(yellow, orange, red).  Currently these give modifiers to this players objects experience gain.
+
+!ACTION: SET_COOP_AI_COMMAND_UI_ENABLED
+!NAME: Interface/Enable or disable the co-op AI command panel
+!DESC:
+!ARG: Set the enabled status of the co-op AI command panel to 
+
+!ACTION: UNIT_SPAWN_NAMED_OBJECT_ON_TEAM_AT_NAMED_OBJECT_LOCATION
+!NAME: Object Type/Spawn/Spawn -- named object on Team at a named object's position.
+!DESC:
+!ARG: Spawn ~ of type ~ on ~ at named object ~ .
+
+!ACTION: PLAYER_GRANT_SPECIAL_POWER
+!NAME: Player/Special Power/Grant power to player.
+!DESC:This will grant a power to the player, it will grant whatever tech level it needs to access the power.
+!ARG: Grant ~to player 
+
+!ACTION: NAMED_SHOW_INFOBOX
+!NAME: Interface/Info Box/Show Info Box
+!DESC:Displays an info box over the top of the named object.  Optionally the 4th parameter takes a string of an image id to display an image.  If the image is found it will display this image in the info box.  Note that a time of 0 will result in a never ending info box that will only be removed when the script Remove Info Box is used on the unit.
+!ARG:  ~ Show info box text ~ for ~ seconds.  Display Image from button 
+
+!ACTION: NAMED_REMOVE_INFOBOX
+!NAME: Interface/Info Box/Remove Info Box
+!DESC:Removes.....wait for it....  The info box on this unit.
+!ARG:  ~ remove info box
+
+!ACTION: PLAYER_TOGGLE_RESOURCE_SHARING
+!NAME: Player/Money/Toggle allied resource sharing on-off.
+!DESC:Toggles resource sharing for this player on/off.  When on this player will share all gathered resources with it's allies.
+!ARG:  ~ turn resource sharing:  
+
+!ACTION: TEAM_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT
+!NAME: Team/Move/Set team to follow a waypoint path starting at waypoint.
+!DESC:Please note that this script will allow you to specify a Waypoint to start on but doesn't check if that Waypoint is part of the path you specified.  Please be careful with this.
+!ARG: Have ~ follow ~ , as a team is ~ , in formation is ~ , starting at waypoint 
+
+!ACTION: NAMED_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT
+!NAME: Object Type/Move/Named object follow a waypoint path starting at waypoint.
+!DESC:Please note that this script will allow you to specify a Waypoint to start on but doesn't check if that Waypoint is part of the path you specified.  Please be careful with this.
+!ARG:  ~ follow ~ starting at 
+
+!ACTION: NAMED_FORCE_ATTACK_NAMED
+!NAME: Object Type/Attack/Named Object force attack a named object.
+!DESC:Sets a named object to force attack another named object. Useful to make friendly units attack each other.
+!ARG:  ~ force attacks 
+
+!ACTION: NAMED_FORCE_ATTACK_WAYPOINT
+!NAME: Object Type/Attack/Named Object force attack a waypoint.
+!DESC:Sets a named object to force attack a waypoint. Useful to make a unit bombard the ground at a particular location.
+!ARG:  ~ force attacks 
+
+!ACTION: CAMPAIGN_CREATE_AUTO_SAVE
+!NAME: Campaign/Create campaign auto save checkpoint.
+!DESC:Create a new auto save checkpoint with a description. This script will work both in single player with an AI buddy and in Co-Op.
+!ARG: Create auto save checkpoint with description: ~.
+
+!ACTION: SHOW_UNIT_INTRO
+!NAME: Interface/Show unit intro
+!DESC:
+!ARG: Show unit intro for ~.
+
+!ACTION: PLAYER_SET_ALL_UNITS_TO_FLEE
+!NAME: Player/Retreat/Set all units on player to flee off map.
+!DESC:Units that need to flee are required to have a RunOffMapBehavior in their object definition for the unit to be affected.  Any units without it will ignore this script.  The RunOffMapBehavior has two modes of operation one is to have the unit run to a waypoint specified in the behavior or go 1000 units in the direction the unit is currently facing, if it can't path to either point the unit will kill itself.  Please be careful with this as some units may not be able to go to whatever exit point and will kill themselves at their current location.
+!ARG: Set ~ units to flee off map
+
+!ACTION: PLAYER_ALLOWED_TOBE_COOPAI
+!NAME: Interface/Toggle CoOp AI interface.
+!DESC:Toggle the CoOp AI's interface on and off.  It defaults to on.
+!ARG: Set ~ CoOp AI's interface to 
+
+!ACTION: PLAYER_TOGGLE_SKIRMISH_AI
+!NAME: SkirmishAI/Toggle SkirmishAI On-Off.
+!DESC:The SkirmishAI is on by default.  Toggling it off will shut it down completely.  This is different than the scripts which transfer assets between the default player team and the default skirmish team.  It is only necessary to use this for performance reasons.
+!ARG: Set ~ to toggle SkirmishAI 
+
+!ACTION: PLACE_AI_BEACON_LOCATION
+!NAME: SkirmishAI/Beacon/Spawn an AI Beacon at a waypoint.
+!DESC:Spawns an AI Beacon of a given type at a waypoint and informs the AI of it's placement.
+!ARG:  ~ place beacon type: ~ at waypoint: 
+
+!ACTION: PLACE_AI_BEACON_OBJECT
+!NAME: SkirmishAI/Beacon/Spawn an AI Beacon on a named object
+!DESC:Spawns an AI Beacon of a given type and attaches it to a named object.
+!ARG:  ~ place beacon type: ~ on unit: 
