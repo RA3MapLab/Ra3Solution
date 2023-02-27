@@ -1,0 +1,576 @@
+-Eliminate all building footprints.[457]消除所有建筑物的脚印
+     -Eliminate building footprint.[456]消除建筑足迹
+     -Move structure to top of build list.[455]将结构移动到构建列表的顶部
+     -Create campaign auto save checkpoint.[554]创建活动自动保存检查点
+     -Set or dear a campaign flag[469]插上或挂上一面竞选旗帜
+     -Add Camera Shaker Effect at.[254]添加相机震动效果
+      -Begin tether camera to a specific unit.[138]开始拴相机到一个特定的单位
+      -Begin tether player's camera to a specific unit.[566]开始将玩家的相机绑定到一个特定的单位上  
+      -Camera look toward point while moving.[28]相机在移动时注视点
+      -Change the camera depth of field.[253]改变相机的景深
+      -Change the camera pitch.[104]改变相机俯仰
+      -Change the camera roll.[262]更换摄像机的滚轴
+      -Change the camera zoom.[103]改变相机高度
+      -Change the camera's focal length (mm).[285]改变相机焦距(毫米)
+      -End movement at selected unit.[31]在选定单位结束移动
+      -End tether to any units.[139]结束拴到任何单位
+      -Follow a specific unit.[105]遵循一个特定的单元
+      -Move along a spline path.[17]沿着样条路径移动
+      -Move the camera for player to a location.[531]将玩家的摄像机移动到一个位置
+      -Move the camera for player to a named object's location.[532]将玩家的摄像机移动到指定对象的位置  
+      -Move the camera to a location.[14]移动相机到一个位置
+      -Move the camera to a named object's location.[503]将摄像机移动到指定对象的位置
+      -Move using camera animation.[419]使用摄像机动画移动
+      -Order camera's locator to follow a spline path.[286]命令相机的定位器遵循样条路径  
+      -Reset to the default view.[19]重新设置默认的视角
+      -Restore (un-dim)all global and ambient lights.[333]恢复(非昏暗)所有全局和环境灯
+      -Restrict camera movement to area.[365]限制摄像机在区域内移动
+      -Rotate around the current viewpoint.[18]围绕当前视点旋转
+      -Rotate the camera in place.[257]原地旋转摄像机
+      -Rotate to a specific view angle.[401]旋转到特定的视图角度
+      -Rotate to look at a waypoint.[167]旋转以查看路径点
+      -Rotate toward unit.[148]向着单位旋转
+      -Set Final pitch for camera movement.[27]设置摄像机移动的最终间距
+      -Set Final zoom for camera movement.[26]设置相机移动的最终变焦
+      -Set up the camera.[100]设置相机
+      -Shake Screen.[169]震动屏幕
+      -Stop following any units.[113]停止跟踪任何单位
+       -Follow a waypoint path--panic.[99]沿着路径点走，恐慌
+       -Force a named object to have an emotion for duration.[391]强制一个命名的对象有持续的情感  
+       -Force a team to have an emotion for duration.[392]迫使团队拥有持续的情感
+       -Force all of player's units to have an emotion for duration.[393]迫使玩家的所有单位都有持续的情感  
+       -Idle all units for all players.[197]为所有玩家闲置所有单位
+       -Begin bloom lighting effect.[258]开始绽放照明效果
+       -Dim all global and ambient lights.[332]调暗所有的全局和环境灯
+       -End bloom lighting effect.[259]端花照明效果
+       -Enable or Disable Draw-icon UI.[224]启用或禁用绘制图标用户界面
+       -Enable or Disable Ocdusion (Drawing Behind Buildings).[222]启用或禁用行为(在建筑物后面绘图)  
+       -Enable or Disable Partide Cap.[225]启用或禁用“缔约方上限”
+       -End letterbox mode.[102]结束信箱模式
+       -Freeze time during the camera movement.[22]相机移动期间的冻结时间
+       -Freeze time.[114]冻结时间
+       -Hide UI[263]隐藏用户界面
+       -Show UI[264]显示用户界面
+       -Start letterbox mode(shows radar).[563]启动信箱模式(显示雷达)
+       -Start letterbox mode.[101]开始信箱模式
+       -Unfreeze time.[115]解冻时间
+       -Toggle AVI capture[271]切换AVI捕获
+       -All timers--display.[132]所有计时器,显示
+       -All timers--hide.[133]所有计时器——隐藏
+       -Specific counter--display.[188]特定的计数器,显示
+       -Specific counter--hide.[189]特定的计数器,隐藏
+       -Specific timer--display.[130]特定的计时器,显示
+       -Specific timer --hide.[131]特定的计时器——隐藏
+     -Enable or disable the co-op AI command panel[522]启用或禁用合作AI命令面板
+       -Fade-in from black[511]淡入从黑
+       -Fade-out to black[510]消失在黑暗中
+       -Remove Info Box[539]删除信息框
+       -Show Info Box[538]显示信息框
+       -User input--disable.[83]用户输入，禁用
+       -User input--enable.[84]用户输入，使用
+        -Link mission hot-spot to object[506]连接任务热点到目标
+        -Link mission hot-spot to waypoint[507]连接任务热点到航路点
+        -Set mission hot-spot to be active or inactive[514]将任务热点设置为激活或不激活
+        -Set visibility of mission hot-spot[508]设置任务热点的可见性
+        -Link mission objective to object using icon[553]使用图标连接任务目标到目标
+        -Link mission objective to object[405]连接任务目标到目标
+        -Link mission objective to waypoint using icon[552]使用图标连接任务目标到航路点
+        -Link mission objective to waypoint[406]连接任务目标到航路点
+        -Mark mission objective as completed[407]将任务目标标记为已完成
+        -Mark mission objective as not completed[408]将任务目标标记为未完成
+        -Set mission objective status[492]设定任务目标状态
+        -Create a radar event at a named object.[172]在指定对象上创建雷达事件
+        -Create a radar event at a specified location.[80]在指定位置创建雷达事件
+        -Create a radar event at a Team.[173]在Team中创建一个雷达事件
+     -Show unit intro[561]显示单位介绍
+     -Toggle CoOp AI interface.[567]切换合作AI界面
+         -Border Shroud is turned off.[242]边境裹尸布关闭
+         -Border Shroud is turned on.[243]边境裹尸布打开
+         -Reveal map at waypoint--fog.[81]在路标处显示地图——雾
+         -Reveal map at waypoint--permanenty.[218]在路标处显示地图——永久
+         -Reveal map at waypoint--undo permanently.[219]在路标处显示地图——永久撤销
+         -Reveal map in polytrigger--permanently.[421]在多触发器中显示地图——永久
+         -Reveal map in polytrigger--undo permanently.[422]揭示地图在多触发器-撤消永久
+         -Reveal map in trigger-fog.[420]在触发雾中显示地图
+         -Reveal the entire map permanently for Player.[183]为Playe永久揭示整个地图
+         -Set Re-Fog delay.[513]设置Re-Fog延迟
+         -Un-Reveal the entire map permanently for Player.[184]为玩家永久取消显示整个地图  
+         -Adjust Object Bonuses based on difficulty.[244]根据难度调整对象奖励
+       -Make area impassable for human player.[383]让人类玩家无法通过区域
+         -Change the active border of the map.[163]改变地图的活动边界
+         -Enables or disables the house color for all units[390]为所有单位启用或禁用房子的颜色  
+         -Exit Map[372]退出地图
+         -Remove all reverb effects[342]移除所有混响效果
+         -Resume all sounds.[25]恢复所有的声音
+         -Set global reverb room type.[341]设置全局混响室类型
+         -Suppress reverb within an area[397]在一个区域内抑制混响
+         -Suspend all sounds.[24]暂停一切听起来
+         -Unsuppress all reverb[399]Unsuppress所有混响
+         -Unsuppress reverb in an area[398]在一个区域内不抑制混响
+         -Enable or Disable EVA.[221]启用/禁用EVA
+         -Play a sound effect as AI co-commander dialog,and subtitle it.[570]播放AI联合指挥官对话框的音效，并添加字幕  
+         -Play a sound effect as AI co-commander dialog.[569]播放AI联合指挥官对话的音效
+         -Play a sound effect as if it were an EVA event,and subtitle it.[497]播放一个声音效果，就像它是一个EVA事件，并字幕  
+         -Play a sound effect as if it were an EVA event.[496]播放一个声音效果，好像它是一个EVA事件
+         -Play a music track a certain number of times,then set a flag.[357]播放音乐曲目一定次数，然后设置一个标志
+         -Play a music track a certain number of times.[356]播放音乐曲目一定次数
+         -Play a music rack.[87]播放音乐架
+         -Play SPECIAL END-OF-LEVEL music a certain number of times.[505]播放特定次数的特殊关卡结束音乐  
+         -Pop music track.[344]流行音乐跟踪
+         -Push music track and play it a certain number of times.[358]推动音乐轨道，并播放一定的次数  
+         -Push music track,play it a certain number of times,then set a flag.[359]推动音乐轨道，播放一定次数，然后设置一个标志
+         -Push music track.[343]推动音乐跟踪
+         -Disable Dynamic System.[544]禁用动态系统
+         -Enable Specific Dynamic System.[555]启用特定动态系统
+         -Enable Standard Dynamic System.[545]启用标准动态系统
+         -Fade In Music.[565]消失在音乐
+         -Fade Out Music.[564]淡出音乐
+         -Play Event.[543]游戏活动
+         -Resume Dynamic System.[556]简历动态系统
+         -Stop Music..[546]停止音乐
+         -Play 2D sound effect.[7]播放2D音效
+         -Play a sound as though coming from a named object.[74]播放一个声音，仿佛来自一个命名的对象  
+         -Play sound effect at waypoint.[11]在导航点播放音效
+         -Play sound effect from team.[385]从团队中播放音效
+         -Resume the ambient sounds.[86]恢复环境声音
+         -Suspend the ambient sounds.[85]暂停环境声音
+         -Sound Events--disable type.[175]声音——禁用事件类型
+         -Sound Events--enable all.[177]声音——让所有的事件
+         -Sound Events--enable type.[176]声音事件,使类型
+         -Fade all audio[312]褪去所有的音频
+         -Make all sounds subject to fade[336] 使所有的声音都变得微弱
+         -Make sound immune to fade[334]使声音免疫褪色
+         -Make sound subject to fade[335]使声音渐弱
+         -Set the current music volume.[119]设置当前音乐音量
+         -Set the current sound volume.[240]设置当前音量
+         -Play a movie in fullscreen mode.[72]以全屏模式播放电影
+         -Play a movie in the radar.[73]在雷达上播放一部电影
+        -Force named object to join team.[375]强制指定对象加入团队
+        -Transfer a named object to the control of a Player.[77]将指定对象转移到玩家的控件上  
+        -Hunt(choose enemy target,move towards it,and attack when within range).[52]狩猎(选择敌人目标，向其移动，在射程内攻击)  
+        -Move unit towards the nearest object of a specific type[417]将单位移动到最近的特定类型的对象  
+        -Named object attack-move along a waypoint path.[416]命名对象攻击-沿着路径点移动  
+        -Named object attack-move to a location.[415]命名对象攻击-移动到一个位置
+        -Named object attacks an area for a given number of seconds.[41]命名对象在给定的秒数内攻击一个区域  
+        -Named object attacks an area.[40]命名对象攻击区域
+        -Named object attacks Team.[42]命名对象攻击
+        -Named Object force attack a named object.[549]命名对象强制攻击一个命名对象
+        -Named Object force attack a waypoint.[550]命名物体强制攻击一个路径点
+        -Set named object to capture a named object.[458]设置命名对象以捕获命名对象
+        -Set unit to attack another unit.[34]让一个单位攻击另一个单位
+        -Use commandbutton ability at a waypoint.[162]在一个路标点使用命令按钮能力
+        -Use commandbutton ability at nearest enemy building kindof.[323]在离敌人最近的地方使用命令按钮技能
+        -Use commandbutton ability at nearest enemy building.[322]在最近的敌人建筑使用命令按钮技能  
+        -Use commandbutton ability at nearest enemy garrisoned building.[320]在最近的敌人驻守建筑上使用命令按钮技能  
+        -Use commandbutton ability at nearest enemy object with kind of.[321]在最近的敌人物体上使用命令按钮能力  
+        -Use commandbutton ability at nearest enemy unit[319]在最近的敌人单位使用命令按钮技能  
+        -Use commandbutton ability at nearest object type.[324]在最接近的对象类型上使用命令按钮功能  
+        -Use commandbutton ability on a specific Unit.[161]在特定单位上使用命令按钮能力
+        -Use commandbutton ability.[192]使用命令按钮的能力
+         -Deal damage to a named object.[63]对指定对象造成伤害
+         -Delete a named object.[64]删除命名对象
+         -Kill a named object..[67]杀死一个命名对象
+         -Kill all units belonging to the specified player in the specified area.[500]在指定区域内杀死所有属于指定玩家的单位
+         -Kill all units contained within a specific transport or structure.[168]杀死特定运输工具或建筑内的所有单位  
+         -Sell off named Object.[54]出售命名对象
+         -Set the health of the unit (in percentage).[486]设置单位的运行状况(以百分比计)
+       -Delete all unmanned (sniped)vehides.[251]删除所有无人(狙击)车辆
+         -Gives a named object experience points.[269]给出一个命名对象的经验点
+         -Named object levels up with visual FX.[395]命名对象等级与视觉特效
+         -Sets a named object's experience points.[270]设置一个命名对象的经验值
+         -Flash a named object white for a specified amount of time.[194]在指定的时间内将指定的对象Flash为白色  
+         -Flash a specific unit for a specified amount of time.[70]在指定的时间内闪现一个特定的单元  
+         -Outline a specific unit with an outline type.[512]用大纲类型概括一个特定的单元
+         -Set a named object to use a special indicator color.[198]设置一个命名对象使用一个特殊的指示颜色  
+         -Empty a named object.[91]清空指定对象
+         -Garrison a named object instanty with a named object.[428]用一个命名对象加里森一个命名对象实例
+         -Garrison a named object with a named object.[94]用一个命名的物体加成一个命名的物体
+         -Garrison a nearby structure with a named object.[95]用命名的物体在附近的建筑上驻军
+         -Named object exit whatever object it's in.[96]命名对象退出它所在的任何对象
+         -Named object guard an area from a location.[367]指定的对象从一个位置保护一个区域
+         -Named object guard another named object.[346]命名对象保护另一个命名对象
+         -Named object guard area.[347]命名的对象保护区域
+         -Named object guard at location.[345]指定位置的对象保护
+         -Named object guards nearest kindof.[297]指定位置的对象保护
+         -Named object guards.[50]命名对象防护
+       -Hulk set override lifetime.[229]浩克设置覆盖寿命
+         -Face a waypoint.[231]面对一个路标
+         -Face another unit.[230]面对另一个单位
+         -Named object follow a waypoint path--exactly.[214]命名的对象遵循路径点路径——完全正确 
+         -Named object follow a waypoint path starting at waypoint.[542]命名对象遵循从路径点开始的路径点路径
+         -Named object follow a waypoint path.[49]命名对象遵循路径点路径 
+         -Named object move to a location.[33]命名对象移动到一个位置  
+         -Teleport named object to waypoint.[378]将命名对象传送到路径点
+         -Unit stops..[140]单位停止
+         -Repair named Object.[360]修复命名对象
+         -Named object idles for some number of frames.[158]指定的对象空闲一定数量的帧
+         -Named object idles for some number of seconds.[307]命名对象空闲一定的秒数
+         -Set a named object to stop executing a sequential script.[153]设置一个命名对象停止执行顺序脚本
+         -Change Custom Model Condition flag.[248]改变自定义模型条件标志
+         -Change Object flags.[226]更改对象标志
+         -Change object status.[411]更改对象状态
+         -Clear model condition flag on a named object.[328]清除指定对象上的模型条件标志
+         -Disable--enable or disable.[536]禁用-启用或禁用
+         -Enables or disables the house color [388]启用或禁用房子的颜色
+         -Give upgrade to named object.[201]升级指定对象
+         -Remove upgrade from named object.[502]从命名对象中移除升级
+         -Set a model condition flag on a named object for duration(optional).[547]在命名对象上设置一个持续时间的模型条件标志(可选)
+         -Set a model condition flag on a named object for duration.specifies of members in horde that get this.[327]在指定对象上设置一个模型条件标志，持续时间。 指定在部落中得到这个的成员
+         -Set the max health of a unit.[551]设置一个单位的最大生命值
+         -Set topple direction.[182]设置推翻方向
+         -Sets a unit's current stance[473]设置一个单位的当前姿态
+         -Stealth--enable or disable.[220]隐形,启用或禁用
+         -Spawn--named object on Team at a named object's position.[527]刷出——团队中指定对象的位置
+         -Spawn a named object on a team at a waypoint with an orientation.[466]在团队中一个方向的路标点生成一个命名的物体
+         -Spawn a named object on a team at a waypoint.[35]在一个路径点生成一个命名的物体
+         -Spawn an unnamed object on a team at a waypoint with an orientation.[467]在一个团队中在一个有方向的路标点刷出一个未命名的物体
+         -Spawn an unnamed object on a team at a waypoint.[36]在一个路标点生成一个未命名的物体
+         -Countdown timer--pause.[134]节目计时器——暂停
+         -Countdown timer--resume.[135]节目计时器——简历
+         -Countdown timer--set.[136]节目计时器——简历
+         -Special Power--fire at location.[137]节目计时器——简历
+        -Change how Player relates to another player.[78]改变玩家与其他玩家的关系
+        -Override Player's relationship to another team.[150]覆盖玩家与其他队伍的关系
+        -Adjust the tech tree for a specific object type.[170]调整特定对象类型的科技树
+        -Allow or Disallow one building of a specific type[283]允许或不允许一个特定类型的建筑
+              -Player is allowed to build buildings.[59]玩家可以建造建筑 
+              -Player is allowed to build units.[61]玩家可以建造单位
+              -Player is not allowed to build buildings.[56]玩家不允许建造建筑
+              -Player is not allowed to build units.[58]玩家不允许建造单位 
+         -Player can build from an object type.[60]玩家可以从一个对象类型建造
+         -Player cannot build from an object type.[57]玩家不能从一个对象类型建造 
+         -Player cannot build in a specific ally's buildability radii (ground control).[509]玩家不能在特定盟友的可建造范围内建造(地面控制)
+         -Set the delay between building teams.[39]设置建筑团队之间的延迟 
+         -All of Player's units leave their garrisons.[97]所有玩家的单位离开他们的驻军
+         -Increase or Decrease Player's money.[129]增加或减少玩家的金钱
+         -Set player's money cap.[490]设置玩家的金钱上限
+         -Set Player's money.[128]设置玩家的钱
+         -Toggle allied resource sharing on-off.[540]切换联合资源共享开关
+         -Set the base power for the player.[487]设置玩家的基础能量
+         -Disable Threat Level Bonus[521]取消威胁等级加成
+         -Kill Player.[69]杀死玩家
+         -Player sells everything.[55]玩家出售一切
+         -Transfer assets from one player to another player.[76]将资产从一个玩家转移到另一个玩家
+         -Set all units on player to flee off map.[562]设置玩家的所有单位逃离地图
+         -Exdude this player from the score screen.[236]把这个玩家从得分屏幕上移除
+         -Grant power to player.[528]给某个玩家协议
+         -Lock or Unlock a player tech.[534]锁定或解锁一个玩家科技
+         -Player's object's special power ignores requirements.[471]玩家目标的特殊能量会忽略要求
+         -Set maximum player power points.[533]设定玩家的最大力量点
+         -Set special power availability.[470]设置特殊电源可用性
+         -Set the players current power point total.[548]设置玩家当前的总功率点
+         -Special power--fire at enemy's highest cost area.[200]特殊能力-向敌人的最高成本区域开火
+         -Special power--fire at waypoint.[430]特殊力量——在航路点开火
+         -Special power--fire on nearest object type to team owned by player.[339]特殊能力-对距离玩家队伍最近的物体类型开火
+         -Special power--fire on nearest object type to team.[338]特殊火力——对离队伍最近的目标开火
+         -Special power--fire on team.[340]特殊力量——向团队开火
+         -Special power--set countdown timer.[437]特殊功率-设置倒计时计时器
+         -Allow or Disallow one upgrade[535]允许或不允许一次升级
+         -Give Player an Upgrade.[314]给予玩家升级
+         -Remove upgrade from Player.[504]从播放器中移除升级
+        -Apply a team's attack priority set.[38]应用团队的攻击优先级设置
+        -Apply named object's attack priority set.[37]应用命名对象的攻击优先级集 
+        -Modify a set's priorities for all of a kind.[111]修改一个集合中所有类型的优先级
+        -Modify a set's priority for a single object type.[110]为单个对象类型修改一个集合的优先级
+        -Specify the set's default priority.[112]指定设置的默认优先级
+         -Counter do math opertation with another Counter.[291]Counter用另一个Counter做数学运算
+         -Counter do math opertation with value.[292]counter用value做数学运算
+         -Decrement counter.[16]减少计数器
+         -Increment counter.[15] 增加计数器
+         -Set a random counter in seconds.[311]设置一个以秒为单位的随机计数器
+         -Set a random counter.[275]设置一个随机计数器
+         -Set counter to a time in seconds.[310]将计数器设置为以秒为单位的时间
+         -Set counter to a value.[2] 将计数器设置为值
+         -Set counter to another counter.[276]设置counter为另一个计数器
+         -Set counter to number of objects owned by player with a model condition[384]将计数器设置为玩家在模型条件下拥有的物体数量
+         -Set counter to number of objects owned by player with kindof[493]设置玩家拥有的物品数量
+         -Set number of object types owned by player to a counter induding dead ones.[394]将玩家拥有的对象类型的数量设置为一个计数器，包括死亡的对象
+         -Set number of object types owned by player to counter.[317]设置玩家可以对抗的对象类型的数量
+         -Set number of player kills of a kindof to counter.[316]设置玩家杀死某种敌人的次数
+         -Set number of player kills of a type to counter.[315]设置玩家杀死某种类型的敌人的次数
+         -Set players money to counter.[300]设置玩家的金钱来对抗
+         -Set units experience points to counter.[301]设置单位经验值来对抗
+         -Set unit's health as percentage to counter.[489]设置单位生命值作为反击的百分比
+         -Record object vs.object kills[494]记录对象对对象的杀戮
+         -Store object vs.object kills to counter [495]存储对象vs.对象杀死计数器
+         -Display a crash box (debug linternal builds only).[174]显示崩溃框(仅调试内部版本)
+         -Display message and pause[0]显示消息和暂停
+         -Display string[88]显示字符串
+         -Null operation.[5]空操作
+      -Disable Script.[9]禁用脚本
+      -Enable Script.[8]启用脚本
+          -Set flag to another flag.[277]设置另一个标志
+          -Set flag to value.[1]将标志设置为值
+          -Add Object Type to Object List.[216]添加对象类型到对象列表
+          -Remove Object Type from Object List.[217]从对象列表中删除对象类型
+          -Find home base of player [369]找到玩家的大本营
+          -Set a reference to an object nearest-to-team,owned by player.[352]设置一个玩家拥有的，离队伍最近的物体的引用
+          -Set reference to object type of player nearest team.[370]设置参考对象类型的球员最近的队伍
+          -Set reference to unnamed object owned by player [371]设置引用玩家拥有的未命名物体
+          -Run subroutine script.[10]运行子程序脚本
+          -Frame countdown timer-setrandom.[121] 帧倒计时计时器-设置为随机
+          -Frame countdown timer--set.[6]帧倒计时计时器--设置
+          -Seconds countdown timer--add seconds.[125]秒倒计时计时器——增加秒数
+          -Seconds countdown timer--set random.[122]秒倒计时-设置随机
+          -Seconds countdown timer--set.[21]秒倒计时计时器--设置
+          -Seconds countdown timer--subtract seconds.[126]秒倒计时计时器——减去秒
+          -Timer--restart stopped.[124]重启已停止-计时器
+          -Timer-stop.[123]计时器停止
+      -Allow AI Auto-Acquire for named object.[463]允许AI自动获取命名对象
+      -Allow AI Auto-Acquire for Player.[461]允许玩家自动获取AI
+      -Allow AI Auto-Acquire for team.[462]允许AI自动获取团队
+        -Spawn an AI Beacon at a waypoint.[571]在一个路标点生成一个AI 信标
+        -Spawn an AI Beacon on a named object[572]在指定对象上生成一个AI 信标
+        -Consider all enemies when deciding what to build[525]在决定建造什么时考虑所有的敌人
+        -Consider specific enemy when deciding what to build[523]在决定造什么东西的时候要考虑特定的敌人
+        -Don't consider any enemies when deciding what to build[526]在决定建造什么东西时不要考虑任何敌人
+        -Don't consider specific enemy when deciding what to build[524]在决定造什么东西的时候不要考虑特定的敌人
+      -Create a skirmish AI base[472]创建一个小规模AI基地
+         -Clear all enemy players'priority[518]清除所有敌方玩家的优先级
+         -Clear enemy player priority[516]清除敌人玩家优先级
+         -Set all enemy players'priority[517]设置所有敌方玩家的优先级
+         -Set enemy player priority[515]设置敌方玩家的优先级
+         -Set Skirmish AI favored enemy[459]设置遭遇战AI的敌人
+         -Use automatic enemy player prioritization scheme[519]使用敌人玩家自动优先排序机制
+         -Use default automatic enemy player prioritization scheme[520]使用默认的敌人玩家自动优先排序机制
+     -Skirmish AI may repair buildings[481]战斗AI可以修复建筑
+     -Skirmish AI Structure Rebuilds Rescan[501]小规模AI结构重建重新扫描
+     -Start AI Opening moves and timers(Turn on the Skirmish AI).[530]开始AI开启动作和计时器(打开小冲突AI)
+     -Toggle SkirmishAI On-Off.[568]切换SkirmishAI开关
+     -Transfer control of all player's units to or from Skirmish AI--Enable Skirmish AI.[452]将所有玩家的单位的控制权转移给或从小规模战斗AI转移——启用小规模战斗AI
+     -Transfer control of Team to or from Skirmish AI.[450]将团队控制权转移给或从Skirmish AI那里转移
+     -Transfer control of Unit to or from Skirmish AI.[451]将单位的控制权转移给或从小规模战斗的AI手中转移
+     -Transfer ownership of all player's units to or from Skirmish AI--Don't Enable Skirmish AI.[529]将所有玩家单位的所有权转让给或从Skirmish AI转移-不启用Skirmish AI
+     -Turn on or off AI Base Builder.[442]开启或关闭AI基地建设者
+     -Turn on or off AI Economy Manager.[445]开启或关闭AI经济管理器
+     -Turn on or off AI Party Builder.[444]开启或关闭AI团队建造者
+     -Turn on or off AI Science Upgrader.[448]开启或关闭人工智能科学升级
+     -Turn on or off AI Unit Builder.[443]开启或关闭AI单位建造者
+     -Turn on or off AI Unit Upgrader.[447]开启或关闭AI单位升级
+     -Turn on or off AI Wall Builder.[446]打开或关闭AI墙建造者
+     -Turn on or off Tactical AI.[449]开启或关闭战术AI
+     -Use Skirmish AI Structure Rebuilds[460]使用小规模AI建筑重建
+        -Override Team's relationship to a Player.[149]重写团队与玩家的关系
+        -Override Team's relationship to a Team.[145]覆盖团队与团队的关系
+        -Remove all overrides to Team's relationship to Teams and Players.[147]删除所有团队与团队和球员的关系
+        -Remove an override to Team's relationship to a Team.[146]删除一个覆盖到Team和Team的关系
+        -Transfer control of Team to Player.[127]将团队控制权移交给玩家
+        -Attack move a team to a named object.[425]攻击移动一个团队到一个命名的对象
+        -Hunt (choose enemy target,move towards it,and attack when within range).[53]狩猎(选择目标，向其移动，并在射程内攻击)
+        -Move team towards the nearest object of a specific type owned by a player [426]将队伍移动到玩家拥有的最近的特定类型的目标
+        -Move team towards the nearest object of a specific type[418]将队伍移动到最近的特定类型的目标
+        -Set team to attack another team.[29]设置团队攻击另一个团队
+        -Set team to attack-move along a waypoint path.[414]设置团队攻击-沿着路径点路径移动
+        -Set team to attack-move to a location.[413]设置团队攻击-移动到一个地点
+        -Set team to capture a named object.[488]设置团队捕获一个命名的对象
+        -Team attacks a named object.[43]团队攻击一个已命名的物体
+        -Capture unowned faction unit--nearest.[211]捕获无主派系单位-最近
+        -Use command ability--all--nearest enemy building kindof.[208]使用命令能力-所有-最近的敌人建筑类
+        -Use command ability--all--nearest enemy building.[207]使用命令能力-所有-最近的敌人建筑
+        -Use command ability--all--nearest enemy garrisoned building.[205]使用命令能力-所有-最近的敌人驻守建筑
+        -Use command ability--all--nearest enemy object with kind of.[206]使用命令能力-所有-最近的敌人目标
+        -Use command ability--all--nearest enemy unit[204]使用命令能力-所有-最近的敌人单位
+        -Use command ability--all --nearest object type.[209]使用命令能力——all——最接近的对象类型
+        -Use command ability--partial--self.[210]用命令的能力——部分自我
+        -Use commandbutton ability at a waypoint.[191]在一个路标点使用命令按钮能力
+        -Use commandbutton ability on a named object.[190]在命名对象上使用命令按钮功能
+        -Use commandbutton ability.[193]用命令按钮的能力
+        -Damage the members of Team.[12]破坏团队成员 
+        -Delete Team,but ignore dead guys.[250]删除团队，但忽略死人
+        -Delete Team.[65]删除团队
+        -Kill an entire team.[68]干掉一整支队伍
+        -Set the health of the team members (in percentage).[318]设置团队成员的生命值(百分比)
+       -Gives the team experience points.[266]给予团队经验值
+       -Sets the team's experience points.[267]设置团队经验值
+       -Team levels up with visual FX.[396]使用视觉特效升级团队
+       -Flash Team for a specified amount of time.[71]flashteam的一段指定的时间
+       -Flash Team white for a specified amount of time.[195]闪光队在指定的时间内保持白色 
+       -Exit all objects a team is in.[93]退出团队所在的所有对象
+       -Garrison a named object instantly with a team.[429]立即组队加成一个命名的物体
+       -Garrison a named object with Team.[90]与团队一起驻守一个命名的物体
+       -Garrison a nearby structure with Team.[92]在附近建造一个建筑
+       -Garrison a team instantly with a team.[432]立即组队进驻一支队伍
+       -Guard a supply source.[237]守卫供给源
+       -Team guard a named object.[165]团队守卫一个命名的物体
+       -Team guard a specific team.[295]团队守卫一个特定的团队
+       -Team guard an area from a location.[368]从一个地点守卫一个区域
+       -Team guard an area.[166]团队守卫一个区域
+       -Team guard at location.[164]位置有队员守卫
+       -Team guard current location.[51]小队守卫当前位置
+       -Team guard nearest kindof.[296]最接近的队员后卫
+       -Face a waypoint.[233]面对一个路标
+       -Face another unit.[232]面对另一个单位
+       -Follow a waypoint path--wander.[98]遵循路标路径-漫步
+       -Set team to follow a waypoint path starting at waypoint.[541]设置团队从路点开始遵循路点路径
+       -Set team to follow a waypoint path.[32]设置团队跟随路径点路径  
+       -Set team to move to a location.[13]  设置团队移动到一个位置 
+       -Set team to move to home position (designated in team template).[348]设置团队移动到本队位置(在团队模板中指定)
+       -Set to EXACTLY follow a waypoint path.[213]设置精确跟随路径点路径
+       -Set to wander around current location.[185]设置在当前位置徘徊
+       -Team stops,then disbands.[142]团队停止,然后解散
+       -Team stops.[141]团队停止
+       -Team will move to the nearest object that matches both kindof and player specified.[288]队伍会移动到最接近的目标，同时匹配指定的种类和玩家
+       -Team will move to the nearest object that matches both type and player specified.[290]队伍会移动到最近的匹配类型和玩家的物体上
+       -Team will move to the nearest object that matches kindof specified.[287]队伍会移动到最近的匹配kindof指定的对象
+       -Team will move to the nearest object that matches type specified.[289]Team将移动到最近的匹配指定类型的对象
+       -Teleport team to waypoint.[379]传送小队到导航点
+       -Delay a sequential script until the specified command ability is ready-all.[202]延迟顺序脚本，直到指定的命令能力就绪为止
+       -Delay a sequential script until the specified command ability is ready-partial.[203]延迟一个连续的脚本，直到指定的命令能力是部分的
+       -Delay a sequential script until the team is no longer contained-all[212]延迟一个顺序脚本，直到团队不再包含-全部
+       -Execute script sequentially--stop.[156]执行脚本顺序——停止
+       -Idle for some number of frames.[160]空闲一定数量的帧
+       -Idle for some number of seconds.[309]空闲几秒钟
+       -Change Custom Model Condition flag -all.[249]更改自定义模型条件标志-全部
+       -Change Object flags-all.[227]全部更改对象标志
+       -Change object status.[412]更改对象状态
+       -Change status of the Scripted AI Recruitable flag for team members.[427]改变脚本AI可招募标志的状态
+       -Clear model condition flag on a team.[330]清除队伍的模型状态标志
+       -Enables or disables the house color[389]启用或禁用房子的颜色
+       -Set a Team's current stance[537]设置一个队伍的当前姿态
+       -Decrease priority by specific amount.[424]按特定数量降低优先级
+       -Increase priority by specific amount.[423]按特定数量增加优先级
+       -Merge Team into another team.[82]将团队合并到另一个团队
+       -Spawn a reinforcement team at location.[30]在某个地点生成一个增援小队
+       -Spawn a reinforcement team at named object's position.[337]在指定目标的位置生成一个增援小队
+       -Start building Team.[62]启动构建团队
+       -Give Team the specified upgrade[299]给团队指定的升级
+       -Override player command points.[380]覆盖玩家命令点
+       -Set command points available to player to counter.[303]设置可用于玩家对抗的命令点
+       -Set command points required to build team to counter.[305]设置小队作战所需的命令点
+       -Set command points total of player to counter.[304]设置玩家的命令点数
+       -Set command points used by player to counter.[302]设置玩家用来反击的命令点
+        -Deselects everything.[382]取消选择所有
+        -Disable console command menu button[558]关闭控制台命令菜单按钮
+        -Disable console HUD fixed element[560]关闭控制台HUD固定元素
+        -Disable named object's UI user ability button[484]禁用命名对象的UI用户能力按钮
+        -Disable PC HUD fixed element[482]禁用PC HUD固定元素
+        -Disable planning mode[439]禁用规划模式
+        -Disable UI build button[485]禁用UI构建按钮
+        -Disable UI player power button[483]禁用UI播放器电源按钮
+        -Display tutorial text[474]显示文本教程
+        -Enable planning mode[438]启用规划模式
+        -Flash console command menu button[557]Flash控制台命令菜单按钮
+        -Flash console HUD fixed element[559]Flash控制台HUD固定元素
+        -Flash named object's UI user ability button[478]Flash命名对象的UI用户能力按钮
+        -Flash PC HUD fixed element[476]Flash PC HUD固定元素
+        -Flash UI build button[479]Flash UI构建按钮
+        -Flash UI player power button[477]Flash UI播放器电源按钮
+        -Hide tutorial text[475]隐藏文本教程
+        -Lock or unlock camera height and angle (allow scrolling).[400]锁定或解锁相机高度和角度(允许滚动)
+        -Lock or unlock camera reset.[436]锁定或解锁相机复位
+        -Lock or unlock camera rotation.[434]锁定或解锁相机旋转
+        -Lock or unlock camera scroll.[435]锁定或解锁相机滚动
+        -Lock or unlock camera zoom.[433]锁定或解锁相机变焦
+        -Lock or unlock camera.[387]锁定或解锁相机
+        -Player selects object.[381]玩家选择对象
+        -Reset camera tutorial state.[20]重置摄像机教程状态
+        -Show windowed text caption.[116]显示窗口文本标题
+        -Switch to production queue tab[491]切换到生产队列选项卡
+        -Allow or Disallow all buildings[284]允许或禁止所有建筑
+        -Restrict camera movement to area--REMOVE.[366]限制摄像机移动到区域-移除
+        -Enable or Disable Terrain Render.[274]启用或禁用地形渲染
+        -Fade using a multiply blend to black.[109]使用正片叠加渐变为黑色
+        -Fade using a saturate blend.[108]使用饱和度混合渐变
+        -Fade using a subtractive blend to black.[107]使用减色法混合到黑色
+        -Fade using an add blend to white.[106]使用添加混合添加到白色
+        -Toggle Fog of War.[364]切换战争迷雾
+        -Hide mission objective[404]隐藏任务目标
+        -Link mission objective to object using presentation settings[464]使用显示设置连接任务目标到目标
+        -Link mission objective to waypoint using presentation settings[465]使用演示设置将任务目标链接到航路点
+        -Mark mission objective as not completed[410]将任务目标标记为未完成
+        -Show mission objective[403]显示任务目标
+        -Show satellite view presentation for specified objective[409]显示指定目标的卫星视图展示
+        -Force ChooseVictim to ignore game difficulty and always use Normal setting.[252]强制选择受害者忽略游戏难度，总是使用普通设置
+        -Supply Source--set cash value.[171]供应来源——设定现金价值
+        -Turn off scoring.[239]关掉得分
+        -Turn on scoring.[238]打开得分
+        -Change the speed of the CloudEffect.[273]修改“CloudEffect”的运行速度
+        -Reveal the entire map for Player.[89]为玩家揭示整个地图
+        -Shroud the entire map for Player.[120]覆盖玩家的整个地图
+        -Reset music scripting system.[351]重置音乐脚本系统
+        -Return to music scripting.[350]回到音乐脚本
+        -Turn off music scripting.[349]关闭音乐脚本
+        -Disable object's ambient sound[256]禁用对象的环境声音
+        -Enable object's ambient sound[255]启用对象的环境声音
+        -Play a speech file as if it were an EVA event,and subtitle it.[499]播放一个语音文件，就像它是一个EVA事件，并为其添加字幕
+        -Play a speech file as if it were an EVA event.[498]播放一个语音文件，就像EVA事件一样
+        -Play a speech file.[75]播放语音文件
+        -Sound Events--override volume--type.[178]声音事件——覆盖卷类型
+        -Sound Events--remove type.[245]声音事件——删除类型
+        -Sound Events--restore volume--all.[180]声音事件——恢复卷
+        -Sound Events--restore volume--type.[179]声音事件——恢复卷类型
+        -Set the current speech volume.[241]设置当前语音音量
+         -Build thing at waypoint.[431]在路标处建造东西
+         -Team set CommandButton auto ability to on or off.[362]团队设置命令按钮自动开关能力
+         -Kill off a percentage of the Horde[331]杀死一定百分比的部落
+         -Shock a specific unit.[66]电击一个特定单位
+         -Gives a unit an experience level.[268]给予一个单位一定的经验值
+         -Sets the unit's maximum level.[441]设置单位的最大等级
+         -dose a gate[354]剂量门
+         -Delay a sequential script until the gate is ready again[373]延迟一个顺序脚本，直到门再次准备好
+         -open a gate[353]开放一个门
+         -Set a specific unit to execute a looping sequential script.[152]设置一个特定的单元来执行一个循环顺序脚本
+         -Set a specific unit to execute a script sequentially.[151]设置一个特定的单元来按顺序执行脚本
+         -Set to guard for some number of frames.[157]设置为某些帧数的保护
+         -Set to guard for some number of seconds.[306]设置为守卫数秒
+         -Camera fading--enable or disable.[402]相机衰落——启用或禁用
+         -Ignite or quench afame status.[260]点燃或熄灭火焰状态
+         -Set stopping distance for current locomotor.[118]设置当前运动器停止距离
+         -Set the sleep status of a specific unit.[453]设置指定单元的休眠状态
+         -Set unit to be held in place,ignoring Physics,Locomotors,etc.[181]设置要保持的单位，忽略物理，运动等
+         -Strict control --enable or disable.[325]严格控制——启用或禁用
+         -Spawn--named object on Team at a position with an orientation.[235]刷出——团队中指定方位的物体
+         -Spawn--named unit on Team at an object type with specified orientation.[468]刷出——团队中指定方向和对象类型的命名单位
+         -Spawn--named unit on Team at an object type.[440]刷出——团队中指定单位的对象类型
+         -Spawn object.[23]产生对象
+         -Team Set Stand Ground Status..[377]团队设置站位地面状态…
+         -Unit Set Stand Ground Status.[376]Unit Set Stand地面状态
+         -Transport--load unit into specific.[45]运输——装载单位成具体
+         -Transport--unload units from specific.[47]运输——从特定单位卸下
+         -Turn on or off a player's structures that auto build units.(Starts ON)[313]开启或关闭玩家能够自动建造单位的建筑。 (开始) 
+         -AI Player build an Upgrade.[215]AI玩家建立一个升级
+         -Set the skillset for an AI Player.[228]为AI玩家设置技能
+         -Plays a movie in game.[272]在游戏中播放电影
+         -Set reference to another team reference.[281]设置引用到另一个团队引用
+         -Set reference to a team.[279]设置引用到一个团队
+         -Set reference to a unit.[278]设置一个单位的引用
+         -Set reference to another unit reference.[280]设置引用到另一个单位引用
+         -Harvest around waypoint.[355]收获在路标
+         -Team recruits from another specific team.[294] 从另一个特定团队招募的团队成员
+         -Team recruits from same player and nearby allied AI teams.[293]从同一玩家和附近的盟军AI队伍中招募团队成员
+         -Team set auto ability to on or off.[363]团队设置自动能力开启或关闭
+         -Gives the team an experience level.[265]给团队一个经验水平
+         -Guard --from inside tunnel network.[246]保安，来自隧道网络内部
+         -Set or dear a team-needs-gate open flag [374]设置或关闭一个团队需要大门的旗帜
+         -Team follow approach path.[196]团队遵循进场路径
+         -Team move to approach path.[199]团队移至进场路径
+         -Repair nearest building that needs it.[361]修理最近的需要它的建筑物
+         -Execute script sequentially --looping.[155]按顺序执行脚本——循环
+         -Execute script sequentially-start.[154]执行脚本sequentially-start
+         -Guard--number of frames.[159]警卫队的帧数
+         -Guard--number of seconds.[308]警卫队的秒数
+         -Ignite or quench aflame status-all.[261]点燃或熄灭火焰状态-所有
+         -Set a model condition flag on a team (and horde members)for duration.specifies of members in team that get this.[329]在团队(和部落成员)上设置一个持续时间的模型状态标志。 指定团队中的成员得到这个
+         -Set stopping distance for each unit's current locomotor.[117]设置每个单元当前移动装置的停止距离
+         -Set the Sleep status of Team.[454]设置团队的睡眠状态
+         -Change priority by Failure Priority Decrease amount.[187]Change priority by Failure priority减少数量  
+         -Change priority by Success Priority Increase amount.[186]Change priority by Success priority增加数量  
+         -Recruit Team at location of another team.[144]在另一队地点招募一队
+         -Recruit Team.[143]招聘团队
+         -Strict Control set enabled or disabled.[326]启用或禁用严格控制设置
+         -Transport--automatically load.[44]把——自动加载
+         -Transport--load team into specific.[46]运输-装载小组到特定的
+         -Transport--unload team from all.[48]运输，将所有队伍撤离
+         -Team will give nearest team upgrade (Giving Team must have upgrade)[282]队伍会给最近的队伍升级(给予队伍必须有升级)
+         -Team will give team upgrade (Giving Team must have upgrade)[298]团队会给予团队升级(给予团队必须有升级)
+         -Flash UI SUDS element[480]Flash UI SUDS元素
+         -Open Command Bar Tab[234]打开命令栏标签
+         -End the mission in victory if the user chooses to[79]如果用户选择胜利结束任务  
+      -Show Victory Screen[386]屏幕显示胜利
+      -Announce defeat.[4]宣布失败
+      -Announce local defeat.[223]宣布当地失败
+      -Announce quick win[247]宣布快速赢得
+      -Announce victory.[3]宣布胜利
+
+
+

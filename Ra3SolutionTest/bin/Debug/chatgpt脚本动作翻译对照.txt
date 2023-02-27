@@ -1,0 +1,1410 @@
+ Tutorial/Deselects everything.
+教程/取消选择所有内容。
+
+ Tutorial/Disable console command menu button
+教程/禁用控制台命令菜单按钮。
+
+ Tutorial/Disable console HUD fixed element
+教程/禁用控制台HUD固定元素。
+
+ Tutorial/Disable named object's UI user ability button
+教程/禁用命名对象的UI用户能力按钮。
+
+ Tutorial/Disable PC HUD fixed element
+教程/禁用PC HUD固定元素。
+
+ Tutorial/Disable planning mode
+教程/禁用规划模式。
+
+ Tutorial/Disable UI build button
+教程/禁用UI构建按钮。
+
+ Tutorial/Disable UI player power button
+教程/禁用UI玩家能量按钮。
+
+ Tutorial/Display tutorial text
+教程/显示教程文本。
+
+ Tutorial/Enable planning mode
+教程/启用规划模式。
+
+ Tutorial/Flash console command menu button
+教程/闪烁控制台命令菜单按钮。
+
+ Tutorial/Flash console HUD fixed element
+教程/闪烁控制台HUD固定元素。
+
+ Tutorial/Flash named object's UI user ability button
+教程/闪烁命名对象的UI用户能力按钮。
+
+ Tutorial/Flash PC HUD fixed element
+教程/闪烁PC HUD固定元素。
+
+ Tutorial/Flash UI build button
+教程/闪烁UI构建按钮。
+
+ Tutorial/Hide tutorial text
+教程/隐藏教程文本。
+
+ Tutorial/Lock or unlock camera height and angle (allow scrolling).
+教程/锁定或解锁相机高度和角度（允许滚动）。
+
+ Tutorial/Lock or unlock camera reset.
+教程/锁定或解锁相机重置。
+
+ Tutorial/Lock or unlock camera rotation.
+教程/锁定或解锁相机旋转。
+
+ Tutorial/Lock or unlock camera scroll.
+教程/锁定或解锁相机滚动。
+
+ Tutorial/Lock or unlock camera zoom.
+教程/锁定或解锁相机缩放。
+
+ Tutorial/Lock or unlock camera.
+教程/锁定或解锁相机。
+
+ Tutorial/Player selects object.
+教程/玩家选择对象。
+
+ Tutorial/Reset camera tutorial state.
+教程/重置相机教程状态。
+
+ Tutorial/Show windowed text caption.
+教程/显示窗口化文本标题。
+
+ Tutorial/Switch to production queue tab
+教程/切换到生产队列选项卡。
+
+ Win & Loss/ Show Victory Screen
+胜利与失败/显示胜利界面。
+
+ Win & Loss/Announce defeat.
+胜利与失败/宣布失败。
+
+ Win & Loss/Announce local defeat.
+胜利与失败/宣布本地失败。
+
+ Win & Loss/Announce quick win
+胜利与失败/宣布快速胜利。
+
+ Win & Loss/Announce victory.
+胜利与失败/宣布胜利。
+
+ ThreeSixty/Override player command points.
+360度/覆盖玩家命令点数。
+
+ ThreeSixty/Set command points available to player to counter.
+360度/设置玩家可用于反制的命令点数。
+
+ ThreeSixty/Set command points required to build team to counter.
+360度/设置建立反制队伍所需的命令点数。
+
+ ThreeSixty/Set command points total of player to counter.
+360度/设置玩家反制总命令点数。
+
+ ThreeSixty/Set command points used by player to counter.
+360度/设置玩家用于反制的命令点数。
+
+ Team/Allegiance/Override Team's relationship to a Player.
+队伍/忠诚度/覆盖队伍与玩家的关系。
+
+ Team/Allegiance/Override Team's relationship to a Team.
+队伍/忠诚度/覆盖队伍与队伍的关系。
+
+ Team/Allegiance/Remove all overrides to Team's relationship to Teams and Players.
+队伍/忠诚度/移除队伍与队伍和玩家之间所有关系的覆盖。
+
+ Team/Allegiance/Remove an override to Team's relationship to a Team.
+队伍/忠诚度/移除队伍与特定队伍之间关系的覆盖。
+
+ Team/Allegiance/Transfer control of Team to Player.
+队伍/忠诚度/将队伍控制权转移给玩家。
+
+ Team/Attack/Attack move a team to a named object.
+队伍/进攻/将队伍攻击移动到指定的物体。
+
+ Team/Attack/Hunt (choose enemy target, move towards it, and attack when within range).
+队伍/进攻/狩猎（选择敌方目标，朝它移动，当在攻击范围内时攻击）。
+
+ Team/Attack/Move team towards the nearest object of a specific type owned by a player
+队伍/进攻/将队伍朝着由玩家拥有的特定类型的最近物体移动。
+
+ Team/Attack/Move team towards the nearest object of a specific type
+队伍/进攻/将队伍朝着特定类型的最近物体移动。
+
+ Team/Attack/Set team to attack another team.
+队伍/进攻/设置队伍攻击另一个队伍。
+
+ Team/Attack/Set team to attack-move along a waypoint path.
+队伍/进攻/设置队伍沿着航路点路径进行攻击移动。
+
+ Team/Attack/Set team to attack-move to a location.
+队伍/进攻/设置队伍攻击移动到一个位置。
+
+ Team/Attack/Set team to capture a named object.
+队伍/进攻/设置队伍捕获指定的物体。
+
+ Team/Attack/Team attacks a named object.
+队伍/进攻/队伍攻击指定的物体。
+
+ Team/Capture/Capture unowned faction unit -- nearest.
+队伍/捕获/捕获未拥有的派系单位--最近的。
+
+ Team/CommandButton/Use command ability -- all -- nearest enemy building kindof.
+队伍/指令按钮/使用指令能力--所有--最近的敌方建筑种类。
+
+ Team/CommandButton/Use command ability -- all -- nearest enemy building.
+队伍/指令按钮/使用指令能力--所有--最近的敌方建筑。
+
+ Team/CommandButton/Use command ability -- all -- nearest enemy garrisoned building.
+队伍/指令按钮/使用指令能力--所有--最近的敌方占领建筑。
+
+ Team/CommandButton/Use command ability -- all -- nearest enemy object with kind of.
+队伍/指令按钮/使用指令能力--所有--最近的敌方对象与种类。
+
+ Team/CommandButton/Use command ability -- all -- nearest enemy unit
+队伍/指令按钮/使用指令能力--所有--最近的敌方单位。
+
+ Team/CommandButton/Use command ability -- all -- nearest object type.
+队伍/指令按钮/使用指令能力--所有--最近的对象类型。
+
+ Team/CommandButton/Use command ability -- partial -- self.
+队伍/指令按钮/部分使用指令能力--自己。
+
+ Team/CommandButton/Use commandbutton ability at a waypoint.
+队伍/指令按钮/在路标上使用指令按钮能力。
+
+ Team/CommandButton/Use commandbutton ability on a named object.
+队伍/指令按钮/在命名对象上使用指令按钮能力。
+
+ Team/CommandButton/Use commandbutton ability.
+队伍/指令按钮/使用指令按钮能力。
+
+ Team/Damage or Remove/Damage the members of Team.
+队伍/伤害或删除/伤害队伍成员。
+
+ Team/Damage or Remove/Delete Team, but ignore dead guys.
+队伍/伤害或删除/删除队伍，但忽略已死亡的成员。
+
+ Team/Damage or Remove/Delete Team.
+队伍/伤害或删除/删除队伍。
+
+ Team/Damage or Remove/Kill an entire team.
+队伍/伤害或删除/消灭整个队伍。
+
+ Team/Damage or Remove/Set the health of the team members (in percentage).
+队伍/伤害或删除/设置队伍成员的健康状态（以百分比计算）。
+
+ Team/Experience/Gives the team experience points.
+队伍/经验/给予队伍经验点数。
+
+ Team/Experience/Sets the team's experience points.
+队伍/经验/设置队伍的经验点数。
+
+ Team/Experience/Team levels up with visual FX.
+队伍/经验/队伍升级，带有视觉效果。
+
+ Team/Flash/Flash Team for a specified amount of time.
+队伍/闪烁/闪烁队伍指定时间。
+
+ Team/Flash/Flash Team white for a specified amount of time.
+队伍/闪烁/闪烁队伍白色指定时间。
+
+ Team/Garrison/Exit all objects a team is in.
+队伍/驻扎/退出队伍所在的所有对象。
+
+ Team/Garrison/Garrison a named object instantly with a team.
+队伍/驻扎/使用队伍即时驻扎一个命名对象。
+
+ Team/Garrison/Garrison a named object with Team.
+队伍/驻扎/使用队伍驻扎一个命名对象。
+
+ Team/Garrison/Garrison a nearby structure with Team.
+队伍/驻扎/使用队伍驻扎一个附近的结构。
+
+ Team/Garrison/Garrison a team instantly with a team.
+队伍/驻扎/使用队伍即时驻扎一个队伍。
+
+ Team/Guard/Guard a supply source.
+队伍/警戒/警戒一个补给源。
+
+ Team/Guard/Team guard a named object.
+队伍/警戒/队伍警戒一个命名对象。
+
+ Team/Guard/Team guard a specific team.
+队伍/警戒/队伍警戒一个特定队伍。
+
+ Team/Guard/Team guard an area from a location.
+队伍/警戒/队伍从一个位置警戒一个区域。
+
+ Team/Guard/Team guard an area.
+队伍/警戒/队伍警戒一个区域。
+
+ Team/Guard/Team guard at location.
+队伍/警戒/队伍在位置警戒。
+
+ Team/Guard/Team guard current location.
+队伍/警戒/队伍在当前位置警戒。
+
+ Team/Guard/Team guard nearest kindof.
+队伍/警戒/队伍警戒最近的指定种类对象。
+
+ Team/Move/Face a waypoint.
+队伍/移动/面向一个路标。
+
+ Team/Move/Face another unit.
+队伍/移动/面向另一个单位。
+
+ Team/Move/Follow a waypoint path -- wander.
+队伍/移动/跟随一个路标路径-徘徊。
+
+ Team/Move/Set team to follow a waypoint path starting at waypoint.
+队伍/移动/设置队伍跟随从路标开始的路径。
+
+ Team/Move/Set team to move to a location.
+队伍/移动/设置队伍移动到一个位置。
+
+ Team/Move/Set team to move to home position (designated in team template).
+队伍/移动/设置队伍移动到家庭位置（在队伍模板中指定）。
+
+ Team/Move/Set to EXACTLY follow a waypoint path.
+队伍/移动/设置严格遵循路标路径。
+
+ Team/Move/Set to wander around current location.
+队伍/移动/设置队伍徘徊在当前位置周围。
+
+ Team/Move/Team stops, then disbands.
+队伍/移动/队伍停止，然后解散。
+
+ Team/Move/Team stops.
+队伍/移动/队伍停止。
+
+ Team/Move/Team will move to the nearest object that matches both kindof and player specified.
+队伍/移动/队伍将移动到最接近同时符合种类和玩家指定条件的对象。
+
+ Team/Move/Team will move to the nearest object that matches both type and player specified.
+队伍/移动/队伍将移动到最接近同时符合类型和玩家指定条件的对象。
+
+ Team/Move/Team will move to the nearest object that matches kindof specified.
+队伍/移动/队伍将移动到最接近同时符合指定种类的对象。
+
+ Team/Move/Team will move to the nearest object that matches type specified.
+队伍/移动/队伍将移动到最接近同时符合指定类型的对象。
+
+ Team/Move/Teleport team to waypoint.
+队伍/移动/将队伍传送到路标。
+
+ Team/SequentialScript/Delay a sequential script until the specified command ability is ready - all.
+队伍/顺序脚本/顺序脚本延迟，直到所有指定的命令能力都准备好。
+
+ Team/SequentialScript/Delay a sequential script until the specified command ability is ready - partial.
+队伍/顺序脚本/顺序脚本延迟，直到部分指定的命令能力准备好。
+
+ Team/SequentialScript/Delay a sequential script until the team is no longer contained - all
+队伍/顺序脚本/顺序脚本延迟，直到队伍不再受限制为止。
+
+ Team/SequentialScript/Execute script sequentially -- stop.
+队伍/顺序脚本/顺序执行脚本-停止。
+
+ Team/SequentialScript/Idle for some number of frames.
+队伍/顺序脚本/空闲一定数量的帧。
+
+ Team/SequentialScript/Idle for some number of seconds.
+队伍/顺序脚本/空闲一定数量的秒数。
+
+ Team/Settings/Change Custom Model Condition flag - all.
+队伍/设定/更改所有自定义模型条件标志。
+
+ Team/Settings/Change Object flags - all.
+队伍/设定/更改所有对象标志。
+
+ Team/Settings/Change object status.
+队伍/设定/更改对象状态。
+
+ Team/Settings/Change status of the Scripted AI Recruitable flag for team members.
+队伍/设定/更改队伍成员 Scripted AI Recruitable 标志的状态。
+
+ Team/Settings/Clear model condition flag on a team.
+队伍/设定/清除队伍上的模型条件标志。
+
+ Team/Settings/Enables or disables the house color
+队伍/设定/启用或禁用家族颜色。
+
+ Team/Settings/Set a Team's current stance
+队伍/设定/设置队伍的当前立场。
+
+ Team/Spawn, Build, or Merge/Decrease priority by specific amount.
+队伍/Spawn, Build, or Merge/按指定数量降低优先级。
+
+ Team/Spawn, Build, or Merge/Increase priority by specific amount.
+队伍/Spawn, Build, or Merge/按指定数量增加优先级。
+
+ Team/Spawn, Build, or Merge/Merge Team into another team.
+队伍/Spawn, Build, or Merge/将队伍合并到另一个队伍中。
+
+ Team/Spawn, Build, or Merge/Spawn a reinforcement team at location.
+队伍/Spawn, Build, or Merge/在位置处生成一个加强队伍。
+
+ Team/Spawn, Build, or Merge/Spawn a reinforcement team at named object's position.
+队伍/Spawn, Build, or Merge/在命名对象的位置生成一个加强队伍。
+
+ Team/Spawn, Build, or Merge/Start building Team.
+队伍/Spawn, Build, or Merge/开始建造队伍。
+
+ Team/Upgrades/Give Team the specified upgrade
+队伍/Upgrades/给队伍指定的升级。
+
+ SkirmishAI/Allow AI Auto-Acquire for named object.
+遭遇战AI/允许AI自动获取指定对象。
+
+ SkirmishAI/Allow AI Auto-Acquire for Player.
+遭遇战AI/允许AI自动获取玩家。
+
+ SkirmishAI/Allow AI Auto-Acquire for team.
+遭遇战AI/允许AI自动获取队伍。
+
+ SkirmishAI/Beacon/Spawn an AI Beacon at a waypoint.
+遭遇战AI/信标/在路径点处生成AI信标。
+
+ SkirmishAI/Beacon/Spawn an AI Beacon on a named object
+遭遇战AI/信标/在指定对象上生成AI信标。
+
+ SkirmishAI/Build Control/Consider all enemies when deciding what to build
+遭遇战AI/建筑控制/考虑所有敌人来决定要建造什么。
+
+ SkirmishAI/Build Control/Consider specific enemy when deciding what to build
+遭遇战AI/建筑控制/考虑特定敌人来决定要建造什么。
+
+ SkirmishAI/Build Control/Don't consider any enemies when deciding what to build
+遭遇战AI/建筑控制/在决定要建造什么时不考虑任何敌人。
+
+ SkirmishAI/Build Control/Don't consider specific enemy when deciding what to build
+遭遇战AI/建筑控制/在决定要建造什么时不考虑特定敌人。
+
+ SkirmishAI/Create a skirmish AI base
+遭遇战AI/创建遭遇战AI基地。
+
+ SkirmishAI/Enemy Target Control/Clear all enemy players' priority
+遭遇战AI/敌方目标控制/清除所有敌方玩家的优先级。
+
+ SkirmishAI/Enemy Target Control/Clear enemy player priority
+遭遇战AI/敌方目标控制/清除敌方玩家的优先级。
+
+ SkirmishAI/Enemy Target Control/Set all enemy players' priority
+遭遇战AI/敌方目标控制/设置所有敌方玩家的优先级。
+
+ SkirmishAI/Enemy Target Control/Set enemy player priority
+遭遇战AI/敌方目标控制/设置敌方玩家的优先级。
+
+ SkirmishAI/Enemy Target Control/Set Skirmish AI favored enemy
+遭遇战AI/敌方目标控制/设置遭遇战AI首选敌人。
+
+ SkirmishAI/Enemy Target Control/Use automatic enemy player prioritization scheme
+遭遇战AI/敌方目标控制/使用自动敌方玩家优先级方案。
+
+ SkirmishAI/Enemy Target Control/Use default automatic enemy player prioritization scheme
+遭遇战AI/敌方目标控制/使用默认的自动敌方玩家优先级方案。
+
+ SkirmishAI/Skirmish AI may repair buildings
+遭遇战AI/遭遇战AI可以修复建筑物。
+
+ SkirmishAI/Skirmish AI Structure Rebuilds Rescan
+遭遇战AI/遭遇战AI结构重建重新扫描。
+
+ SkirmishAI/Start AI Opening moves and timers(Turn on the Skirmish AI).
+遭遇战AI/开始AI开局策略和计时器（打开遭遇战AI）。
+
+ SkirmishAI/Toggle SkirmishAI On-Off.
+遭遇战AI/切换遭遇战AI开关。
+
+ SkirmishAI/Transfer control of all player's units to or from Skirmish AI -- Enable Skirmish AI.
+遭遇战AI/将所有玩家单位的控制权转移给遭遇战AI或从遭遇战AI转移控制权 - 启用遭遇战AI。
+
+ SkirmishAI/Transfer control of Team to or from Skirmish AI.
+遭遇战AI/将队伍的控制权转移给遭遇战AI或从遭遇战AI转移控制权。
+
+ SkirmishAI/Transfer control of Unit to or from Skirmish AI.
+遭遇战AI/将单个单位的控制权转移给遭遇战AI或从遭遇战AI转移控制权。
+
+ SkirmishAI/Transfer ownership of all player's units to or from Skirmish AI -- Don't Enable Skirmish AI.
+遭遇战AI/将所有玩家单位的所有权转移给遭遇战AI或从遭遇战AI转移所有权 - 不启用遭遇战AI。
+
+ SkirmishAI/Turn on or off AI Base Builder.
+遭遇战AI/打开或关闭AI基地建造器。
+
+ SkirmishAI/Turn on or off AI Economy Manager.
+遭遇战AI/打开或关闭AI经济管理器。
+
+ SkirmishAI/Turn on or off AI Party Builder.
+遭遇战AI/打开或关闭AI队伍建造器。
+
+ SkirmishAI/Turn on or off AI Science Upgrader.
+遭遇战AI/打开或关闭AI科技升级器。
+
+ SkirmishAI/Turn on or off AI Unit Builder.
+遭遇战AI/打开或关闭AI单位建造器。
+
+ SkirmishAI/Turn on or off AI Unit Upgrader.
+遭遇战AI/打开或关闭AI单位升级器。
+
+ SkirmishAI/Turn on or off AI Wall Builder.
+遭遇战AI/打开或关闭AI墙建造器。
+
+ SkirmishAI/Turn on or off Tactical AI.
+遭遇战AI/打开或关闭战术AI。
+
+ SkirmishAI/Use Skirmish AI Structure Rebuilds
+遭遇战AI/使用遭遇战AI结构重建。
+
+ Scripting/Attack Priority Set/Apply a team's attack priority set.
+Scripting/攻击优先级设置/应用一个队伍的攻击优先级设置。
+
+ Scripting/Attack Priority Set/Apply named object's attack priority set.
+Scripting/攻击优先级设置/应用指定对象的攻击优先级设置。
+
+ Scripting/Attack Priority Set/Modify a set's priorities for all of a kind.
+Scripting/攻击优先级设置/修改一个种类所有对象的优先级设置。
+
+ Scripting/Attack Priority Set/Modify a set's priority for a single object type.
+Scripting/攻击优先级设置/修改单个对象类型的优先级设置。
+
+ Scripting/Attack Priority Set/Specify the set's default priority.
+Scripting/攻击优先级设置/指定集合的默认优先级。
+
+ Scripting/Counters/Counter do math opertation with another Counter.
+Scripting/计数器/计数器执行与另一个计数器的数学运算。
+
+ Scripting/Counters/Counter do math opertation with value.
+Scripting/计数器/计数器执行与数值的数学运算。
+
+ Scripting/Counters/Decrement counter.
+Scripting/计数器/递减计数器。
+
+ Scripting/Counters/Increment counter.
+Scripting/计数器/递增计数器。
+
+ Scripting/Counters/Set a random counter in seconds.
+Scripting/计数器/随机设置计数器，单位为秒。
+
+ Scripting/Counters/Set a random counter.
+Scripting/计数器/随机设置计数器。
+
+ Scripting/Counters/Set counter to a time in seconds.
+Scripting/计数器/将计数器设置为特定时间，单位为秒。
+
+ Scripting/Counters/Set counter to a value.
+Scripting/计数器/将计数器设置为特定值。
+
+ Scripting/Counters/Set counter to another counter.
+Scripting/计数器/将计数器设置为另一个计数器。
+
+ Scripting/Counters/Set counter to number of objects owned by player with a model condition
+Scripting/计数器/将计数器设置为拥有特定模型条件的玩家所拥有的对象数量。
+
+ Scripting/Counters/Set counter to number of objects owned by player with kindof
+Scripting/计数器/将计数器设置为拥有特定种类的玩家所拥有的对象数量。
+
+ Scripting/Counters/Set number of object types owned by player to a counter including dead ones.
+Scripting/计数器/将拥有特定对象类型的玩家所拥有的对象数量（包括已死亡的对象）设置为计数器。
+
+ Scripting/Counters/Set number of object types owned by player to counter.
+Scripting/计数器/将拥有特定对象类型的玩家所拥有的对象数量设置为计数器。
+
+ Scripting/Counters/Set number of player kills of a kindof to counter.
+Scripting/计数器/将拥有特定种类的玩家所杀死的对象数量设置为计数器。
+
+ Scripting/Counters/Set number of player kills of a type to counter.
+Scripting/计数器/将拥有特定类型的玩家所杀死的对象数量设置为计数器。
+
+ Scripting/Counters/Set players money to counter.
+脚本/计数器/将玩家货币设置为计数器。
+
+ Scripting/Counters/Set units experience points to counter.
+脚本/计数器/将单位经验点设置为计数器。
+
+ Scripting/Counters/Set unit's health as percentage to counter.
+脚本/计数器/将单位健康值设置为百分比计数器。
+
+ Scripting/Data Tracking/Record object vs. object kills
+脚本/数据跟踪/记录物体之间的杀敌数。
+
+ Scripting/Data Tracking/Store object vs. object kills to counter
+脚本/数据跟踪/将物体之间的杀敌数存储到计数器中。
+
+ Scripting/Debug/Display a crash box (debug|internal builds only).
+脚本/调试/显示崩溃框（仅用于调试|内部版本）。
+
+ Scripting/Debug/Display message and pause
+脚本/调试/显示消息并暂停。
+
+ Scripting/Debug/Display string
+脚本/调试/显示字符串。
+
+ Scripting/Debug/Null operation.
+脚本/调试/空操作。
+
+ Scripting/Disable script.
+脚本/禁用脚本。
+
+ Scripting/Enable Script.
+脚本/启用脚本。
+
+ Scripting/Flags/Set flag to another flag.
+脚本/标志/将标志设置为另一个标志。
+
+ Scripting/Flags/Set flag to value.
+脚本/标志/将标志设置为值。
+
+ Scripting/Object List/Add Object Type to Object List.
+脚本/对象列表/将对象类型添加到对象列表中。
+
+ Scripting/Object List/Remove Object Type from Object List.
+脚本/对象列表/从对象列表中删除对象类型。
+
+ Scripting/Reference/Find home base of player
+脚本/引用/查找玩家的主基地。
+
+ Scripting/Reference/Set a reference to an object nearest-to-team, owned by player.
+脚本/引用/将引用设置为最接近团队、由玩家拥有的对象。
+
+ Scripting/Reference/Set reference to object type of player nearest team.
+脚本/引用/将引用设置为玩家最接近的团队对象类型。
+
+ Scripting/Reference/Set reference to unnamed object owned by player 
+脚本/引用/将引用设置为由玩家拥有的未命名对象。
+
+ Scripting/Run subroutine script.
+脚本/运行子例程脚本。
+
+ Scripting/Timer/Frame countdown timer -- set random.
+脚本/计时器/帧倒计时器--随机设置。
+
+ Scripting/Timer/Frame countdown timer -- set.
+脚本/计时器/帧倒计时器--设置。
+
+ Scripting/Timer/Seconds countdown timer -- add seconds.
+脚本/计时器/秒倒计时器--添加秒数。
+
+ Scripting/Timer/Seconds countdown timer -- set random.
+脚本/计时器/秒倒计时器--随机设置。
+
+ Scripting/Timer/Seconds countdown timer -- set.
+脚本/计时器/秒倒计时器--设置。
+
+ Scripting/Timer/Seconds countdown timer -- subtract seconds.
+脚本/计时器/秒倒计时器--减去秒数。
+
+ Scripting/Timer/Timer -- restart stopped.
+脚本/计时器/计时器--重新启动停止。
+
+ Scripting/Timer/Timer -- stop.
+脚本/计时器/计时器--停止。
+
+ Player/Allegiance/Change how Player relates to another player.
+玩家/关系/更改玩家与其他玩家之间的关系。
+
+ Player/Allegiance/Override Player's relationship to another team.
+玩家/关系/覆盖玩家与另一个队伍之间的关系。
+
+ Player/Build/Adjust the tech tree for a specific object type.
+玩家/建造/调整特定对象类型的科技树。
+
+ Player/Build/Allow or Disallow one building of a specific type
+玩家/建造/允许或禁止建造特定类型的建筑物。
+
+ Player/Build/Permissions/Player is allowed to build buildings.
+玩家/建造/权限/允许玩家建造建筑物。
+
+ Player/Build/Permissions/Player is allowed to build units.
+玩家/建造/权限/允许玩家建造单位。
+
+ Player/Build/Permissions/Player is not allowed to build buildings.
+玩家/建造/权限/不允许玩家建造建筑物。
+
+ Player/Build/Permissions/Player is not allowed to build units.
+玩家/建造/权限/不允许玩家建造单位。
+
+ Player/Build/Player can build from an object type.
+玩家/建造/玩家可以从对象类型中建造。
+
+ Player/Build/Player cannot build from an object type.
+玩家/建造/玩家无法从对象类型中建造。
+
+ Player/Build/Player cannot build in a specific ally's buildability radii (ground control).
+玩家/建造/玩家无法在特定盟友的建造半径（地面控制）内建造。
+
+ Player/Build/Set the delay between building teams.
+玩家/建造/设置建造队伍之间的延迟时间。
+
+ Player/Garrison/All of Player's units leave their garrisons.
+玩家/驻军/玩家所有单位离开其驻扎点。
+
+ Player/Money/Increase or Decrease Player's money.
+玩家/金钱/增加或减少玩家的金钱。
+
+ Player/Money/Set player's money cap.
+玩家/金钱/设置玩家的金钱上限。
+
+ Player/Money/Set Player's money.
+玩家/金钱/设置玩家的金钱。
+
+ Player/Money/Toggle allied resource sharing on-off.
+玩家/金钱/打开或关闭盟友资源共享。
+
+ Player/Power/Set the base power for the player.
+玩家/能源/设置玩家的基础能源值。
+
+ Player/Red Alerts/Disable Threat Level Bonus
+玩家/警报/禁用威胁级别奖励。
+
+ Player/Remove, Sell, or Transfer All/Kill Player.
+玩家/移除、出售或转让所有/杀死玩家。
+
+ Player/Remove, Sell, or Transfer All/Player sells everything.
+玩家/移除、出售或转让所有/玩家出售所有物品。
+
+ Player/Remove, Sell, or Transfer All/Transfer assets from one player to another player.
+玩家/移除、出售或转让所有/将资产从一个玩家转移到另一个玩家。
+
+ Player/Retreat/Set all units on player to flee off map.
+玩家/撤退/设置玩家的所有单位逃离地图。
+
+ Player/Scoring/Exclude this player from the score screen.
+玩家/得分/在得分界面中排除此玩家。
+
+ Player/Special Power/Grant power to player.
+玩家/特殊技能/授予玩家特殊技能。
+
+ Player/Special Power/Lock or Unlock a player tech.
+玩家/特殊技能/锁定或解锁玩家科技。
+
+ Player/Special Power/Player's object's special power ignores requirements.
+玩家/特殊技能/玩家对象的特殊技能忽略要求。
+
+ Player/Special Power/Set maximum player power points.
+玩家/特殊技能/设置最大玩家能量点数。
+
+ Player/Special Power/Set special power availability.
+玩家/特殊技能/设置特殊技能可用性。
+
+ Player/Special Power/Set the players current power point total.
+玩家/特殊技能/设置玩家当前能量点总数。
+
+ Player/Special Power/Special power -- fire at enemy's highest cost area.
+玩家/特殊技能/特殊技能 - 对敌方最高成本区域进行攻击。
+
+ Player/Special Power/Special power -- fire at waypoint.
+玩家/特殊技能/特殊技能 - 对航路点进行攻击。
+
+ Player/Special Power/Special power -- fire on nearest object type to team owned by player.
+玩家/特殊技能/特殊技能 - 对玩家团队拥有的最接近对象类型进行攻击。
+
+ Player/Special Power/Special power -- fire on nearest object type to team.
+玩家/特殊技能/特殊技能 - 对最接近团队的对象类型进行攻击。
+
+ Player/Special Power/Special power -- fire on team.
+玩家/特殊技能/特殊技能 - 对团队进行攻击。
+
+ Player/Special Power/Special power -- set countdown timer.
+玩家/特殊技能/特殊技能 - 设置倒计时计时器。
+
+ Player/Upgrades and Sciences/Allow or Disallow one upgrade
+玩家/升级和科技/允许或禁止一个升级
+
+ Player/Upgrades and Sciences/Give Player an Upgrade.
+玩家/升级和科技/给玩家一个升级
+
+ Player/Upgrades and Sciences/Remove upgrade from Player.
+玩家/升级和科技/从玩家中删除一个升级
+
+ Object Type/Allegiance/Force named object to join team.
+物体类型/忠诚度/强制命名的对象加入某个队伍。
+
+ Object Type/Allegiance/Transfer a named object to the control of a Player.
+物体类型/忠诚度/将命名的对象转移到某个玩家的控制下。
+
+ Object Type/Attack/Hunt (choose enemy target, move towards it, and attack when within range).
+物体类型/攻击/猎杀（选择敌人目标，朝其移动，并在射程范围内攻击）。
+
+ Object Type/Attack/Move unit towards the nearest object of a specific type
+物体类型/攻击/向特定类型的最近对象移动单位。
+
+ Object Type/Attack/Named object attack-move along a waypoint path.
+物体类型/攻击/命名的对象沿着航路点路径攻击移动。
+
+ Object Type/Attack/Named object attack-move to a location.
+物体类型/攻击/命名的对象攻击移动到一个位置。
+
+ Object Type/Attack/Named object attacks an area for a given number of seconds.
+物体类型/攻击/命名的对象在一定时间内攻击一个区域。
+
+ Object Type/Attack/Named object attacks an area.
+物体类型/攻击/命名的对象攻击一个区域。
+
+ Object Type/Attack/Named object attacks Team.
+物体类型/攻击/命名的对象攻击队伍。
+
+ Object Type/Attack/Named Object force attack a named object.
+物体类型/攻击/命名的对象强制攻击一个命名的对象。
+
+ Object Type/Attack/Named Object force attack a waypoint.
+物体类型/攻击/命名的对象强制攻击一个航路点。
+
+ Object Type/Attack/Set named object to capture a named object.
+物体类型/攻击/设置命名的对象去捕获一个命名的对象。
+
+ Object Type/Attack/Set unit to attack another unit.
+物体类型/攻击/设置单位攻击另一个单位。
+
+ Object Type/CommandButton/Use commandbutton ability at a waypoint.
+对象类型/命令按钮/在路径点使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability at nearest enemy building kindof.
+对象类型/命令按钮/在最近的敌方建筑类型处使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability at nearest enemy building.
+对象类型/命令按钮/在最近的敌方建筑处使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability at nearest enemy garrisoned building.
+对象类型/命令按钮/在最近的敌方驻守建筑处使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability at nearest enemy object with kind of.
+对象类型/命令按钮/在最近的敌方对象（该对象类型）处使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability at nearest enemy unit
+对象类型/命令按钮/在最近的敌方单位处使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability at nearest object type.
+对象类型/命令按钮/在最近的对象类型处使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability on a specific Unit.
+对象类型/命令按钮/在特定的单位上使用命令按钮技能。
+
+ Object Type/CommandButton/Use commandbutton ability.
+对象类型/命令按钮/使用命令按钮技能。
+
+ Object Type/Damage or Remove/Deal damage to a named object.
+对象类型/伤害或移除/对命名对象造成伤害。
+
+ Object Type/Damage or Remove/Delete a named object.
+对象类型/伤害或移除/删除命名对象。
+
+ Object Type/Damage or Remove/Kill a named object.
+对象类型/伤害或移除/击杀命名对象。
+
+ Object Type/Damage or Remove/Kill all units belonging to the specified player in the specified area.
+对象类型/伤害或移除/在指定区域内杀死属于指定玩家的所有单位。
+
+ Object Type/Damage or Remove/Kill all units contained within a specific transport or structure.
+对象类型/伤害或移除/杀死特定运输或建筑内的所有单位。
+
+ Object Type/Damage or Remove/Sell off named Object.
+对象类型/伤害或移除/出售命名对象。
+
+ Object Type/Damage or Remove/Set the health of the unit (in percentage).
+对象类型/伤害或移除/设置单位的生命值（以百分比表示）。
+
+ Object Type/Delete all unmanned (sniped) vehicles.
+对象类型/删除所有无人驾驶（被狙击）的载具。
+
+ Object Type/Experience/Gives a named object experience points.
+对象类型/经验/给予命名对象经验值。
+
+ Object Type/Experience/Named object levels up with visual FX.
+对象类型/经验/命名对象升级，伴随着视觉特效。
+
+ Object Type/Experience/Sets a named object's experience points.
+对象类型/经验/设置命名对象的经验值。
+
+ Object Type/Flash or Color/Flash a named object white for a specified amount of time.
+对象类型/闪光或颜色/闪烁命名对象为白色，持续一定时间。
+
+ Object Type/Flash or Color/Flash a specific unit for a specified amount of time.
+对象类型/闪光或颜色/闪烁特定单位一段时间。
+
+ Object Type/Flash or Color/Outline a specific unit with an outline type.
+对象类型/闪光或颜色/使用轮廓类型为特定单位添加轮廓。
+
+ Object Type/Flash or Color/Set a named object to use a special indicator color.
+对象类型/闪光或颜色/设置命名对象使用特殊指示颜色。
+
+ Object Type/Garrison/Empty a named object.
+对象类型/进驻/清空指定对象。
+
+ Object Type/Garrison/Garrison a named object instantly with a named object.
+对象类型/进驻/立即用指定对象进驻指定对象。
+
+ Object Type/Garrison/Garrison a named object with a named object.
+对象类型/进驻/用指定对象进驻指定对象。
+
+ Object Type/Garrison/Garrison a nearby structure with a named object.
+对象类型/进驻/用指定对象进驻附近建筑。
+
+ Object Type/Garrison/Named object exit whatever object it's in.
+对象类型/进驻/指定对象退出当前所在对象。
+
+ Object Type/Guard/Named object guard an area from a location.
+对象类型/守卫/指定对象在指定位置守卫区域。
+
+ Object Type/Guard/Named object guard another named object.
+对象类型/守卫/指定对象守卫另一指定对象。
+
+ Object Type/Guard/Named object guard area.
+对象类型/守卫/指定对象守卫区域。
+
+ Object Type/Guard/Named object guard at location.
+对象类型/守卫/指定对象在指定位置守卫。
+
+ Object Type/Guard/Named object guards nearest kindof.
+对象类型/守卫/指定对象守卫最近的指定类型。
+
+ Object Type/Guard/Named object guards.
+对象类型/守卫/指定对象进行守卫。
+
+ Object Type/Hulk set override lifetime.
+对象类型/废墟 设置覆盖生命周期。
+
+ Object Type/Move/Face a waypoint.
+对象类型/移动/面向航点。
+
+ Object Type/Move/Face another unit.
+对象类型/移动/面向另一个单位。
+
+ Object Type/Move/Named object follow a waypoint path -- exactly.
+对象类型/移动/指定对象准确地沿着航点路径移动。
+
+ Object Type/Move/Named object follow a waypoint path starting at waypoint.
+对象类型/移动/指定对象从航点开始沿着路径移动。
+
+ Object Type/Move/Named object follow a waypoint path.
+对象类型/移动/指定对象沿着路径移动。
+
+ Object Type/Move/Named object move to a location.
+对象类型/移动/指定对象移动到位置。
+
+ Object Type/Move/Teleport named object to waypoint.
+对象类型/移动/瞬间将指定对象传送到航点。
+
+ Object Type/Move/Unit stops.
+对象类型/移动/单位停止。
+
+ Object Type/Repair/Repair named Object.
+对象类型/修理/修理指定对象。
+
+ Object Type/SequentialScript/Named object idles for some number of frames.
+对象类型/顺序脚本/指定对象闲置若干帧。
+
+ Object Type/SequentialScript/Named object idles for some number of seconds.
+对象类型/顺序脚本/指定对象闲置若干秒。
+
+ Object Type/SequentialScript/Set a named object to stop executing a sequential script.
+对象类型/顺序脚本/设置指定对象停止执行顺序脚本。
+
+ Object Type/Settings/Change Custom Model Condition flag.
+对象类型/设置/更改自定义模型条件标记。
+
+ Object Type/Settings/Change Object flags.
+对象类型/设置/更改对象标记。
+
+ Object Type/Settings/Change object status.
+对象类型/设置/更改对象状态。
+
+ Object Type/Settings/Clear model condition flag on a named object.
+对象类型/设置/清除指定对象的模型条件标记。
+
+ Object Type/Settings/Disable -- enable or disable.
+对象类型/设置/禁用或启用。
+
+ Object Type/Settings/Enables or disables the house color
+对象类型/设置/启用或禁用家族颜色。
+
+ Object Type/Settings/Give upgrade to named object.
+对象类型/设置/将升级赋予指定对象。
+
+ Object Type/Settings/Remove upgrade from named object.
+对象类型/设置/从指定对象中移除升级。
+
+ Object Type/Settings/Set a model condition flag on a named object for duration(optional).
+对象类型/设置/在指定对象上设置模型条件标记，可设置持续时间。
+
+ Object Type/Settings/Set a model condition flag on a named object for duration. % specifies # of members in horde that get this.
+对象类型/设置/在指定对象上设置模型条件标记，可设置持续时间。%表示接收此设置的军团成员数量。
+
+ Object Type/Settings/Set the max health of a unit.
+对象类型/设置/设置单位的最大生命值。
+
+ Object Type/Settings/Set topple direction.
+对象类型/设置/设置翻倒的方向。
+
+ Object Type/Settings/Sets a unit's current stance
+对象类型/设置/设置单位的当前状态。
+
+ Object Type/Settings/Stealth -- enable or disable.
+对象类型/设置/隐身-启用或禁用。
+
+ Object Type/Spawn/Spawn -- named object on Team at a named object's position.
+对象类型/生成/在一名对象位置上生成指定的队伍名字的物体。
+
+ Object Type/Spawn/Spawn a named object on a team at a waypoint with an orientation.
+对象类型/生成/在一个指定的路标上，以一定的朝向，生成指定队伍的物体。
+
+ Object Type/Spawn/Spawn a named object on a team at a waypoint.
+对象类型/生成/在一个指定的路标上，生成指定队伍的物体。
+
+ Object Type/Spawn/Spawn an unnamed object on a team at a waypoint with an orientation.
+对象类型/生成/在一个指定的路标上，以一定的朝向，生成一个未命名的物体。
+
+ Object Type/Spawn/Spawn an unnamed object on a team at a waypoint.
+对象类型/生成/在一个指定的路标上，生成一个未命名的物体。
+
+ Object Type/Special Power/Countdown timer -- pause.
+对象类型/特殊技能/倒计时计时器 -- 暂停。
+
+ Object Type/Special Power/Countdown timer -- resume.
+对象类型/特殊技能/倒计时计时器 -- 恢复。
+
+ Object Type/Special Power/Countdown timer -- set.
+对象类型/特殊技能/倒计时计时器 -- 设置。
+
+ Object Type/Special Power/Special Power -- fire at location.
+对象类型/特殊技能/特殊技能 -- 在指定位置释放。
+
+ Map/Fog or Reveal/Border Shroud is turned off.
+地图/雾或揭示/边缘迷雾关闭。
+
+ Map/Fog or Reveal/Border Shroud is turned on.
+地图/雾或揭示/边缘迷雾开启。
+
+ Map/Fog or Reveal/Reveal map at waypoint -- fog.
+地图/雾或揭示/在路径点处揭示地图-迷雾。
+
+ Map/Fog or Reveal/Reveal map at waypoint -- permanently.
+地图/雾或揭示/在路径点处永久揭示地图。
+
+ Map/Fog or Reveal/Reveal map at waypoint -- undo permanently.
+地图/雾或揭示/在路径点处撤销永久揭示地图。
+
+ Map/Fog or Reveal/Reveal map in polytrigger -- permanently.
+地图/雾或揭示/在多边形触发器中永久揭示地图。
+
+ Map/Fog or Reveal/Reveal map in polytrigger -- undo permanently.
+地图/雾或揭示/在多边形触发器中撤销永久揭示地图。
+
+ Map/Fog or Reveal/Reveal map in trigger -- fog.
+地图/雾或揭示/在触发器中揭示地图-迷雾。
+
+ Map/Fog or Reveal/Reveal the entire map permanently for Player.
+地图/雾或揭示/永久揭示整张地图的玩家。
+
+ Map/Fog or Reveal/Set Re-Fog delay.
+地图/雾或揭示/设置重新迷雾延迟。
+
+ Map/Fog or Reveal/Un-Reveal the entire map permanently for Player.
+地图/雾或揭示/永久取消揭示整张地图的玩家。
+
+ Map/Gameplay/Adjust Object Bonuses based on difficulty.
+地图/游戏玩法/根据难度调整对象奖励。
+
+ Map/Make area impassable for human player.
+地图/使区域对玩家不可通过。
+
+ Map/Modify/Change the active border of the map.
+地图/修改/更改地图的活动边界。
+
+ Map/Modify/Enables or disables the house color for all units
+地图/修改/启用或禁用所有单位的阵营颜色。
+
+ Map/Modify/Exit Map
+地图/修改/退出地图。
+
+ Media/Audio/All Sounds/Remove all reverb effects
+媒体/声音/全部音效/移除所有混响效果。
+
+ Media/Audio/All Sounds/Resume all sounds.
+媒体/声音/全部音效/恢复所有音效。
+
+ Media/Audio/All Sounds/Set global reverb room type.
+媒体/声音/全部音效/设置全局混响房间类型。
+
+ Media/Audio/All Sounds/Suppress reverb within an area
+媒体/声音/全部音效/抑制一个区域内的混响效果。
+
+ Media/Audio/All Sounds/Suspend all sounds.
+媒体/声音/全部音效/暂停所有音效。
+
+ Media/Audio/All Sounds/Unsuppress all reverb
+媒体/声音/全部音效/取消抑制所有混响效果。
+
+ Media/Audio/All Sounds/Unsuppress reverb in an area
+媒体/声音/全部音效/取消抑制一个区域内的混响效果。
+
+ Media/Audio/EVA/Enable or Disable EVA.
+媒体/语音/启用或禁用AI协同指挥官的语音。
+
+ Media/Audio/EVA/Play a sound effect as AI co-commander dialog, and subtitle it.
+媒体/语音/播放一个声音效果作为AI协同指挥官对话，并加上字幕。
+
+ Media/Audio/EVA/Play a sound effect as AI co-commander dialog.
+媒体/语音/播放一个声音效果作为AI协同指挥官对话。
+
+ Media/Audio/EVA/Play a sound effect as if it were an EVA event, and subtitle it.
+媒体/语音/播放一个声音效果作为EVA事件，并加上字幕。
+
+ Media/Audio/EVA/Play a sound effect as if it were an EVA event.
+媒体/语音/播放一个声音效果作为EVA事件。
+
+ Media/Audio/Music/Play a music track a certain number of times, then set a flag.
+媒体/音乐/播放一个音乐曲目一定次数，然后设置一个标志。
+
+ Media/Audio/Music/Play a music track a certain number of times.
+媒体/音乐/播放一个音乐曲目一定次数。
+
+ Media/Audio/Music/Play a music track.
+媒体/音乐/播放一个音乐曲目。
+
+ Media/Audio/Music/Play SPECIAL END-OF-LEVEL music a certain number of times.
+媒体/音乐/播放特殊的结局音乐曲目一定次数。
+
+ Media/Audio/Music/Pop music track.
+媒体/音乐/弹出音乐曲目。
+
+ Media/Audio/Music/Push music track and play it a certain number of times.
+媒体/音乐/推入音乐曲目并播放一定次数。
+
+ Media/Audio/Music/Push music track, play it a certain number of times, then set a flag.
+媒体/音乐/推入音乐曲目，播放一定次数，然后设置一个标志。
+
+ Media/Audio/Music/Push music track.
+媒体/音乐/推入音乐曲目。
+
+ Media/Audio/PathfinderMusic/Disable Dynamic System.
+媒体/声音/路径导航音乐/禁用动态系统。
+
+ Media/Audio/PathfinderMusic/Enable Specific Dynamic System.
+媒体/声音/路径导航音乐/启用特定的动态系统。
+
+ Media/Audio/PathfinderMusic/Enable Standard Dynamic System.
+媒体/声音/路径导航音乐/启用标准的动态系统。
+
+ Media/Audio/PathfinderMusic/Fade In Music.
+媒体/声音/路径导航音乐/淡入音乐。
+
+ Media/Audio/PathfinderMusic/Fade Out Music.
+媒体/声音/路径导航音乐/淡出音乐。
+
+ Media/Audio/PathfinderMusic/Play Event.
+媒体/声音/路径导航音乐/播放事件。
+
+ Media/Audio/PathfinderMusic/Resume Dynamic System.
+媒体/声音/路径导航音乐/恢复动态系统。
+
+ Media/Audio/PathfinderMusic/Stop Music.
+媒体/声音/路径导航音乐/停止音乐。
+
+ Media/Audio/Sound Effect/Play 2D sound effect.
+媒体/声音/音效/播放2D音效。
+
+ Media/Audio/Sound Effect/Play a sound as though coming from a named object.
+媒体/声音/音效/从指定物体播放声音。
+
+ Media/Audio/Sound Effect/Play sound effect at waypoint.
+媒体/声音/音效/在路径点播放音效。
+
+ Media/Audio/Sound Effect/Play sound effect from team.
+媒体/声音/音效/从团队播放音效。
+
+ Media/Audio/Sound Effect/Resume the ambient sounds.
+媒体/声音/音效/恢复环境声音。
+
+ Media/Audio/Sound Effect/Suspend the ambient sounds.
+媒体/声音/音效/暂停环境声音。
+
+ Media/Audio/Sound Events/Sound Events -- disable type.
+媒体/声音/音效事件/禁用类型。
+
+ Media/Audio/Sound Events/Sound Events -- enable all.
+媒体/声音/音效事件/启用全部。
+
+ Media/Audio/Sound Events/Sound Events -- enable type.
+媒体/声音/音效事件/启用类型。
+
+ Media/Audio/Volume/Fade all audio
+媒体/声音/音量/渐变全部音频。
+
+ Media/Audio/Volume/Make all sounds subject to fade
+媒体/声音/音量/使所有声音逐渐消失。
+
+ Media/Audio/Volume/Make sound immune to fade
+媒体/声音/音量/使声音免于消失。
+
+ Media/Audio/Volume/Make sound subject to fade
+媒体/声音/音量/使声音逐渐消失。
+
+ Media/Audio/Volume/Set the current music volume.
+媒体/声音/音量/设置当前音乐音量。
+
+ Media/Audio/Volume/Set the current sound volume.
+媒体/声音/音量/设置当前声音音量。
+
+ Media/Video/Play a movie in fullscreen mode.
+媒体/视频/全屏播放电影。
+
+ Media/Video/Play a movie in the radar.
+媒体/视频/在雷达上播放电影。
+
+ Interface/Counters and Timers/All timers -- display.
+界面/计数器和定时器/显示所有定时器
+
+ Interface/Counters and Timers/All timers -- hide.
+界面/计数器和定时器/隐藏所有定时器
+
+ Interface/Counters and Timers/Specific counter -- display.
+界面/计数器和定时器/显示特定计数器
+
+ Interface/Counters and Timers/Specific counter -- hide.
+界面/计数器和定时器/隐藏特定计数器
+
+ Interface/Counters and Timers/Specific timer -- display.
+界面/计数器和定时器/显示特定定时器
+
+ Interface/Counters and Timers/Specific timer -- hide.
+界面/计数器和定时器/隐藏特定定时器
+
+ Interface/Enable or disable the co-op AI command panel
+界面/启用或禁用协作AI命令面板
+
+ Interface/Fade/Fade-in from black
+界面/淡入/从黑色淡入
+
+ Interface/Fade/Fade-out to black
+界面/淡出/到黑色淡出
+
+ Interface/Info Box/Remove Info Box
+界面/信息框/删除信息框
+
+ Interface/Info Box/Show Info Box
+界面/信息框/显示信息框
+
+ Interface/Input/User input -- disable.
+界面/输入/禁用用户输入
+
+ Interface/Input/User input -- enable.
+界面/输入/启用用户输入
+
+ Interface/Mission Hot-Spot/Link mission hot-spot to object
+界面/任务热点/将任务热点链接到对象
+
+ Interface/Mission Hot-Spot/Link mission hot-spot to waypoint
+界面/任务热点/将任务热点链接到路径点
+
+ Interface/Mission Hot-Spot/Set mission hot-spot to be active or inactive
+界面/任务热点/设置任务热点为活动或非活动状态
+
+ Interface/Mission Hot-Spot/Set visibility of mission hot-spot
+界面/任务热点/设置任务热点的可见性
+
+ Interface/Objectives/Link mission objective to object using icon
+界面/目标/使用图标将任务目标链接到对象
+
+ Interface/Objectives/Link mission objective to object
+界面/目标/将任务目标链接到对象
+
+ Interface/Objectives/Link mission objective to waypoint using icon
+界面/目标/使用图标将任务目标链接到路径点
+
+ Interface/Objectives/Mark mission objective as completed
+界面/任务目标/标记任务目标为已完成
+
+ Interface/Objectives/Mark mission objective as not completed
+界面/任务目标/标记任务目标为未完成
+
+ Interface/Objectives/Set mission objective status
+界面/任务目标/设置任务目标状态
+
+ Interface/Radar/Create a radar event at a named object.
+界面/雷达/在指定对象上创建雷达事件。
+
+ Interface/Radar/Create a radar event at a specified location.
+界面/雷达/在指定位置创建雷达事件。
+
+ Interface/Radar/Create a radar event at a Team.
+界面/雷达/在小组创建雷达事件。
+
+ Interface/Show unit intro
+界面/显示单位介绍
+
+ Interface/Toggle CoOp AI interface.
+界面/切换合作AI界面。
+
+ Base Builder/Eliminate all building footprints.
+基地建造者/消除所有建筑物足迹。
+
+ Base Builder/Eliminate building footprint.
+基地建造者/消除建筑物足迹。
+
+ Base Builder/Move structure to top of build list.
+基地建造者/将结构移动到构建列表顶部。
+
+ Campaign/Create campaign auto save checkpoint.
+战役/创建战役自动保存检查点。
+
+ Campaign/Set or clear a campaign flag
+战役/设置或清除战役标志。
+
+ Cinematics/Camera/Add Camera Shaker Effect at.
+电影/相机/在指定位置添加相机震动效果。
+
+ Cinematics/Camera/Begin tether camera to a specific unit.
+电影/相机/开始将相机锁定到特定单位。
+
+ Cinematics/Camera/Begin tether player's camera to a specific unit.
+电影/相机/开始将玩家相机锁定到特定单位。
+
+ Cinematics/Camera/Camera look toward point while moving.
+电影/相机/相机在移动时朝向指定点。
+
+ Cinematics/Camera/Change the camera depth of field.
+电影/相机/更改相机景深。
+
+ Cinematics/Camera/Change the camera pitch.
+电影/相机/更改相机俯仰角。
+
+ Cinematics/Camera/Change the camera roll.
+电影/相机/更改相机翻转。
+
+ Cinematics/Camera/Change the camera zoom.
+电影/相机/更改相机缩放。
+
+ Cinematics/Camera/Change the camera's focal length (mm).
+电影/相机/更改相机的焦距（毫米）。
+
+ Cinematics/Camera/End movement at selected unit.
+电影/相机/移动相机到选定的单位。
+
+ Cinematics/Camera/End tether to any units.
+电影/相机/结束与任何单位的相机锁定。
+
+ Cinematics/Camera/Follow a specific unit.
+电影/相机/跟随特定单位。
+
+ Cinematics/Camera/Move along a spline path.
+电影/相机/沿着样条路径移动。
+
+ Cinematics/Camera/Move the camera for player to a location.
+电影/相机/将相机移动到玩家的位置。
+
+ Cinematics/Camera/Move the camera for player to a named object's location.
+电影/相机/将相机移动到指定命名对象的位置。
+
+ Cinematics/Camera/Move the camera to a location.
+电影/相机/将相机移动到一个位置。
+
+ Cinematics/Camera/Move the camera to a named object's location.
+电影/相机/将相机移动到命名对象的位置。
+
+ Cinematics/Camera/Move using camera animation.
+电影/相机/使用相机动画进行移动。
+
+ Cinematics/Camera/Order camera's locator to follow a spline path.
+电影/相机/命令相机定位器沿着样条路径移动。
+
+ Cinematics/Camera/Reset to the default view.
+电影/相机/重置为默认视图。
+
+ Cinematics/Camera/Restore (un-dim) all global and ambient lights.
+电影/相机/恢复（取消调暗）所有全局和环境光。
+
+ Cinematics/Camera/Restrict camera movement to area.
+电影/相机/限制相机移动区域。
+
+ Cinematics/Camera/Rotate around the current viewpoint.
+电影/相机/围绕当前视点旋转。
+
+ Cinematics/Camera/Rotate the camera in place.
+电影/相机/原地旋转相机。
+
+ Cinematics/Camera/Rotate to a specific view angle.
+电影/相机/旋转到特定视角。
+
+ Cinematics/Camera/Rotate to look at a waypoint.
+电影/相机/旋转以查看航点。
+
+ Cinematics/Camera/Rotate toward unit.
+电影/相机/旋转朝向单位。
+
+ Cinematics/Camera/Set Final pitch for camera movement.
+电影/相机/设置相机运动的最终俯仰角。
+
+ Cinematics/Camera/Set Final zoom for camera movement.
+电影/相机/设置相机运动的最终缩放。
+
+ Cinematics/Camera/Set up the camera.
+电影/相机/设置相机。
+
+ Cinematics/Camera/Shake Screen.
+电影/相机/屏幕震动。
+
+ Cinematics/Camera/Stop following any units.
+电影/相机/停止跟随任何单位。
+
+ Cinematics/Force Emotion/Follow a waypoint path -- panic.
+电影/强制情感/跟随路径点 - 恐慌。
+
+ Cinematics/Force Emotion/Force a named object to have an emotion for duration.
+电影/强制情感/强制命名对象在一段时间内具有情感。
+
+ Cinematics/Force Emotion/Force a team to have an emotion for duration.
+电影/强制情感/强制团队在一段时间内具有情感。
+
+ Cinematics/Force Emotion/Force all of player's units to have an emotion for duration.
+电影/强制情感/强制所有玩家的单位在一段时间内具有情感。
+
+ Cinematics/Force Emotion/Idle all units for all players.
+电影/强制情感/使所有玩家的单位闲置。
+
+ Cinematics/Lighting/Begin bloom lighting effect.
+电影/灯光/启用曝光特效。
+
+ Cinematics/Lighting/Dim all global and ambient lights.
+电影/灯光/调暗所有全局和环境灯光。
+
+ Cinematics/Lighting/End bloom lighting effect.
+电影/灯光/关闭曝光特效。
+
+ Cinematics/Settings/Enable or Disable Draw-icon UI.
+电影/设置/启用或禁用绘制图标UI。
+
+ Cinematics/Settings/Enable or Disable Occlusion (Drawing Behind Buildings).
+电影/设置/启用或禁用遮挡（绘制在建筑物后面）。
+
+ Cinematics/Settings/Enable or Disable Particle Cap.
+电影/设置/启用或禁用粒子容量。
+
+ Cinematics/Settings/End letterbox mode.
+电影/设置/结束信箱模式。
+
+ Cinematics/Settings/Freeze time during the camera movement.
+电影/设置/在相机移动期间冻结时间。
+
+ Cinematics/Settings/Freeze time.
+电影/设置/冻结时间。
+
+ Cinematics/Settings/Hide UI
+电影/设置/隐藏UI。
+
+ Cinematics/Settings/Show UI
+电影/设置/显示UI。
+
+ Cinematics/Settings/Start letterbox mode(shows radar).
+电影/设置/开始信箱模式（显示雷达）。
+
+ Cinematics/Settings/Start letterbox mode.
+电影/设置/开始信箱模式。
+
+ Cinematics/Settings/Unfreeze time.
+电影/设置/取消冻结时间。
+
+ Cinematics/Toggle AVI capture
+电影/切换AVI捕获
+

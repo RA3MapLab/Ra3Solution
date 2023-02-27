@@ -12,6 +12,9 @@ namespace RMGlib.Core.Utility
         public string scriptDesc = "";
         //参数位置参考
         public string scriptArg = "";
+        
+        //参数位置参考
+        public string translation = "";
         public List<ArgumentModel> argumentModel { get; set; }
 
         public ScriptModel()

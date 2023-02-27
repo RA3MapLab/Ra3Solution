@@ -13,6 +13,9 @@ namespace RMGlib.Core.Utility
         public string scriptDesc = "";
         //参数位置参考
         public string scriptArg = "";
+        
+        //脚本翻译
+        public string scriptTrans = "";
         public ScriptModel()
         {
         }

@@ -1,0 +1,3623 @@
+﻿!ACTION: CONDITION_FALSE
+脚本名称: Unused or Obsolete/False.
+翻译名称:未使用或过时/假
+执行代码: False.
+
+!ACTION: COUNTER
+脚本名称: Scripting/Counter compared to a value.
+翻译名称:脚本/某计数器<、=、>某数值
+执行代码: Counter ~ IS ~ 
+
+!ACTION: COUNTER_SECONDS
+脚本名称: Scripting/Counter compared to time in seconds.
+翻译名称:脚本/某计时器<、=、>某数值
+执行代码: Counter ~ IS ~ time ~ secs. 
+
+!ACTION: COUNTER_COUNTER
+脚本名称: Scripting/Counter compared to another Counter.
+翻译名称:脚本/某计数器与另一个某计数器相比数值
+执行代码: Counter ~ IS ~ counter 
+
+!ACTION: DISTANCE_BETWEEN_OBJ
+脚本名称: Scripting/Compare distance between 2 named objects.
+翻译名称:脚本/比较一个已命名的物体与另一个已命名的物体距离<、=、>某数值
+执行代码: Distance between ~ and ~ is ~ ~.
+
+!ACTION: DISTANCE_BETWEEN_TEAM
+脚本名称: Scripting/Compare distance between 2 teams.
+翻译名称:脚本/比较一个队伍与另一个队伍的距离<、=、>某数值
+执行代码: Distance between ~ and ~ is ~ ~.
+
+!ACTION: UNIT_HEALTH
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object's health % compared to a value.
+翻译名称:物体类型/攻击.摧毁.存在/某物体生命状况<、=、>某百分比
+执行代码:  ~ health is ~ ~ percent.
+
+!ACTION: FLAG
+脚本名称: Scripting/Flag compared to a value.
+翻译名称:脚本/某个值的真假
+执行代码:  ~ is 
+
+!ACTION: CONDITION_TRUE
+脚本名称: Scripting/True.
+翻译名称:脚本/真
+执行代码: True.
+
+!ACTION: TIMER_EXPIRED
+脚本名称: Scripting/Timer expired.
+翻译名称:脚本/计时器已结束
+执行代码: Timer ~ has expired.
+
+!ACTION: TEAM_INSIDE_AREA_PARTIALLY
+脚本名称: Team/Area or Path/Team has units in an area.
+翻译名称:队伍/区域和路径/队伍中有至少1个单位在某区域
+执行代码:  ~ has one or more units in ~ (~).
+
+!ACTION: TEAM_DESTROYED
+脚本名称: Team/Attacked, Destroyed, or Exists/Team is destroyed.
+翻译名称:队伍/攻击，摧毁，存在/队伍已经被摧毁
+执行代码:  ~ has been destroyed.
+
+!ACTION: TEAM_HAS_FEWER_THAN_X_UNITS_WITH_KINDOF
+脚本名称: Team/Attacked, Destroyed, or Exists/Team has fewer than X units left of KindOf.
+翻译名称:队伍/攻击，摧毁，存在/队伍中有少于X个某类型的单位
+执行代码:  ~ has fewer than ~ units left of type ~.
+
+!ACTION: NAMED_RANK_LEVEL
+脚本名称: Unused or Obsolete/Named object is rank level or above.
+翻译名称:未使用或遗漏/命名物体的等级=或高于某等级
+执行代码:  ~ is veterancy ~ or above.
+
+!ACTION: NAMED_DESTROYED
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object is destroyed.
+翻译名称:物体类型/攻击.摧毁.存在/命名物体被摧毁
+执行代码:  ~ has been destroyed.
+
+!ACTION: NAMED_DYING
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object is dying. (Cinematic)
+翻译名称:物体类型/攻击.摧毁.存在/命名物体处于死亡动画
+执行代码:  ~ has been killed, but is still on screen.
+
+!ACTION: NAMED_TOTALLY_DEAD
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object is finished dying. (Cinematic)
+翻译名称:物体类型/攻击.摧毁.存在/命名物体的结束死亡动画
+执行代码:  ~ has been killed, and is finished dying.
+
+!ACTION: NAMED_NOT_DESTROYED
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object exists and is alive.
+翻译名称:物体类型/攻击.摧毁.存在/命名单位存在且存活
+执行代码:  ~ exists and is alive.
+
+!ACTION: TEAM_HAS_UNITS
+脚本名称: Team/Attacked, Destroyed, or Exists/Team has units.
+翻译名称:队伍/攻击，摧毁，存在/队伍中有至少1个单位
+执行代码:  ~ has one or more units.
+
+!ACTION: CAMERA_MOVEMENT_FINISHED
+脚本名称: Camera/Camera movement finished.
+翻译名称:相机/相机完成移动
+执行代码: The camera movement has finished.
+
+!ACTION: CAMERA_SCROLL_DISTANCE
+脚本名称: Tutorial/Camera/Camera scroll distance.
+翻译名称:辅助/相机/相机缩放了某高度
+执行代码: Player has scrolled camera ~ units.
+
+!ACTION: CAMERA_ROTATE_DISTANCE
+脚本名称: Tutorial/Camera/Camera rotate distance.
+翻译名称:辅助/相机/相机旋转了某角度
+执行代码: Player has rotated camera ~ degrees.
+
+!ACTION: CAMERA_ZOOM_DISTANCE
+脚本名称: Tutorial/Camera/Camera zoom distance.
+翻译名称:辅助/相机/相机变焦了某数值
+执行代码: Player has zoomed camera ~ units.
+
+!ACTION: CAMERA_RESET
+脚本名称: Tutorial/Camera/Camera reset.
+翻译名称:辅助/相机/相机已复位
+执行代码: Player has reset camera
+
+!ACTION: NAMED_INSIDE_AREA
+脚本名称: Object Type/Area or Path/Named object is inside an area.
+翻译名称:物体类型/区域或路径/命名物体在某区域
+执行代码:  ~ is inside 
+
+!ACTION: NAMED_OUTSIDE_AREA
+脚本名称: Object Type/Area or Path/Named object is outside an area.
+翻译名称:物体类型/区域或者路径/命名物体在区域外
+执行代码:  ~ is outside 
+
+!ACTION: TEAM_INSIDE_AREA_ENTIRELY
+脚本名称: Team/Area or Path/Team is completely inside an area.
+翻译名称:队伍/区域和路径/队伍完全在某区域
+执行代码:  ~ is all inside ~ (~).
+
+!ACTION: TEAM_OUTSIDE_AREA_ENTIRELY
+脚本名称: Team/Area or Path/Team is completely outside an area.
+翻译名称:队伍/区域和路径/队伍完全在某区域外
+执行代码:  ~ is completely outside ~ (~).
+
+!ACTION: NAMED_ATTACKED_BY_OBJECTTYPE
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object is attacked by a specific object type.
+翻译名称:物体类型/攻击.摧毁.存在/某物体受到某一类型指定物体攻击
+执行代码:  ~ has been attacked by a(n) 
+
+!ACTION: TEAM_ATTACKED_BY_OBJECTTYPE
+脚本名称: Team/Attacked, Destroyed, or Exists/Team is attacked by a specific object type.
+翻译名称:队伍/攻击，摧毁，存在/某队伍受到特定类型单位攻击
+执行代码:  ~ has been attacked by a(n) 
+
+!ACTION: TEAM_COMPARE_NUM_MEMBERS
+脚本名称: Team/Attacked, Destroyed, or Exists/Team has (comparison) number of objects.
+翻译名称:队伍/攻击，摧毁，存在/队伍中若干数量的某种单位
+执行代码:  ~ has~ ~ members.
+
+!ACTION: NAMED_ATTACKED_BY_PLAYER
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object has been attacked by Player.
+翻译名称:物体类型/攻击.摧毁.存在/某命名物体被某玩家攻击
+执行代码:  ~ has been attacked by 
+
+!ACTION: TEAM_ATTACKED_BY_PLAYER
+脚本名称: Team/Attacked, Destroyed, or Exists/Team has been attacked by Player.
+翻译名称:队伍/攻击，摧毁，存在/队伍被某玩家攻击
+执行代码:  ~ has been attacked by 
+
+!ACTION: BUILT_BY_PLAYER
+脚本名称: Player/Owns/Player has built an object type.
+翻译名称:玩家/所有物/玩家已经建造了一个某类单位
+执行代码:  ~ has been built by 
+
+!ACTION: NAMED_CREATED
+脚本名称: Unused or Obsolete/Unit has been created.
+翻译名称:未使用或已过时/某物体的引用单元
+执行代码:  ~ has been created.
+
+!ACTION: TEAM_CREATED
+脚本名称: Team/Attacked, Destroyed, or Exists/Team has been created.
+翻译名称:队伍/攻击，摧毁，存在/队伍已经被创建
+执行代码:  ~ has been created.
+
+!ACTION: PLAYER_HAS_CREDITS
+脚本名称: Player/Owns/Player has (comparison) number of credits.
+翻译名称:玩家/所有物/某玩家分数<、=、>某数值
+执行代码:  ~ has ~ ~ credits.
+
+!ACTION: NAMED_DISCOVERED
+脚本名称: Player/Sighted/Player has sighted named object.
+翻译名称:玩家/看见/某玩家看见一个已命名的物体
+执行代码:  ~ has seen 
+
+!ACTION: NAMED_BUILDING_IS_EMPTY
+脚本名称: Object Type/Garrisoned/A specific building is empty.
+翻译名称:物体类型/驻守/某物体内是空的
+执行代码:  ~ is empty.
+
+!ACTION: BUILDING_ENTERED_BY_PLAYER
+脚本名称: Player/Garrisoned/Player has garrisoned a specific building.
+翻译名称:玩家/驻守/玩家驻守某个命名的建筑
+执行代码:  ~ has garrisoned building named 
+
+!ACTION: ENEMY_SIGHTED
+脚本名称: Object Type/Sighted/Unit has sighted a friendly, neutral, or enemy unit belonging to Player.
+翻译名称:物体类型/视野/单位视野内出现属于某玩家的（友好，中立，敌对）的单位
+执行代码:  ~ sees a(n) ~ unit belonging to ~.
+
+!ACTION: ENEMY_SIGHTED_BY_TEAM
+脚本名称: Team/Sighted/Team has sighted a friendly, neutral, or enemy unit belonging to Player.
+翻译名称:队伍/视野/队伍的视野内出现属于某玩家的(友好，中立，敌对)的单位
+执行代码:  ~ sees a(n) ~ unit belonging to ~.
+
+!ACTION: TYPE_SIGHTED
+脚本名称: Object Type/Sighted/Named object has sighted a type of object belonging to Player.
+翻译名称:物体类型/视野/命名物体的视野中出现属于某玩家的某类物体
+执行代码:  ~ sees a(n) ~ belonging to ~.
+
+!ACTION: TEAM_DISCOVERED
+脚本名称: Player/Sighted/Player has sighted Team.
+翻译名称:玩家/视野/玩家视野中有某队伍
+执行代码:  ~ has seen ~.
+
+!ACTION: NAMED_OWNED_BY_PLAYER
+脚本名称: Player/Owns/Player owns Unit.
+翻译名称:玩家/所有物/玩家拥有某单位
+执行代码:  ~ owns ~.
+
+!ACTION: TEAM_OWNED_BY_PLAYER
+脚本名称: Player/Owns/Player owns Team.
+翻译名称:玩家/所有物/玩家拥有某队伍
+执行代码:  ~ is owned by ~.
+
+!ACTION: PLAYER_HAS_N_OR_FEWER_BASES
+脚本名称: Unused or Obsolete/Player currently controls N or fewer bases.
+翻译名称:未使用或遗漏/玩家目前控制了少于=某数量的基地
+执行代码:  ~ currently controls ~ or fewer bases.
+
+!ACTION: PLAYER_HAS_POWER
+脚本名称: Player/Power/Player's base currently has power.
+翻译名称:玩家/电力/某玩家的基地建筑电量充足
+执行代码:  ~ buildings are powered.
+
+!ACTION: PLAYER_HAS_NO_POWER
+脚本名称: Player/Power/Player's base currently has no power.
+翻译名称:玩家/电力/玩家的基地目前无电量
+执行代码:  ~ buildings are not powered.
+
+!ACTION: NAMED_REACHED_WAYPOINTS_END
+脚本名称: Object Type/Area or Path/Named object has reached the end of a specific waypoint path. (Unreliable)
+翻译名称:物体类型/区域或者路径/命名物体已经抵达了某路径的终点
+执行代码:  ~ has reached the end of 
+
+!ACTION: TEAM_REACHED_WAYPOINTS_END
+脚本名称: Team/Area or Path/Team has reached the end of a specific waypoint path. (Unreliable)
+翻译名称:队伍/区域或路径/队伍已经抵达某路径的终点
+执行代码:  ~ has reached the end of 
+
+!ACTION: NAMED_SELECTED
+脚本名称: Object Type/Selected/Named object is currently selected.
+翻译名称:物体类型/选择/当前已选择命名对象
+执行代码:  ~ is currently selected.
+
+!ACTION: TYPE_SELECTED
+脚本名称: Object Type/Selected/Object Type is currently selected.
+翻译名称:物体类型/选择/当前被选中某一类型物体
+执行代码:  ~ is currently selected.
+
+!ACTION: NAMED_ENTERED_AREA
+脚本名称: Unused or Obsolete/Unit enters an area.
+翻译名称:未使用过时的/某单位进入了某区域
+执行代码:  ~ enters 
+
+!ACTION: NAMED_EXITED_AREA
+脚本名称: Object Type/Area or Path/Named object exits an area.
+翻译名称:物体类型/区域或者路径/命名单位离开了某区域
+执行代码:  ~ exits 
+
+!ACTION: TEAM_ENTERED_AREA_ENTIRELY
+脚本名称: Unused or Obsolete/Team entirely enters an area.
+翻译名称:未使用或遗漏/某队伍完全进入一个某个区域
+执行代码:  ~ all enter ~ (~).
+
+!ACTION: TEAM_ENTERED_AREA_PARTIALLY
+脚本名称: Team/Area or Path/One unit from team enters an area.
+翻译名称:队伍/区域和路径/某队伍中的一个单位进入了某区域
+执行代码: One unit from ~ enters ~ (~).
+
+!ACTION: TEAM_EXITED_AREA_ENTIRELY
+脚本名称: Team/Area or Path/Team entirely exits an area.
+翻译名称:队伍/区域和路径/队伍完全离开某区域
+执行代码:  ~ has completely exited ~ (~).
+
+!ACTION: TEAM_EXITED_AREA_PARTIALLY
+脚本名称: Team/Area or Path/One unit from team exits an area.
+翻译名称:队伍/区域和路径/某队伍中的一个单位离开了某区域
+执行代码: One unit from ~ exits ~ (~).
+
+!ACTION: MULTIPLAYER_ALLIED_VICTORY
+脚本名称: Unused or Obsolete/Multiplayer allied victory.
+翻译名称:未使用或遗漏/多人游戏盟友获胜
+执行代码: The multiplayer game has ended in victory for the local player and his allies.
+
+!ACTION: MULTIPLAYER_ALLIED_DEFEAT
+脚本名称: Unused or Obsolete/Multiplayer allied defeat.
+翻译名称:未使用或遗漏/多人游戏盟友战败
+执行代码: The multiplayer game has ended in defeat for the local player and his allies.
+
+!ACTION: MULTIPLAYER_PLAYER_DEFEAT
+脚本名称: Player/Win & Loss/Multiplayer local player defeat check.
+翻译名称:玩家/胜利和失败/多人游戏当前玩家战败检测
+执行代码: Everything belonging to the local player has been destroyed, but his allies may or may not have been defeated.
+
+!ACTION: HAS_FINISHED_VIDEO
+脚本名称: Movie/Movie in the radar has completed playing.
+翻译名称:电影/雷达中的电影已完成播放
+执行代码: Movie ~ has completed playing.
+
+!ACTION: HAS_FINISHED_SPEECH
+脚本名称: Unused or Obsolete/Speech has completed playing.
+翻译名称:未使用过时的/语音已完成播放
+执行代码:  ~ has completed playing.
+
+!ACTION: HAS_FINISHED_AUDIO
+脚本名称: Audio/Sound has completed playing.
+翻译名称:音频/声音播放完成
+执行代码:  ~ has completed playing.
+
+!ACTION: PLAYER_TRIGGERED_SPECIAL_POWER
+脚本名称: Player/Special Power/Player starts using a special power.
+翻译名称:玩家/特殊能力/玩家开始使用一种特殊能力
+执行代码:  ~ starts using ~.
+
+!ACTION: PLAYER_TRIGGERED_SPECIAL_POWER_FROM_NAMED
+脚本名称: Player/Special Power/Player start using a special power from a named object.
+翻译名称:玩家/特殊能力/玩家开始使用某命名单位的特殊能力
+执行代码:  ~ starts using ~ from ~.
+
+!ACTION: PLAYER_COMPLETED_SPECIAL_POWER
+脚本名称: Player/Special Power/Player completed using a special power.
+翻译名称:玩家/特殊能力/某玩家完成使用某种特殊能力
+执行代码:  ~ completed using ~.
+
+!ACTION: PLAYER_BUILT_UPGRADE
+脚本名称: Player/Upgrades and Sciences/Player built an Upgrade.
+翻译名称:玩家/升级和科技/某玩家某种升级已完成
+执行代码:  ~ has built ~.
+
+!ACTION: PLAYER_DESTROYED_N_BUILDINGS_PLAYER
+脚本名称: Player/Attacked or Destroyed/Player destroyed N or more of an opponent's buildings.
+翻译名称:玩家/攻击、破坏/某玩家摧毁了某玩家N个数值或者更多的建筑
+执行代码:  ~ has destroyed ~ or more buildings owned by ~.
+
+!ACTION: PLAYER_HAS_OBJECT_COMPARISON
+脚本名称: Player/Owns/Player has (comparison) object type.
+翻译名称:玩家/拥有/某玩家拥有某物体类型<、=、>某数值
+执行代码:  ~ has ~ ~ object of type ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_WITH_UPGRADE
+脚本名称: Player/Area/Player has (comparison) object type in an area with a specified upgrade.
+翻译名称:玩家/区域/某玩家有一个<、=、>某数值的某物体类型在某区域升级
+执行代码:  ~ has ~ ~ object of type with ~ in the ~ with ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA
+脚本名称: Player/Area/Player has (comparison) object type in an area.
+翻译名称:玩家/区域/玩家有若干某类型的单位在某区域
+执行代码:  ~ has ~ ~ object of type ~ in the ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_COMPLETELY_BUILT
+脚本名称: Player/Area/Player has (comparison) completely built unit types in an area.
+翻译名称:玩家/区域/玩家已经在某区域内完成了若干某类型单位的建造
+执行代码:  ~ has ~ ~ completely built objects of type ~ in the ~.
+
+!ACTION: PLAYER_ISSUED_FORMATION_ORDER
+脚本名称: Tutorial/Player/Player has issued a formation order.
+翻译名称:辅助/玩家/玩家发送了一个信号指令
+执行代码: Player has issued formation order
+
+!ACTION: PLAYER_HAS_NUMBER_OBJECTS_WITH_MODELCONDITION
+脚本名称: Player/Owns/Player has (comparison) objects with a model condition.
+翻译名称:玩家/所有物/玩家拥有若干处于某模型状态的物品
+执行代码:  ~ has ~ ~ objects with ~.
+
+!ACTION: PLAYER_HAS_NUMBER_UNITS_DISTANCE_FROM_OBJECT
+脚本名称: Player/Owns/Player has (comparison) obejcts more than x distance from named object.
+翻译名称:玩家/所有物/玩家总有若干和某命名物体距离为X的单位
+执行代码:  Player ~ has ~ ~ objects at least ~ feet from ~.
+
+!ACTION: COMPARISON_TREES_IN_TRIGGER_AREA
+脚本名称: Unused or Obsolete/There are (comparison) trees in an area.
+翻译名称:未使用或遗漏/某区域有<、=、>某数值的树
+执行代码: There are ~ ~ trees in the ~ .
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_KIND
+脚本名称: Player/Owns/Player has (comparison) object types with kindof.
+翻译名称:玩家/拥有/某玩家拥有物体类型的状态<、=、>某数值
+执行代码:  ~ has ~ ~ objects with ~.
+
+!ACTION: PLAYER_HAS_COMPARISON_UNIT_KIND_IN_TRIGGER_AREA
+脚本名称: Player/Area/Player has (comparison) object types with kindof in an area.
+翻译名称:玩家/区域/某玩家有一个<、=、>某数值的物体状态在某区域
+执行代码:  ~ has ~ ~ objects with ~ in the ~.
+
+!ACTION: PLAYER_POWER_COMPARE_PERCENT
+脚本名称: Player/Power/Player has (comparison) percent power supply to consumption.
+翻译名称:玩家/电力/某玩家电力百分比<、>、=某数值
+执行代码:  ~ has ~ ~ percent power supply ratio.
+
+!ACTION: PLAYER_EXCESS_POWER_COMPARE_VALUE
+脚本名称: Player/Power/Player has (comparison) kilowatts excess power supply.
+翻译名称:玩家/电力/某玩家过剩电力<、>、=某数值
+执行代码:  ~ has ~ ~ excess kilowatts power supply.
+
+!ACTION: SKIRMISH_SPECIAL_POWER_READY
+脚本名称: Player/Special Power/Player's special power is ready to fire.
+翻译名称: 玩家/特殊能力/某玩家的某种技能已准备好
+执行代码:  ~ is ready to fire ~.
+
+!ACTION: SKIRMISH_FIRE_SPECIAL_POWER_ON_TEAM
+脚本名称: Player/Special Power/Player can perform special power on team location.
+翻译名称:玩家/特殊能力/某玩家在某队伍上使用某种特殊能力
+执行代码:  ~ can perform ~ at ~'s location.
+
+!ACTION: UNIT_HAS_OBJECT_STATUS
+脚本名称: Object Type/Object Status/Named object has object status.
+翻译名称:物体类型/物体状态/某物体有某状态
+执行代码:  ~ has 
+
+!ACTION: UNIT_HAS_MODELCONDITION
+脚本名称: Object Type/Settings/Named object has model condition.
+翻译名称:物体类型/设置/某物体有某模型状态
+执行代码:  ~ has 
+
+!ACTION: UNIT_USING_STANCE
+脚本名称: Object Type/Stance/Named object is using stance.
+翻译名称:物体类型/姿态/某物体有某姿态
+执行代码: Is ~ in the ~.
+
+!ACTION: TEAM_ALL_HAS_OBJECT_STATUS
+脚本名称: Team/Object Status/Team has object status - all.
+翻译名称: 队伍/物体状态/某队伍全体有某种状态
+执行代码:  ~ has 
+
+!ACTION: TEAM_SOME_HAVE_OBJECT_STATUS
+脚本名称: Team/Object Status/Team has object status - partial.
+翻译名称: 队伍/物体状态/某队伍部分有某种状态
+执行代码:  ~ has 
+
+!ACTION: SKIRMISH_VALUE_IN_AREA
+脚本名称: Unused or Obsolete/Player has (comparison) threat level in area.
+翻译名称:未使用、过时的/某玩家有<、>、=某数值的威胁等级在某区域
+执行代码:  ~ has ~ ~ threat within area 
+
+!ACTION: SKIRMISH_PLAYER_FACTION
+脚本名称: Player/Faction and Start Position/Player is faction.
+翻译名称:玩家/阵营与起始位置/某玩家阵营是
+执行代码:  ~ is 
+
+!WARNING: 56B8B7: Reg not esi: decnum = 0
+!ACTION: SKIRMISH_SUPPLIES_VALUE_WITHIN_DISTANCE
+脚本名称: Unused or Obsolete/Supplies are within specified distance.
+翻译名称:未使用、过时的/某玩家有物体在某区某个面积数值里面至少价值为某数值
+执行代码:  ~ has supplies within ~ of ~ worth at least 
+
+!ACTION: SKIRMISH_COMMAND_BUTTON_READY_ALL
+脚本名称: Team/CommandButton/Team's CommandButton ability is ready - all.
+翻译名称:技能/某玩家的某队伍所有成员准备好了某种技能
+执行代码:  ~'s ~ are ready to use ~ (all applicable members).
+
+!ACTION: SKIRMISH_COMMAND_BUTTON_READY_PARTIAL
+脚本名称: Team/CommandButton/Team's CommandButton ability is ready - partial
+翻译名称:技能/某玩家的某队伍一个成员准备好了某种技能
+执行代码:  ~'s ~ are ready to use ~ (at least one member).
+
+!ACTION: SKIRMISH_UNOWNED_FACTION_UNIT_EXISTS
+脚本名称: Object Type/Unowned/There are (comparison) unowned faction objects.
+翻译名称:物体类型/未归属/某玩家有一些<、>、=某数值未归属阵营的物体
+执行代码:  ~. There are ~ ~ unowned faction objects.
+
+!ACTION: SKIRMISH_PLAYER_HAS_COMPARISON_GARRISONED
+脚本名称: Player/Garrisoned/Player has (comparison) garrisoned buildings.
+翻译名称: 玩家/驻守/玩家驻守的建筑<、>、=某数值
+执行代码:  ~ has ~ ~ garrisoned buildings.
+
+!ACTION: SKIRMISH_PLAYER_HAS_UNITS_IN_AREA
+脚本名称: Player/Area/Player has units in an area
+翻译名称:玩家/区域/某玩家有单位在某区域
+执行代码:  ~ has units in ~.
+
+!ACTION: SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER
+脚本名称: Player/Attacked or Destroyed/Player has been attacked by Player.
+翻译名称:玩家/攻击、破坏/某玩家被某玩家攻击
+执行代码:  ~ has been attacked by ~.
+
+!ACTION: SKIRMISH_PLAYER_IS_OUTSIDE_AREA
+脚本名称: Unused or Obsolete/Player doesn't have units in an area.
+翻译名称:未使用、过时的/
+执行代码:  ~ has doesn't have units in ~.
+
+!ACTION: SKIRMISH_PLAYER_HAS_DISCOVERED_PLAYER
+脚本名称: Player/Sighted/Player has sighted another player.
+翻译名称:玩家/看见/某玩家看见某玩家
+执行代码:  ~ has seen ~.
+
+!ACTION: SUPPLY_SOURCE_SAFE
+脚本名称: Unused or Obsolete/Supply source is safe.
+翻译名称:未使用、过时的/
+执行代码:  ~ closest supply src with at least ~ available resources is SAFE from enemy influence.
+
+!ACTION: SUPPLY_SOURCE_ATTACKED
+脚本名称: Unused or Obsolete/Supply source is attacked.
+翻译名称:未使用、过时的/
+执行代码:  ~ supply source is under attack.
+
+!ACTION: START_POSITION_IS
+脚本名称: Player/Faction and Start Position/Start Position.
+翻译名称: 玩家/阵营与起始位置/某玩家起始位置数值是
+执行代码:  ~ starting position is ~ .
+
+!ACTION: PLAYER_LOST_OBJECT_TYPE
+脚本名称: Player/Owns/Player has lost an object of type.
+翻译名称:玩家/拥有/某玩家失去某物体
+执行代码:  ~ has lost an object of type ~.
+
+!ACTION: CAMERA_HIT_SPECIFIC_SPLINE_WAYPOINT
+脚本名称: Camera/Camera following spline path hits specified waypoint.
+翻译名称:相机/相机跟随样条路径到达指定命名点
+执行代码:  Camera following spline path hits ~.
+
+!ACTION: CAMERA_ENTERED_AREA
+脚本名称: Camera/Camera entered trigger area.
+翻译名称:相机/相机进入触发区域
+执行代码: Camera enters ~.
+
+!ACTION: HAS_COMMAND_POINTS_TO_BUILD_TEAM
+脚本名称: Player/CommandPoints/Player has enough command points to build a team. (May be broken. -JB)
+翻译名称:玩家/命令/某玩家有足够的命令点来建立某个队伍（权限，同下）
+执行代码:  ~ has enough command points to build ~.
+
+!ACTION: HAS_COMMAND_POINTS_TO_BUILD_UNIT
+脚本名称: Player/CommandPoints/Player has enough command points to build object type.
+翻译名称:玩家/命令/某玩家有足够的命令点来建立某一类型物体
+执行代码:  ~ has enough command points to build ~.
+
+!ACTION: PLAYER_HAS_KILLED_KINDOF_UNITS
+脚本名称: Player/Attacked or Destroyed/Player has destroyed N or more objects of kindof.
+翻译名称:玩家/攻击、破坏/某玩家击杀了某数值或者更多的同状态物体
+执行代码:  ~ has killed ~ or more objects of ~.
+
+!ACTION: PLAYER_HAS_KILLED_TYPE_UNITS
+脚本名称: Player/Attacked or Destroyed/Player has destroyed N or more objects of type.
+翻译名称:玩家/攻击、破坏/某玩家击杀了某数值或者更多的某一类型物体
+执行代码:  ~ has killed ~ or more ~.
+
+!ACTION: PLAYER_HAS_KILLED_NAMED_UNIT
+脚本名称: Player/Attacked or Destroyed/Player has killed Named Unit
+翻译名称:玩家/攻击、破坏/某玩家击杀了已命名的物体
+执行代码:  ~ has killed object named: 
+
+!ACTION: NAMED_DESTROYED_BY_OBJECTTYPE
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object is destroyed by a specific object type.
+翻译名称:物体类型/攻击.摧毁.存在/某物体受到某一类型指定物体摧毁
+执行代码:  ~ has been destroyed by a(n) 
+
+!ACTION: GATE_IS_OPEN
+脚本名称: Unused or Obsolete/Check if a gate is open. (False, if not a gate, or closed)
+翻译名称:未使用、过时的/
+执行代码:  The unit (presumed a gate) referenced as~ is OPEN.
+
+!ACTION: MUSIC_IS_PLAYING_FROM_SCRIPT
+脚本名称: Audio/Music/Playing Music is from Script
+翻译名称:音频/音乐/播放了某背景BGM
+执行代码:  The music scripting system is on.
+
+!ACTION: UNIT_CAN_PATH_TO_WAYPOINT
+脚本名称: Object Type/Area or Path/Named object can path to waypoint.
+翻译名称:物体类型/区域或者路径/某物体走到某点
+执行代码:  ~ can path to ~.
+
+!ACTION: UNIT_CAN_PATH_TO_OBJECT
+脚本名称: Object Type/Area or Path/Named object can path to named object.
+翻译名称:物体类型/区域或者路径/某物体走到某物体旁
+执行代码:  ~ can path to ~.
+
+!ACTION: TEAM_CAN_PATH_TO_WAYPOINT
+脚本名称: Team/Area or Path/Team can path to waypoint.
+翻译名称:队伍/区域和路径/队伍能够抵达某路径点
+执行代码: The first unit of ~ can path to ~.
+
+!ACTION: TEAM_CAN_PATH_TO_OBJECT
+脚本名称: Team/Area or Path/Team can path to named object.
+翻译名称:队伍/区域和路径/队伍能够抵达某命名物体位置
+执行代码: The first unit of ~ can path to ~.
+
+!ACTION: UNIT_CAN_PATH_INTO_PLAYERS_NEAREST_BASE
+脚本名称: Unused or Obsolete/Named object can path into (Player's) nearest base or is already inside it.
+翻译名称:未使用、过时的/某命名物体可以抵达最近的某玩家的基地位置
+执行代码:  ~ is inside, or can path into the nearest base owned by player, 
+
+!ACTION: TEAM_CAN_PATH_INTO_PLAYERS_NEAREST_BASE
+脚本名称: Unused or Obsolete/Team can path into (Player's) nearest base or is already inside it.
+翻译名称:未使用、过时的/某队伍可以抵达最近的某玩家的基地位置
+执行代码: The first unit of team ~ is inside, or can path into the nearest base owned by player, 
+
+!ACTION: UNIT_COMPARE_RANK
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object's veterancy level compared to a value.
+翻译名称:物体类型/攻击.摧毁.存在/某物体经验等级<、>、=某数值
+执行代码: Does ~ have veterancy level ~ ~.
+
+!ACTION: EVAL_TEAM_HEALTH
+脚本名称: Team/Health/Team health level compared to a value.
+翻译名称:队伍/健康值/队伍的生命值百分比等于某个数值
+执行代码: Does ~ have ~ ~ percent health.
+
+!ACTION: UNIT_HAS_GAINED_LEVEL
+脚本名称: Object Type/Experience/Named object has gained experience level.
+翻译名称:物体类型/经验/某物体获得一个等级
+执行代码:  ~ has gained a level.
+
+!ACTION: UNIT_IS_AT_LEVEL
+脚本名称: Unused or Obsolete/Experience/Named object is at experience level.
+翻译名称:未使用、过时的/命名物体处于某经验等级
+执行代码:  ~ is at experience level 
+
+!ACTION: PLAYER_HAS_OBJECT_OF_VETERANCY
+脚本名称: Player/Experience/Player has object of veterancy level compared to a value.
+翻译名称: 玩家/经验/某玩家某类型物体经验等级<、>、=某数值
+执行代码:  ~ has ~ with veterancy level ~ ~.
+
+!ACTION: UNIT_HAS_PASSENGER
+脚本名称: Object Type/Garrison/Evaluates if named object is currently holding passengers.
+翻译名称:物体类型/驻守/计算某物是否包含任何驻兵单位
+执行代码:  Evaluate if ~ is containing any passengers.
+
+!ACTION: UNIT_IS_ATTACKED_AND_CANNOT_RETALIATE
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Evaluate if a named object is being attacked but cannot retaliate
+翻译名称:物体类型/攻击.摧毁.存在/某物体被攻击不能反击
+执行代码:  Evaluate if ~ is being attacked and cannot retaliate.
+
+!ACTION: TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ANY
+脚本名称: Team/Attacked, Destroyed, or Exists/Evaluate if any member of a team is being attacked but cannot retaliate
+翻译名称:队伍/攻击、破坏、存在/某队伍的任何一个成员被攻击并且不反击
+执行代码:  Evaluate if any team member of ~ is being attacked and cannot retaliate.
+
+!ACTION: TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ALL
+脚本名称: Team/Attacked, Destroyed, or Exists/Evaluate if all members of a team being attacked cannot retaliate
+翻译名称:队伍/攻击、破坏、存在/某队伍的所有成员被攻击并且不反击
+执行代码:  Evaluate if all team members of ~ are being attacked and cannot retaliate.
+
+!ACTION: IS_GAME_IN_SKIRMISH_OR_MULTIPLAYER
+脚本名称: Unused or Obsolete/Is game in a skirmish or multiplayer game.
+翻译名称:未使用、过时的/判断游戏处于遭遇战模式或多人游戏模式
+执行代码:  Is the game in a skirmish or multiplayer mode == 
+
+!ACTION: COMPARE_NUM_PLAYERS_IN_GAME
+脚本名称: Game Type/Compares the number of players in game to a value.
+翻译名称:游戏类型/将游戏中的玩家数值进行比较
+执行代码:  Is this a ~ ~ player game.
+
+!ACTION: IS_UNIT_WEBBED
+脚本名称: Unused or Obsolete/Check unit Webbed Status.
+翻译名称:未使用、过时的/改变某物体的网络状态
+执行代码:  Is webbed status of ~ == 
+
+!ACTION: NUM_UNITS_LEVELED_UP
+脚本名称: Player/Owns/Num objects leveled up during game.
+翻译名称:玩家/拥有/某玩家有某数值个物体在游戏中获得经验
+执行代码: Does ~ have ~ objects that have gained veterancy this game.
+
+!ACTION: PLAYER_HAS_NUM_UNITS_WITH_UPGRADE
+脚本名称: Player/Owns/Num objects has specified upgrade.
+翻译名称:玩家/拥有/某玩家的某数值的单位有某种升级
+执行代码:  Does ~ have ~ units that have ~.
+
+!ACTION: PLAYER_HAS_NUM_UNITS_LOADED_WITH_OBJECT
+脚本名称: Player/Owns/Num objects of type loaded on transport.
+翻译名称:玩家/拥有/某玩家有某个数值的某个物体类型装载运输到某个物体类型上
+执行代码:  Does ~ have ~ objects of type ~ loaded on transport of type ~.
+
+!ACTION: UNIT_HAS_TOGGLED_WEAPON
+脚本名称: Player/Owns/Does Player have objects that have Toggled Weapon sets.
+翻译名称:玩家/拥有/某玩家的某物体切换武器设置
+执行代码:  Does ~ have ~ that have toggled weapon sets.
+
+!ACTION: UNIT_IN_ALT_FORMATION
+脚本名称: Unused or Obsolete/Does Player have Units that are in alternate formation.
+翻译名称:未使用、过时的/某玩家有某物体目前处于交替形成阶段
+执行代码:  Does ~ have ~ that is currently in alternate formation.
+
+!ACTION: UNIT_USING_AUTOPICKUP
+脚本名称: Unused or Obsolete/Does Player have Units that have triggered auto pickup.
+翻译名称:未使用、过时的/某玩家有某物体触发了自动拾取
+执行代码:  Does ~ have ~ that has triggered auto pickup.
+
+!ACTION: HAS_EVA_EVENT_PLAYED_IN_LAST_N_SECONDS
+脚本名称: Player/Eva/Has EVA event played recently.
+翻译名称:玩家/Eva/最近有EVA活动吗？
+执行代码:  Has ~ played with in the last ~ seconds.
+
+!ACTION: IS_NUM_OF_UNITS_BELONGING_TO_PLAYER_NEAR_EVA_EVENT_LAST_PLAYED_LOCATION_COMPARISON_INT
+脚本名称: Unused or Obsolete/Is number of units belonging to player near EVA event's last played location greater than, less than, or equal to a fixed value.
+翻译名称:未使用、过时的/某玩家单位数量在某距离以内的某EVA事件位置<、>、=某数值
+执行代码:  Is the number of units belong to ~ within ~ feet of the location where ~ last played ~ 
+
+!ACTION: UNIT_TEST_OBJECT_PANEL_FLAGS
+脚本名称: Object Type/Settings/Test object flags.
+翻译名称:物体类型/设置/某物体的被动状态
+执行代码: Test the value of ~ for ~.
+
+!ACTION: TEST_CAMPAIGN_FLAG
+脚本名称: Campaign/Test a campaign flag.
+翻译名称:运动/测试运动旗帜
+执行代码: Test the value of campaign flag ~.
+
+!ACTION: UNIT_HAS_UPGRADE
+脚本名称: Object Type/Upgrades/Unit has upgrade.
+翻译名称:物体类型/升级/某物体升级
+执行代码:  ~ has ~.
+
+!ACTION: UNIT_SPECIAL_POWER_READY
+脚本名称: Object Type/Special Power/Unit's special power is ready to fire.
+翻译名称:物体类型/特殊能力/某物体准备好了某种特殊能力
+执行代码:  ~ is ready to fire ~.
+
+!ACTION: PLAYER_HAS_NUMBER_OBJECTS_WITH_OBJECT_STATUS
+脚本名称: Player/Owns/Player has (comparison) objects with object status
+翻译名称:玩家/拥有/某玩家拥有物体某状态小于、等于、大于某数值
+执行代码:  ~ has ~ ~ with ~.
+
+!ACTION: PLAYER_TRIGGERED_SCRIPT_EVENT
+脚本名称: Player/Player has triggered game event
+翻译名称:玩家/
+执行代码:  ~ has triggered ~.
+
+!ACTION: BUILDING_GARRISONNED_BY_OBJECT_TYPE
+脚本名称: Object Type/Garrison/Named building is garrisoned by object type owned by specific player.
+翻译名称:物体类型/驻守/某物体被某玩家的某一类型单位驻守
+执行代码:  ~ is garrisoned by object type ~ owned by ~.
+
+!ACTION: PLAYER_TRIGGERED_SPECIAL_POWER_IN_AREA
+脚本名称: Player/Special Power/Player starts using a special power in trigger area.
+翻译名称:玩家/特殊能力/某玩家开始使用某种技能在某区域
+执行代码:  ~ starts using ~ in ~.
+
+!ACTION: MISSION_HOT_SPOT_ACTIVE
+脚本名称: Interface/Mission Hot-Spot/Mission hot-spot has been activated.
+翻译名称:界面/任务热点/任务热点已激活
+执行代码:  Mission hot-spot ~ has been activated.
+
+!ACTION: PLAYER_RED_ALERT_ACTIVATED
+脚本名称: Player/Red Alerts/Player activated their Red Alert.
+翻译名称:玩家/红色警报/某玩家玩家激活了他们的红色警报
+执行代码: Player has activated their Red Alert.
+
+!ACTION: PLAYER_IS_HUMAN_OR_AI_PERSONALITY
+脚本名称: Player/Controlled By/Is player controlled by human or AI Personality.
+翻译名称:玩家/控制/某玩家由人类或者AI控制
+执行代码:  ~ is controlled by 
+
+!ACTION: NAMED_HAS_KILLED_COMPARISON_UNIT_TYPE
+脚本名称: Object Type/Attacked, Destroyed, or Exists/Named object has killed (comparison) number of object type or type list.
+翻译名称:物体类型/攻击.摧毁.存在/某单位击杀某指定物体<、>、=某数值
+执行代码:  ~ has killed  ~ ~ 
+
+!ACTION: PLAYER_HAS_COMPARISON_POWER_POINTS
+脚本名称: Player/Special Power/Player has <comparison><n> power points.
+翻译名称:玩家/特殊能力/某玩家技能点数<、>、=某数值
+执行代码:  ~ has ~ ~ power points.
+
+!ACTION: PLAYER_HAS_PLAYER_TECH
+脚本名称: Player/Special Power/Player has player tech.
+翻译名称:玩家/特殊能力/某玩家有某种技能
+执行代码:  ~ has ~ player tech.
+
+!ACTION: UI_STATE_PROPOSITION_STATE
+脚本名称: Tutorial/UI state proposition is true.
+翻译名称:辅助/某指令为真
+执行代码:  ~ is true.
+
+!ACTION: CURRENT_PLATFORM
+脚本名称: Platform/Is game running on platform.
+翻译名称:平台/游戏是否在平台上运行
+执行代码: Is game running on 
+
+!ACTION: DEBUG_MESSAGE_BOX
+脚本名称: Scripting/Debug/Display message and pause
+翻译名称:脚本/
+执行代码: Show debug string and pause: 
+
+!ACTION: DEBUG_STRING
+脚本名称: Scripting/Debug/Display string
+翻译名称:脚本/
+执行代码: Show debug string without pausing: 
+
+!ACTION: DEBUG_CRASH_BOX
+脚本名称: Scripting/Debug/Display a crash box (debug|internal builds only).
+翻译名称:脚本/
+执行代码: Display a crash box with the text: 
+
+!ACTION: SET_FLAG
+脚本名称: Scripting/Flags/Set flag to value.
+翻译名称:
+执行代码: Set ~ to 
+
+!ACTION: SET_FLAG_TO_FLAG
+脚本名称: Scripting/Flags/Set flag to another flag.
+翻译名称:脚本/
+执行代码: Set ~ to 
+
+!ACTION: SET_COUNTER
+脚本名称: Scripting/Counters/Set counter to a value.
+翻译名称:脚本/
+执行代码: Set ~ to 
+
+!ACTION: SET_COUNTER_TO_COUNTER
+脚本名称: Scripting/Counters/Set counter to another counter.
+翻译名称:脚本/
+执行代码: Set ~ to 
+
+!WARNING: 55A27D: Reg not esi: decnum = 1
+!ACTION: SET_RANDOM_COUNTER
+脚本名称: Scripting/Counters/Set a random counter.
+翻译名称:脚本/
+执行代码: Set ~ randomly between ~ and ~.
+
+!ACTION: SET_COUNTER_IN_SECONDS
+脚本名称: Scripting/Counters/Set counter to a time in seconds.
+翻译名称:脚本/
+执行代码: Set ~ to ~ seconds. 
+
+!ACTION: SET_RANDOM_COUNTER_IN_SECONDS
+脚本名称: Scripting/Counters/Set a random counter in seconds.
+翻译名称:脚本/
+执行代码: Set ~ randomly between ~ and ~ seconds.
+
+!ACTION: SET_CAMERA_CLIP_DEPTH_MULTIPLIER
+脚本名称: Cinematics/Camera/Change the camera depth of field.
+翻译名称:电影/相机/改变相机景深
+执行代码: Modify normal depth of Frustrum by ~ (1.0 = normal, < 1.0 shortens frustrum, > 1.0 lengthens.)
+
+!ACTION: QUICKVICTORY
+脚本名称: Win & Loss/Announce quick win
+翻译名称:
+执行代码: End game in victory immediately.
+
+!ACTION: VICTORY_SCREEN
+脚本名称: Win & Loss/ Show Victory Screen
+翻译名称:
+执行代码: Shows the victory screen, but does not behave as a victory.
+
+!ACTION: NO_OP
+脚本名称: Scripting/Debug/Null operation.
+翻译名称:脚本/
+执行代码: Null operation. (Does nothing.)
+
+!ACTION: SET_TIMER
+脚本名称: Scripting/Timer/Frame countdown timer -- set.
+翻译名称:脚本/
+执行代码: Set ~ to expire in ~ frames.
+
+!WARNING: 55A57F: Reg not esi: decnum = 1
+!ACTION: SET_RANDOM_TIMER
+脚本名称: Scripting/Timer/Frame countdown timer -- set random.
+翻译名称:脚本/
+执行代码: Set ~ to expire between ~ and ~ frames.
+
+!ACTION: STOP_TIMER
+脚本名称: Scripting/Timer/Timer -- stop.
+翻译名称:脚本/
+执行代码: Stop 
+
+!ACTION: RESTART_TIMER
+脚本名称: Scripting/Timer/Timer -- restart stopped.
+翻译名称:脚本/
+执行代码: Restart 
+
+!ACTION: PLAY_SOUND_EFFECT
+脚本名称: Media/Audio/Sound Effect/Play 2D sound effect.
+翻译名称:
+执行代码: Play ~ as though it was a 2D sound (NOT RECOMMENDED for 3D sounds).
+
+!ACTION: ENABLE_SCRIPT
+脚本名称: Scripting/Enable Script.
+翻译名称:脚本/
+执行代码: Enable ~.
+
+!ACTION: DISABLE_SCRIPT
+脚本名称: Scripting/Disable script.
+翻译名称:脚本/
+执行代码: Disable ~.
+
+!ACTION: CALL_SUBROUTINE
+脚本名称: Scripting/Run subroutine script.
+翻译名称:脚本/
+执行代码: Run ~.
+
+!ACTION: PLAY_SOUND_EFFECT_AT
+脚本名称: Media/Audio/Sound Effect/Play sound effect at waypoint.
+翻译名称:
+执行代码: Play ~ at ~.
+
+!ACTION: DAMAGE_MEMBERS_OF_TEAM
+脚本名称: Team/Damage or Remove/Damage the members of Team.
+翻译名称:
+执行代码: Damage ~, amount=~ (-1==kill).
+
+!ACTION: TEAM_SET_HEALTH
+脚本名称: Team/Damage or Remove/Set the health of the team members (in percentage).
+翻译名称:
+执行代码: Set health of ~ to percentage (0.0 - 100.0) 
+
+!ACTION: MOVE_TEAM_TO
+脚本名称: Team/Move/Set team to move to a location.
+翻译名称:
+执行代码: Move ~ to ~.
+
+!ACTION: ATTACK_MOVE_TEAM_TO
+脚本名称: Team/Attack/Set team to attack-move to a location.
+翻译名称:
+执行代码: AttackMove ~ to ~.
+
+!ACTION: ATTACK_MOVE_TEAM_TO_NAMED_OBJECT
+脚本名称: Team/Attack/Attack move a team to a named object.
+翻译名称:
+执行代码: AttackMove ~ to ~.
+
+!ACTION: MOVE_TEAM_HOME
+脚本名称: Team/Move/Set team to move to home position (designated in team template).
+翻译名称:
+执行代码: Move ~ Home. 
+
+!WARNING: 55AAC8: Reg not esi: decnum = 0
+!ACTION: TEAM_FOLLOW_WAYPOINTS
+脚本名称: Team/Move/Set team to follow a waypoint path.
+翻译名称:
+执行代码: Have ~ follow ~ , as a team is ~ , in formation is 
+
+!WARNING: 55AB5A: Reg not esi: decnum = 0
+!ACTION: TEAM_ATTACK_MOVE_FOLLOW_WAYPOINTS
+脚本名称: Team/Attack/Set team to attack-move along a waypoint path.
+翻译名称:
+执行代码: Have ~ AttackMove along ~ , as a team is ~ , in formation is 
+
+!ACTION: TEAM_FOLLOW_WAYPOINTS_EXACT
+脚本名称: Team/Move/Set to EXACTLY follow a waypoint path.
+翻译名称:
+执行代码: Have ~ EXACTLY follow ~ , as a team is 
+
+!ACTION: TEAM_WANDER_IN_PLACE
+脚本名称: Team/Move/Set to wander around current location.
+翻译名称:
+执行代码: Have ~ wander around it's current location.
+
+!ACTION: TEAM_INCREASE_PRIORITY
+脚本名称: Unused or Obsolete/Team/Spawn, Build, or Merge/Change priority by Success Priority Increase amount.
+翻译名称:未使用、过时的/
+执行代码: Increase the AI priority for~  by its Success Priority Increase amount.
+
+!ACTION: TEAM_INCREASE_PRIORITY_BY_VALUE
+脚本名称: Team/Spawn, Build, or Merge/Increase priority by specific amount.
+翻译名称:
+执行代码: Increase the build priority for ~  by ~ .
+
+!ACTION: TEAM_DECREASE_PRIORITY
+脚本名称: Unused or Obsolete/Team/Spawn, Build, or Merge/Change priority by Failure Priority Decrease amount.
+翻译名称:未使用、过时的/
+执行代码: Reduce the AI priority for~  by its Failure Priority Decrease amount.
+
+!ACTION: TEAM_DECREASE_PRIORITY_BY_VALUE
+脚本名称: Team/Spawn, Build, or Merge/Decrease priority by specific amount.
+翻译名称:
+执行代码: Decrease the build priority for ~  by ~ .
+
+!ACTION: TEAM_WANDER
+脚本名称: Team/Move/Follow a waypoint path -- wander.
+翻译名称:
+执行代码: Have ~ wander along 
+
+!ACTION: TEAM_PANIC
+脚本名称: Cinematics/Force Emotion/Follow a waypoint path -- panic.
+翻译名称:电影/情绪/某队伍沿着某路线惊慌移动
+执行代码: Have ~ move in panic along 
+
+!ACTION: MOVE_NAMED_UNIT_TO
+脚本名称: Object Type/Move/Named object move to a location.
+翻译名称:物体类型/移动/
+执行代码: Move ~ to ~.
+
+!ACTION: ATTACK_MOVE_NAMED_UNIT_TO
+脚本名称: Object Type/Attack/Named object attack-move to a location.
+翻译名称:物体类型/
+执行代码: AttackMove ~ to ~.
+
+!ACTION: CREATE_REINFORCEMENT_TEAM
+脚本名称: Team/Spawn, Build, or Merge/Spawn a reinforcement team at location.
+翻译名称:
+执行代码: Spawn an instance of ~ at ~.
+
+!ACTION: CREATE_REINFORCEMENT_TEAM_AT_UNIT_POSITION
+脚本名称: Team/Spawn, Build, or Merge/Spawn a reinforcement team at named object's position.
+翻译名称:
+执行代码: Spawn an instance of ~ at ~.
+
+!ACTION: UNIT_SET_TEAM
+脚本名称: Object Type/Allegiance/Force named object to join team.
+翻译名称:物体类型/
+执行代码:  ~ will join ~.
+
+!ACTION: TEAM_GUARD_SUPPLY_CENTER
+脚本名称: Team/Guard/Guard a supply source.
+翻译名称:
+执行代码: Have ~ guard attacked or closest supply source with at least ~ available resources
+
+!ACTION: AI_PLAYER_BUILD_UPGRADE
+脚本名称: Unused or Obsolete/Player/Upgrades and Sciences/AI Player build an Upgrade.
+翻译名称:未使用、过时的/玩家/
+执行代码: Have AI ~ build this upgrade: 
+
+!ACTION: GIVE_PLAYER_UPGRADE
+脚本名称: Player/Upgrades and Sciences/Give Player an Upgrade.
+翻译名称:玩家/
+执行代码: Give ~ this upgrade: 
+
+!ACTION: REMOVE_PLAYER_UPGRADE
+脚本名称: Player/Upgrades and Sciences/Remove upgrade from Player.
+翻译名称:玩家/
+执行代码: Remove ~ from 
+
+!ACTION: SKIRMISH_FOLLOW_APPROACH_PATH
+脚本名称: Unused or Obsolete/Team/Move/Team follow approach path.
+翻译名称:未使用、过时的/
+执行代码: Have ~ approach the enemy using path ~, as a team is 
+
+!ACTION: SKIRMISH_MOVE_TO_APPROACH_PATH
+脚本名称: Unused or Obsolete/Team/Move/Team move to approach path.
+翻译名称:未使用、过时的/
+执行代码: Have ~ move to the start of enemy path ~.
+
+!ACTION: RECRUIT_TEAM
+脚本名称: Unused or Obsolete/Team/Spawn, Build, or Merge/Recruit Team.
+翻译名称:未使用、过时的/
+执行代码: Recruit an instance of ~, maximum recruiting distance (feet):~.
+
+!ACTION: RECRUIT_TEAM_AT_TEAM
+脚本名称: Unused or Obsolete/Team/Spawn, Build, or Merge/Recruit Team at location of another team.
+翻译名称:未使用、过时的/
+执行代码: Recruit an instance of ~, maximum recruiting distance (feet):~ from the team ~.
+
+!ACTION: MOVE_CAMERA_TO
+脚本名称: Cinematics/Camera/Move the camera to a location.
+翻译名称:电影/相机/相机移动到某点在（）秒内，停止在（）秒，渐入（）秒，渐退（）
+执行代码: Move camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: MOVE_CAMERA_TO_NAMED
+脚本名称: Cinematics/Camera/Move the camera to a named object's location.
+翻译名称:电影/相机/相机移动到某命名物体在（）秒内，停止在（）秒，渐入（）秒，渐退（）
+执行代码: Move camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: PLAYER_CAMERA_MOVE_TO
+脚本名称: Cinematics/Camera/Move the camera for player to a location.
+翻译名称:电影/相机/某玩家相机移动到某点在（）秒内，停止在（）秒，渐入（）秒，渐退（）
+执行代码: Move ~ camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: PLAYER_CAMERA_MOVE_TO_NAMED
+脚本名称: Cinematics/Camera/Move the camera for player to a named object's location.
+翻译名称:电影/相机/某玩家相机移动到某命名物体在（）秒内，停止在（）秒，渐入（）秒，渐退（）
+执行代码: Move ~ camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: CAMERA_RESTRICT_TO_AREA
+脚本名称: Cinematics/Camera/Restrict camera movement to area.
+翻译名称:电影/相机/限制相机移动到某区域
+执行代码: Restrict camera movement to ~.
+
+!ACTION: CAMERA_REMOVE_AREA_RESTRICTION
+脚本名称: Unused or Obsolete/Camera/Move/Restrict camera movement to area -- REMOVE.
+翻译名称:未使用、过时的/
+执行代码: Restrict camera movement to area -- REMOVE.
+
+!ACTION: ZOOM_CAMERA
+脚本名称: Cinematics/Camera/Change the camera zoom.
+翻译名称:电影/相机/改变相机变焦为（）在（）秒内，在（）秒后进入，在（）秒后退出
+执行代码: Change camera zoom to ~ in ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: FOCAL_LENGTH_CAMERA
+脚本名称: Cinematics/Camera/Change the camera's focal length (mm).
+翻译名称: 电影/相机/改变相机焦距为（）在（）秒内，在（）秒后进入，在（）秒后退出
+执行代码: Typical values range from 10mm (wide) to 400mm (extreme zoom). Normal camera is 25mm
+
+!ACTION: CAMERA_FADE_ADD
+脚本名称: Unused or Obsolete/Cinematics/Fade/Fade using an add blend to white.
+翻译名称:未使用、过时的/
+执行代码: CAMERA_FADE_SUBTRACT
+
+!ACTION: CAMERA_FADE_MULTIPLY
+脚本名称: Unused or Obsolete/Cinematics/Fade/Fade using a multiply blend to black.
+翻译名称:未使用、过时的/
+执行代码: CAMERA_FADE_SATURATE
+
+!ACTION: PITCH_CAMERA
+脚本名称: Cinematics/Camera/Change the camera pitch.
+翻译名称:电影/相机/改变相机高度为（）在（）秒内，在（）秒后进入，在（）秒后退出
+执行代码: Change camera pitch to ~ in ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: ROLL_CAMERA
+脚本名称: Cinematics/Camera/Change the camera roll.
+翻译名称:电影/相机/改变相机角度为（）在（）秒内，在（）秒后进入，在（）秒后退出
+执行代码: Change camera roll to ~ degrees in ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: CAMERA_FOLLOW_NAMED
+脚本名称: Cinematics/Camera/Follow a specific unit.
+翻译名称:电影/相机/相机跟随一个命名物体，值为真，镜头高于这个单位（）秒
+执行代码: Have the camera follow ~. Snap camera to object is ~. Camera will be ~ higher than the unit.
+
+!ACTION: CAMERA_STOP_FOLLOW
+脚本名称: Cinematics/Camera/Stop following any units.
+翻译名称:电影/相机/相机停止跟随任何单位
+执行代码: Stop following any units.
+
+!ACTION: SETUP_CAMERA
+脚本名称: Cinematics/Camera/Set up the camera.
+翻译名称:电影/相机/相机固定到某点，缩放值（），高度值（），朝向某点
+执行代码: Position camera at ~, zoom = ~(0.0 to 1.0), pitch = ~(1.0==default), looking towards ~.
+
+!ACTION: INCREMENT_COUNTER
+脚本名称: Scripting/Counters/Increment counter.
+翻译名称:脚本/
+执行代码: Add ~ to 
+
+!ACTION: DECREMENT_COUNTER
+脚本名称: Scripting/Counters/Decrement counter.
+翻译名称:脚本/
+执行代码: Subtract ~ from 
+
+!ACTION: MOVE_CAMERA_BY_ANIMATION
+脚本名称: Cinematics/Camera/Move using camera animation.
+翻译名称:电影/相机/移动中使用某相机动画
+执行代码: Move using ~.
+
+!ACTION: MOVE_CAMERA_ALONG_SPLINE_PATH
+脚本名称: Cinematics/Camera/Move along a spline path.
+翻译名称:电影/相机/相机沿着某路线移动在（）秒内，停止在（）秒，渐入（）秒，渐退（），开始在（）秒
+执行代码: Move along ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds, delay start ~ seconds. 
+
+!ACTION: MOVE_CAMERA_LOCATOR_ALONG_SPLINE_PATH
+脚本名称: Cinematics/Camera/Order camera's locator to follow a spline path.
+翻译名称:电影/相机/相机固定沿着某路线移动在（）秒内，停止在（）秒，渐入（）秒，渐退（），开始在（）秒
+执行代码: Look at point moving along ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds, delay start ~ seconds. 
+
+!ACTION: ROTATE_CAMERA
+脚本名称: Cinematics/Camera/Rotate around the current viewpoint.
+翻译名称:电影/相机/相机当前位置旋转（）次，持续（）秒，渐入（）秒，渐退（）秒
+执行代码: Rotate ~ times, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: ROTATE_CAMERA_TO_ANGLE
+脚本名称: Cinematics/Camera/Rotate to a specific view angle.
+翻译名称:电影/相机/旋转相机视角为（）度，持续（）秒，渐入（）秒，渐退（）秒
+执行代码: Rotate camera view to ~ degrees, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: ROTATE_CAMERA_LOCKED
+脚本名称: Cinematics/Camera/Rotate the camera in place.
+翻译名称:电影/相机/相机旋转到位（）次，持续（）秒，渐入（）秒，渐退（）秒
+执行代码: Rotate in place ~ times, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: RESET_CAMERA
+脚本名称: Cinematics/Camera/Reset to the default view.
+翻译名称:电影/相机/重置某位置相机的默认视图用（）秒，渐入（）秒，渐退（）秒
+执行代码: Reset to ~, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.
+
+!ACTION: RESET_CAMERA_TUTORIAL_STATE
+脚本名称: Tutorial/Reset camera tutorial state.
+翻译名称:
+执行代码: Makes it so that script commands that try to detect camera rotation, etc can be accurate from this point.
+
+!ACTION: MOVE_CAMERA_TO_SELECTION
+脚本名称: Cinematics/Camera/End movement at selected unit.
+翻译名称:电影/相机/结束相机运动在选择的单位
+执行代码: End movement at selected unit.
+
+!ACTION: SET_MILLISECOND_TIMER
+脚本名称: Scripting/Timer/Seconds countdown timer -- set.
+翻译名称:脚本/
+执行代码: Set ~ to expire in ~ seconds.
+
+!ACTION: SET_RANDOM_MSEC_TIMER
+脚本名称: Scripting/Timer/Seconds countdown timer -- set random.
+翻译名称:脚本/
+执行代码: Set ~ to expire between ~ and ~ seconds.
+
+!ACTION: ADD_TO_MSEC_TIMER
+脚本名称: Scripting/Timer/Seconds countdown timer -- add seconds.
+翻译名称:脚本/
+执行代码: Add ~ seconds to ~ .
+
+!ACTION: SUB_FROM_MSEC_TIMER
+脚本名称: Scripting/Timer/Seconds countdown timer -- subtract seconds.
+翻译名称:脚本/
+执行代码: Subtract ~ seconds from ~ .
+
+!ACTION: CAMERA_MOD_FREEZE_TIME
+脚本名称: Cinematics/Settings/Freeze time during the camera movement.
+翻译名称:电影/设置/相机运动中的冻结时间
+执行代码: Freeze time during the camera movement.
+
+!ACTION: SUSPEND_BACKGROUND_SOUNDS
+脚本名称: Media/Audio/All Sounds/Suspend all sounds.
+翻译名称:
+执行代码: Suspend background sounds.
+
+!ACTION: RESUME_BACKGROUND_SOUNDS
+脚本名称: Media/Audio/All Sounds/Resume all sounds.
+翻译名称:
+执行代码: Resume background sounds.
+
+!ACTION: CAMERA_MOD_SET_FINAL_ZOOM
+脚本名称: Cinematics/Camera/Set Final zoom for camera movement.
+翻译名称:电影/相机/调整相机缩放值（）数值（1=最大高度，0=在地面）
+执行代码: Adjust zoom to ~ (1.0==max height, 0.0==in the ground) ~ ease-in ~ ease-out.
+
+!ACTION: CAMERA_MOD_SET_FINAL_PITCH
+脚本名称: Cinematics/Camera/Set Final pitch for camera movement.
+翻译名称:电影/相机/调整相机高度（）数值（1=默认值，0=平行地面）
+执行代码: Adjust pitch to ~ (1.0==default, 0.0==toward horizon, >1 = toward ground) ~ ease-in ~ ease-out.
+
+!ACTION: CAMERA_MOD_LOOK_TOWARD
+脚本名称: Cinematics/Camera/Camera look toward point while moving.
+翻译名称:电影/相机/相机移动到某点
+执行代码: Look toward ~ during the camera movement.
+
+!ACTION: CREATE_OBJECT
+脚本名称: Unused or Obsolete/Object Type/Spawn/Spawn object.
+翻译名称:未使用、过时的/
+执行代码: Spawn object ~ in ~ at position (~), rotated ~ .
+
+!ACTION: TEAM_ATTACK_TEAM
+脚本名称: Team/Attack/Set team to attack another team.
+翻译名称:
+执行代码:  ~ begin attack on 
+
+!ACTION: NAMED_ATTACK_NAMED
+脚本名称: Object Type/Attack/Set unit to attack another unit.
+翻译名称:物体类型/
+执行代码:  ~ begin attack on 
+
+!ACTION: CREATE_NAMED_ON_TEAM_AT_WAYPOINT
+脚本名称: Object Type/Spawn/Spawn a named object on a team at a waypoint.
+翻译名称:物体类型/
+执行代码: Spawn ~ of type ~ on ~ at 
+
+!ACTION: CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION
+脚本名称: Object Type/Spawn/Spawn a named object on a team at a waypoint with an orientation.
+翻译名称:物体类型/
+执行代码: Spawn ~ of type ~ on ~ at ~, rotated ~.
+
+!ACTION: CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT
+脚本名称: Object Type/Spawn/Spawn an unnamed object on a team at a waypoint.
+翻译名称:物体类型/
+执行代码: Spawn unit of type ~ on ~ at 
+
+!ACTION: CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION
+脚本名称: Object Type/Spawn/Spawn an unnamed object on a team at a waypoint with an orientation.
+翻译名称:物体类型/
+执行代码: Spawn unit of type ~ on ~ at ~, rotated ~.
+
+!ACTION: NAMED_APPLY_ATTACK_PRIORITY_SET
+脚本名称: Scripting/Attack Priority Set/Apply named object's attack priority set.
+翻译名称:脚本/
+执行代码: Have ~ use ~.
+
+!ACTION: TEAM_APPLY_ATTACK_PRIORITY_SET
+脚本名称: Scripting/Attack Priority Set/Apply a team's attack priority set.
+翻译名称:脚本/
+执行代码: Have ~ use ~.
+
+!ACTION: SET_ATTACK_PRIORITY_THING
+脚本名称: Scripting/Attack Priority Set/Modify a set's priority for a single object type.
+翻译名称:脚本/
+执行代码: For ~ set the priority of object type ~ to 
+
+!ACTION: SET_ATTACK_PRIORITY_KIND_OF
+脚本名称: Scripting/Attack Priority Set/Modify a set's priorities for all of a kind.
+翻译名称:脚本/
+执行代码: For ~ set the priority of object type ~ to 
+
+!ACTION: SET_DEFAULT_ATTACK_PRIORITY
+脚本名称: Scripting/Attack Priority Set/Specify the set's default priority.
+翻译名称:脚本/
+执行代码: For ~ set the default priority to 
+
+!ACTION: SET_BASE_CONSTRUCTION_SPEED
+脚本名称: Player/Build/Set the delay between building teams.
+翻译名称: 玩家/
+执行代码:  ~ will delay 
+
+!ACTION: NAMED_SET_SLEEP_STATUS
+脚本名称: Unused or Obsolete/Object Type/Settings/Set the sleep status of a specific unit.
+翻译名称:未使用、过时的/
+执行代码:  ~ changes his sleep status to 
+
+!ACTION: TEAM_SET_SLEEP_STATUS
+脚本名称: Unused or Obsolete/Team/Settings/Set the Sleep status of Team.
+翻译名称:未使用、过时的/
+执行代码:  ~ change their sleep status to 
+
+!ACTION: NAMED_ATTACK_AREA
+脚本名称: Object Type/Attack/Named object attacks an area.
+翻译名称:物体类型/
+执行代码:  ~ attacks anything in 
+
+!ACTION: NAMED_ATTACK_AREA_FOR_SECONDS
+脚本名称: Object Type/Attack/Named object attacks an area for a given number of seconds.
+翻译名称:物体类型/
+执行代码:  ~ attacks anything in ~ for ~ seconds.
+
+!ACTION: NAMED_ATTACK_TEAM
+脚本名称: Object Type/Attack/Named object attacks Team.
+翻译名称:物体类型/
+执行代码:  ~ attacks 
+
+!ACTION: TEAM_ATTACK_NAMED
+脚本名称: Team/Attack/Team attacks a named object.
+翻译名称:
+执行代码:  ~ attacks 
+
+!ACTION: TEAM_LOAD_TRANSPORTS
+脚本名称: Unused or Obsolete/Team/Transport/Transport -- automatically load.
+翻译名称:未使用、过时的/
+执行代码:  ~ load into transports.
+
+!ACTION: NAMED_ENTER_NAMED
+脚本名称: Unused or Obsolete/Object Type/Transport/Transport -- load unit into specific.
+翻译名称:未使用、过时的/
+执行代码:  ~ loads into 
+
+!ACTION: TEAM_ENTER_NAMED
+脚本名称: Unused or Obsolete/Team/Transport/Transport -- load team into specific.
+翻译名称:未使用、过时的/
+执行代码:  ~ attempt to load into 
+
+!ACTION: NAMED_EXIT_ALL
+脚本名称: Unused or Obsolete/Object Type/Transport/Transport -- unload units from specific.
+翻译名称:未使用、过时的/
+执行代码:  ~ unloads.
+
+!ACTION: TEAM_EXIT_ALL
+脚本名称: Unused or Obsolete/Team/Transport/Transport -- unload team from all.
+翻译名称:未使用、过时的/
+执行代码:  ~ unload.
+
+!ACTION: NAMED_FOLLOW_WAYPOINTS
+脚本名称: Object Type/Move/Named object follow a waypoint path.
+翻译名称:物体类型/
+执行代码:  ~ follow 
+
+!ACTION: NAMED_ATTACK_FOLLOW_WAYPOINTS
+脚本名称: Object Type/Attack/Named object attack-move along a waypoint path.
+翻译名称:物体类型/
+执行代码:  ~ AttackMove follows waypoints, beginning at 
+
+!ACTION: NAMED_FOLLOW_WAYPOINTS_EXACT
+脚本名称: Object Type/Move/Named object follow a waypoint path -- exactly.
+翻译名称:物体类型/
+执行代码:  ~ EXACTLY follow 
+
+!ACTION: NAMED_GUARD
+脚本名称: Object Type/Guard/Named object guards.
+翻译名称:物体类型/
+执行代码:  ~ begins guarding.
+
+!ACTION: UNIT_GUARD_NEAREST_KINDOF
+脚本名称: Object Type/Guard/Named object guards nearest kindof.
+翻译名称:物体类型/
+执行代码:  ~ begins guarding nearest 
+
+!ACTION: TEAM_GUARD
+脚本名称: Team/Guard/Team guard current location.
+翻译名称:
+执行代码:  ~ begins guarding.
+
+!ACTION: TEAM_GUARD_POSITION
+脚本名称: Team/Guard/Team guard at location.
+翻译名称:
+执行代码:  ~ begins guarding at 
+
+!ACTION: TEAM_GUARD_OBJECT
+脚本名称: Team/Guard/Team guard a named object.
+翻译名称:
+执行代码:  ~ begins guarding 
+
+!ACTION: TEAM_GUARD_TEAM
+脚本名称: Team/Guard/Team guard a specific team.
+翻译名称:
+执行代码:  ~ begins guarding 
+
+!ACTION: TEAM_GUARD_AREA
+脚本名称: Team/Guard/Team guard an area.
+翻译名称:
+执行代码:  ~ begins guarding 
+
+!ACTION: TEAM_GUARD_AREA_FROM_POSITION
+脚本名称: Team/Guard/Team guard an area from a location.
+翻译名称:
+执行代码:  ~ begins guarding ~ from 
+
+!ACTION: TEAM_GUARD_NEAREST_KINDOF
+脚本名称: Team/Guard/Team guard nearest kindof.
+翻译名称:
+执行代码:  ~ begins guarding nearest 
+
+!ACTION: UNIT_GUARD_POSITION
+脚本名称: Object Type/Guard/Named object guard at location.
+翻译名称:
+执行代码:  ~ begins guarding at 
+
+!ACTION: UNIT_GUARD_OBJECT
+脚本名称: Object Type/Guard/Named object guard another named object.
+翻译名称:
+执行代码:  ~ begins guarding 
+
+!ACTION: UNIT_GUARD_AREA
+脚本名称: Object Type/Guard/Named object guard area.
+翻译名称:
+执行代码:  ~ begins guarding 
+
+!ACTION: UNIT_GUARD_AREA_FROM_POSITION
+脚本名称: Object Type/Guard/Named object guard an area from a location.
+翻译名称:
+执行代码:  ~ begins guarding ~ from 
+
+!ACTION: NAMED_HUNT
+脚本名称: Object Type/Attack/Hunt (choose enemy target, move towards it, and attack when within range).
+翻译名称:
+执行代码:  ~ begins hunting.
+
+!ACTION: TEAM_HUNT
+脚本名称: Team/Attack/Hunt (choose enemy target, move towards it, and attack when within range).
+翻译名称:
+执行代码:  ~ begins hunting.
+
+!ACTION: TEAM_HARVEST
+脚本名称: Unused or Obsolete/Team/Attack/Harvest around waypoint.
+翻译名称:未使用、过时的/
+执行代码:  ~ begins harvesting around ~.
+
+!ACTION: PLAYER_DISABLE_BASE_CONSTRUCTION
+脚本名称: Player/Build/Permissions/Player is not allowed to build buildings.
+翻译名称:玩家/
+执行代码:  ~ is not allowed to build buildings.
+
+!ACTION: PLAYER_DISABLE_FACTORIES
+脚本名称: Player/Build/Player cannot build from an object type.
+翻译名称:玩家/
+执行代码:  ~ is not allowed to build from 
+
+!ACTION: PLAYER_SET_ALLY_BUILDABILITY
+脚本名称: Player/Build/Player cannot build in a specific ally's buildability radii (ground control).
+翻译名称:玩家/
+执行代码:  ~ is allowed to build in ~ controlled territory: 
+
+!ACTION: PLAYER_DISABLE_UNIT_CONSTRUCTION
+脚本名称: Player/Build/Permissions/Player is not allowed to build units.
+翻译名称:玩家/
+执行代码:  ~ is not allowed to build units.
+
+!ACTION: PLAYER_ENABLE_BASE_CONSTRUCTION
+脚本名称: Player/Build/Permissions/Player is allowed to build buildings.
+翻译名称:玩家/
+执行代码:  ~ is allowed to build buildings.
+
+!ACTION: PLAYER_ENABLE_FACTORIES
+脚本名称: Player/Build/Player can build from an object type.
+翻译名称:玩家/
+执行代码:  ~ is allowed to build from 
+
+!ACTION: PLAYER_ENABLE_UNIT_CONSTRUCTION
+脚本名称: Player/Build/Permissions/Player is allowed to build units.
+翻译名称:玩家/
+执行代码:  ~ is able to build units.
+
+!ACTION: BUILD_TEAM
+脚本名称: Team/Spawn, Build, or Merge/Start building Team.
+翻译名称:
+执行代码: Start building 
+
+!ACTION: NAMED_DAMAGE
+脚本名称: Object Type/Damage or Remove/Deal damage to a named object.
+翻译名称:
+执行代码:  ~ takes ~ points of damage.
+
+!ACTION: KILL_HORDE_MEMBERS
+脚本名称: Unused or Obsolete/Object Type/Damage or Remove/Kill off a percentage of the Horde
+翻译名称:未使用、过时的/
+执行代码:  Horde ~ kill off  ~ percent. 
+
+!ACTION: NAMED_DELETE
+脚本名称: Object Type/Damage or Remove/Delete a named object.
+翻译名称:
+执行代码:  ~ is removed from the world.
+
+!ACTION: TEAM_DELETE
+脚本名称: Team/Damage or Remove/Delete Team.
+翻译名称:
+执行代码:  ~ is removed from the world.
+
+!ACTION: TEAM_DELETE_LIVING
+脚本名称: Team/Damage or Remove/Delete Team, but ignore dead guys.
+翻译名称:
+执行代码: Each living member of ~ is removed from the world. (Dead or dying members will remain)
+
+!ACTION: NAMED_SHOCK
+脚本名称: Unused or Obsolete/Object Type/Damage or Remove/Shock a specific unit.
+翻译名称:未使用、过时的/
+执行代码:  ~ will be shocked dir (0-360) ~, force ~, zMult ~, with FX named ~ .
+
+!ACTION: NAMED_KILL
+脚本名称: Object Type/Damage or Remove/Kill a named object.
+翻译名称:未使用、过时的/
+执行代码:  ~is dealt a lethal amount of damage.
+
+!ACTION: TEAM_KILL
+脚本名称: Team/Damage or Remove/Kill an entire team.
+翻译名称:未使用、过时的/
+执行代码:  ~ is dealt a lethal amount of damage.
+
+!ACTION: PLAYER_KILL
+脚本名称: Player/Remove, Sell, or Transfer All/Kill Player.
+翻译名称:
+执行代码: All of ~'s buildings and units are dealt a lethal amount of damage.
+
+!ACTION: NAMED_OUTLINE
+脚本名称: Object Type/Flash or Color/Outline a specific unit with an outline type.
+翻译名称:
+执行代码:  ~ is set to ~ outline type.
+
+!ACTION: NAMED_FLASH
+脚本名称: Object Type/Flash or Color/Flash a specific unit for a specified amount of time.
+翻译名称:
+执行代码:  ~ flashes for ~ seconds.
+
+!ACTION: TEAM_FLASH
+脚本名称: Team/Flash/Flash Team for a specified amount of time.
+翻译名称:
+执行代码:  ~ flashes for ~ seconds.
+
+!ACTION: NAMED_CUSTOM_COLOR
+脚本名称: Object Type/Flash or Color/Set a named object to use a special indicator color.
+翻译名称:
+执行代码:  ~ uses the color ~ .
+
+!ACTION: NAMED_FLASH_WHITE
+脚本名称: Object Type/Flash or Color/Flash a named object white for a specified amount of time.
+翻译名称:
+执行代码:  ~ flashes white for ~ seconds.
+
+!ACTION: TEAM_FLASH_WHITE
+脚本名称: Team/Flash/Flash Team white for a specified amount of time.
+翻译名称:
+执行代码:  ~ flashes white for ~ seconds.
+
+!ACTION: MOVIE_PLAY_FULLSCREEN
+脚本名称: Media/Video/Play a movie in fullscreen mode.
+翻译名称:
+执行代码:  ~ plays fullscreen but doesn't play for low detail ( ~ )
+
+!ACTION: MOVIE_PLAY_RADAR
+脚本名称: Media/Video/Play a movie in the radar.
+翻译名称:
+执行代码:  ~ plays in the radar window.
+
+!ACTION: SOUND_PLAY_NAMED
+脚本名称: Media/Audio/Sound Effect/Play a sound as though coming from a named object.
+翻译名称:
+执行代码:  ~ plays as though coming from 
+
+!ACTION: SPEECH_PLAY
+脚本名称: Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file.
+翻译名称:未使用、过时的/
+执行代码:  ~ plays, allowing overlap ~ (true to allow, false to disallow).
+
+!ACTION: PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT
+脚本名称: Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file as if it were an EVA event.
+翻译名称:未使用、过时的/
+执行代码:  ~ plays as if it was an EVA event
+
+!ACTION: PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE
+脚本名称: Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file as if it were an EVA event, and subtitle it.
+翻译名称:未使用、过时的/
+执行代码:  ~ plays as if it was an EVA event, while displaying military briefing ~ for ~ seconds.
+
+!ACTION: PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT
+脚本名称: Media/Audio/EVA/Play a sound effect as if it were an EVA event.
+翻译名称:
+执行代码:  ~ plays as if it was an EVA event
+
+!ACTION: PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE
+脚本名称: Media/Audio/EVA/Play a sound effect as if it were an EVA event, and subtitle it.
+翻译名称:
+执行代码:  ~ plays as if it was an EVA event, while displaying ~ for ~ seconds.
+
+!ACTION: PLAY_SOUND_AS_AI_COCOMMANDER_DIALOG
+脚本名称: Media/Audio/EVA/Play a sound effect as AI co-commander dialog.
+翻译名称:
+执行代码:  ~ plays as AI co-commander dialog
+
+!ACTION: PLAY_SOUND_AS_AI_COCOMMANDER_DIALOG_WITH_SUBTITLE
+脚本名称: Media/Audio/EVA/Play a sound effect as AI co-commander dialog, and subtitle it.
+翻译名称:
+执行代码:  ~ plays as AI co-commander dialog, while displaying ~ for ~ seconds.
+
+!ACTION: PLAYER_TRANSFER_OWNERSHIP_PLAYER
+脚本名称: Player/Remove, Sell, or Transfer All/Transfer assets from one player to another player.
+翻译名称:
+执行代码: All assets of ~ are transferred to 
+
+!ACTION: NAMED_TRANSFER_OWNERSHIP_PLAYER
+脚本名称: Object Type/Allegiance/Transfer a named object to the control of a Player.
+翻译名称:
+执行代码:  ~ is transferred to the command of 
+
+!ACTION: PLAYER_EXCLUDE_FROM_SCORE_SCREEN
+脚本名称: Player/Scoring/Exclude this player from the score screen.
+翻译名称:
+执行代码: Exclude ~ from the score screen.
+
+!ACTION: ENABLE_SCORING
+脚本名称: Unused or Obsolete/Map/Gameplay/Turn on scoring.
+翻译名称:未使用、过时的/
+执行代码: Turn on scoring.
+
+!ACTION: DISABLE_SCORING
+脚本名称: Unused or Obsolete/Map/Gameplay/Turn off scoring.
+翻译名称:未使用、过时的/
+执行代码: Turn off scoring.
+
+!ACTION: PLAYER_RELATES_PLAYER
+脚本名称: Player/Allegiance/Change how Player relates to another player.
+翻译名称:
+执行代码:  ~ considers ~ to be 
+
+!ACTION: OPTIONAL_VICTORY
+脚本名称: Unused or Obsolete/Win & Loss/End the mission in victory if the user chooses to
+翻译名称:未使用、过时的/
+执行代码: End game in victory if the user indicates that they wish to.
+
+!ACTION: RADAR_CREATE_EVENT
+脚本名称: Interface/Radar/Create a radar event at a specified location.
+翻译名称:界面/
+执行代码: A radar event occurs at ~ of type 
+
+!ACTION: OBJECT_CREATE_RADAR_EVENT
+脚本名称: Interface/Radar/Create a radar event at a named object.
+翻译名称:界面/
+执行代码: A radar event occurs at ~ of type 
+
+!ACTION: TEAM_CREATE_RADAR_EVENT
+脚本名称: Interface/Radar/Create a radar event at a Team.
+翻译名称:界面/
+执行代码: A radar event occurs at ~ of type 
+
+!ACTION: NAMED_SET_CAMERA_FADING
+脚本名称: Unused or Obsolete/Object Type/Settings/Camera fading -- enable or disable.
+翻译名称:未使用、过时的/
+执行代码: Set ~ camera fading to ~.
+
+!ACTION: NAMED_SET_STEALTH_ENABLED
+脚本名称: Object Type/Settings/Stealth -- enable or disable.
+翻译名称:物体类型/设置/
+执行代码: Set ~ stealth ability to ~.
+
+!ACTION: NAMED_SET_DISABLED
+脚本名称: Object Type/Settings/Disable -- enable or disable.
+翻译名称:物体类型/设置/
+执行代码: Set  ~ ~ to ~.
+
+!ACTION: NAMED_SET_STRICT_CONTROL_ENABLED
+脚本名称: Unused or Obsolete/Object Type/Settings/Strict control -- enable or disable.
+翻译名称:未使用、过时的/
+执行代码: Set ~ strict control to ~.
+
+!ACTION: TEAM_SET_STRICT_CONTROL_ENABLED
+脚本名称: Unused or Obsolete/Team/Status/Strict Control set enabled or disabled.
+翻译名称:未使用、过时的/
+执行代码: Set ~ strict control to ~.
+
+!ACTION: MAP_REVEAL_AT_WAYPOINT
+脚本名称: Map/Fog or Reveal/Reveal map at waypoint -- fog.
+翻译名称:
+执行代码: The map is revealed at ~ with a radius of ~ feet for ~.
+
+!ACTION: MAP_REVEAL_IN_TRIGGER
+脚本名称: Map/Fog or Reveal/Reveal map in trigger -- fog.
+翻译名称:
+执行代码: The map is revealed inside ~ for ~.
+
+!ACTION: MAP_REVEAL_ALL
+脚本名称: Unused or Obsolete/Map/Shroud or Reveal/Reveal the entire map for Player.
+翻译名称:未使用、过时的/
+执行代码: The world is revealed for ~.
+
+!ACTION: MAP_REVEAL_ALL_PERM
+脚本名称: Map/Fog or Reveal/Reveal the entire map permanently for Player.
+翻译名称:
+执行代码: The world is revealed permanently for ~.
+
+!ACTION: MAP_REVEAL_ALL_UNDO_PERM
+脚本名称: Map/Fog or Reveal/Un-Reveal the entire map permanently for Player.
+翻译名称:
+执行代码: Undo the permanent reveal for ~.  This will mess things up badly if called when there has been no permanent reveal.
+
+!ACTION: MAP_SHROUD_ALL
+脚本名称: Unused or Obsolete/Map/Shroud or Reveal/Shroud the entire map for Player.
+翻译名称:未使用、过时的/
+执行代码: The world is shrouded for ~.
+
+!ACTION: DISABLE_BORDER_SHROUD
+脚本名称: Map/Fog or Reveal/Border Shroud is turned off.
+翻译名称:
+执行代码: Shroud off the map edges is turned off.
+
+!ACTION: ENABLE_BORDER_SHROUD
+脚本名称: Map/Fog or Reveal/Border Shroud is turned on.
+翻译名称:
+执行代码: Shroud off the map edges is turned on.
+
+!ACTION: MAP_SHROUD_SET_RESHROUD_TIME
+脚本名称: Map/Fog or Reveal/Set Re-Fog delay.
+翻译名称:
+执行代码: Set Fog Delay(In Seconds) to 
+
+!ACTION: TEAM_GARRISON_SPECIFIC_BUILDING
+脚本名称: Team/Garrison/Garrison a named object with Team.
+翻译名称:
+执行代码:  ~ enters into 
+
+!ACTION: EXIT_SPECIFIC_BUILDING
+脚本名称: Object Type/Garrison/Empty a named object.
+翻译名称:物体类型/驻守/
+执行代码:  ~ empties.
+
+!ACTION: TEAM_GARRISON_NEAREST_BUILDING
+脚本名称: Team/Garrison/Garrison a nearby structure with Team.
+翻译名称:
+执行代码:  ~ garrison a nearby object.
+
+!ACTION: TEAM_EXIT_ALL_BUILDINGS
+脚本名称: Team/Garrison/Exit all objects a team is in.
+翻译名称:
+执行代码:  ~ exits all objects.
+
+!ACTION: NAMED_GARRISON_SPECIFIC_BUILDING
+脚本名称: Object Type/Garrison/Garrison a named object with a named object.
+翻译名称:物体类型/驻守/
+执行代码:  ~ garrison 
+
+!ACTION: NAMED_GARRISON_SPECIFIC_BUILDING_INSTANTLY
+脚本名称: Object Type/Garrison/Garrison a named object instantly with a named object.
+翻译名称:物体类型/驻守/
+执行代码:  ~ garrison's ~ instantly.
+
+!ACTION: TEAM_GARRISON_SPECIFIC_BUILDING_INSTANTLY
+脚本名称: Team/Garrison/Garrison a named object instantly with a team.
+翻译名称:
+执行代码:  ~ garrison's ~ instantly.
+
+!ACTION: TEAM_GARRISON_TEAM_INSTANTLY
+脚本名称: Team/Garrison/Garrison a team instantly with a team.
+翻译名称:
+执行代码:  ~ garrison's ~ instantly.
+
+!ACTION: NAMED_GARRISON_NEAREST_BUILDING
+脚本名称: Object Type/Garrison/Garrison a nearby structure with a named object.
+翻译名称:物体类型/驻守/
+执行代码:  ~ garrison a nearby structure.
+
+!ACTION: NAMED_EXIT_BUILDING
+脚本名称: Object Type/Garrison/Named object exit whatever object it's in.
+翻译名称:物体类型/驻守/
+执行代码:  ~ leaves it's garrison.
+
+!ACTION: PLAYER_EXIT_ALL_BUILDINGS
+脚本名称: Player/Garrison/All of Player's units leave their garrisons.
+翻译名称:
+执行代码: All of ~ units leave their garrisons.
+
+!ACTION: TEAM_MERGE_INTO_TEAM
+脚本名称: Team/Spawn, Build, or Merge/Merge Team into another team.
+翻译名称:
+执行代码:  ~ merges onto 
+
+!ACTION: IDLE_ALL_UNITS
+脚本名称: Cinematics/Force Emotion/Idle all units for all players.
+翻译名称:电影/情绪/空闲所有玩家的单位
+执行代码: Idle all units for all players.
+
+!ACTION: DISABLE_INPUT
+脚本名称: Interface/Input/User input -- disable.
+翻译名称:界面/
+执行代码: Disable mouse and keyboard input.
+
+!ACTION: ENABLE_INPUT
+脚本名称: Interface/Input/User input -- enable.
+翻译名称:界面/
+执行代码: Enable mouse and keyboard input.
+
+!ACTION: SOUND_AMBIENT_PAUSE
+脚本名称: Media/Audio/Sound Effect/Suspend the ambient sounds.
+翻译名称:
+执行代码: Pause the ambient sounds.
+
+!ACTION: SOUND_AMBIENT_RESUME
+脚本名称: Media/Audio/Sound Effect/Resume the ambient sounds.
+翻译名称:
+执行代码: Resume the ambient sounds.
+
+!ACTION: MUSIC_SET_TRACK
+脚本名称: Media/Audio/Music/Play a music track.
+翻译名称:
+执行代码: Play ~ using fadeout (~) and fadein (~).
+
+!ACTION: AUDIO_PUSH_MUSIC
+脚本名称: Media/Audio/Music/Push music track.
+翻译名称:).
+执行代码: Undone by Pop music track.
+
+!ACTION: AUDIO_POP_MUSIC
+脚本名称: Media/Audio/Music/Pop music track.
+翻译名称:
+执行代码: Pop the current music track off the stack using fadeout (~) and fadein (~).
+
+!ACTION: MUSIC_PLAY_TRACK_FINITE_TIMES
+脚本名称: Media/Audio/Music/Play a music track a certain number of times.
+翻译名称:
+执行代码: Play ~ ~ times using fadeout (~) and fadein (~).
+
+!WARNING: 55F619: Reg not esi: decnum = 0
+!ACTION: MUSIC_PLAY_TRACK_FINITE_TIMES_AND_NOTIFY
+脚本名称: Media/Audio/Music/Play a music track a certain number of times, then set a flag.
+翻译名称:
+执行代码: Play ~ ~ times using fadeout (~) and fadein (~), then set ~ to true.
+
+!ACTION: MUSIC_PLAY_TRACK_FINITE_TIMES_AS_SPECIAL_END_OF_LEVEL_MUSIC
+脚本名称: Media/Audio/Music/Play SPECIAL END-OF-LEVEL music a certain number of times.
+翻译名称:
+执行代码: Play ~ as SPECIAL END-OF-LEVEL MUSIC ~ times using fadeout (~) and fadein (~).
+
+!ACTION: MUSIC_PUSH_TRACK_FINITE_TIMES
+脚本名称: Media/Audio/Music/Push music track and play it a certain number of times.
+翻译名称:
+执行代码: Push (stack) ~ atop the current music track and play it ~ times using fadeout (~) and fadein (~). (Does NOT pop the music off the stack upon completion.) 
+
+!WARNING: 55F82B: Reg not esi: decnum = 0
+!ACTION: MUSIC_PUSH_TRACK_FINITE_TIMES_AND_NOTIFY
+脚本名称: Media/Audio/Music/Push music track, play it a certain number of times, then set a flag.
+翻译名称:
+执行代码: Push (stack) ~ atop the current music track and play it ~ times using fadeout (~) and fadein (~), then set ~ to true. (Does NOT pop the music off the stack upon completion.) 
+
+!ACTION: MUSIC_TURN_OFF_MUSIC_SCRIPTING
+脚本名称: Unused or Obsolete/Media/Audio/Music/Turn off music scripting.
+翻译名称:未使用、过时的/
+执行代码: Turn off the music scripting system, fading out (~) the music scripting system's current music.
+
+!ACTION: MUSIC_RETURN_TO_MUSIC_SCRIPTING
+脚本名称: Unused or Obsolete/Media/Audio/Music/Return to music scripting.
+翻译名称:未使用、过时的/
+执行代码: Resume use of (turn on) the music scripting system, fading out (~) the current music track and fading in (~) the music scripting system's music.
+
+!ACTION: MUSIC_RESET_MUSIC_SCRIPTING_SYSTEM
+脚本名称: Unused or Obsolete/Media/Audio/Music/Reset music scripting system.
+翻译名称:未使用、过时的/
+执行代码: Reset the music scripting system, as if the level had just started, fading out (~) the music scripting system's current music.
+
+!ACTION: PATH_MUSIC_PLAY_EVENT
+脚本名称: Media/Audio/PathfinderMusic/Play Event.
+翻译名称:
+执行代码: Play a specific Path Music Event(~), also Suspends Dynamic State System( if running ).
+
+!ACTION: PATH_MUSIC_DISABLE_DYNAMIC_SYSTEM
+脚本名称: Media/Audio/PathfinderMusic/Disable Dynamic System.
+翻译名称:
+执行代码: Disable the Path Music Dynamic State System
+
+!ACTION: PATH_MUSIC_ENABLE_DYNAMIC_SYSTEM
+脚本名称: Media/Audio/PathfinderMusic/Enable Standard Dynamic System.
+翻译名称:
+执行代码: Enable the Standard Path Music Dynamic State System
+
+!ACTION: PATH_MUSIC_ENABLE_SPECIFIC_DYNAMIC_SYSTEM
+脚本名称: Media/Audio/PathfinderMusic/Enable Specific Dynamic System.
+翻译名称:
+执行代码: Enables a specific Path Music Dynamic State System(~)
+
+!ACTION: PATH_MUSIC_ENABLE_RESUME_SYSTEM
+脚本名称: Media/Audio/PathfinderMusic/Resume Dynamic System.
+翻译名称:
+执行代码: Resume a Suspended Path Music Dynamic State System
+
+!ACTION: PATH_MUSIC_STOP_MUSIC
+脚本名称: Media/Audio/PathfinderMusic/Stop Music.
+翻译名称:
+执行代码: Stop any Path Music currently playing.
+
+!ACTION: PATH_MUSIC_FADE_OUT_MUSIC
+脚本名称: Media/Audio/PathfinderMusic/Fade Out Music.
+翻译名称:
+执行代码: Fade Out Path Music Volume( Stop Music after fade ) over (~) seconds.
+
+!ACTION: PATH_MUSIC_FADE_IN_MUSIC
+脚本名称: Media/Audio/PathfinderMusic/Fade In Music.
+翻译名称:
+执行代码: Fade In Path Music Volume over (~) seconds.
+
+!ACTION: CAMERA_LETTERBOX_BEGIN
+脚本名称: Cinematics/Settings/Start letterbox mode.
+翻译名称:电影/设置/启动电影模式
+执行代码: Start letterbox mode (hide UI, add border).
+
+!ACTION: CAMERA_LETTERBOX_BEGIN_WITH_RADAR
+脚本名称: Cinematics/Settings/Start letterbox mode(shows radar).
+翻译名称:电影/设置/启动电影模式，但保持雷达可见
+执行代码: Start letterbox mode (hide UI, add border), but keep the Radar visible.
+
+!ACTION: CAMERA_LETTERBOX_END
+脚本名称: Cinematics/Settings/End letterbox mode.
+翻译名称:电影/设置/结束电影模式
+执行代码: End letterbox mode (show UI, remove border).
+
+!ACTION: HIDE_UI
+脚本名称: Cinematics/Settings/Hide UI
+翻译名称:电影/设置/隐藏UL
+执行代码: Like letterbox mode, but without the borders
+
+!ACTION: SHOW_UI
+脚本名称: Cinematics/Settings/Show UI
+翻译名称:电影/设置/显示UL
+执行代码: Show UI
+
+!ACTION: FREEZE_TIME
+脚本名称: Cinematics/Settings/Freeze time.
+翻译名称:电影/设置/冻结时间
+执行代码: Freeze time.
+
+!ACTION: UNFREEZE_TIME
+脚本名称: Cinematics/Settings/Unfreeze time.
+翻译名称:电影/设置/解冻时间
+执行代码: Unfreeze time.
+
+!ACTION: SHOW_MILITARY_CAPTION
+脚本名称: Tutorial/Show windowed text caption.
+翻译名称:
+执行代码: Show ~ for ~ seconds.
+
+!ACTION: NAMED_SET_HELD
+脚本名称: Unused or Obsolete/Object Type/Settings/Set unit to be held in place, ignoring Physics, Locomotors, etc.
+翻译名称:未使用、过时的/
+执行代码: Set Held status for ~ to ~.
+
+!ACTION: NAMED_SET_STOPPING_DISTANCE
+脚本名称: Unused or Obsolete/Object Type/Settings/Set stopping distance for current locomotor.
+翻译名称:未使用、过时的/
+执行代码: Set stopping distance for ~ to ~.
+
+!ACTION: SET_STOPPING_DISTANCE
+脚本名称: Unused or Obsolete/Team/Settings/Set stopping distance for each unit's current locomotor.
+翻译名称:未使用、过时的/
+执行代码: Set stopping distances for ~ to ~.
+
+!ACTION: MUSIC_SET_VOLUME
+脚本名称: Media/Audio/Volume/Set the current music volume.
+翻译名称:
+执行代码: Set the desired music volume to ~%. (0-100)
+
+!ACTION: TEAM_TRANSFER_TO_PLAYER
+脚本名称: Team/Allegiance/Transfer control of Team to Player.
+翻译名称:
+执行代码: Control of ~ transfers to 
+
+!ACTION: PLAYER_SET_MONEY
+脚本名称: Player/Money/Set Player's money.
+翻译名称:
+执行代码: Set ~'s money to $
+
+!ACTION: PLAYER_SET_MONEY_CAP
+脚本名称: Player/Money/Set player's money cap.
+翻译名称:
+执行代码: Set ~'s money cap to $
+
+!ACTION: PLAYER_GIVE_MONEY
+脚本名称: Player/Money/Increase or Decrease Player's money.
+翻译名称:
+执行代码:  ~ gets $
+
+!ACTION: DISPLAY_COUNTER
+脚本名称: Interface/Counters and Timers/Specific counter -- display.
+翻译名称:界面/
+执行代码: Show ~ with text 
+
+!ACTION: HIDE_COUNTER
+脚本名称: Interface/Counters and Timers/Specific counter -- hide.
+翻译名称:界面/
+执行代码: Hide 
+
+!ACTION: DISPLAY_COUNTDOWN_TIMER
+脚本名称: Interface/Counters and Timers/Specific timer -- display.
+翻译名称:界面/
+执行代码: Show ~ with text 
+
+!ACTION: HIDE_COUNTDOWN_TIMER
+脚本名称: Interface/Counters and Timers/Specific timer -- hide.
+翻译名称:界面/
+执行代码: Hide 
+
+!ACTION: DISABLE_COUNTDOWN_TIMER_DISPLAY
+脚本名称: Interface/Counters and Timers/All timers -- hide.
+翻译名称:界面/
+执行代码: Disables timer display.
+
+!ACTION: ENABLE_COUNTDOWN_TIMER_DISPLAY
+脚本名称: Interface/Counters and Timers/All timers -- display.
+翻译名称:界面/
+执行代码: Enables timer display.
+
+!ACTION: NAMED_STOP_SPECIAL_POWER_COUNTDOWN
+脚本名称: Object Type/Special Power/Countdown timer -- pause.
+翻译名称:物体类型/特殊能力/
+执行代码: Pause ~'s ~ countdown.
+
+!ACTION: NAMED_START_SPECIAL_POWER_COUNTDOWN
+脚本名称: Object Type/Special Power/Countdown timer -- resume.
+翻译名称:物体类型/特殊能力/
+执行代码: Resume ~'s ~ countdown.
+
+!ACTION: NAMED_SET_SPECIAL_POWER_COUNTDOWN
+脚本名称: Object Type/Special Power/Countdown timer -- set.
+翻译名称:物体类型/特殊能力/
+执行代码: Set ~'s ~ to ~ seconds.
+
+!ACTION: PLAYER_SET_SPECIAL_POWER_COUNTDOWN
+脚本名称: Player/Special Power/Special power -- set countdown timer.
+翻译名称:
+执行代码: Set ~'s ~ to ~ seconds.
+
+!ACTION: PLAYER_FIRE_SPECIAL_POWER_AT_WAYPOINT
+脚本名称: Player/Special Power/Special power -- fire at waypoint.
+翻译名称:
+执行代码:  ~ fires ~ at ~.
+
+!ACTION: SKIRMISH_FIRE_SPECIAL_POWER_AT_MOST_COST
+脚本名称: Player/Special Power/Special power -- fire at enemy's highest cost area.
+翻译名称:
+执行代码:  ~ fire ~ at enemy's most costly area.
+
+!ACTION: FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE
+脚本名称: Player/Special Power/Special power -- fire on nearest object type to team.
+翻译名称:
+执行代码:  ~ fire ~ on nearest object of ~ to 
+
+!WARNING: 560709: Reg not esi: decnum = 0
+!ACTION: FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE_BY_PLAYER
+脚本名称: Player/Special Power/Special power -- fire on nearest object type to team owned by player.
+翻译名称:
+执行代码:  ~ fire ~ on nearest object of ~ to ~ owned by 
+
+!ACTION: FIRE_SPECIAL_POWER_ON_TEAM
+脚本名称: Player/Special Power/Special power -- fire on team.
+翻译名称:
+执行代码:  ~ fire ~ on 
+
+!ACTION: NAMED_FIRE_SPECIAL_POWER_AT_WAYPOINT
+脚本名称: Object Type/Special Power/Special Power -- fire at location.
+翻译名称:
+执行代码:  ~ fires ~ at ~.
+
+!ACTION: NAMED_STOP
+脚本名称: Object Type/Move/Unit stops.
+翻译名称:
+执行代码:  ~ stops.
+
+!ACTION: TEAM_STOP
+脚本名称: Team/Move/Team stops.
+翻译名称:
+执行代码:  ~ stops.
+
+!ACTION: TEAM_STOP_AND_DISBAND
+脚本名称: Team/Move/Team stops, then disbands.
+翻译名称:
+执行代码:  ~ stops, then disbands.
+
+!ACTION: TEAM_SET_OVERRIDE_RELATION_TO_TEAM
+脚本名称: Team/Allegiance/Override Team's relationship to a Team.
+翻译名称:
+执行代码:  ~ considers ~ to be ~ (rather than using the the player relationship).
+
+!ACTION: TEAM_REMOVE_OVERRIDE_RELATION_TO_TEAM
+脚本名称: Team/Allegiance/Remove an override to Team's relationship to a Team.
+翻译名称:
+执行代码:  ~ uses the player relationship to 
+
+!ACTION: TEAM_REMOVE_ALL_OVERRIDE_RELATIONS
+脚本名称: Team/Allegiance/Remove all overrides to Team's relationship to Teams and Players.
+翻译名称:
+执行代码:  ~ uses the player relationship to all other teams and players.
+
+!ACTION: PLAYER_CAMERA_TETHER_NAMED
+脚本名称: Cinematics/Camera/Begin tether player's camera to a specific unit.
+翻译名称:电影/相机/某玩家相机固定到某物体（）秒
+执行代码:  ~ have player camera tethered to ~.  Snap camera to object is ~.  Amount of play is ~.
+
+!ACTION: CAMERA_TETHER_NAMED
+脚本名称: Cinematics/Camera/Begin tether camera to a specific unit.
+翻译名称:电影/相机/相机固定到某物体（）秒
+执行代码: Have the camera tethered to ~.  Snap camera to object is ~.  Amount of play is ~.
+
+!ACTION: CAMERA_STOP_TETHER_NAMED
+脚本名称: Cinematics/Camera/End tether to any units.
+翻译名称:电影/相机/相机停止固定对任何单位
+执行代码: Stop tether to any units.
+
+!ACTION: CAMERA_LOOK_TOWARD_OBJECT
+脚本名称: Cinematics/Camera/Rotate toward unit.
+翻译名称:电影/相机/相机在某命名单位旋转持续（）秒，保持（）秒，渐入（）秒，渐退（）秒.Z轴偏移（）数值
+执行代码: Rotate toward ~, taking ~ seconds and holding ~ seconds, ease-in ~ seconds, ease-out ~ seconds with z-offset of ~.
+
+!ACTION: CAMERA_LOOK_TOWARD_WAYPOINT
+脚本名称: Cinematics/Camera/Rotate to look at a waypoint.
+翻译名称:电影/相机/相机在某位置旋转持续（）秒，渐入（）秒，渐退（）秒
+执行代码: Rotate to look at ~, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds, reverse rotation ~.
+
+!ACTION: UNIT_DESTROY_ALL_CONTAINED
+脚本名称: Object Type/Damage or Remove/Kill all units contained within a specific transport or structure.
+翻译名称:
+执行代码: All units inside ~ are killed.
+
+!ACTION: TEAM_SET_OVERRIDE_RELATION_TO_PLAYER
+脚本名称: Team/Allegiance/Override Team's relationship to a Player.
+翻译名称:
+执行代码:  ~ considers ~ to be ~ (rather than using the the player relationship).
+
+!ACTION: PLAYER_SET_OVERRIDE_RELATION_TO_TEAM
+脚本名称: Player/Allegiance/Override Player's relationship to another team.
+翻译名称:
+执行代码:  ~ considers ~ to be ~ (rather than using the the player relationship).
+
+!ACTION: UNIT_EXECUTE_SEQUENTIAL_SCRIPT
+脚本名称: Unused or Obsolete/Object Type/SequentialScript/Set a specific unit to execute a script sequentially.
+翻译名称:未使用、过时的/
+执行代码:  ~ executes ~ sequentially.
+
+!ACTION: UNIT_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING
+脚本名称: Unused or Obsolete/Object Type/SequentialScript/Set a specific unit to execute a looping sequential script.
+翻译名称:未使用、过时的/
+执行代码:  ~ executes ~ sequentially, ~ times. (0=forever)
+
+!ACTION: TEAM_EXECUTE_SEQUENTIAL_SCRIPT
+脚本名称: Unused or Obsolete/Team/SequentialScript/Execute script sequentially -- start.
+翻译名称:未使用、过时的/
+执行代码:  ~ executes ~ sequentially.
+
+!ACTION: TEAM_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING
+脚本名称: Unused or Obsolete/Team/SequentialScript/Execute script sequentially -- looping.
+翻译名称:未使用、过时的/
+执行代码:  ~ executes ~ sequentially, ~ times. (0=forever)
+
+!ACTION: UNIT_STOP_SEQUENTIAL_SCRIPT
+脚本名称: Object Type/SequentialScript/Set a named object to stop executing a sequential script.
+翻译名称:
+执行代码:  ~ stops executing.
+
+!ACTION: TEAM_STOP_SEQUENTIAL_SCRIPT
+脚本名称: Team/SequentialScript/Execute script sequentially -- stop.
+翻译名称:
+执行代码:  ~ stops executing.
+
+!ACTION: UNIT_GUARD_FOR_FRAMECOUNT
+脚本名称: Unused or Obsolete/Object Type/SequentialScript/Set to guard for some number of frames.
+翻译名称:未使用、过时的/
+执行代码:  ~ guards for ~ frames.
+
+!ACTION: UNIT_IDLE_FOR_FRAMECOUNT
+脚本名称: Object Type/SequentialScript/Named object idles for some number of frames.
+翻译名称:
+执行代码:  ~ idles for ~ frames.
+
+!ACTION: UNIT_GUARD_FOR_SECONDS
+脚本名称: Unused or Obsolete/Object Type/SequentialScript/Set to guard for some number of seconds.
+翻译名称:未使用、过时的/
+执行代码:  ~ guards for ~ seconds.
+
+!ACTION: UNIT_IDLE_FOR_SECONDS
+脚本名称: Object Type/SequentialScript/Named object idles for some number of seconds.
+翻译名称:
+执行代码:  ~ idles for ~ seconds.
+
+!ACTION: UNIT_SET_MODELCONDITION
+脚本名称: Object Type/Settings/Change Custom Model Condition flag.
+翻译名称:物体类型/设置/
+执行代码:  ~ sets custom model condition number (1-10) ~ to ~.
+
+!ACTION: TEAM_SET_MODELCONDITION
+脚本名称: Team/Settings/Change Custom Model Condition flag - all.
+翻译名称:
+执行代码:  ~ sets custom model condition number (1-4) ~ to ~.
+
+!ACTION: UNIT_SET_MODELCONDITION_FOR_DURATION
+脚本名称: Object Type/Settings/Set a model condition flag on a named object for duration. % specifies # of members in horde that get this.
+翻译名称:物体类型/设置/
+执行代码:  ~ sets ~ for ~ seconds. Percentage (hordes) ~.
+
+!ACTION: UNIT_SET_MODELCONDITION_GENERIC
+脚本名称: Object Type/Settings/Set a model condition flag on a named object for duration(optional).
+翻译名称:物体类型/设置/
+执行代码:  ~ sets ~ for ~ seconds(optional). 
+
+!ACTION: UNIT_CLEAR_MODELCONDITION
+脚本名称: Object Type/Settings/Clear model condition flag on a named object.
+翻译名称:物体类型/设置/
+执行代码:  ~ clears ~.
+
+!ACTION: TEAM_SET_MODELCONDITION_FOR_DURATION
+脚本名称: Unused or Obsolete/Team/Settings/Set a model condition flag on a team (and horde members) for duration. % specifies # of members in team that get this.
+翻译名称:未使用、过时的/
+执行代码:  ~ sets model condition ~ for ~ seconds. Percentage ~.
+
+!ACTION: TEAM_CLEAR_MODELCONDITION
+脚本名称: Team/Settings/Clear model condition flag on a team.
+翻译名称:
+执行代码:  ~ clears model condition ~.
+
+!ACTION: UNIT_SET_FLAME_STATUS
+脚本名称: Unused or Obsolete/Object Type/Settings/Ignite or quench aflame status.
+翻译名称:未使用、过时的/
+执行代码:  ~ is now on fire (T-F) ~ .
+
+!ACTION: TEAM_SET_FLAME_STATUS
+脚本名称: Unused or Obsolete/Team/Settings/Ignite or quench aflame status - all.
+翻译名称:未使用、过时的/
+执行代码:  ~ is now on fire (T-F) ~ .
+
+!ACTION: TEAM_GUARD_FOR_FRAMECOUNT
+脚本名称: Unused or Obsolete/Team/SequentialScript/Guard -- number of frames.
+翻译名称:未使用、过时的/
+执行代码:  ~ guards for ~ frames.
+
+!ACTION: TEAM_IDLE_FOR_FRAMECOUNT
+脚本名称: Team/SequentialScript/Idle for some number of frames.
+翻译名称:
+执行代码:  ~ idles for ~ frames.
+
+!ACTION: TEAM_GUARD_FOR_SECONDS
+脚本名称: Unused or Obsolete/Team/SequentialScript/Guard -- number of seconds.
+翻译名称:未使用、过时的/
+执行代码:  ~ guards for ~ seconds.
+
+!ACTION: TEAM_IDLE_FOR_SECONDS
+脚本名称: Team/SequentialScript/Idle for some number of seconds.
+翻译名称:
+执行代码:  ~ idles for ~ seconds.
+
+!ACTION: HUMAN_IMPASSABLE_AREA
+脚本名称: Map/Make area impassable for human player.
+翻译名称:
+执行代码:  Make area ~ impassable for human player: 
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ABILITY
+脚本名称: Object Type/CommandButton/Use commandbutton ability.
+翻译名称:
+执行代码:  ~ use ~.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ABILITY_ON_NAMED
+脚本名称: Object Type/CommandButton/Use commandbutton ability on a specific Unit.
+翻译名称:
+执行代码:  ~ use ~ on ~.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT
+脚本名称: Object Type/CommandButton/Use commandbutton ability at a waypoint.
+翻译名称:
+执行代码:  ~ use ~ at ~.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT
+脚本名称: Object Type/CommandButton/Use commandbutton ability at nearest enemy unit
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy unit.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING
+脚本名称: Object Type/CommandButton/Use commandbutton ability at nearest enemy garrisoned building.
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy garrisoned building.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_KINDOF
+脚本名称: Object Type/CommandButton/Use commandbutton ability at nearest enemy object with kind of.
+翻译名称:.
+执行代码:  ~ use ~  on nearest enemy with 
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING
+脚本名称: Object Type/CommandButton/Use commandbutton ability at nearest enemy building.
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy building.
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS
+脚本名称: Object Type/CommandButton/Use commandbutton ability at nearest enemy building kindof.
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy building with 
+
+!ACTION: NAMED_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE
+脚本名称: Object Type/CommandButton/Use commandbutton ability at nearest object type.
+翻译名称:
+执行代码:  ~ use ~ on nearest object of type ~.
+
+!ACTION: NAMED_BUILD_STRUCTURE_AT_WAYPOINT
+脚本名称: Unused or Obsolete/Object Type/CommandButton/Build thing at waypoint.
+翻译名称:未使用、过时的/
+执行代码:  ~ build ~ at angle ~ at ~.
+
+!ACTION: TEAM_USE_COMMANDBUTTON_ABILITY
+脚本名称: Team/CommandButton/Use commandbutton ability.
+翻译名称:
+执行代码:  ~ use ~.
+
+!ACTION: TEAM_USE_COMMANDBUTTON_ABILITY_ON_NAMED
+脚本名称: Team/CommandButton/Use commandbutton ability on a named object.
+翻译名称:
+执行代码:  ~ use ~ on ~.
+
+!ACTION: TEAM_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT
+脚本名称: Team/CommandButton/Use commandbutton ability at a waypoint.
+翻译名称:
+执行代码:  ~ use ~ at ~.
+
+!ACTION: MAP_SWITCH_BORDER
+脚本名称: Map/Modify/Change the active border of the map.
+翻译名称:
+执行代码:  ~ becomes the active border.
+
+!ACTION: MAP_CHANGE_CLOUD_SPEED
+脚本名称: Unused or Obsolete/Map/Modify/Change the speed of the CloudEffect.
+翻译名称:未使用、过时的/
+执行代码:  Modify the default CloudEffect speed to be ~ 
+
+!ACTION: SCREEN_SHAKE
+脚本名称: Cinematics/Camera/Shake Screen.
+翻译名称:电影/相机/选择屏幕震动强度 
+执行代码: The screen will shake with 
+
+!ACTION: TECHTREE_MODIFY_BUILDABILITY_OBJECT
+脚本名称: Player/Build/Adjust the tech tree for a specific object type.
+翻译名称:
+执行代码:  ~ becomes 
+
+!ACTION: WAREHOUSE_SET_VALUE
+脚本名称: Unused or Obsolete/Map/Gameplay/Supply Source -- set cash value.
+翻译名称:未使用、过时的/
+执行代码: Warehouse named ~ is set to having ~ dollars worth of boxes. 
+
+!ACTION: SOUND_DISABLE_TYPE
+脚本名称: Media/Audio/Sound Events/Sound Events -- disable type.
+翻译名称:
+执行代码:  ~ is disabled.
+
+!ACTION: SOUND_ENABLE_TYPE
+脚本名称: Media/Audio/Sound Events/Sound Events -- enable type.
+翻译名称:
+执行代码:  ~ is enabled.
+
+!ACTION: SOUND_REMOVE_TYPE
+脚本名称: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- remove type.
+翻译名称:未使用、过时的/
+执行代码:  ~ is removed.
+
+!ACTION: SOUND_ENABLE_ALL
+脚本名称: Media/Audio/Sound Events/Sound Events -- enable all.
+翻译名称:
+执行代码: Enable all sound events.
+
+!ACTION: AUDIO_OVERRIDE_VOLUME_TYPE
+脚本名称: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- override volume -- type.
+翻译名称:未使用、过时的/
+执行代码:  ~ play at ~% of full volume.
+
+!ACTION: AUDIO_RESTORE_VOLUME_TYPE
+脚本名称: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- restore volume -- type.
+翻译名称:未使用、过时的/
+执行代码:  ~ play at normal volume.
+
+!ACTION: AUDIO_RESTORE_VOLUME_ALL_TYPE
+脚本名称: Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- restore volume -- all.
+翻译名称:未使用、过时的/
+执行代码: All sound events play at normal volume.
+
+!ACTION: NAMED_SET_TOPPLE_DIRECTION
+脚本名称: Object Type/Settings/Set topple direction.
+翻译名称: 物体类型/设置/
+执行代码: Topples towards the specified coordinate.
+
+!ACTION: UNIT_ATTACK_MOVE_TOWARDS_NEAREST_OBJECT_TYPE
+脚本名称: Object Type/Attack/Move unit towards the nearest object of a specific type
+翻译名称:
+执行代码:  ~ will AttackMove towards the nearest 
+
+!ACTION: TEAM_ATTACK_MOVE_TOWARDS_NEAREST_OBJECT_TYPE
+脚本名称: Team/Attack/Move team towards the nearest object of a specific type
+翻译名称:
+执行代码:  ~ will AttackMove towards the nearest 
+
+!ACTION: ATTACK_MOVE_TEAM_TO_NEAREST_OBJECT_OF_TYPE_OF_PLAYER
+脚本名称: Team/Attack/Move team towards the nearest object of a specific type owned by a player
+翻译名称:
+执行代码:  ~ will AttackMove towards the nearest ~ owned by 
+
+!ACTION: TEAM_SET_AI_RECRUITABLE_FLAG
+脚本名称: Team/Settings/Change status of the Scripted AI Recruitable flag for team members.
+翻译名称:
+执行代码: Set the Scripted AI Recruitable flag for ~ to 
+
+!ACTION: SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_ALL
+脚本名称: Team/SequentialScript/Delay a sequential script until the specified command ability is ready - all.
+翻译名称:
+执行代码:  ~ 's ~ all wait until ~ is ready.
+
+!ACTION: SKIRMISH_WAIT_FOR_COMMANDBUTTON_AVAILABLE_PARTIAL
+脚本名称: Team/SequentialScript/Delay a sequential script until the specified command ability is ready - partial.
+翻译名称:
+执行代码:  ~ 's ~ wait until at least one member is ~ ready.
+
+!ACTION: CAMERA_ADD_SHAKER_AT
+脚本名称: Cinematics/Camera/Add Camera Shaker Effect at.
+翻译名称:电影/相机/添加相机抖动效果在某点.角度距离（）.持续时间（）.半斤（）
+执行代码: Add Camera Shaker Effect at waypoint ~ with Amplitude ~ Duration (seconds) ~ Radius.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_UNIT
+脚本名称: Team/CommandButton/Use command ability -- all -- nearest enemy unit
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy unit.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_GARRISONED_BUILDING
+脚本名称: Team/CommandButton/Use command ability -- all -- nearest enemy garrisoned building.
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy garrisoned building.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_KINDOF
+脚本名称: Team/CommandButton/Use command ability -- all -- nearest enemy object with kind of.
+翻译名称:.
+执行代码:  ~ use ~  on nearest enemy with 
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING
+脚本名称: Team/CommandButton/Use command ability -- all -- nearest enemy building.
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy building.
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_ENEMY_BUILDING_CLASS
+脚本名称: Team/CommandButton/Use command ability -- all -- nearest enemy building kindof.
+翻译名称:
+执行代码:  ~ use ~  on nearest enemy building with 
+
+!ACTION: TEAM_ALL_USE_COMMANDBUTTON_ON_NEAREST_OBJECTTYPE
+脚本名称: Team/CommandButton/Use command ability -- all -- nearest object type.
+翻译名称:
+执行代码:  ~ use ~ on nearest object of type ~.
+
+!ACTION: TEAM_PARTIAL_USE_COMMANDBUTTON
+脚本名称: Team/CommandButton/Use command ability -- partial -- self.
+翻译名称:
+执行代码:  ~% of ~ perform ~.
+
+!ACTION: TEAM_CAPTURE_NEAREST_UNOWNED_FACTION_UNIT
+脚本名称: Team/Capture/Capture unowned faction unit -- nearest.
+翻译名称:
+执行代码:  ~ capture the nearest unowned faction unit.
+
+!ACTION: TEAM_WAIT_FOR_NOT_CONTAINED_ALL
+脚本名称: Team/SequentialScript/Delay a sequential script until the team is no longer contained - all
+翻译名称:
+执行代码:  ~ all delay until they are no longer contained.
+
+!ACTION: OBJECTLIST_ADDOBJECTTYPE
+脚本名称: Scripting/Object List/Add Object Type to Object List.
+翻译名称:脚本/
+执行代码: Add ~ to 
+
+!ACTION: OBJECTLIST_REMOVEOBJECTTYPE
+脚本名称: Scripting/Object List/Remove Object Type from Object List.
+翻译名称:脚本/
+执行代码: Remove ~ from 
+
+!ACTION: MAP_REVEAL_PERMANENTLY_AT_WAYPOINT
+脚本名称: Map/Fog or Reveal/Reveal map at waypoint -- permanently.
+翻译名称:
+执行代码: The map is permanently revealed at ~ with a radius of ~ for ~. (Afterwards referred to as ~).
+
+!ACTION: MAP_REVEAL_PERMANENTLY_IN_TRIGGER
+脚本名称: Map/Fog or Reveal/Reveal map in polytrigger -- permanently.
+翻译名称:
+执行代码: The map is permanently revealed in trigger ~ for ~. (Afterwards referred to as ~).
+
+!ACTION: MAP_UNDO_REVEAL_PERMANENTLY_AT_WAYPOINT
+脚本名称: Map/Fog or Reveal/Reveal map at waypoint -- undo permanently.
+翻译名称:
+执行代码:  ~ is undone.
+
+!ACTION: MAP_UNDO_REVEAL_PERMANENTLY_IN_TRIGGER
+脚本名称: Map/Fog or Reveal/Reveal map in polytrigger -- undo permanently.
+翻译名称:
+执行代码:  ~ is undone.
+
+!ACTION: EVA_SET_ENABLED_DISABLED
+脚本名称: Media/Audio/EVA/Enable or Disable EVA.
+翻译名称:
+执行代码: Set EVA to be enabled ~ (False to disable.)
+
+!ACTION: OPTIONS_SET_OCCLUSION_MODE
+脚本名称: Cinematics/Settings/Enable or Disable Occlusion (Drawing Behind Buildings).
+翻译名称:电影/设置/启用或禁用阻塞
+执行代码: Set Occlusion to be enabled ~ (False to disable.)
+
+!ACTION: OPTIONS_SET_DRAWICON_UI_MODE
+脚本名称: Cinematics/Settings/Enable or Disable Draw-icon UI.
+翻译名称:电影/设置/启用或禁用绘制图标UI
+执行代码: Set Draw-icon UI to be enabled ~ (False to disable.)
+
+!ACTION: OPTIONS_SET_PARTICLE_CAP_MODE
+脚本名称: Cinematics/Settings/Enable or Disable Particle Cap.
+翻译名称:电影/设置/启用或禁用粒子
+执行代码: Set Particle Cap to be enabled ~ (False to disable.)
+
+!ACTION: UNIT_AFFECT_OBJECT_PANEL_FLAGS
+脚本名称: Object Type/Settings/Change Object flags.
+翻译名称:物体类型/设置/
+执行代码:  ~ changes the value of ~ to ~.
+
+!ACTION: TEAM_AFFECT_OBJECT_PANEL_FLAGS
+脚本名称: Team/Settings/Change Object flags - all.
+翻译名称:
+执行代码:  ~ change the value of ~ to ~.
+
+!ACTION: PLAYER_SELECT_SKILLSET
+脚本名称: Unused or Obsolete/Player/Upgrades and Sciences/Set the skillset for an AI Player.
+翻译名称:未使用、过时的/
+执行代码:  ~ uses skillset number ~ (1-5).
+
+!ACTION: SCRIPTING_OVERRIDE_HULK_LIFETIME
+脚本名称: Object Type/Hulk set override lifetime.
+翻译名称:
+执行代码: Override hulk lifetime to ~ seconds. Negative value reverts to normal behavior.
+
+!ACTION: NAMED_FACE_NAMED
+脚本名称: Object Type/Move/Face another unit.
+翻译名称:
+执行代码:  ~ begin facing 
+
+!ACTION: NAMED_FACE_WAYPOINT
+脚本名称: Object Type/Move/Face a waypoint.
+翻译名称:
+执行代码:  ~ begin facing 
+
+!ACTION: TEAM_FACE_NAMED
+脚本名称: Team/Move/Face another unit.
+翻译名称:
+执行代码:  ~ begin facing 
+
+!ACTION: TEAM_FACE_WAYPOINT
+脚本名称: Team/Move/Face a waypoint.
+翻译名称:
+执行代码:  ~ begin facing 
+
+!ACTION: OPEN_COMMAND_BAR
+脚本名称: Unused or Obsolete/Tutorial/Open Command Bar Tab
+翻译名称: .未使用、过时的/
+执行代码: UNIT_SPAWN_NAMED_LOCATION_ORIENTATION
+
+!ACTION: SOUND_SET_VOLUME
+脚本名称: Media/Audio/Volume/Set the current sound volume.
+翻译名称:
+执行代码: Set the desired sound volume to ~%. (0-100)
+
+!ACTION: SPEECH_SET_VOLUME
+脚本名称: Unused or Obsolete/Media/Audio/Volume/Set the current speech volume.
+翻译名称:未使用、过时的/
+执行代码: Set the desired speech volume to ~%. (0-100)
+
+!ACTION: OBJECT_ALLOW_BONUSES
+脚本名称: Map/Gameplay/Adjust Object Bonuses based on difficulty.
+翻译名称:
+执行代码: Enable Object Bonuses based on difficulty ~ (true to enable, false to disable).
+
+!ACTION: TEAM_GUARD_IN_TUNNEL_NETWORK
+脚本名称: Unused or Obsolete/Team/Guard/Guard -- from inside tunnel network.
+翻译名称:未使用、过时的/
+执行代码:  ~ Enter and guard from tunnel network.
+
+!ACTION: LOCALDEFEAT
+脚本名称: Win & Loss/Announce local defeat.
+翻译名称:
+执行代码: Show 'Game Over' window
+
+!ACTION: VICTORY
+脚本名称: Win & Loss/Announce victory.
+翻译名称:
+执行代码: Show 'Victorious' window and end game
+
+!ACTION: DEFEAT
+脚本名称: Win & Loss/Announce defeat.
+翻译名称:
+执行代码: Show 'Defeated' window and end game
+
+!ACTION: DELETE_ALL_UNMANNED
+脚本名称: Object Type/Delete all unmanned (sniped) vehicles.
+翻译名称:
+执行代码: Delete all unmanned (sniped) vehicles.
+
+!ACTION: CHOOSE_VICTIM_ALWAYS_USES_NORMAL
+脚本名称: Unused or Obsolete/Map/Gameplay/Force ChooseVictim to ignore game difficulty and always use Normal setting.
+翻译名称:未使用、过时的/
+执行代码: Force ChooseVictim to ignore game difficulty and always use Normal setting ~ (true to enable, false to disable).
+
+!ACTION: ENABLE_OBJECT_SOUND
+脚本名称: Unused or Obsolete/Media/Audio/Sound Effect/Enable object's ambient sound
+翻译名称:未使用、过时的/
+执行代码: Enable (or trigger) ~'s ambient sound.
+
+!ACTION: DISABLE_OBJECT_SOUND
+脚本名称: Unused or Obsolete/Media/Audio/Sound Effect/Disable object's ambient sound
+翻译名称:未使用、过时的/
+执行代码: Disable ~'s ambient sound.
+
+!ACTION: CAMERA_BLOOM_EFFECT_BEGIN
+脚本名称: Cinematics/Lighting/Begin bloom lighting effect.
+翻译名称:电影/照明光效/开始绽放灯光效果
+执行代码: Set Bloom Filter to be enabled
+
+!ACTION: CAMERA_BLOOM_EFFECT_END
+脚本名称: Cinematics/Lighting/End bloom lighting effect.
+翻译名称:电影/照明光效/设置Bloom FLUTL禁用
+执行代码: Set Bloom Filter to be disabled
+
+!ACTION: TERRAIN_RENDER_DISABLE
+脚本名称: Unused or Obsolete/Camera/Terrain/Enable or Disable Terrain Render.
+翻译名称:未使用、过时的/
+执行代码: Disable terrain render ~ (True to disable.)
+
+!ACTION: TEAM_GIVE_EXPERIENCE_LEVEL
+脚本名称: Unused or Obsolete/Team/Experience/Gives the team an experience level.
+翻译名称:未使用、过时的/
+执行代码: Gives ~ experience level ~.
+
+!ACTION: TEAM_GIVE_EXPERIENCE_POINTS
+脚本名称: Team/Experience/Gives the team experience points.
+翻译名称:
+执行代码: Gives ~ experience points ~.
+
+!ACTION: TEAM_SET_EXPERIENCE_POINTS
+脚本名称: Team/Experience/Sets the team's experience points.
+翻译名称:
+执行代码: Sets ~ experience points' to ~.
+
+!ACTION: UNIT_GIVE_EXPERIENCE_LEVEL
+脚本名称: Unused or Obsolete/Object Type/Experience/Gives a unit an experience level.
+翻译名称:未使用、过时的/
+执行代码: Gives ~ experience level ~.
+
+!ACTION: UNIT_GIVE_EXPERIENCE_POINTS
+脚本名称: Object Type/Experience/Gives a named object experience points.
+翻译名称:物体类型/经验/
+执行代码: Gives ~ experience points ~.
+
+!ACTION: UNIT_SET_EXPERIENCE_POINTS
+脚本名称: Object Type/Experience/Sets a named object's experience points.
+翻译名称:物体类型/经验/
+执行代码: Sets ~ experience points to ~.
+
+!ACTION: TOGGLE_AVI_CAPTURE
+脚本名称: Cinematics/Toggle AVI capture
+翻译名称:电影/切换Avl捕捉
+执行代码: Toggles on & off the AVI capture.
+
+!ACTION: PLAY_MOVIE_IN_GAME
+脚本名称: Unused or Obsolete/PlayMovie/Plays a movie in game.
+翻译名称:未使用、过时的/
+执行代码: Play Movie named ~ allow cancel ~ .
+
+!ACTION: SET_UNIT_REFERENCE
+脚本名称: Unused or Obsolete/Scripting/Reference/Set reference to a unit.
+翻译名称:未使用、过时的/
+执行代码: Set ~ to reference unit 
+
+!ACTION: TEAM_SET_PLAYERS_NEAREST_UNIT_OF_TYPE_TO_REFERENCE
+脚本名称: Scripting/Reference/Set a reference to an object nearest-to-team, owned by player.
+翻译名称:脚本/
+执行代码: Find an object matching a type in the list ~ nearest the ~ (and owned by the teams Player) and set its reference to 
+
+!ACTION: FIND_HOME_BASE_OF_PLAYER
+脚本名称: Scripting/Reference/Find home base of player
+翻译名称:脚本/
+执行代码: Find the home base owned by ~ and set ~ to reference it. (Building must be inside map boundaries: ~)
+
+!ACTION: GATE_OPEN
+脚本名称: Unused or Obsolete/Object Type/gate/open a gate
+翻译名称:未使用、过时的/
+执行代码: Open gate 
+
+!ACTION: GATE_CLOSE
+脚本名称: Unused or Obsolete/Object Type/gate/ close a gate
+翻译名称:未使用、过时的/
+执行代码:  Close gate.
+
+!ACTION: GATE_READY
+脚本名称: Unused or Obsolete/Object Type/gate/ Delay a sequential script until the gate is ready again
+翻译名称:未使用、过时的/
+执行代码:  ~ delay until it is ready again.
+
+!ACTION: SET_TEAM_REFERENCE
+脚本名称: Unused or Obsolete/Scripting/Reference/Set reference to a team.
+翻译名称:未使用、过时的/
+执行代码: Set ~ to reference team 
+
+!ACTION: SET_UNIT_REFERENCE_TO_REFERENCE
+脚本名称: Unused or Obsolete/Scripting/Reference/Set reference to another unit reference.
+翻译名称:未使用、过时的/
+执行代码: Set ~ to reference another unit reference 
+
+!ACTION: SET_TEAM_REFERENCE_TO_REFERNECE
+脚本名称: Unused or Obsolete/Scripting/Reference/ Set reference to another team reference.
+翻译名称:未使用、过时的/
+执行代码: Set ~ to reference another team reference 
+
+!ACTION: TEAM_GIVE_NEAREST_TEAM_UPGRADE
+脚本名称: Unused or Obsolete/Team/Upgrades/Team will give nearest team upgrade (Giving Team must have upgrade)
+翻译名称:未使用、过时的/
+执行代码:  ~ will give nearest team upgrade
+
+!ACTION: TEAM_GIVE_TEAM_UPGRADE
+脚本名称: Unused or Obsolete/Team/Upgrades/Team will give team upgrade (Giving Team must have upgrade)
+翻译名称:未使用、过时的/
+执行代码:  ~ will give ~ upgrade 
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF
+脚本名称: Team/Move/Team will move to the nearest object that matches kindof specified.
+翻译名称:
+执行代码:  ~ will move to the nearest object of ~.
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_KINDOF_OWNED_BY_PLAYER
+脚本名称: Team/Move/Team will move to the nearest object that matches both kindof and player specified.
+翻译名称:
+执行代码:  ~ will move to the nearest object of ~ that is owned by the ~.
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE
+脚本名称: Team/Move/Team will move to the nearest object that matches type specified.
+翻译名称:
+执行代码:  ~ will move to the nearest object of type ~.
+
+!ACTION: TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE_OWNED_BY_PLAYER
+脚本名称: Team/Move/Team will move to the nearest object that matches both type and player specified.
+翻译名称:
+执行代码:  ~ will move to the nearest object of type ~ that is owned by ~.
+
+!ACTION: COUNTER_MATH_COUNTER
+脚本名称: Scripting/Counters/Counter do math opertation with another Counter.
+翻译名称:脚本/
+执行代码: Counter ~ , ~ with counter 
+
+!ACTION: COUNTER_MATH_VALUE
+脚本名称: Scripting/Counters/Counter do math opertation with value.
+翻译名称:脚本/
+执行代码: Counter ~ , ~ with value 
+
+!ACTION: TEAM_RECRUIT_UNITS
+脚本名称: Unused or Obsolete/Team/Capture-Recruit/Team recruits from same player and nearby allied AI teams.
+翻译名称:未使用、过时的/
+执行代码:  ~ will recruit ~ units of type ~ from nearby recruitable allied teams.
+
+!ACTION: TEAM_RECRUIT_UNITS_FROM_TEAM
+脚本名称: Unused or Obsolete/Team/Capture-Recruit/Team recruits from another specific team.
+翻译名称:未使用、过时的/
+执行代码:  ~ will recruit ~ units of type ~ from ~ .
+
+!ACTION: TEAM_UPGRADE
+脚本名称: Team/Upgrades/Give Team the specified upgrade
+翻译名称:
+执行代码: Give Team ~ the upgrade ~.
+
+!ACTION: SET_PLAYER_MONEY_TO_COUNTER
+脚本名称: Scripting/Counters/Set players money to counter.
+翻译名称:脚本/
+执行代码: Store amount of  ~ money to the counter 
+
+!ACTION: SET_UNIT_EXPERIENCE_TO_COUNTER
+脚本名称: Scripting/Counters/Set units experience points to counter.
+翻译名称:脚本/
+执行代码: Store amount of ~ experience points to the counter 
+
+!ACTION: SET_UNIT_HEALTH_PERCENTAGE_TO_COUNTER
+脚本名称: Scripting/Counters/Set unit's health as percentage to counter.
+翻译名称:脚本/
+执行代码: Store ~'s health as percentage to the counter 
+
+!ACTION: SET_PLAYER_COMMAND_POINTS_USED_TO_COUNTER
+脚本名称: ThreeSixty/Set command points used by player to counter.
+翻译名称:
+执行代码: Store amount of command points used by player ~ to the counter 
+
+!ACTION: SET_PLAYER_COMMAND_POINTS_AVAILABLE_TO_COUNTER
+脚本名称: ThreeSixty/Set command points available to player to counter.
+翻译名称:
+执行代码: Store amount of command points available to player ~ to the counter 
+
+!ACTION: SET_PLAYER_COMMAND_POINTS_TOTAL_TO_COUNTER
+脚本名称: ThreeSixty/Set command points total of player to counter.
+翻译名称:
+执行代码: Store total number of command point of player ~ to the counter 
+
+!ACTION: SET_COMMAND_POINTS_TO_BUILD_TEAM_TO_COUNTER
+脚本名称: ThreeSixty/Set command points required to build team to counter.
+翻译名称:
+执行代码: Store the amount of command points required to build ~ to the counter 
+
+!ACTION: SET_PLAYER_KILLS_OF_TYPE_TO_COUNTER
+脚本名称: Scripting/Counters/Set number of player kills of a type to counter.
+翻译名称:脚本/
+执行代码: Store the amount of kills by ~ of the type of object(s) ~ to 
+
+!ACTION: SET_PLAYER_KILLS_OF_KINDOF_TO_COUNTER
+脚本名称: Scripting/Counters/Set number of player kills of a kindof to counter.
+翻译名称:脚本/
+执行代码: Store the amount of kills by ~ of the ~ to 
+
+!ACTION: SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER
+脚本名称: Scripting/Counters/Set number of object types owned by player to counter.
+翻译名称:脚本/
+执行代码: Store the number of ~ owned by ~ to 
+
+!ACTION: SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER_INCLUDE_DEAD
+脚本名称: Scripting/Counters/Set number of object types owned by player to a counter including dead ones.
+翻译名称:脚本/
+执行代码: Store the number of objects (include dead ones)~ owned by ~ to 
+
+!ACTION: SET_COUNTER_TO_NUMBER_OBJECTS_PLAYER_OWNES_WITH_MODELCONDITION
+脚本名称: Scripting/Counters/Set counter to number of objects owned by player with a model condition
+翻译名称:脚本/
+执行代码: Store the number of objects owned by ~ with ~ ON to the counter 
+
+!WARNING: 5649FB: Reg not esi: decnum = 0
+!ACTION: SET_COUNTER_TO_NUMBER_OBJECTS_PLAYER_OWNS_WITH_KINDOF
+脚本名称: Scripting/Counters/Set counter to number of objects owned by player with kindof
+翻译名称:脚本/
+执行代码: Store the number of objects owned by ~ of ~ to ~, count dead : ~, count under construction : 
+
+!ACTION: PLAY_SOUND_EFFECT_AT_TEAM
+脚本名称: Media/Audio/Sound Effect/Play sound effect from team.
+翻译名称:
+执行代码: Play ~ as though coming from a member of ~.
+
+!ACTION: AUDIO_FADE_VOLUME
+脚本名称: Media/Audio/Volume/Fade all audio
+翻译名称:
+执行代码: Fade (0-1) all audio from volume ~ to volume ~. Take ~ seconds to increase, hold for ~ seconds, and decrease ~ seconds.
+
+!ACTION: AUDIO_MAKE_SOUND_IMMUNE_TO_FADE
+脚本名称: Media/Audio/Volume/Make sound immune to fade
+翻译名称:
+执行代码: Make the ~ ignore the fade levels set by 'fade all audio.'
+
+!ACTION: AUDIO_MAKE_SOUND_SUBJECT_TO_FADE
+脚本名称: Media/Audio/Volume/Make sound subject to fade
+翻译名称:
+执行代码: Make the ~ subject to the fade levels set by 'fade all audio.'
+
+!ACTION: AUDIO_MAKE_ALL_SOUNDS_SUBJECT_TO_FADE
+脚本名称: Media/Audio/Volume/Make all sounds subject to fade
+翻译名称:
+执行代码: Make all sounds subject to the fade levels set by 'fade all audio.'
+
+!ACTION: AUDIO_SET_REVERB_ROOM_TYPE
+脚本名称: Media/Audio/All Sounds/Set global reverb room type.
+翻译名称:
+执行代码: Use global reverb room type 
+
+!ACTION: AUDIO_REMOVE_REVERB
+脚本名称: Media/Audio/All Sounds/Remove all reverb effects
+翻译名称:
+执行代码: Do not use reverb effects
+
+!ACTION: AUDIO_SET_REVERB_SUPPRESSION_POLYGON
+脚本名称: Media/Audio/All Sounds/Suppress reverb within an area
+翻译名称:
+执行代码: Lower reverb of all sounds in ~ to ~ of normal.
+
+!ACTION: AUDIO_REMOVE_REVERB_SUPPRESSION_POLYGON
+脚本名称: Media/Audio/All Sounds/Unsuppress reverb in an area
+翻译名称:
+执行代码: Return the reverb of sounds in ~ to normal.
+
+!ACTION: AUDIO_REMOVE_ALL_REVERB_SUPPRESSION_POLYGONS
+脚本名称: Media/Audio/All Sounds/Unsuppress all reverb
+翻译名称:
+执行代码: Remove all reverb-suppression areas.
+
+!ACTION: DIM_WORLD_LIGHTS
+脚本名称: Cinematics/Lighting/Dim all global and ambient lights.
+翻译名称: 电影/照明光效/逐步将所有场景光插入到颜色中
+执行代码: Gradually interpolate all the scene lights to the color, red:~ green: ~. blue: ~ over 
+
+!ACTION: RESTORE_WORLD_LIGHTS
+脚本名称: Cinematics/Camera/Restore (un-dim) all global and ambient lights.
+翻译名称:电影/相机/逐步将所有场景光插入到白天颜色的正常时间，超过（）秒
+执行代码: Gradually interpolate all the scene lights to normal Time-Of-Day color, over:~ seconds: 
+
+!ACTION: ALLOW_DISALLOW_ONE_BUILDING
+脚本名称: Player/Build/Allow or Disallow one building of a specific type
+翻译名称:
+执行代码:  ~ allowed to build ~ is ~.
+
+!ACTION: ALLOW_DISALLOW_ALL_BUILDINGS
+脚本名称: Unused or Obsolete/Base/Allow or Disallow all buildings
+翻译名称:未使用、过时的/
+执行代码:  ~ is allowed to build ALL buildings is ~ . 
+
+!ACTION: ALLOW_DISALLOW_ONE_UPGRADE
+脚本名称: Player/Upgrades and Sciences/Allow or Disallow one upgrade
+翻译名称:
+执行代码:  ~ allowed to build ~ is ~.
+
+!ACTION: TOGGLE_AUTO_BUILD
+脚本名称: Unused or Obsolete/Player/Build/Turn on or off a player's structures that auto build units.  (Starts ON)
+翻译名称:未使用、过时的/
+执行代码:  ~ toggle auto build 
+
+!ACTION: REPAIR_OBJECT
+脚本名称: Object Type/Repair/Repair named Object.
+翻译名称:
+执行代码: Repair named object ~ ~, and it is ~ that this should be free.
+
+!ACTION: TEAM_REPAIR_NEREST
+脚本名称: Unused or Obsolete/Team/Repair/Repair nearest building that needs it.
+翻译名称:未使用、过时的/
+执行代码: Have Team ~ repair the nearest building within the radius 
+
+!ACTION: TEAM_SET_AUTO_ABILITY
+脚本名称: Unused or Obsolete/Team/CommandButton/Team set auto ability to on or off.
+翻译名称:未使用、过时的/
+执行代码: Have Team ~ set auto ability ~ to 
+
+!ACTION: NAME_SET_AUTO_ABILITY
+脚本名称: Unused or Obsolete/Object Type/CommandButton/Team set CommandButton auto ability to on or off.
+翻译名称:未使用、过时的/
+执行代码: Have Team ~ set auto ability ~ to 
+
+!ACTION: SET_LOGIC_FOG_STATE
+脚本名称: Unused or Obsolete/Fog or Reveal/Toggle Fog of War.
+翻译名称:未使用、过时的/
+执行代码: Set presence of Fog of War to ~. (Default true.)
+
+!ACTION: NAMED_RECEIVE_UPGRADE
+脚本名称: Object Type/Settings/Give upgrade to named object.
+翻译名称:物体类型/设置/
+执行代码: Give ~ to ~.
+
+!ACTION: NAMED_REMOVE_UPGRADE
+脚本名称: Object Type/Settings/Remove upgrade from named object.
+翻译名称:物体类型/设置/
+执行代码: Remove ~ from ~.
+
+!ACTION: SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER
+脚本名称: Scripting/Reference/Set reference to object type of player nearest team.
+翻译名称:脚本/
+执行代码: Find ~ Owned by ~ nearest ~ and reference as 
+
+!ACTION: SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER
+脚本名称: Scripting/Reference/Set reference to unnamed object owned by player 
+翻译名称:脚本/
+执行代码: Find unnamed ~ Owned by ~ nearest ~ and reference as 
+
+!ACTION: MAP_EXIT
+脚本名称: Map/Modify/Exit Map
+翻译名称:
+执行代码: Exits map back to the main menu.
+
+!ACTION: TEAM_NEEDS_OPEN_GATE
+脚本名称: Unused or Obsolete/Team/Misc/Set or clear a team-needs-gate open flag 
+翻译名称:未使用、过时的/
+执行代码: Team ~ wants gate ~ open is 
+
+!ACTION: UNIT_STAND_GROUND
+脚本名称: Unused or Obsolete/Object Type/Status/Unit Set Stand Ground Status.
+翻译名称:未使用、过时的/
+执行代码: Set Stand Ground Status of ~ to 
+
+!ACTION: TEAM_STAND_GROUND
+脚本名称: Unused or Obsolete/Object Type/Status/Team Set Stand Ground Status.
+翻译名称:未使用、过时的/
+执行代码: Set Stand Ground Status of ~ to 
+
+!ACTION: UNIT_TELEPORT_TO_WAYPOINT
+脚本名称: Object Type/Move/Teleport named object to waypoint.
+翻译名称:
+执行代码: Teleport ~ to ~.
+
+!ACTION: TEAM_TELEPORT_TO_WAYPOINT
+脚本名称: Team/Move/Teleport team to waypoint.
+翻译名称:
+执行代码: Teleport ~ to ~.
+
+!ACTION: OVERRIDE_PLAYER_COMMAND_POINTS
+脚本名称: ThreeSixty/Override player command points.
+翻译名称:
+执行代码: Override command points for ~ to total: ~ maximum: 
+
+!ACTION: SELECT_OBJECT
+脚本名称: Tutorial/Player selects object.
+翻译名称:辅助/玩家/玩家发出队形命令
+执行代码: For ~ select object 
+
+!ACTION: DESELECT
+脚本名称: Tutorial/Deselects everything.
+翻译名称:
+执行代码: Deselects everything 
+
+!ACTION: LOCK_CAMERA
+脚本名称: Tutorial/Lock or unlock camera.
+翻译名称:
+执行代码: Set the camera lock to ~ .
+
+!ACTION: LOCK_CAMERA_ZOOM
+脚本名称: Tutorial/Lock or unlock camera zoom.
+翻译名称:
+执行代码: Set the camera zoom lock to ~ .
+
+!ACTION: LOCK_CAMERA_ROTATION
+脚本名称: Tutorial/Lock or unlock camera rotation.
+翻译名称:
+执行代码: Set the camera rotation lock to ~ .
+
+!ACTION: LOCK_CAMERA_SCROLL
+脚本名称: Tutorial/Lock or unlock camera scroll.
+翻译名称:
+执行代码: Set the camera scroll lock to ~ .
+
+!ACTION: LOCK_CAMERA_RESET
+脚本名称: Tutorial/Lock or unlock camera reset.
+翻译名称:
+执行代码: Set the camera reset lock to ~ .
+
+!ACTION: LOCK_CAMERA_ANGLE_AND_HEIGHT
+脚本名称: Tutorial/Lock or unlock camera height and angle (allow scrolling).
+翻译名称:
+执行代码: Set the camera angle&  height lock to ~ .
+
+!ACTION: UNIT_ENABLE_HOUSE_COLOR
+脚本名称: Object Type/Settings/Enables or disables the house color
+翻译名称:物体类型/设置/
+执行代码: Enable house color for ~ to ~ .
+
+!ACTION: TEAM_ENABLE_HOUSE_COLOR
+脚本名称: Team/Settings/Enables or disables the house color
+翻译名称:
+执行代码: Enable the house color for ~ to ~ .
+
+!ACTION: ENABLE_HOUSE_COLOR
+脚本名称: Map/Modify/Enables or disables the house color for all units
+翻译名称:
+执行代码: Enable the house color for all units ~ .
+
+!ACTION: UNIT_FORCE_EMOTION
+脚本名称: Cinematics/Force Emotion/Force a named object to have an emotion for duration.
+翻译名称:电影/情绪/某命名物体某种情绪持续（）秒
+执行代码: Force ~ to have ~ for ~ seconds.
+
+!ACTION: TEAM_FORCE_EMOTION
+脚本名称: Cinematics/Force Emotion/Force a team to have an emotion for duration.
+翻译名称:电影/情绪/某队伍某种情绪持续（）秒
+执行代码: Force ~ to have ~ for ~ seconds.
+
+!ACTION: PLAYER_FORCE_EMOTION
+脚本名称: Cinematics/Force Emotion/Force all of player's units to have an emotion for duration.
+翻译名称:电影/情绪/某玩家所有某种情绪持续（）秒
+执行代码: Force all units of ~ to have ~ for ~ seconds.
+
+!ACTION: SELL_OBJECT
+脚本名称: Object Type/Damage or Remove/Sell off named Object.
+翻译名称:
+执行代码: Sell off 
+
+!ACTION: PLAYER_SELL_EVERYTHING
+脚本名称: Player/Remove, Sell, or Transfer All/Player sells everything.
+翻译名称:
+执行代码: Sell everything belonging to 
+
+!ACTION: UNIT_GAIN_LEVEL
+脚本名称: Object Type/Experience/Named object levels up with visual FX.
+翻译名称:物体类型/经验/
+执行代码:  ~ gains a level with FX turned 
+
+!ACTION: TEAM_GAIN_LEVEL
+脚本名称: Team/Experience/Team levels up with visual FX.
+翻译名称:
+执行代码:  ~ gains a level with FX turned 
+
+!ACTION: SHOW_MISSION_OBJECTIVE
+脚本名称: Unused or Obsolete/Interface/Objectives/Show mission objective
+翻译名称:未使用、过时的/
+执行代码: Make mission objective '~' visible.
+
+!ACTION: HIDE_MISSION_OBJECTIVE
+脚本名称: Unused or Obsolete/Interface/Objectives/Hide mission objective
+翻译名称:未使用、过时的/
+执行代码: Hide mission objective '~'.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_OBJECT
+脚本名称: Interface/Objectives/Link mission objective to object
+翻译名称:界面/
+执行代码: Set mission objective '~' linked to ~ to ~.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_OBJECT_WITH_CATEGORY
+脚本名称: Interface/Objectives/Link mission objective to object using icon
+翻译名称:界面/
+执行代码: Set mission objective '~' linked to ~ to ~ using icon ~.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_OBJECT_WITH_PRESENTATION_SETTINGS
+脚本名称: Unused or Obsolete/Interface/Objectives/Link mission objective to object using presentation settings
+翻译名称:.未使用、过时的/
+执行代码: LINK_MISSION_OBJECTIVE_TO_WAYPOINT
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_WAYPOINT_WITH_CATEGORY
+脚本名称: Interface/Objectives/Link mission objective to waypoint using icon
+翻译名称:界面/
+执行代码: Set mission objective '~' linked to ~ to ~ using icon ~.
+
+!ACTION: LINK_MISSION_OBJECTIVE_TO_WAYPOINT_WITH_PRESENTATION_SETTINGS
+脚本名称: Unused or Obsolete/Interface/Objectives/Link mission objective to waypoint using presentation settings
+翻译名称:未使用、过时的/
+执行代码: MARK_MISSION_OBJECTIVE_COMPLETED
+
+!ACTION: MARK_MISSION_OBJECTIVE_NOT_COMPLETED
+脚本名称: Interface/Objectives/Mark mission objective as not completed
+翻译名称:界面/
+执行代码: Mark mission objective '~' as not completed.
+
+!ACTION: SET_MISSION_OBJECTIVE_STATUS
+脚本名称: Interface/Objectives/Set mission objective status
+翻译名称:界面/
+执行代码: Set status of mission objective '~' to ~.
+
+!ACTION: SATELLITE_VIEW_PRESENTATION_FOR_OBJECTIVE
+脚本名称: Unused or Obsolete/Interface/Objectives/Show satellite view presentation for specified objective
+翻译名称:未使用、过时的/
+执行代码: SATELLITE_VIEW_PRESENTATION_FOR_ALL_OBJECTIVES
+
+!ACTION: UNIT_CHANGE_OBJECT_STATUS
+脚本名称: Object Type/Settings/Change object status.
+翻译名称:物体类型/设置/
+执行代码: For ~ set ~ to ~.
+
+!ACTION: TEAM_CHANGE_OBJECT_STATUS
+脚本名称: Team/Settings/Change object status.
+翻译名称:.
+执行代码: For all units in ~ set ~ to ~.
+
+!ACTION: ENABLE_PLANNING_MODE
+脚本名称: Tutorial/Enable planning mode
+翻译名称:
+执行代码: Enable planning mode.
+
+!ACTION: DISABLE_PLANNING_MODE
+脚本名称: Tutorial/Disable planning mode
+翻译名称:
+执行代码: Disable planning mode.
+
+!WARNING: 566596: Reg not esi: decnum = 0
+!ACTION: CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE
+脚本名称: Unused or Obsolete/Object Type/Spawn/Spawn -- named unit on Team at an object type.
+翻译名称:未使用、过时的/
+执行代码: Spawn ~ of type ~ on ~ at type 
+
+!ACTION: CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE_WITH_ORIENTATION
+脚本名称: Unused or Obsolete/Object Type/Spawn/Spawn -- named unit on Team at an object type with specified orientation.
+翻译名称:未使用、过时的/
+执行代码: Spawn ~ of type ~ on ~ at type ~, rotated ~.
+
+!ACTION: UNIT_SET_MAX_LEVEL
+脚本名称: Unused or Obsolete/Object Type/Experience/Sets the unit's maximum level.
+翻译名称:未使用、过时的/
+执行代码: Sets ~ maximum level to ~.
+
+!ACTION: PLAYER_AI_CHANGEBASEBUILDER
+脚本名称: SkirmishAI/Turn on or off AI Base Builder.
+翻译名称:
+执行代码: Turn AI Base Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGEUNITBUILDER
+脚本名称: SkirmishAI/Turn on or off AI Unit Builder.
+翻译名称:
+执行代码: Turn AI Unit Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGETEAMBUILDER
+脚本名称: SkirmishAI/Turn on or off AI Party Builder.
+翻译名称:
+执行代码: Turn AI Party Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGE_ECONOMY_MANAGER
+脚本名称: SkirmishAI/Turn on or off AI Economy Manager.
+翻译名称:
+执行代码: Turn AI Economy Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGEWALLBUILDER
+脚本名称: SkirmishAI/Turn on or off AI Wall Builder.
+翻译名称:
+执行代码: Turn AI Wall Builder for ~ 
+
+!ACTION: PLAYER_AI_CHANGEUNITUPGRADER
+脚本名称: SkirmishAI/Turn on or off AI Unit Upgrader.
+翻译名称:
+执行代码: Turn AI Unit Upgrader for ~ 
+
+!ACTION: PLAYER_AI_CHANGESCIENCEUPGRADER
+脚本名称: SkirmishAI/Turn on or off AI Science Upgrader.
+翻译名称:
+执行代码: Turn AI Science Upgrader for ~ 
+
+!ACTION: PLAYER_AI_CHANGETACTICAL
+脚本名称: SkirmishAI/Turn on or off Tactical AI.
+翻译名称:
+执行代码: Turn Tactical AI for ~ 
+
+!ACTION: TEAM_AI_TRANSFER
+脚本名称: SkirmishAI/Transfer control of Team to or from Skirmish AI.
+翻译名称: 
+执行代码: Ensure you have needed components of Skirmish AI turned on.
+
+!ACTION: UNIT_AI_TRANSFER
+脚本名称: SkirmishAI/Transfer control of Unit to or from Skirmish AI.
+翻译名称: 
+执行代码: Ensure you have needed components of Skirmish AI turned on.
+
+!ACTION: UNIT_AI_TRANSFER_ALL
+脚本名称: SkirmishAI/Transfer control of all player's units to or from Skirmish AI -- Enable Skirmish AI.
+翻译名称: 
+执行代码: Transfers control of all players objects to or from the Skirmish AI, it also starts the AI timers and opening moves(turns Skirmish AI On, if transferring to the Skirmish AI). Ensure you have needed components of Skirmish AI turned on in the player list.
+
+!ACTION: SKIRMISH_AI_TRANSFER_ALL
+脚本名称: SkirmishAI/Transfer ownership of all player's units to or from Skirmish AI -- Don't Enable Skirmish AI.
+翻译名称: 
+执行代码: Transfers control of all a players units to or from the Skirmish AI, note it does not start its timers or opening moves (doesn't turn the AI on if transferring to the AI).
+
+!ACTION: SKIRMISH_AI_START
+脚本名称: SkirmishAI/Start AI Opening moves and timers(Turn on the Skirmish AI).
+翻译名称: 
+执行代码: Units that have been transferred to the SkirmishAI will now start executing their opening moves and timers.  Ensure you have needed components of Skirmish AI turned on in the player list.
+
+!ACTION: SKIRMISH_AI_SET_ENEMY_PLAYER_PRIORITY
+脚本名称: SkirmishAI/Enemy Target Control/Set enemy player priority
+翻译名称: 
+执行代码: AI's target heuristics will always choose a higher-priority enemy's stuff over a lower-priority enemy's stuff, if possible. Priority of zero means the target heuristics will never consider that enemy.
+
+!ACTION: SKIRMISH_AI_CLEAR_ENEMY_PLAYER_PRIORITY
+脚本名称: SkirmishAI/Enemy Target Control/Clear enemy player priority
+翻译名称: 
+执行代码: AI's target heuristics will will never target this enemy's objects.
+
+!ACTION: SKIRMISH_AI_SET_ALL_ENEMY_PLAYERS_PRIORITIES
+脚本名称: SkirmishAI/Enemy Target Control/Set all enemy players' priority
+翻译名称:
+执行代码: AI's target heuristics will always choose a higher-priority enemy's stuff over a lower-priority enemy's stuff, if possible. Priority of zero means the target heuristics will never consider that enemy.
+
+!ACTION: SKIRMISH_AI_CLEAR_ALL_ENEMY_PLAYERS_PRIORITIES
+脚本名称: SkirmishAI/Enemy Target Control/Clear all enemy players' priority
+翻译名称:
+执行代码: AI's target heuristics will not target any enemies until 'Set enemy player priority' is called 
+
+!ACTION: SKIRMISH_AI_USE_AUTOMATIC_ENEMY_PLAYER_PRIORITY_SCHEME
+脚本名称: SkirmishAI/Enemy Target Control/Use automatic enemy player prioritization scheme
+翻译名称: 
+执行代码: AI automatically prioritizes enemy players using the given scheme
+
+!ACTION: SKIRMISH_AI_USE_DEFAULT_AUTOMATIC_ENEMY_PLAYER_PRIORITY_SCHEME
+脚本名称: SkirmishAI/Enemy Target Control/Use default automatic enemy player prioritization scheme
+翻译名称: 
+执行代码: AI automatically prioritizes enemy players using the default scheme for the AI's difficulty & personality
+
+!ACTION: SKIRMISH_AI_CONSIDER_ENEMY_WHEN_BUILDING
+脚本名称: SkirmishAI/Build Control/Consider specific enemy when deciding what to build
+翻译名称:
+执行代码: AI considers the units owned by the given enemy when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. This enemy's units will be weighed the same as those of all the other enemies the AI has been told to consider. By default, the AI considers all enemies, so this is only useful after telling the AI to not consider all the enemies.
+
+!ACTION: SKIRMISH_AI_DONT_CONSIDER_ENEMY_WHEN_BUILDING
+脚本名称: SkirmishAI/Build Control/Don't consider specific enemy when deciding what to build
+翻译名称:
+执行代码: AI does not consider the units owned by the given enemy when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. 
+
+!ACTION: SKIRMISH_AI_CONSIDER_ALL_ENEMIES_WHEN_BUILDING
+脚本名称: SkirmishAI/Build Control/Consider all enemies when deciding what to build
+翻译名称:
+执行代码: AI considers the units owned by the all its enemies equally when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. This is the default behavior.
+
+!ACTION: SKIRMISH_AI_DONT_CONSIDER_ANY_ENEMIES_WHEN_BUILDING
+脚本名称: SkirmishAI/Build Control/Don't consider any enemies when deciding what to build
+翻译名称: 
+执行代码: AI does not consider the units owned by the any its enemies when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. Without some enemy units to consider, the AI will have no idea what to build, and will just build randomly. It is expected that you will call 'Consider specific enemy when deciding what to build' after this to give the AI something to build against.
+
+!ACTION: BUILD_LIST_MOVE_TO_TOP
+脚本名称: Base Builder/Move structure to top of build list.
+翻译名称:基础建设/某命名物体移到生成列表的顶部
+执行代码: Move ~ to top of build list
+
+!ACTION: BUILD_LIST_ELIMINATE_FOOTPRINT
+脚本名称: Base Builder/Eliminate building footprint.
+翻译名称:基础建设/消除某玩家占用面积
+执行代码: Eliminate footprint for ~ .
+
+!ACTION: BUILD_LIST_ELIMINATE_FOOTPRINT_ALL
+脚本名称: Base Builder/Eliminate all building footprints.
+翻译名称:基础建设/消除某玩家占用面积
+执行代码: Eliminate all building footprints for ~ .
+
+!ACTION: UNIT_CONTEXT_SENSITIVE_ATTACK
+脚本名称: Object Type/Attack/Set named object to capture a named object.
+翻译名称: 
+执行代码: This script should be used to tell Engineer and Infiltration type units to capture/infiltrate another object.
+
+!ACTION: TEAM_CONTEXT_SENSITIVE_ATTACK
+脚本名称: Team/Attack/Set team to capture a named object.
+翻译名称: 
+执行代码: This script should be used to tell a team of Engineer's and/or Infiltration type units to capture/infiltrate another object.
+
+!ACTION: SKIRMISH_AI_SET_FAVORED_ENEMY
+脚本名称: SkirmishAI/Enemy Target Control/Set Skirmish AI favored enemy
+翻译名称: 
+执行代码: Sets the given enemy's priority to 10, and everyone else's priority to 0
+
+!ACTION: SKIRMISH_AI_USE_REBUILD_SYSTEM
+脚本名称: SkirmishAI/Use Skirmish AI Structure Rebuilds
+翻译名称:
+执行代码: Use structure rebuilds for ~: 
+
+!ACTION: SKIRMISH_AI_USE_REPAIRS
+脚本名称: SkirmishAI/Skirmish AI may repair buildings
+翻译名称:
+执行代码: Use structure repair for ~: 
+
+!ACTION: PLAYER_ALLOW_AI_AUTOACQUIRE
+脚本名称: SkirmishAI/Allow AI Auto-Acquire for Player.
+翻译名称:
+执行代码: Use AI AutoAcquire for ~: 
+
+!ACTION: TEAM_ALLOW_AI_AUTOACQUIRE
+脚本名称: SkirmishAI/Allow AI Auto-Acquire for team.
+翻译名称:
+执行代码: Use AI AutoAcquire for ~: 
+
+!ACTION: UNIT_ALLOW_AI_AUTOACQUIRE
+脚本名称: SkirmishAI/Allow AI Auto-Acquire for named object.
+翻译名称:
+执行代码: Use AI AutoAcquire for ~: 
+
+!ACTION: SET_CAMPAIGN_FLAG
+脚本名称: Campaign/Set or clear a campaign flag
+翻译名称:战役/设置或清除战役标志
+执行代码: Set campaign flag ~ to 
+
+!ACTION: PLAYER_SPECIAL_POWER_AVAILABILITY
+脚本名称: Player/Special Power/Set special power availability.
+翻译名称:
+执行代码:  ~ set ~ availability to ~.
+
+!ACTION: PLAYER_LOCK_PLAYER_TECH
+脚本名称: Player/Special Power/Lock or Unlock a player tech.
+翻译名称:
+执行代码:  ~ set ~ locked to ~.
+
+!ACTION: PLAYER_SET_MAX_PLAYER_POWER_POINTS
+脚本名称: Player/Special Power/Set maximum player power points.
+翻译名称:
+执行代码:  ~ set maximum power points to ~.
+
+!ACTION: PLAYER_SET_PLAYER_POWER_POINTS
+脚本名称: Player/Special Power/Set the players current power point total.
+翻译名称:
+执行代码:  ~ set power points to ~.
+
+!ACTION: PLAYER_UNIT_TYPE_SPECIAL_POWER_IGNORE_REQUIREMENTS
+脚本名称: Player/Special Power/Player's object's special power ignores requirements.
+翻译名称:
+执行代码: The ~ for ~ owned by ~ ignores requirements: ~.
+
+!ACTION: SKIRMISH_AI_MAKE_BASE
+脚本名称: SkirmishAI/Create a skirmish AI base
+翻译名称:
+执行代码: Player ~ has a base at ~.
+
+!ACTION: UNIT_SET_STANCE
+脚本名称: Object Type/Settings/Sets a unit's current stance
+翻译名称:物体类型/设置/
+执行代码: Sets ~ stance to ~.
+
+!ACTION: TEAM_SET_STANCE
+脚本名称: Team/Settings/Set a Team's current stance
+翻译名称:
+执行代码: Sets ~ stance to ~.
+
+!ACTION: DISPLAY_TUTORIAL_TEXT
+脚本名称: Tutorial/Display tutorial text
+翻译名称:
+执行代码: Show tutorial text: 
+
+!ACTION: HIDE_TUTORIAL_TEXT
+脚本名称: Tutorial/Hide tutorial text
+翻译名称:
+执行代码: Hide the tutorial text.
+
+!ACTION: FLASH_MOUSE_HUD_FIXED_ELEMENT
+脚本名称: Tutorial/Flash PC HUD fixed element
+翻译名称:
+执行代码: Set flash PC HUD fixed element ~ to ~.
+
+!ACTION: FLASH_JOYPAD_HUD_FIXED_ELEMENT
+脚本名称: Tutorial/Flash console HUD fixed element
+翻译名称:
+执行代码: Set flash console HUD fixed element ~ to ~.
+
+!ACTION: FLASH_UI_SUDS_ELEMENT
+脚本名称: Unused or Obsolete/Tutorial/Flash UI SUDS element
+翻译名称:.未使用、过时的/
+执行代码: FLASH_UI_PLAYER_POWER_BUTTON
+
+!ACTION: FLASH_UI_UNIT_ABILITY_BUTTON
+脚本名称: Tutorial/Flash named object's UI user ability button
+翻译名称:
+执行代码: For ~ set flash UI user ability button ~ to ~.
+
+!ACTION: FLASH_UI_BUILD_BUTTON
+脚本名称: Tutorial/Flash UI build button
+翻译名称:
+执行代码: Set flash UI build '~' button to ~.
+
+!ACTION: FLASH_JOYPAD_COMMANDBAR_BUTTON
+脚本名称: Tutorial/Flash console command menu button
+翻译名称:
+执行代码: Set flash console command menu button ~ to ~.
+
+!ACTION: DISABLE_MOUSE_HUD_FIXED_ELEMENT
+脚本名称: Tutorial/Disable PC HUD fixed element
+翻译名称:
+执行代码: Set disable PC HUD fixed element ~ to ~.
+
+!ACTION: DISABLE_JOYPAD_HUD_FIXED_ELEMENT
+脚本名称: Tutorial/Disable console HUD fixed element
+翻译名称:
+执行代码: Set disable console HUD fixed element ~ to ~.
+
+!ACTION: DISABLE_UI_PLAYER_POWER_BUTTON
+脚本名称: Tutorial/Disable UI player power button
+翻译名称:
+执行代码: Set disable UI player power button ~ to ~.
+
+!ACTION: DISABLE_UI_UNIT_ABILITY_BUTTON
+脚本名称: Tutorial/Disable named object's UI user ability button
+翻译名称:
+执行代码: For ~ set disable UI user ability button ~ to ~.
+
+!ACTION: DISABLE_UI_BUILD_BUTTON
+脚本名称: Tutorial/Disable UI build button
+翻译名称:
+执行代码: Set disable UI build '~' button to ~.
+
+!ACTION: DISABLE_JOYPAD_COMMANDBAR_BUTTON
+脚本名称: Tutorial/Disable console command menu button
+翻译名称:
+执行代码: Set disable console command menu button ~ to ~.
+
+!ACTION: UNIT_SET_HEALTH
+脚本名称: Object Type/Damage or Remove/Set the health of the unit (in percentage).
+翻译名称:
+执行代码: Set health of ~ to percentage (0.0 - 100.0) 
+
+!ACTION: NAMED_SET_MAX_HEALTH
+脚本名称: Object Type/Settings/Set the max health of a unit.
+翻译名称:物体类型/设置/
+执行代码: Set health of ~ to ~ set current health to max 
+
+!ACTION: PLAYER_SET_BASE_POWER
+脚本名称: Player/Power/Set the base power for the player.
+翻译名称:
+执行代码: Set base power for ~ to 
+
+!ACTION: SWITCH_TO_PRODUCTION_QUEUE_TAB
+脚本名称: Tutorial/Switch to production queue tab
+翻译名称:
+执行代码: Switch to ~.
+
+!WARNING: 568163: Reg not esi: decnum = 0
+!ACTION: REGISTER_OBJECT_VS_OBJECT_KILL_RECORDING
+脚本名称: Scripting/Data Tracking/Record object vs. object kills
+翻译名称:脚本/
+执行代码: Record object type ~ belonging to ~ killed object type ~ belonging to ~.
+
+!WARNING: 568209: Reg not esi: decnum = 0
+!ACTION: STORE_OBJECT_KILL_COUNT_TO_COUNTER
+脚本名称: Scripting/Data Tracking/Store object vs. object kills to counter
+翻译名称:脚本/
+执行代码: Store num of object type ~ belonging to ~ killed object type ~ belonging to ~ to counter ~.
+
+!ACTION: UNIT_KILL_ALL_IN_AREA
+脚本名称: Object Type/Damage or Remove/Kill all units belonging to the specified player in the specified area.
+翻译名称:
+执行代码: Kill all units belonging to ~ in ~.
+
+!ACTION: SKIRMISH_AI_REBUILD_SYSTEM_SCAN
+脚本名称: SkirmishAI/Skirmish AI Structure Rebuilds Rescan
+翻译名称:
+执行代码: Scan for new structures to rebuild for 
+
+!ACTION: LINK_MISSION_HOT_SPOT_TO_OBJECT
+脚本名称: Interface/Mission Hot-Spot/Link mission hot-spot to object
+翻译名称:界面/
+执行代码: Set mission hot-spot ~ linked to object ~ to ~.
+
+!ACTION: LINK_MISSION_HOT_SPOT_TO_WAYPOINT
+脚本名称: Interface/Mission Hot-Spot/Link mission hot-spot to waypoint
+翻译名称:界面/
+执行代码: Set mission hot-spot ~ linked to waypoint ~ to ~.
+
+!ACTION: SET_MISSION_HOT_SPOT_VISIBILITY
+脚本名称: Interface/Mission Hot-Spot/Set visibility of mission hot-spot
+翻译名称:界面/
+执行代码: Set visibility of mission hot-spot ~ to ~.
+
+!ACTION: SET_MISSION_HOT_SPOT_ACTIVENESS
+脚本名称: Interface/Mission Hot-Spot/Set mission hot-spot to be active or inactive
+翻译名称:界面/
+执行代码: Set 'active' status of mission hot-spot ~ to ~.
+
+!ACTION: FADE_OUT_TO_BLACK
+脚本名称: Interface/Fade/Fade-out to black
+翻译名称:界面/
+执行代码: Fade-out the entire screen to black in ~ seconds.
+
+!ACTION: FADE_IN_FROM_BLACK
+脚本名称: Interface/Fade/Fade-in from black
+翻译名称:界面/
+执行代码: Fade-in the entire screen from black in ~ seconds.
+
+!ACTION: REDALERT_DISABLE_THREAT_LEVEL_BONUS
+脚本名称: Player/Red Alerts/Disable Threat Level Bonus
+翻译名称: 
+执行代码: This will disable the attribute modifiers associated with each area of the red alert system(yellow, orange, red).  Currently these give modifiers to this players objects experience gain.
+
+!ACTION: SET_COOP_AI_COMMAND_UI_ENABLED
+脚本名称: Interface/Enable or disable the co-op AI command panel
+翻译名称:界面/
+执行代码: Set the enabled status of the co-op AI command panel to 
+
+!ACTION: UNIT_SPAWN_NAMED_OBJECT_ON_TEAM_AT_NAMED_OBJECT_LOCATION
+脚本名称: Object Type/Spawn/Spawn -- named object on Team at a named object's position.
+翻译名称:
+执行代码: Spawn ~ of type ~ on ~ at named object ~ .
+
+!ACTION: PLAYER_GRANT_SPECIAL_POWER
+脚本名称: Player/Special Power/Grant power to player.
+翻译名称:
+执行代码: Grant ~to player 
+
+!ACTION: NAMED_SHOW_INFOBOX
+脚本名称: Interface/Info Box/Show Info Box
+翻译名称:界面/
+执行代码:  ~ Show info box text ~ for ~ seconds.  Display Image from button 
+
+!ACTION: NAMED_REMOVE_INFOBOX
+脚本名称: Interface/Info Box/Remove Info Box
+翻译名称:界面/
+执行代码:  ~ remove info box
+
+!ACTION: PLAYER_TOGGLE_RESOURCE_SHARING
+脚本名称: Player/Money/Toggle allied resource sharing on-off.
+翻译名称:
+执行代码:  ~ turn resource sharing:  
+
+!WARNING: 568961: Reg not esi: decnum = 0
+!ACTION: TEAM_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT
+脚本名称: Team/Move/Set team to follow a waypoint path starting at waypoint.
+翻译名称:
+执行代码: Have ~ follow ~ , as a team is ~ , in formation is ~ , starting at waypoint 
+
+!ACTION: NAMED_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT
+脚本名称: Object Type/Move/Named object follow a waypoint path starting at waypoint.
+翻译名称:
+执行代码:  ~ follow ~ starting at 
+
+!ACTION: NAMED_FORCE_ATTACK_NAMED
+脚本名称: Object Type/Attack/Named Object force attack a named object.
+翻译名称:
+执行代码:  ~ force attacks 
+
+!ACTION: NAMED_FORCE_ATTACK_WAYPOINT
+脚本名称: Object Type/Attack/Named Object force attack a waypoint.
+翻译名称:
+执行代码:  ~ force attacks 
+
+!ACTION: CAMPAIGN_CREATE_AUTO_SAVE
+脚本名称: Campaign/Create campaign auto save checkpoint.
+翻译名称:战役/用描述本地化字符串创建自动保存检查点
+执行代码: Create auto save checkpoint with 翻译名称ription: ~.
+
+!ACTION: SHOW_UNIT_INTRO
+脚本名称: Interface/Show unit intro
+翻译名称:界面/
+执行代码: Show unit intro for ~.
+
+!ACTION: PLAYER_SET_ALL_UNITS_TO_FLEE
+脚本名称: Player/Retreat/Set all units on player to flee off map.
+翻译名称:
+执行代码: Set ~ units to flee off map
+
+!ACTION: PLAYER_ALLOWED_TOBE_COOPAI
+脚本名称: Interface/Toggle CoOp AI interface.
+翻译名称:界面/
+执行代码: Set ~ CoOp AI's interface to 
+
+!ACTION: PLAYER_TOGGLE_SKIRMISH_AI
+脚本名称: SkirmishAI/Toggle SkirmishAI On-Off.
+翻译名称:
+执行代码: Set ~ to toggle SkirmishAI 
+
+!ACTION: PLACE_AI_BEACON_LOCATION
+脚本名称: SkirmishAI/Beacon/Spawn an AI Beacon at a waypoint.
+翻译名称:
+执行代码:  ~ place beacon type: ~ at waypoint: 
+
+!ACTION: PLACE_AI_BEACON_OBJECT
+脚本名称: SkirmishAI/Beacon/Spawn an AI Beacon on a named object
+翻译名称:
+执行代码:  ~ place beacon type: ~ on unit: 
+

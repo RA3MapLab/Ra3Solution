@@ -1,1 +1,3228 @@
-[{"scriptName":" Scripting/True.","scriptDesc":"","scriptArg":" True.","commandWord":"CONDITION_TRUE","editorNumber":3,"argumentModel":[]},{"scriptName":" Audio/Music/Playing Music is from Script","scriptDesc":"","scriptArg":"  The music scripting system is on.","commandWord":"MUSIC_IS_PLAYING_FROM_SCRIPT","editorNumber":104,"argumentModel":[]},{"scriptName":" Audio/Sound has completed playing.","scriptDesc":"","scriptArg":"  ~ has completed playing.","commandWord":"HAS_FINISHED_AUDIO","editorNumber":43,"argumentModel":[{"typeNumber":12,"realType":"String","exampleData":"Sound"}]},{"scriptName":" Camera/Camera entered trigger area.","scriptDesc":"","scriptArg":" Camera enters ~.","commandWord":"CAMERA_ENTERED_AREA","editorNumber":94,"argumentModel":[{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Camera/Camera following spline path hits specified waypoint.","scriptDesc":"","scriptArg":"  Camera following spline path hits ~.","commandWord":"CAMERA_HIT_SPECIFIC_SPLINE_WAYPOINT","editorNumber":87,"argumentModel":[{"typeNumber":7,"realType":"String","exampleData":"Waypoint"}]},{"scriptName":" Camera/Camera movement finished.","scriptDesc":"","scriptArg":" The camera movement has finished.","commandWord":"CAMERA_MOVEMENT_FINISHED","editorNumber":7,"argumentModel":[]},{"scriptName":" Campaign/Test a campaign flag.","scriptDesc":"","scriptArg":" Test the value of campaign flag ~.","commandWord":"TEST_CAMPAIGN_FLAG","editorNumber":137,"argumentModel":[{"typeNumber":80,"realType":"String","exampleData":"Use_Alternate_Campaign_Finale"}]},{"scriptName":" Game Type/Compares the number of players in game to a value.","scriptDesc":"","scriptArg":"  Is this a ~ ~ player game.","commandWord":"COMPARE_NUM_PLAYERS_IN_GAME","editorNumber":114,"argumentModel":[{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"2"}]},{"scriptName":" Interface/Mission Hot-Spot/Mission hot-spot has been activated.","scriptDesc":"","scriptArg":"  Mission hot-spot ~ has been activated.","commandWord":"MISSION_HOT_SPOT_ACTIVE","editorNumber":144,"argumentModel":[{"typeNumber":90,"realType":"String","exampleData":"hotspot"}]},{"scriptName":" Movie/Movie in the radar has completed playing.","scriptDesc":"","scriptArg":" Movie ~ has completed playing.","commandWord":"HAS_FINISHED_VIDEO","editorNumber":41,"argumentModel":[{"typeNumber":23,"realType":"String","exampleData":"Movie"}]},{"scriptName":" Object Type/Area or Path/Named object can path to named object.","scriptDesc":"","scriptArg":"  ~ can path to ~.","commandWord":"UNIT_CAN_PATH_TO_OBJECT","editorNumber":99,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Area or Path/Named object can path to waypoint.","scriptDesc":"","scriptArg":"  ~ can path to ~.","commandWord":"UNIT_CAN_PATH_TO_WAYPOINT","editorNumber":98,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":7,"realType":"String","exampleData":"Waypoint"}]},{"scriptName":" Object Type/Area or Path/Named object exits an area.","scriptDesc":"","scriptArg":"  ~ exits ","commandWord":"NAMED_EXITED_AREA","editorNumber":32,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Object Type/Area or Path/Named object has reached the end of a specific waypoint path. (Unreliable)","scriptDesc":"","scriptArg":"  ~ has reached the end of ","commandWord":"NAMED_REACHED_WAYPOINTS_END","editorNumber":28,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":24,"realType":"String","exampleData":"WaypointPath"}]},{"scriptName":" Object Type/Area or Path/Named object is inside an area.","scriptDesc":"","scriptArg":"  ~ is inside ","commandWord":"NAMED_INSIDE_AREA","editorNumber":9,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Object Type/Area or Path/Named object is outside an area.","scriptDesc":"","scriptArg":"  ~ is outside ","commandWord":"NAMED_OUTSIDE_AREA","editorNumber":10,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Evaluate if a named object is being attacked but cannot retaliate","scriptDesc":"","scriptArg":"  Evaluate if ~ is being attacked and cannot retaliate.","commandWord":"UNIT_IS_ATTACKED_AND_CANNOT_RETALIATE","editorNumber":110,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object exists and is alive.","scriptDesc":"This checks to see if the object exists on the level, and is not effectively dead.  This means it will fire if the unit is around and not dead, a unit in its slow death will cause this to return false.","scriptArg":"  ~ exists and is alive.","commandWord":"NAMED_NOT_DESTROYED","editorNumber":12,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object has been attacked by Player.","scriptDesc":"","scriptArg":"  ~ has been attacked by ","commandWord":"NAMED_ATTACKED_BY_PLAYER","editorNumber":17,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object has killed (comparison) number of object type or type list.","scriptDesc":"Script will compare if a unit has killed (x) number of object type(s).","scriptArg":"  ~ has killed  ~ ~ ","commandWord":"NAMED_HAS_KILLED_COMPARISON_UNIT_TYPE","editorNumber":149,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"2"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object is attacked by a specific object type.","scriptDesc":"","scriptArg":"  ~ has been attacked by a(n) ","commandWord":"NAMED_ATTACKED_BY_OBJECTTYPE","editorNumber":15,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object is destroyed by a specific object type.","scriptDesc":"","scriptArg":"  ~ has been destroyed by a(n) ","commandWord":"NAMED_DESTROYED_BY_OBJECTTYPE","editorNumber":92,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object is destroyed.","scriptDesc":"This will return true if the unit is dead or does not exist.  It will also return true if the unit doesn","scriptArg":"  ~ has been destroyed.","commandWord":"NAMED_DESTROYED","editorNumber":11,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object is dying. (Cinematic)","scriptDesc":"Returns true if the unit is currently dead, if the unit doesn","scriptArg":"  ~ has been killed, but is still on screen.","commandWord":"NAMED_DYING","editorNumber":47,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object is finished dying. (Cinematic)","scriptDesc":"This will return true if the unit no longer exists but did in the past.  If the unit currently exists it will return false.","scriptArg":"  ~ has been killed, and is finished dying.","commandWord":"NAMED_TOTALLY_DEAD","editorNumber":48,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object's health % compared to a value.","scriptDesc":"Compares the unit's current health relative to the initial health (which may be modified in World Builder) to the value.","scriptArg":"  ~ health is ~ ~ percent.","commandWord":"UNIT_HEALTH","editorNumber":46,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Object Type/Attacked, Destroyed, or Exists/Named object's veterancy level compared to a value.","scriptDesc":"","scriptArg":" Does ~ have veterancy level ~ ~.","commandWord":"UNIT_COMPARE_RANK","editorNumber":105,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Object Type/Experience/Named object has gained experience level.","scriptDesc":"","scriptArg":"  ~ has gained a level.","commandWord":"UNIT_HAS_GAINED_LEVEL","editorNumber":85,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Garrison/Evaluates if named object is currently holding passengers.","scriptDesc":"","scriptArg":"  Evaluate if ~ is containing any passengers.","commandWord":"UNIT_HAS_PASSENGER","editorNumber":109,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Garrison/Named building is garrisoned by object type owned by specific player.","scriptDesc":"","scriptArg":"  ~ is garrisoned by object type ~ owned by ~.","commandWord":"BUILDING_GARRISONNED_BY_OBJECT_TYPE","editorNumber":142,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Object Type/Garrisoned/A specific building is empty.","scriptDesc":"","scriptArg":"  ~ is empty.","commandWord":"NAMED_BUILDING_IS_EMPTY","editorNumber":58,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Object Status/Named object has object status.","scriptDesc":"","scriptArg":"  ~ has ","commandWord":"UNIT_HAS_OBJECT_STATUS","editorNumber":59,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":41,"realType":"Int32","exampleData":"5"}]},{"scriptName":" Object Type/Selected/Named object is currently selected.","scriptDesc":"","scriptArg":"  ~ is currently selected.","commandWord":"NAMED_SELECTED","editorNumber":30,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Selected/Object Type is currently selected.","scriptDesc":"","scriptArg":"  ~ is currently selected.","commandWord":"TYPE_SELECTED","editorNumber":135,"argumentModel":[{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Object Type/Settings/Named object has model condition.","scriptDesc":"","scriptArg":"  ~ has ","commandWord":"UNIT_HAS_MODELCONDITION","editorNumber":150,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":58,"realType":"String","exampleData":"AFLAME"}]},{"scriptName":" Object Type/Settings/Test object flags.","scriptDesc":"","scriptArg":" Test the value of ~ for ~.","commandWord":"UNIT_TEST_OBJECT_PANEL_FLAGS","editorNumber":136,"argumentModel":[{"typeNumber":46,"realType":"String","exampleData":"Indestructible"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Object Type/Sighted/Named object has sighted a type of object belonging to Player.","scriptDesc":"","scriptArg":"  ~ sees a(n) ~ belonging to ~.","commandWord":"TYPE_SIGHTED","editorNumber":57,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Object Type/Sighted/Unit has sighted a friendly, neutral, or enemy unit belonging to Player.","scriptDesc":"","scriptArg":"  ~ sees a(n) ~ unit belonging to ~.","commandWord":"ENEMY_SIGHTED","editorNumber":45,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":19,"realType":"Int32","exampleData":"2"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Object Type/Special Power/Unit's special power is ready to fire.","scriptDesc":"","scriptArg":"  ~ is ready to fire ~.","commandWord":"UNIT_SPECIAL_POWER_READY","editorNumber":139,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":31,"realType":"String","exampleData":"specialpower"}]},{"scriptName":" Object Type/Stance/Named object is using stance.","scriptDesc":"","scriptArg":" Is ~ in the ~.","commandWord":"UNIT_USING_STANCE","editorNumber":133,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":68,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Object Type/Unowned/There are (comparison) unowned faction objects.","scriptDesc":"","scriptArg":"  ~. There are ~ ~ unowned faction objects.","commandWord":"SKIRMISH_UNOWNED_FACTION_UNIT_EXISTS","editorNumber":70,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Object Type/Upgrades/Unit has upgrade.","scriptDesc":"","scriptArg":"  ~ has ~.","commandWord":"UNIT_HAS_UPGRADE","editorNumber":138,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":33,"realType":"String","exampleData":"upgrade"}]},{"scriptName":" Platform/Is game running on platform.","scriptDesc":"Returns true if running on the chosen platform.  Current options are PC/360/PS3","scriptArg":" Is game running on ","commandWord":"CURRENT_PLATFORM","editorNumber":154,"argumentModel":[{"typeNumber":102,"realType":"String","exampleData":"PS3"}]},{"scriptName":" Player/Area/Player has (comparison) completely built unit types in an area.","scriptDesc":"","scriptArg":"  ~ has ~ ~ completely built objects of type ~ in the ~.","commandWord":"PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_COMPLETELY_BUILT","editorNumber":128,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Player/Area/Player has (comparison) object type in an area with a specified upgrade.","scriptDesc":"","scriptArg":"  ~ has ~ ~ object of type with ~ in the ~ with ~.","commandWord":"PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_WITH_UPGRADE","editorNumber":80,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":33,"realType":"String","exampleData":"upgrade"}]},{"scriptName":" Player/Area/Player has (comparison) object type in an area.","scriptDesc":"","scriptArg":"  ~ has ~ ~ object of type ~ in the ~.","commandWord":"PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA","editorNumber":55,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Player/Area/Player has (comparison) object types with kindof in an area.","scriptDesc":"","scriptArg":"  ~ has ~ ~ objects with ~ in the ~.","commandWord":"PLAYER_HAS_COMPARISON_UNIT_KIND_IN_TRIGGER_AREA","editorNumber":56,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":27,"realType":"Int32","exampleData":"5"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Player/Area/Player has units in an area","scriptDesc":"","scriptArg":"  ~ has units in ~.","commandWord":"SKIRMISH_PLAYER_HAS_UNITS_IN_AREA","editorNumber":72,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Player/Attacked or Destroyed/Player destroyed N or more of an opponent's buildings.","scriptDesc":"","scriptArg":"  ~ has destroyed ~ or more buildings owned by ~.","commandWord":"PLAYER_DESTROYED_N_BUILDINGS_PLAYER","editorNumber":54,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Player/Attacked or Destroyed/Player has been attacked by Player.","scriptDesc":"","scriptArg":"  ~ has been attacked by ~.","commandWord":"SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER","editorNumber":73,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Player/Attacked or Destroyed/Player has destroyed N or more objects of kindof.","scriptDesc":"","scriptArg":"  ~ has killed ~ or more objects of ~.","commandWord":"PLAYER_HAS_KILLED_KINDOF_UNITS","editorNumber":90,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":27,"realType":"Int32","exampleData":"5"}]},{"scriptName":" Player/Attacked or Destroyed/Player has destroyed N or more objects of type.","scriptDesc":"","scriptArg":"  ~ has killed ~ or more ~.","commandWord":"PLAYER_HAS_KILLED_TYPE_UNITS","editorNumber":91,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Player/Attacked or Destroyed/Player has killed Named Unit","scriptDesc":"","scriptArg":"  ~ has killed object named: ","commandWord":"PLAYER_HAS_KILLED_NAMED_UNIT","editorNumber":147,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Player/CommandPoints/Player has enough command points to build a team. (May be broken. -JB)","scriptDesc":"","scriptArg":"  ~ has enough command points to build ~.","commandWord":"HAS_COMMAND_POINTS_TO_BUILD_TEAM","editorNumber":88,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Player/CommandPoints/Player has enough command points to build object type.","scriptDesc":"","scriptArg":"  ~ has enough command points to build ~.","commandWord":"HAS_COMMAND_POINTS_TO_BUILD_UNIT","editorNumber":89,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Player/Controlled By/Is player controlled by human or AI Personality.","scriptDesc":"","scriptArg":"  ~ is controlled by ","commandWord":"PLAYER_IS_HUMAN_OR_AI_PERSONALITY","editorNumber":146,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":70,"realType":"String","exampleData":"Human"}]},{"scriptName":" Player/Eva/Has EVA event played recently.","scriptDesc":"","scriptArg":"  Has ~ played with in the last ~ seconds.","commandWord":"HAS_EVA_EVENT_PLAYED_IN_LAST_N_SECONDS","editorNumber":126,"argumentModel":[{"typeNumber":78,"realType":"String","exampleData":"EVA"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Player/Experience/Player has object of veterancy level compared to a value.","scriptDesc":"","scriptArg":"  ~ has ~ with veterancy level ~ ~.","commandWord":"PLAYER_HAS_OBJECT_OF_VETERANCY","editorNumber":106,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Faction and Start Position/Player is faction.","scriptDesc":"","scriptArg":"  ~ is ","commandWord":"SKIRMISH_PLAYER_FACTION","editorNumber":66,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":47,"realType":"String","exampleData":"allies"}]},{"scriptName":" Player/Faction and Start Position/Start Position.","scriptDesc":"","scriptArg":"  ~ starting position is ~ .","commandWord":"START_POSITION_IS","editorNumber":79,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Garrisoned/Player has (comparison) garrisoned buildings.","scriptDesc":"","scriptArg":"  ~ has ~ ~ garrisoned buildings.","commandWord":"SKIRMISH_PLAYER_HAS_COMPARISON_GARRISONED","editorNumber":71,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Garrisoned/Player has garrisoned a specific building.","scriptDesc":"","scriptArg":"  ~ has garrisoned building named ","commandWord":"BUILDING_ENTERED_BY_PLAYER","editorNumber":44,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Player/Owns/Does Player have objects that have Toggled Weapon sets.","scriptDesc":"","scriptArg":"  Does ~ have ~ that have toggled weapon sets.","commandWord":"UNIT_HAS_TOGGLED_WEAPON","editorNumber":123,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":15,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Player/Owns/Num objects has specified upgrade.","scriptDesc":"","scriptArg":"  Does ~ have ~ units that have ~.","commandWord":"PLAYER_HAS_NUM_UNITS_WITH_UPGRADE","editorNumber":121,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":33,"realType":"String","exampleData":"upgrade"}]},{"scriptName":" Player/Owns/Num objects leveled up during game.","scriptDesc":"","scriptArg":" Does ~ have ~ objects that have gained veterancy this game.","commandWord":"NUM_UNITS_LEVELED_UP","editorNumber":120,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Owns/Num objects of type loaded on transport.","scriptDesc":"","scriptArg":"  Does ~ have ~ objects of type ~ loaded on transport of type ~.","commandWord":"PLAYER_HAS_NUM_UNITS_LOADED_WITH_OBJECT","editorNumber":122,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":15,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":15,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Player/Owns/Player has (comparison) number of credits.","scriptDesc":"","scriptArg":"  ~ has ~ ~ credits.","commandWord":"PLAYER_HAS_CREDITS","editorNumber":22,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Owns/Player has (comparison) obejcts more than x distance from named object.","scriptDesc":"","scriptArg":"  Player ~ has ~ ~ objects at least ~ feet from ~.","commandWord":"PLAYER_HAS_NUMBER_UNITS_DISTANCE_FROM_OBJECT","editorNumber":108,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Player/Owns/Player has (comparison) object type.","scriptDesc":"","scriptArg":"  ~ has ~ ~ object of type ~.","commandWord":"PLAYER_HAS_OBJECT_COMPARISON","editorNumber":49,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"1"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Player/Owns/Player has (comparison) object types with kindof.","scriptDesc":"","scriptArg":"  ~ has ~ ~ objects with ~.","commandWord":"PLAYER_HAS_COMPARISON_UNIT_KIND","editorNumber":155,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":27,"realType":"Int32","exampleData":"5"}]},{"scriptName":" Player/Owns/Player has (comparison) objects with a model condition.","scriptDesc":"","scriptArg":"  ~ has ~ ~ objects with ~.","commandWord":"PLAYER_HAS_NUMBER_OBJECTS_WITH_MODELCONDITION","editorNumber":107,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":58,"realType":"String","exampleData":"AFLAME"}]},{"scriptName":" Player/Owns/Player has (comparison) objects with object status","scriptDesc":"","scriptArg":"  ~ has ~ ~ with ~.","commandWord":"PLAYER_HAS_NUMBER_OBJECTS_WITH_OBJECT_STATUS","editorNumber":140,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":41,"realType":"Int32","exampleData":"1"}]},{"scriptName":" Player/Owns/Player has built an object type.","scriptDesc":"","scriptArg":"  ~ has been built by ","commandWord":"BUILT_BY_PLAYER","editorNumber":19,"argumentModel":[{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Player/Owns/Player has lost an object of type.","scriptDesc":"","scriptArg":"  ~ has lost an object of type ~.","commandWord":"PLAYER_LOST_OBJECT_TYPE","editorNumber":76,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Player/Owns/Player owns Team.","scriptDesc":"","scriptArg":"  ~ is owned by ~.","commandWord":"TEAM_OWNED_BY_PLAYER","editorNumber":26,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Player/Owns/Player owns Unit.","scriptDesc":"","scriptArg":"  ~ owns ~.","commandWord":"NAMED_OWNED_BY_PLAYER","editorNumber":25,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Player/Player has triggered game event","scriptDesc":"","scriptArg":"  ~ has triggered ~.","commandWord":"PLAYER_TRIGGERED_SCRIPT_EVENT","editorNumber":141,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":86,"realType":"Int32","exampleData":"2"}]},{"scriptName":" Player/Power/Player has (comparison) kilowatts excess power supply.","scriptDesc":"","scriptArg":"  ~ has ~ ~ excess kilowatts power supply.","commandWord":"PLAYER_EXCESS_POWER_COMPARE_VALUE","editorNumber":63,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Power/Player has (comparison) percent power supply to consumption.","scriptDesc":"","scriptArg":"  ~ has ~ ~ percent power supply ratio.","commandWord":"PLAYER_POWER_COMPARE_PERCENT","editorNumber":62,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Power/Player's base currently has no power.","scriptDesc":"","scriptArg":"  ~ buildings are not powered.","commandWord":"PLAYER_HAS_NO_POWER","editorNumber":40,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Player/Power/Player's base currently has power.","scriptDesc":"","scriptArg":"  ~ buildings are powered.","commandWord":"PLAYER_HAS_POWER","editorNumber":27,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Player/Red Alerts/Player activated their Red Alert.","scriptDesc":"","scriptArg":" Player has activated their Red Alert.","commandWord":"PLAYER_RED_ALERT_ACTIVATED","editorNumber":145,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Player/Sighted/Player has sighted another player.","scriptDesc":"","scriptArg":"  ~ has seen ~.","commandWord":"SKIRMISH_PLAYER_HAS_DISCOVERED_PLAYER","editorNumber":75,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Player/Sighted/Player has sighted named object.","scriptDesc":"","scriptArg":"  ~ has seen ","commandWord":"NAMED_DISCOVERED","editorNumber":23,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Player/Sighted/Player has sighted Team.","scriptDesc":"","scriptArg":"  ~ has seen ~.","commandWord":"TEAM_DISCOVERED","editorNumber":24,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Player/Special Power/Player can perform special power on team location.","scriptDesc":"","scriptArg":"  ~ can perform ~ at ~'s location.","commandWord":"SKIRMISH_FIRE_SPECIAL_POWER_ON_TEAM","editorNumber":116,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":31,"realType":"String","exampleData":"specialpower"},{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Player/Special Power/Player completed using a special power.","scriptDesc":"","scriptArg":"  ~ completed using ~.","commandWord":"PLAYER_COMPLETED_SPECIAL_POWER","editorNumber":51,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":31,"realType":"String","exampleData":"specialpower"}]},{"scriptName":" Player/Special Power/Player has <comparison><n> power points.","scriptDesc":"Determines if a player has x amount of player power points.","scriptArg":"  ~ has ~ ~ power points.","commandWord":"PLAYER_HAS_COMPARISON_POWER_POINTS","editorNumber":151,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Player/Special Power/Player has player tech.","scriptDesc":"Determines if a player has purchased a player tech.","scriptArg":"  ~ has ~ player tech.","commandWord":"PLAYER_HAS_PLAYER_TECH","editorNumber":153,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":94,"realType":"String","exampleData":"PlayerTech"}]},{"scriptName":" Player/Special Power/Player start using a special power from a named object.","scriptDesc":"","scriptArg":"  ~ starts using ~ from ~.","commandWord":"PLAYER_TRIGGERED_SPECIAL_POWER_FROM_NAMED","editorNumber":52,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":31,"realType":"String","exampleData":"specialpower"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Player/Special Power/Player starts using a special power in trigger area.","scriptDesc":"","scriptArg":"  ~ starts using ~ in ~.","commandWord":"PLAYER_TRIGGERED_SPECIAL_POWER_IN_AREA","editorNumber":143,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":31,"realType":"String","exampleData":"specialpower"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Player/Special Power/Player starts using a special power.","scriptDesc":"","scriptArg":"  ~ starts using ~.","commandWord":"PLAYER_TRIGGERED_SPECIAL_POWER","editorNumber":50,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":31,"realType":"String","exampleData":"specialpower"}]},{"scriptName":" Player/Special Power/Player's special power is ready to fire.","scriptDesc":"","scriptArg":"  ~ is ready to fire ~.","commandWord":"SKIRMISH_SPECIAL_POWER_READY","editorNumber":64,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":31,"realType":"String","exampleData":"specialpower"}]},{"scriptName":" Player/Upgrades and Sciences/Player built an Upgrade.","scriptDesc":"","scriptArg":"  ~ has built ~.","commandWord":"PLAYER_BUILT_UPGRADE","editorNumber":53,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":33,"realType":"String","exampleData":"upgrade"}]},{"scriptName":" Player/Win & Loss/Multiplayer local player defeat check.","scriptDesc":"","scriptArg":" Everything belonging to the local player has been destroyed, but his allies may or may not have been defeated.","commandWord":"MULTIPLAYER_PLAYER_DEFEAT","editorNumber":39,"argumentModel":[]},{"scriptName":" Scripting/Compare distance between 2 named objects.","scriptDesc":"","scriptArg":" Distance between ~ and ~ is ~ ~.","commandWord":"DISTANCE_BETWEEN_OBJ","editorNumber":83,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Scripting/Compare distance between 2 teams.","scriptDesc":"","scriptArg":" Distance between ~ and ~ is ~ ~.","commandWord":"DISTANCE_BETWEEN_TEAM","editorNumber":84,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Scripting/Counter compared to a value.","scriptDesc":"","scriptArg":" Counter ~ IS ~ ","commandWord":"COUNTER","editorNumber":1,"argumentModel":[{"typeNumber":4,"realType":"String","exampleData":"Counter"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"1"}]},{"scriptName":" Scripting/Counter compared to another Counter.","scriptDesc":"","scriptArg":" Counter ~ IS ~ counter ","commandWord":"COUNTER_COUNTER","editorNumber":81,"argumentModel":[{"typeNumber":4,"realType":"String","exampleData":"Counter"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":4,"realType":"String","exampleData":"Counter"}]},{"scriptName":" Scripting/Counter compared to time in seconds.","scriptDesc":"","scriptArg":" Counter ~ IS ~ time ~ secs. ","commandWord":"COUNTER_SECONDS","editorNumber":82,"argumentModel":[{"typeNumber":4,"realType":"String","exampleData":"Counter"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Scripting/Flag compared to a value.","scriptDesc":"","scriptArg":"  ~ is ","commandWord":"FLAG","editorNumber":2,"argumentModel":[{"typeNumber":5,"realType":"String","exampleData":"Flag"},{"typeNumber":8,"realType":"Int32","exampleData":"1"}]},{"scriptName":" Scripting/Timer expired.","scriptDesc":"","scriptArg":" Timer ~ has expired.","commandWord":"TIMER_EXPIRED","editorNumber":4,"argumentModel":[{"typeNumber":4,"realType":"String","exampleData":"Timer"}]},{"scriptName":" Team/Area or Path/One unit from team enters an area.","scriptDesc":"","scriptArg":" One unit from ~ enters ~ (~).","commandWord":"TEAM_ENTERED_AREA_PARTIALLY","editorNumber":34,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":37,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Team/Area or Path/One unit from team exits an area.","scriptDesc":"","scriptArg":" One unit from ~ exits ~ (~).","commandWord":"TEAM_EXITED_AREA_PARTIALLY","editorNumber":36,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":37,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Team/Area or Path/Team can path to named object.","scriptDesc":"","scriptArg":" The first unit of ~ can path to ~.","commandWord":"TEAM_CAN_PATH_TO_OBJECT","editorNumber":102,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Team/Area or Path/Team can path to waypoint.","scriptDesc":"","scriptArg":" The first unit of ~ can path to ~.","commandWord":"TEAM_CAN_PATH_TO_WAYPOINT","editorNumber":101,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":7,"realType":"String","exampleData":"Waypoint"}]},{"scriptName":" Team/Area or Path/Team entirely exits an area.","scriptDesc":"","scriptArg":"  ~ has completely exited ~ (~).","commandWord":"TEAM_EXITED_AREA_ENTIRELY","editorNumber":35,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":37,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Team/Area or Path/Team has reached the end of a specific waypoint path. (Unreliable)","scriptDesc":"","scriptArg":"  ~ has reached the end of ","commandWord":"TEAM_REACHED_WAYPOINTS_END","editorNumber":29,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":24,"realType":"String","exampleData":"WaypointPath"}]},{"scriptName":" Team/Area or Path/Team has units in an area.","scriptDesc":"","scriptArg":"  ~ has one or more units in ~ (~).","commandWord":"TEAM_INSIDE_AREA_PARTIALLY","editorNumber":5,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":37,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Team/Area or Path/Team is completely inside an area.","scriptDesc":"","scriptArg":"  ~ is all inside ~ (~).","commandWord":"TEAM_INSIDE_AREA_ENTIRELY","editorNumber":13,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":37,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Team/Area or Path/Team is completely outside an area.","scriptDesc":"","scriptArg":"  ~ is completely outside ~ (~).","commandWord":"TEAM_OUTSIDE_AREA_ENTIRELY","editorNumber":14,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":37,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Evaluate if all members of a team being attacked cannot retaliate","scriptDesc":"","scriptArg":"  Evaluate if all team members of ~ are being attacked and cannot retaliate.","commandWord":"TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ALL","editorNumber":112,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Evaluate if any member of a team is being attacked but cannot retaliate","scriptDesc":"","scriptArg":"  Evaluate if any team member of ~ is being attacked and cannot retaliate.","commandWord":"TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ANY","editorNumber":111,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Team has (comparison) number of objects.","scriptDesc":"Compares the number of objects in a team to the passed in comparison values.  Note that this script does not count dead, under construction, projectiles, or units with the IGNORE_FOR_VICTORY kind of.","scriptArg":"  ~ has~ ~ members.","commandWord":"TEAM_COMPARE_NUM_MEMBERS","editorNumber":148,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Team has been attacked by Player.","scriptDesc":"","scriptArg":"  ~ has been attacked by ","commandWord":"TEAM_ATTACKED_BY_PLAYER","editorNumber":18,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Team has been created.","scriptDesc":"","scriptArg":"  ~ has been created.","commandWord":"TEAM_CREATED","editorNumber":21,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Team has fewer than X units left of KindOf.","scriptDesc":"","scriptArg":"  ~ has fewer than ~ units left of type ~.","commandWord":"TEAM_HAS_FEWER_THAN_X_UNITS_WITH_KINDOF","editorNumber":115,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":27,"realType":"Int32","exampleData":"5"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Team has units.","scriptDesc":"","scriptArg":"  ~ has one or more units.","commandWord":"TEAM_HAS_UNITS","editorNumber":8,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Team is attacked by a specific object type.","scriptDesc":"","scriptArg":"  ~ has been attacked by a(n) ","commandWord":"TEAM_ATTACKED_BY_OBJECTTYPE","editorNumber":16,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":61,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Team/Attacked, Destroyed, or Exists/Team is destroyed.","scriptDesc":"This condition is only true for the single logic frame when the team dies.","scriptArg":"  ~ has been destroyed.","commandWord":"TEAM_DESTROYED","editorNumber":6,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"}]},{"scriptName":" Team/CommandButton/Team's CommandButton ability is ready - all.","scriptDesc":"","scriptArg":"  ~'s ~ are ready to use ~ (all applicable members).","commandWord":"SKIRMISH_COMMAND_BUTTON_READY_ALL","editorNumber":68,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":42,"realType":"String","exampleData":"ability"}]},{"scriptName":" Team/CommandButton/Team's CommandButton ability is ready - partial","scriptDesc":"","scriptArg":"  ~'s ~ are ready to use ~ (at least one member).","commandWord":"SKIRMISH_COMMAND_BUTTON_READY_PARTIAL","editorNumber":69,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":42,"realType":"String","exampleData":"ability"}]},{"scriptName":" Team/Health/Team health level compared to a value.","scriptDesc":"","scriptArg":" Does ~ have ~ ~ percent health.","commandWord":"EVAL_TEAM_HEALTH","editorNumber":118,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Team/Object Status/Team has object status - all.","scriptDesc":" (all applicable members).","scriptArg":"  ~ has ","commandWord":"TEAM_ALL_HAS_OBJECT_STATUS","editorNumber":60,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":41,"realType":"Int32","exampleData":"1"}]},{"scriptName":" Team/Object Status/Team has object status - partial.","scriptDesc":" (at least one member).","scriptArg":"  ~ has ","commandWord":"TEAM_SOME_HAVE_OBJECT_STATUS","editorNumber":61,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":41,"realType":"Int32","exampleData":"1"}]},{"scriptName":" Team/Sighted/Team has sighted a friendly, neutral, or enemy unit belonging to Player.","scriptDesc":"","scriptArg":"  ~ sees a(n) ~ unit belonging to ~.","commandWord":"ENEMY_SIGHTED_BY_TEAM","editorNumber":95,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":19,"realType":"Int32","exampleData":"2"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Tutorial/Camera/Camera reset.","scriptDesc":"","scriptArg":" Player has reset camera","commandWord":"CAMERA_RESET","editorNumber":132,"argumentModel":[]},{"scriptName":" Tutorial/Camera/Camera rotate distance.","scriptDesc":"","scriptArg":" Player has rotated camera ~ degrees.","commandWord":"CAMERA_ROTATE_DISTANCE","editorNumber":130,"argumentModel":[{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Tutorial/Camera/Camera scroll distance.","scriptDesc":"","scriptArg":" Player has scrolled camera ~ units.","commandWord":"CAMERA_SCROLL_DISTANCE","editorNumber":129,"argumentModel":[{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Tutorial/Camera/Camera zoom distance.","scriptDesc":"","scriptArg":" Player has zoomed camera ~ units.","commandWord":"CAMERA_ZOOM_DISTANCE","editorNumber":131,"argumentModel":[{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Tutorial/Player/Player has issued a formation order.","scriptDesc":"","scriptArg":" Player has issued formation order","commandWord":"PLAYER_ISSUED_FORMATION_ORDER","editorNumber":134,"argumentModel":[]},{"scriptName":" Tutorial/UI state proposition is true.","scriptDesc":"The condition is only guaranteed to work correctly in a tutorial game","scriptArg":"  ~ is true.","commandWord":"UI_STATE_PROPOSITION_STATE","editorNumber":152,"argumentModel":[{"typeNumber":101,"realType":"String","exampleData":"AircraftBuildPageIsOpen"}]},{"scriptName":" Unused or Obsolete/Check if a gate is open. (False, if not a gate, or closed)","scriptDesc":"","scriptArg":"  The unit (presumed a gate) referenced as~ is OPEN.","commandWord":"GATE_IS_OPEN","editorNumber":97,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]},{"scriptName":" Unused or Obsolete/Check unit Webbed Status.","scriptDesc":"","scriptArg":"  Is webbed status of ~ == ","commandWord":"IS_UNIT_WEBBED","editorNumber":119,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":8,"realType":"Int32","exampleData":"1"}]},{"scriptName":" Unused or Obsolete/Does Player have Units that are in alternate formation.","scriptDesc":"","scriptArg":"  Does ~ have ~ that is currently in alternate formation.","commandWord":"UNIT_IN_ALT_FORMATION","editorNumber":125,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":15,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Unused or Obsolete/Does Player have Units that have triggered auto pickup.","scriptDesc":"","scriptArg":"  Does ~ have ~ that has triggered auto pickup.","commandWord":"UNIT_USING_AUTOPICKUP","editorNumber":124,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":15,"realType":"String","exampleData":"alliedsuperweaponeffect"}]},{"scriptName":" Unused or Obsolete/Experience/Named object is at experience level.","scriptDesc":"","scriptArg":"  ~ is at experience level ","commandWord":"UNIT_IS_AT_LEVEL","editorNumber":86,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Player"},{"typeNumber":10,"realType":"String","exampleData":"string"}]},{"scriptName":" Unused or Obsolete/False.","scriptDesc":"","scriptArg":" False.","commandWord":"CONDITION_FALSE","editorNumber":0,"argumentModel":[]},{"scriptName":" Unused or Obsolete/Is game in a skirmish or multiplayer game.","scriptDesc":"","scriptArg":"  Is the game in a skirmish or multiplayer mode == ","commandWord":"IS_GAME_IN_SKIRMISH_OR_MULTIPLAYER","editorNumber":113,"argumentModel":[{"typeNumber":8,"realType":"Int32","exampleData":"1"}]},{"scriptName":" Unused or Obsolete/Is number of units belonging to player near EVA event's last played location greater than, less than, or equal to a fixed value.","scriptDesc":"","scriptArg":"  Is the number of units belong to ~ within ~ feet of the location where ~ last played ~ ","commandWord":"IS_NUM_OF_UNITS_BELONGING_TO_PLAYER_NEAR_EVA_EVENT_LAST_PLAYED_LOCATION_COMPARISON_INT","editorNumber":127,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"},{"typeNumber":78,"realType":"String","exampleData":"EVA"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Unused or Obsolete/Multiplayer allied defeat.","scriptDesc":"","scriptArg":" The multiplayer game has ended in defeat for the local player and his allies.","commandWord":"MULTIPLAYER_ALLIED_DEFEAT","editorNumber":38,"argumentModel":[]},{"scriptName":" Unused or Obsolete/Multiplayer allied victory.","scriptDesc":"","scriptArg":" The multiplayer game has ended in victory for the local player and his allies.","commandWord":"MULTIPLAYER_ALLIED_VICTORY","editorNumber":37,"argumentModel":[]},{"scriptName":" Unused or Obsolete/Named object can path into (Player's) nearest base or is already inside it.","scriptDesc":"","scriptArg":"  ~ is inside, or can path into the nearest base owned by player, ","commandWord":"UNIT_CAN_PATH_INTO_PLAYERS_NEAREST_BASE","editorNumber":100,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Unused or Obsolete/Named object is rank level or above.","scriptDesc":"","scriptArg":"  ~ is veterancy ~ or above.","commandWord":"NAMED_RANK_LEVEL","editorNumber":117,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Unused or Obsolete/Player currently controls N or fewer bases.","scriptDesc":"","scriptArg":"  ~ currently controls ~ or fewer bases.","commandWord":"PLAYER_HAS_N_OR_FEWER_BASES","editorNumber":93,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Unused or Obsolete/Player doesn't have units in an area.","scriptDesc":"","scriptArg":"  ~ has doesn't have units in ~.","commandWord":"SKIRMISH_PLAYER_IS_OUTSIDE_AREA","editorNumber":74,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Unused or Obsolete/Player has (comparison) threat level in area.","scriptDesc":"","scriptArg":"  ~ has ~ ~ threat within area ","commandWord":"SKIRMISH_VALUE_IN_AREA","editorNumber":65,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Unused or Obsolete/Speech has completed playing.","scriptDesc":"","scriptArg":"  ~ has completed playing.","commandWord":"HAS_FINISHED_SPEECH","editorNumber":42,"argumentModel":[{"typeNumber":21,"realType":"String","exampleData":"Music"}]},{"scriptName":" Unused or Obsolete/Supplies are within specified distance.","scriptDesc":"","scriptArg":"  ~ has supplies within ~ of ~ worth at least ","commandWord":"SKIRMISH_SUPPLIES_VALUE_WITHIN_DISTANCE","editorNumber":67,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":1,"realType":"Double","exampleData":"1.1"}]},{"scriptName":" Unused or Obsolete/Supply source is attacked.","scriptDesc":"","scriptArg":"  ~ supply source is under attack.","commandWord":"SUPPLY_SOURCE_ATTACKED","editorNumber":78,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Unused or Obsolete/Supply source is safe.","scriptDesc":"","scriptArg":"  ~ closest supply src with at least ~ available resources is SAFE from enemy influence.","commandWord":"SUPPLY_SOURCE_SAFE","editorNumber":77,"argumentModel":[{"typeNumber":11,"realType":"String","exampleData":"Player"},{"typeNumber":0,"realType":"Int32","exampleData":"4"}]},{"scriptName":" Unused or Obsolete/Team can path into (Player's) nearest base or is already inside it.","scriptDesc":"","scriptArg":" The first unit of team ~ is inside, or can path into the nearest base owned by player, ","commandWord":"TEAM_CAN_PATH_INTO_PLAYERS_NEAREST_BASE","editorNumber":103,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Team"},{"typeNumber":11,"realType":"String","exampleData":"Player"}]},{"scriptName":" Unused or Obsolete/Team entirely enters an area.","scriptDesc":"","scriptArg":"  ~ all enter ~ (~).","commandWord":"TEAM_ENTERED_AREA_ENTIRELY","editorNumber":33,"argumentModel":[{"typeNumber":3,"realType":"String","exampleData":"Player"},{"typeNumber":9,"realType":"String","exampleData":"Area"},{"typeNumber":37,"realType":"Int32","exampleData":"3"}]},{"scriptName":" Unused or Obsolete/There are (comparison) trees in an area.","scriptDesc":"","scriptArg":" There are ~ ~ trees in the ~ .","commandWord":"COMPARISON_TREES_IN_TRIGGER_AREA","editorNumber":96,"argumentModel":[{"typeNumber":6,"realType":"Int32","exampleData":"2"},{"typeNumber":0,"realType":"Int32","exampleData":"4"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Unused or Obsolete/Unit enters an area.","scriptDesc":"","scriptArg":"  ~ enters ","commandWord":"NAMED_ENTERED_AREA","editorNumber":31,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"},{"typeNumber":9,"realType":"String","exampleData":"Area"}]},{"scriptName":" Unused or Obsolete/Unit has been created.","scriptDesc":"","scriptArg":"  ~ has been created.","commandWord":"NAMED_CREATED","editorNumber":20,"argumentModel":[{"typeNumber":14,"realType":"String","exampleData":"Object"}]}]
+[
+  {
+    "scriptName": " Scripting/True.",
+    "scriptDesc": "",
+    "scriptArg": " True.",
+    "scriptTrans": "真实 真",
+    "commandWord": "CONDITION_TRUE",
+    "editorNumber": 3,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Audio/Music/Playing Music is from Script",
+    "scriptDesc": "",
+    "scriptArg": "  The music scripting system is on.",
+    "scriptTrans": "演奏音乐来自脚本",
+    "commandWord": "MUSIC_IS_PLAYING_FROM_SCRIPT",
+    "editorNumber": 104,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Audio/Sound has completed playing.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has completed playing.",
+    "scriptTrans": "声音已经播放完毕",
+    "commandWord": "HAS_FINISHED_AUDIO",
+    "editorNumber": 43,
+    "argumentModel": [
+      {
+        "typeNumber": 12,
+        "realType": "String",
+        "exampleData": "Sound"
+      }
+    ]
+  },
+  {
+    "scriptName": " Camera/Camera entered trigger area.",
+    "scriptDesc": "",
+    "scriptArg": " Camera enters ~.",
+    "scriptTrans": "摄像机进入触发区",
+    "commandWord": "CAMERA_ENTERED_AREA",
+    "editorNumber": 94,
+    "argumentModel": [
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Camera/Camera following spline path hits specified waypoint.",
+    "scriptDesc": "",
+    "scriptArg": "  Camera following spline path hits ~.",
+    "scriptTrans": "跟随样条路径的摄像机到达指定的路径点",
+    "commandWord": "CAMERA_HIT_SPECIFIC_SPLINE_WAYPOINT",
+    "editorNumber": 87,
+    "argumentModel": [
+      {
+        "typeNumber": 7,
+        "realType": "String",
+        "exampleData": "Waypoint"
+      }
+    ]
+  },
+  {
+    "scriptName": " Camera/Camera movement finished.",
+    "scriptDesc": "",
+    "scriptArg": " The camera movement has finished.",
+    "scriptTrans": "摄像机运动完成",
+    "commandWord": "CAMERA_MOVEMENT_FINISHED",
+    "editorNumber": 7,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Campaign/Test a campaign flag.",
+    "scriptDesc": "",
+    "scriptArg": " Test the value of campaign flag ~.",
+    "scriptTrans": "测试一面竞选旗帜",
+    "commandWord": "TEST_CAMPAIGN_FLAG",
+    "editorNumber": 137,
+    "argumentModel": [
+      {
+        "typeNumber": 80,
+        "realType": "String",
+        "exampleData": "Use_Alternate_Campaign_Finale"
+      }
+    ]
+  },
+  {
+    "scriptName": " Game Type/Compares the number of players in game to a value.",
+    "scriptDesc": "",
+    "scriptArg": "  Is this a ~ ~ player game.",
+    "scriptTrans": "将游戏中的玩家数量与一个值进行比较",
+    "commandWord": "COMPARE_NUM_PLAYERS_IN_GAME",
+    "editorNumber": 114,
+    "argumentModel": [
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "2"
+      }
+    ]
+  },
+  {
+    "scriptName": " Interface/Mission Hot-Spot/Mission hot-spot has been activated.",
+    "scriptDesc": "",
+    "scriptArg": "  Mission hot-spot ~ has been activated.",
+    "scriptTrans": "任务热点已经激活",
+    "commandWord": "MISSION_HOT_SPOT_ACTIVE",
+    "editorNumber": 144,
+    "argumentModel": [
+      {
+        "typeNumber": 90,
+        "realType": "String",
+        "exampleData": "hotspot"
+      }
+    ]
+  },
+  {
+    "scriptName": " Movie/Movie in the radar has completed playing.",
+    "scriptDesc": "",
+    "scriptArg": " Movie ~ has completed playing.",
+    "scriptTrans": "电影在雷达上已经完成播放",
+    "commandWord": "HAS_FINISHED_VIDEO",
+    "editorNumber": 41,
+    "argumentModel": [
+      {
+        "typeNumber": 23,
+        "realType": "String",
+        "exampleData": "Movie"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Area or Path/Named object can path to named object.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ can path to ~.",
+    "scriptTrans": "命名对象可以路径到命名对象",
+    "commandWord": "UNIT_CAN_PATH_TO_OBJECT",
+    "editorNumber": 99,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Area or Path/Named object can path to waypoint.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ can path to ~.",
+    "scriptTrans": "命名对象可以路径到路径点",
+    "commandWord": "UNIT_CAN_PATH_TO_WAYPOINT",
+    "editorNumber": 98,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 7,
+        "realType": "String",
+        "exampleData": "Waypoint"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Area or Path/Named object exits an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ exits ",
+    "scriptTrans": "命名对象退出一个区域",
+    "commandWord": "NAMED_EXITED_AREA",
+    "editorNumber": 32,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Area or Path/Named object has reached the end of a specific waypoint path. (Unreliable)",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has reached the end of ",
+    "scriptTrans": "命名对象已到达特定路径点路径的终点。 (不可靠)",
+    "commandWord": "NAMED_REACHED_WAYPOINTS_END",
+    "editorNumber": 28,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 24,
+        "realType": "String",
+        "exampleData": "WaypointPath"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Area or Path/Named object is inside an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is inside ",
+    "scriptTrans": "命名对象在一个区域内",
+    "commandWord": "NAMED_INSIDE_AREA",
+    "editorNumber": 9,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Area or Path/Named object is outside an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is outside ",
+    "scriptTrans": "命名对象在区域之外",
+    "commandWord": "NAMED_OUTSIDE_AREA",
+    "editorNumber": 10,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Evaluate if a named object is being attacked but cannot retaliate",
+    "scriptDesc": "",
+    "scriptArg": "  Evaluate if ~ is being attacked and cannot retaliate.",
+    "scriptTrans": "评估指定对象是否正在受到攻击但无法进行报复",
+    "commandWord": "UNIT_IS_ATTACKED_AND_CANNOT_RETALIATE",
+    "editorNumber": 110,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object exists and is alive.",
+    "scriptDesc": "This checks to see if the object exists on the level, and is not effectively dead.  This means it will fire if the unit is around and not dead, a unit in its slow death will cause this to return false.",
+    "scriptArg": "  ~ exists and is alive.",
+    "scriptTrans": "命名对象存在并且是活动的",
+    "commandWord": "NAMED_NOT_DESTROYED",
+    "editorNumber": 12,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object has been attacked by Player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been attacked by ",
+    "scriptTrans": "已命名物体被玩家攻击",
+    "commandWord": "NAMED_ATTACKED_BY_PLAYER",
+    "editorNumber": 17,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object has killed (comparison) number of object type or type list.",
+    "scriptDesc": "Script will compare if a unit has killed (x) number of object type(s).",
+    "scriptArg": "  ~ has killed  ~ ~ ",
+    "scriptTrans": "命名对象已终止（比较）对象类型或类型列表的数量",
+    "commandWord": "NAMED_HAS_KILLED_COMPARISON_UNIT_TYPE",
+    "editorNumber": 149,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object is attacked by a specific object type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been attacked by a(n) ",
+    "scriptTrans": "命名对象受到特定对象类型的攻击",
+    "commandWord": "NAMED_ATTACKED_BY_OBJECTTYPE",
+    "editorNumber": 15,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object is destroyed by a specific object type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been destroyed by a(n) ",
+    "scriptTrans": "命名对象由特定的对象类型销毁",
+    "commandWord": "NAMED_DESTROYED_BY_OBJECTTYPE",
+    "editorNumber": 92,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object is destroyed.",
+    "scriptDesc": "This will return true if the unit is dead or does not exist.  It will also return true if the unit doesn",
+    "scriptArg": "  ~ has been destroyed.",
+    "scriptTrans": "命名对象被销毁",
+    "commandWord": "NAMED_DESTROYED",
+    "editorNumber": 11,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object is dying. (Cinematic)",
+    "scriptDesc": "Returns true if the unit is currently dead, if the unit doesn",
+    "scriptArg": "  ~ has been killed, but is still on screen.",
+    "scriptTrans": "命名对象正在死亡。(电影)",
+    "commandWord": "NAMED_DYING",
+    "editorNumber": 47,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object is finished dying. (Cinematic)",
+    "scriptDesc": "This will return true if the unit no longer exists but did in the past.  If the unit currently exists it will return false.",
+    "scriptArg": "  ~ has been killed, and is finished dying.",
+    "scriptTrans": "命名对象结束死亡。(电影)",
+    "commandWord": "NAMED_TOTALLY_DEAD",
+    "editorNumber": 48,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object's health % compared to a value.",
+    "scriptDesc": "Compares the unit's current health relative to the initial health (which may be modified in World Builder) to the value.",
+    "scriptArg": "  ~ health is ~ ~ percent.",
+    "scriptTrans": "命名对象的运行状况%与某个值的比较",
+    "commandWord": "UNIT_HEALTH",
+    "editorNumber": 46,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Attacked, Destroyed, or Exists/Named object's veterancy level compared to a value.",
+    "scriptDesc": "",
+    "scriptArg": " Does ~ have veterancy level ~ ~.",
+    "scriptTrans": "命名对象的经验等级与一个值的比较",
+    "commandWord": "UNIT_COMPARE_RANK",
+    "editorNumber": 105,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Experience/Named object has gained experience level.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has gained a level.",
+    "scriptTrans": "命名对象获得经验等级",
+    "commandWord": "UNIT_HAS_GAINED_LEVEL",
+    "editorNumber": 85,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Garrison/Evaluates if named object is currently holding passengers.",
+    "scriptDesc": "",
+    "scriptArg": "  Evaluate if ~ is containing any passengers.",
+    "scriptTrans": "评估指定对象当前是否携带乘客",
+    "commandWord": "UNIT_HAS_PASSENGER",
+    "editorNumber": 109,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Garrison/Named building is garrisoned by object type owned by specific player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is garrisoned by object type ~ owned by ~.",
+    "scriptTrans": "命名建筑由特定玩家拥有的对象类型驻守",
+    "commandWord": "BUILDING_GARRISONNED_BY_OBJECT_TYPE",
+    "editorNumber": 142,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Garrisoned/A specific building is empty.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is empty.",
+    "scriptTrans": "一个特定的建筑是空的",
+    "commandWord": "NAMED_BUILDING_IS_EMPTY",
+    "editorNumber": 58,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Object Status/Named object has object status.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ",
+    "scriptTrans": "命名对象具有对象状态",
+    "commandWord": "UNIT_HAS_OBJECT_STATUS",
+    "editorNumber": 59,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 41,
+        "realType": "Int32",
+        "exampleData": "5"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Selected/Named object is currently selected.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is currently selected.",
+    "scriptTrans": "命名对象当前被选中",
+    "commandWord": "NAMED_SELECTED",
+    "editorNumber": 30,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Selected/Object Type is currently selected.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is currently selected.",
+    "scriptTrans": "当前已选择对象类型",
+    "commandWord": "TYPE_SELECTED",
+    "editorNumber": 135,
+    "argumentModel": [
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Settings/Named object has model condition.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ",
+    "scriptTrans": "命名对象具有模型条件",
+    "commandWord": "UNIT_HAS_MODELCONDITION",
+    "editorNumber": 150,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 58,
+        "realType": "String",
+        "exampleData": "AFLAME"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Settings/Test object flags.",
+    "scriptDesc": "",
+    "scriptArg": " Test the value of ~ for ~.",
+    "scriptTrans": "测试对象标志",
+    "commandWord": "UNIT_TEST_OBJECT_PANEL_FLAGS",
+    "editorNumber": 136,
+    "argumentModel": [
+      {
+        "typeNumber": 46,
+        "realType": "String",
+        "exampleData": "Indestructible"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Sighted/Named object has sighted a type of object belonging to Player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ sees a(n) ~ belonging to ~.",
+    "scriptTrans": " 命名对象看到了一个属于玩家的对象类型",
+    "commandWord": "TYPE_SIGHTED",
+    "editorNumber": 57,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Sighted/Unit has sighted a friendly, neutral, or enemy unit belonging to Player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ sees a(n) ~ unit belonging to ~.",
+    "scriptTrans": "单位发现一个属于玩家的友军、中立或敌人单位",
+    "commandWord": "ENEMY_SIGHTED",
+    "editorNumber": 45,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 19,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Special Power/Unit's special power is ready to fire.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is ready to fire ~.",
+    "scriptTrans": "部队的特殊力量已经准备好开火",
+    "commandWord": "UNIT_SPECIAL_POWER_READY",
+    "editorNumber": 139,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 31,
+        "realType": "String",
+        "exampleData": "specialpower"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Stance/Named object is using stance.",
+    "scriptDesc": "",
+    "scriptArg": " Is ~ in the ~.",
+    "scriptTrans": "命名对象正在使用姿态",
+    "commandWord": "UNIT_USING_STANCE",
+    "editorNumber": 133,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 68,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Unowned/There are (comparison) unowned faction objects.",
+    "scriptDesc": "",
+    "scriptArg": "  ~. There are ~ ~ unowned faction objects.",
+    "scriptTrans": "有(比较而言)无主的派系对象",
+    "commandWord": "SKIRMISH_UNOWNED_FACTION_UNIT_EXISTS",
+    "editorNumber": 70,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Object Type/Upgrades/Unit has upgrade.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~.",
+    "scriptTrans": "单位已经升级",
+    "commandWord": "UNIT_HAS_UPGRADE",
+    "editorNumber": 138,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 33,
+        "realType": "String",
+        "exampleData": "upgrade"
+      }
+    ]
+  },
+  {
+    "scriptName": " Platform/Is game running on platform.",
+    "scriptDesc": "Returns true if running on the chosen platform.  Current options are PC/360/PS3",
+    "scriptArg": " Is game running on ",
+    "scriptTrans": "游戏是否在平台上运行",
+    "commandWord": "CURRENT_PLATFORM",
+    "editorNumber": 154,
+    "argumentModel": [
+      {
+        "typeNumber": 102,
+        "realType": "String",
+        "exampleData": "PS3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Area/Player has (comparison) completely built unit types in an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ completely built objects of type ~ in the ~.",
+    "scriptTrans": "玩家在一个区域中拥有完整的单位类型",
+    "commandWord": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_COMPLETELY_BUILT",
+    "editorNumber": 128,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Area/Player has (comparison) object type in an area with a specified upgrade.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ object of type with ~ in the ~ with ~.",
+    "scriptTrans": "玩家在指定的升级区域中拥有(比较)对象类型",
+    "commandWord": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_WITH_UPGRADE",
+    "editorNumber": 80,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 33,
+        "realType": "String",
+        "exampleData": "upgrade"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Area/Player has (comparison) object type in an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ object of type ~ in the ~.",
+    "scriptTrans": "玩家在一个区域中拥有(比较)对象类型",
+    "commandWord": "PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA",
+    "editorNumber": 55,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Area/Player has (comparison) object types with kindof in an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ objects with ~ in the ~.",
+    "scriptTrans": "玩家有（比较）物体类型和区域中的种类",
+    "commandWord": "PLAYER_HAS_COMPARISON_UNIT_KIND_IN_TRIGGER_AREA",
+    "editorNumber": 56,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 27,
+        "realType": "Int32",
+        "exampleData": "5"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Area/Player has units in an area",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has units in ~.",
+    "scriptTrans": "玩家在某个区域拥有单位",
+    "commandWord": "SKIRMISH_PLAYER_HAS_UNITS_IN_AREA",
+    "editorNumber": 72,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Attacked or Destroyed/Player destroyed N or more of an opponent's buildings.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has destroyed ~ or more buildings owned by ~.",
+    "scriptTrans": "玩家摧毁了N个或更多个对手的建筑",
+    "commandWord": "PLAYER_DESTROYED_N_BUILDINGS_PLAYER",
+    "editorNumber": 54,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Attacked or Destroyed/Player has been attacked by Player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been attacked by ~.",
+    "scriptTrans": "玩家被玩家攻击了",
+    "commandWord": "SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER",
+    "editorNumber": 73,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Attacked or Destroyed/Player has destroyed N or more objects of kindof.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has killed ~ or more objects of ~.",
+    "scriptTrans": "玩家已经摧毁了N个或更多的物体。",
+    "commandWord": "PLAYER_HAS_KILLED_KINDOF_UNITS",
+    "editorNumber": 90,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 27,
+        "realType": "Int32",
+        "exampleData": "5"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Attacked or Destroyed/Player has destroyed N or more objects of type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has killed ~ or more ~.",
+    "scriptTrans": "玩家已摧毁N个或更多类型的物体",
+    "commandWord": "PLAYER_HAS_KILLED_TYPE_UNITS",
+    "editorNumber": 91,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Attacked or Destroyed/Player has killed Named Unit",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has killed object named: ",
+    "scriptTrans": " 玩家杀死了命名单位",
+    "commandWord": "PLAYER_HAS_KILLED_NAMED_UNIT",
+    "editorNumber": 147,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/CommandPoints/Player has enough command points to build a team. (May be broken. -JB)",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has enough command points to build ~.",
+    "scriptTrans": "玩家有足够的指挥点来组建团队。（可能损坏。-JB）",
+    "commandWord": "HAS_COMMAND_POINTS_TO_BUILD_TEAM",
+    "editorNumber": 88,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/CommandPoints/Player has enough command points to build object type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has enough command points to build ~.",
+    "scriptTrans": "玩家有足够的命令点来构建对象类型",
+    "commandWord": "HAS_COMMAND_POINTS_TO_BUILD_UNIT",
+    "editorNumber": 89,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Controlled By/Is player controlled by human or AI Personality.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is controlled by ",
+    "scriptTrans": "玩家是受人类人格还是AI人格控制",
+    "commandWord": "PLAYER_IS_HUMAN_OR_AI_PERSONALITY",
+    "editorNumber": 146,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 70,
+        "realType": "String",
+        "exampleData": "Human"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Eva/Has EVA event played recently.",
+    "scriptDesc": "",
+    "scriptArg": "  Has ~ played with in the last ~ seconds.",
+    "scriptTrans": "最近有EVA活动吗",
+    "commandWord": "HAS_EVA_EVENT_PLAYED_IN_LAST_N_SECONDS",
+    "editorNumber": 126,
+    "argumentModel": [
+      {
+        "typeNumber": 78,
+        "realType": "String",
+        "exampleData": "EVA"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Experience/Player has object of veterancy level compared to a value.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ with veterancy level ~ ~.",
+    "scriptTrans": "玩家将对象的老练程度与价值相比较",
+    "commandWord": "PLAYER_HAS_OBJECT_OF_VETERANCY",
+    "editorNumber": 106,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Faction and Start Position/Player is faction.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is ",
+    "scriptTrans": "玩家是派系.",
+    "commandWord": "SKIRMISH_PLAYER_FACTION",
+    "editorNumber": 66,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 47,
+        "realType": "String",
+        "exampleData": "allies"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Faction and Start Position/Start Position.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ starting position is ~ .",
+    "scriptTrans": "起始位置",
+    "commandWord": "START_POSITION_IS",
+    "editorNumber": 79,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Garrisoned/Player has (comparison) garrisoned buildings.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ garrisoned buildings.",
+    "scriptTrans": "玩家拥有驻守的建筑",
+    "commandWord": "SKIRMISH_PLAYER_HAS_COMPARISON_GARRISONED",
+    "editorNumber": 71,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Garrisoned/Player has garrisoned a specific building.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has garrisoned building named ",
+    "scriptTrans": "玩家已驻守特定建筑",
+    "commandWord": "BUILDING_ENTERED_BY_PLAYER",
+    "editorNumber": 44,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Does Player have objects that have Toggled Weapon sets.",
+    "scriptDesc": "",
+    "scriptArg": "  Does ~ have ~ that have toggled weapon sets.",
+    "scriptTrans": "玩家是否拥有带有“切换武器”设置的对象",
+    "commandWord": "UNIT_HAS_TOGGLED_WEAPON",
+    "editorNumber": 123,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Num objects has specified upgrade.",
+    "scriptDesc": "",
+    "scriptArg": "  Does ~ have ~ units that have ~.",
+    "scriptTrans": "Num对象已指定升级",
+    "commandWord": "PLAYER_HAS_NUM_UNITS_WITH_UPGRADE",
+    "editorNumber": 121,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 33,
+        "realType": "String",
+        "exampleData": "upgrade"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Num objects leveled up during game.",
+    "scriptDesc": "",
+    "scriptArg": " Does ~ have ~ objects that have gained veterancy this game.",
+    "scriptTrans": "Num对象在游戏中升级",
+    "commandWord": "NUM_UNITS_LEVELED_UP",
+    "editorNumber": 120,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Num objects of type loaded on transport.",
+    "scriptDesc": "",
+    "scriptArg": "  Does ~ have ~ objects of type ~ loaded on transport of type ~.",
+    "scriptTrans": "传输时加载的类型对象的数目",
+    "commandWord": "PLAYER_HAS_NUM_UNITS_LOADED_WITH_OBJECT",
+    "editorNumber": 122,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has (comparison) number of credits.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ credits.",
+    "scriptTrans": "玩家拥有(比较)数量的积分",
+    "commandWord": "PLAYER_HAS_CREDITS",
+    "editorNumber": 22,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has (comparison) obejcts more than x distance from named object.",
+    "scriptDesc": "",
+    "scriptArg": "  Player ~ has ~ ~ objects at least ~ feet from ~.",
+    "scriptTrans": "玩家与指定对象之间的距离大于x",
+    "commandWord": "PLAYER_HAS_NUMBER_UNITS_DISTANCE_FROM_OBJECT",
+    "editorNumber": 108,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has (comparison) object type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ object of type ~.",
+    "scriptTrans": "玩家拥有(比较)对象类型",
+    "commandWord": "PLAYER_HAS_OBJECT_COMPARISON",
+    "editorNumber": 49,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "1"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has (comparison) object types with kindof.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ objects with ~.",
+    "scriptTrans": "玩家有（比较）对象类型和类型",
+    "commandWord": "PLAYER_HAS_COMPARISON_UNIT_KIND",
+    "editorNumber": 155,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 27,
+        "realType": "Int32",
+        "exampleData": "5"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has (comparison) objects with a model condition.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ objects with ~.",
+    "scriptTrans": "",
+    "commandWord": "PLAYER_HAS_NUMBER_OBJECTS_WITH_MODELCONDITION",
+    "editorNumber": 107,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 58,
+        "realType": "String",
+        "exampleData": "AFLAME"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has (comparison) objects with object status",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ with ~.",
+    "scriptTrans": "玩家拥有带有对象状态的(比较)对象",
+    "commandWord": "PLAYER_HAS_NUMBER_OBJECTS_WITH_OBJECT_STATUS",
+    "editorNumber": 140,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 41,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has built an object type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been built by ",
+    "scriptTrans": "玩家创建了一个对象类型",
+    "commandWord": "BUILT_BY_PLAYER",
+    "editorNumber": 19,
+    "argumentModel": [
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player has lost an object of type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has lost an object of type ~.",
+    "scriptTrans": "玩家丢失了一个类型对象",
+    "commandWord": "PLAYER_LOST_OBJECT_TYPE",
+    "editorNumber": 76,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player owns Team.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is owned by ~.",
+    "scriptTrans": "玩家拥有团队",
+    "commandWord": "TEAM_OWNED_BY_PLAYER",
+    "editorNumber": 26,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Owns/Player owns Unit.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ owns ~.",
+    "scriptTrans": "玩家拥有单位",
+    "commandWord": "NAMED_OWNED_BY_PLAYER",
+    "editorNumber": 25,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Player has triggered game event",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has triggered ~.",
+    "scriptTrans": "玩家触发游戏事件",
+    "commandWord": "PLAYER_TRIGGERED_SCRIPT_EVENT",
+    "editorNumber": 141,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 86,
+        "realType": "Int32",
+        "exampleData": "2"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Power/Player has (comparison) kilowatts excess power supply.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ excess kilowatts power supply.",
+    "scriptTrans": "玩家有(比较)千瓦的过剩电力供应",
+    "commandWord": "PLAYER_EXCESS_POWER_COMPARE_VALUE",
+    "editorNumber": 63,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Power/Player has (comparison) percent power supply to consumption.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ percent power supply ratio.",
+    "scriptTrans": "玩家的能量供给与消耗的百分比",
+    "commandWord": "PLAYER_POWER_COMPARE_PERCENT",
+    "editorNumber": 62,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Power/Player's base currently has no power.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ buildings are not powered.",
+    "scriptTrans": "玩家的基础目前没有能量。",
+    "commandWord": "PLAYER_HAS_NO_POWER",
+    "editorNumber": 40,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Power/Player's base currently has power.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ buildings are powered.",
+    "scriptTrans": "玩家的基础现在拥有能量",
+    "commandWord": "PLAYER_HAS_POWER",
+    "editorNumber": 27,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Red Alerts/Player activated their Red Alert.",
+    "scriptDesc": "",
+    "scriptArg": " Player has activated their Red Alert.",
+    "scriptTrans": "玩家启动了红色警报。",
+    "commandWord": "PLAYER_RED_ALERT_ACTIVATED",
+    "editorNumber": 145,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Sighted/Player has sighted another player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has seen ~.",
+    "scriptTrans": "玩家看到了另一个玩家",
+    "commandWord": "SKIRMISH_PLAYER_HAS_DISCOVERED_PLAYER",
+    "editorNumber": 75,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Sighted/Player has sighted named object.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has seen ",
+    "scriptTrans": "玩家看到了命名的物体",
+    "commandWord": "NAMED_DISCOVERED",
+    "editorNumber": 23,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Sighted/Player has sighted Team.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has seen ~.",
+    "scriptTrans": "玩家看到了团队",
+    "commandWord": "TEAM_DISCOVERED",
+    "editorNumber": 24,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player can perform special power on team location.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ can perform ~ at ~'s location.",
+    "scriptTrans": "玩家可以在团队位置上执行特殊异能",
+    "commandWord": "SKIRMISH_FIRE_SPECIAL_POWER_ON_TEAM",
+    "editorNumber": 116,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 31,
+        "realType": "String",
+        "exampleData": "specialpower"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player completed using a special power.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ completed using ~.",
+    "scriptTrans": "玩家使用特殊能力完成",
+    "commandWord": "PLAYER_COMPLETED_SPECIAL_POWER",
+    "editorNumber": 51,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 31,
+        "realType": "String",
+        "exampleData": "specialpower"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player has <comparison><n> power points.",
+    "scriptDesc": "Determines if a player has x amount of player power points.",
+    "scriptArg": "  ~ has ~ ~ power points.",
+    "scriptTrans": "玩家有“比较”“n”动力点",
+    "commandWord": "PLAYER_HAS_COMPARISON_POWER_POINTS",
+    "editorNumber": 151,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player has player tech.",
+    "scriptDesc": "Determines if a player has purchased a player tech.",
+    "scriptArg": "  ~ has ~ player tech.",
+    "scriptTrans": "玩家拥有玩家技术",
+    "commandWord": "PLAYER_HAS_PLAYER_TECH",
+    "editorNumber": 153,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 94,
+        "realType": "String",
+        "exampleData": "PlayerTech"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player start using a special power from a named object.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ starts using ~ from ~.",
+    "scriptTrans": "玩家开始使用来自命名对象的特殊能力",
+    "commandWord": "PLAYER_TRIGGERED_SPECIAL_POWER_FROM_NAMED",
+    "editorNumber": 52,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 31,
+        "realType": "String",
+        "exampleData": "specialpower"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player starts using a special power in trigger area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ starts using ~ in ~.",
+    "scriptTrans": "玩家开始在触发区域使用一种特殊能力",
+    "commandWord": "PLAYER_TRIGGERED_SPECIAL_POWER_IN_AREA",
+    "editorNumber": 143,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 31,
+        "realType": "String",
+        "exampleData": "specialpower"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player starts using a special power.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ starts using ~.",
+    "scriptTrans": "玩家开始使用一种特殊能力",
+    "commandWord": "PLAYER_TRIGGERED_SPECIAL_POWER",
+    "editorNumber": 50,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 31,
+        "realType": "String",
+        "exampleData": "specialpower"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Special Power/Player's special power is ready to fire.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is ready to fire ~.",
+    "scriptTrans": "玩家的特殊能力已准备好开火",
+    "commandWord": "SKIRMISH_SPECIAL_POWER_READY",
+    "editorNumber": 64,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 31,
+        "realType": "String",
+        "exampleData": "specialpower"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Upgrades and Sciences/Player built an Upgrade.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has built ~.",
+    "scriptTrans": "玩家建造了一种升级",
+    "commandWord": "PLAYER_BUILT_UPGRADE",
+    "editorNumber": 53,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 33,
+        "realType": "String",
+        "exampleData": "upgrade"
+      }
+    ]
+  },
+  {
+    "scriptName": " Player/Win & Loss/Multiplayer local player defeat check.",
+    "scriptDesc": "",
+    "scriptArg": " Everything belonging to the local player has been destroyed, but his allies may or may not have been defeated.",
+    "scriptTrans": "多人本地玩家击败检查",
+    "commandWord": "MULTIPLAYER_PLAYER_DEFEAT",
+    "editorNumber": 39,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Scripting/Compare distance between 2 named objects.",
+    "scriptDesc": "",
+    "scriptArg": " Distance between ~ and ~ is ~ ~.",
+    "scriptTrans": "比较两个命名对象之间的距离",
+    "commandWord": "DISTANCE_BETWEEN_OBJ",
+    "editorNumber": 83,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Scripting/Compare distance between 2 teams.",
+    "scriptDesc": "",
+    "scriptArg": " Distance between ~ and ~ is ~ ~.",
+    "scriptTrans": "比较两队之间的距离",
+    "commandWord": "DISTANCE_BETWEEN_TEAM",
+    "editorNumber": 84,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Scripting/Counter compared to a value.",
+    "scriptDesc": "",
+    "scriptArg": " Counter ~ IS ~ ",
+    "scriptTrans": "计时器计算出一个值",
+    "commandWord": "COUNTER",
+    "editorNumber": 1,
+    "argumentModel": [
+      {
+        "typeNumber": 4,
+        "realType": "String",
+        "exampleData": "Counter"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Scripting/Counter compared to another Counter.",
+    "scriptDesc": "",
+    "scriptArg": " Counter ~ IS ~ counter ",
+    "scriptTrans": "计数器与另一个计数器相比较",
+    "commandWord": "COUNTER_COUNTER",
+    "editorNumber": 81,
+    "argumentModel": [
+      {
+        "typeNumber": 4,
+        "realType": "String",
+        "exampleData": "Counter"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 4,
+        "realType": "String",
+        "exampleData": "Counter"
+      }
+    ]
+  },
+  {
+    "scriptName": " Scripting/Counter compared to time in seconds.",
+    "scriptDesc": "",
+    "scriptArg": " Counter ~ IS ~ time ~ secs. ",
+    "scriptTrans": "计数器与时间的比较，以秒为单位",
+    "commandWord": "COUNTER_SECONDS",
+    "editorNumber": 82,
+    "argumentModel": [
+      {
+        "typeNumber": 4,
+        "realType": "String",
+        "exampleData": "Counter"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Scripting/Flag compared to a value.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is ",
+    "scriptTrans": "标记为一个值",
+    "commandWord": "FLAG",
+    "editorNumber": 2,
+    "argumentModel": [
+      {
+        "typeNumber": 5,
+        "realType": "String",
+        "exampleData": "Flag"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Scripting/Timer expired.",
+    "scriptDesc": "",
+    "scriptArg": " Timer ~ has expired.",
+    "scriptTrans": "计时器已过期",
+    "commandWord": "TIMER_EXPIRED",
+    "editorNumber": 4,
+    "argumentModel": [
+      {
+        "typeNumber": 4,
+        "realType": "String",
+        "exampleData": "Timer"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/One unit from team enters an area.",
+    "scriptDesc": "",
+    "scriptArg": " One unit from ~ enters ~ (~).",
+    "scriptTrans": "一个小队进入一个区域",
+    "commandWord": "TEAM_ENTERED_AREA_PARTIALLY",
+    "editorNumber": 34,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 37,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/One unit from team exits an area.",
+    "scriptDesc": "",
+    "scriptArg": " One unit from ~ exits ~ (~).",
+    "scriptTrans": "一个小队离开一个区域",
+    "commandWord": "TEAM_EXITED_AREA_PARTIALLY",
+    "editorNumber": 36,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 37,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/Team can path to named object.",
+    "scriptDesc": "",
+    "scriptArg": " The first unit of ~ can path to ~.",
+    "scriptTrans": "团队可以路径到命名的对象",
+    "commandWord": "TEAM_CAN_PATH_TO_OBJECT",
+    "editorNumber": 102,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/Team can path to waypoint.",
+    "scriptDesc": "",
+    "scriptArg": " The first unit of ~ can path to ~.",
+    "scriptTrans": "团队可以路径到路标",
+    "commandWord": "TEAM_CAN_PATH_TO_WAYPOINT",
+    "editorNumber": 101,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 7,
+        "realType": "String",
+        "exampleData": "Waypoint"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/Team entirely exits an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has completely exited ~ (~).",
+    "scriptTrans": "团队完全离开一个区域",
+    "commandWord": "TEAM_EXITED_AREA_ENTIRELY",
+    "editorNumber": 35,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 37,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/Team has reached the end of a specific waypoint path. (Unreliable)",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has reached the end of ",
+    "scriptTrans": "团队已经到达特定路径点路径的终点。(不可靠)",
+    "commandWord": "TEAM_REACHED_WAYPOINTS_END",
+    "editorNumber": 29,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 24,
+        "realType": "String",
+        "exampleData": "WaypointPath"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/Team has units in an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has one or more units in ~ (~).",
+    "scriptTrans": "小队已经在一个区域部署了部队",
+    "commandWord": "TEAM_INSIDE_AREA_PARTIALLY",
+    "editorNumber": 5,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 37,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/Team is completely inside an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is all inside ~ (~).",
+    "scriptTrans": "团队完全在一个区域内",
+    "commandWord": "TEAM_INSIDE_AREA_ENTIRELY",
+    "editorNumber": 13,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 37,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Area or Path/Team is completely outside an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is completely outside ~ (~).",
+    "scriptTrans": "团队完全在一个区域之外",
+    "commandWord": "TEAM_OUTSIDE_AREA_ENTIRELY",
+    "editorNumber": 14,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 37,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Evaluate if all members of a team being attacked cannot retaliate",
+    "scriptDesc": "",
+    "scriptArg": "  Evaluate if all team members of ~ are being attacked and cannot retaliate.",
+    "scriptTrans": "评估是否所有被攻击的团队成员都不能进行报复",
+    "commandWord": "TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ALL",
+    "editorNumber": 112,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Evaluate if any member of a team is being attacked but cannot retaliate",
+    "scriptDesc": "",
+    "scriptArg": "  Evaluate if any team member of ~ is being attacked and cannot retaliate.",
+    "scriptTrans": "评估团队中是否有成员受到攻击但无法反击",
+    "commandWord": "TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ANY",
+    "editorNumber": 111,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Team has (comparison) number of objects.",
+    "scriptDesc": "Compares the number of objects in a team to the passed in comparison values.  Note that this script does not count dead, under construction, projectiles, or units with the IGNORE_FOR_VICTORY kind of.",
+    "scriptArg": "  ~ has~ ~ members.",
+    "scriptTrans": "团队有(比较)数量的对象",
+    "commandWord": "TEAM_COMPARE_NUM_MEMBERS",
+    "editorNumber": 148,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Team has been attacked by Player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been attacked by ",
+    "scriptTrans": "球队被球员攻击",
+    "commandWord": "TEAM_ATTACKED_BY_PLAYER",
+    "editorNumber": 18,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Team has been created.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been created.",
+    "scriptTrans": "队伍被产生",
+    "commandWord": "TEAM_CREATED",
+    "editorNumber": 21,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Team has fewer than X units left of KindOf.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has fewer than ~ units left of type ~.",
+    "scriptTrans": "团队剩下不到X个单位",
+    "commandWord": "TEAM_HAS_FEWER_THAN_X_UNITS_WITH_KINDOF",
+    "editorNumber": 115,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 27,
+        "realType": "Int32",
+        "exampleData": "5"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Team has units.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has one or more units.",
+    "scriptTrans": "团队有单位",
+    "commandWord": "TEAM_HAS_UNITS",
+    "editorNumber": 8,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Team is attacked by a specific object type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been attacked by a(n) ",
+    "scriptTrans": "团队受到特定对象类型的攻击",
+    "commandWord": "TEAM_ATTACKED_BY_OBJECTTYPE",
+    "editorNumber": 16,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Attacked, Destroyed, or Exists/Team is destroyed.",
+    "scriptDesc": "This condition is only true for the single logic frame when the team dies.",
+    "scriptArg": "  ~ has been destroyed.",
+    "scriptTrans": "团队被摧毁",
+    "commandWord": "TEAM_DESTROYED",
+    "editorNumber": 6,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/CommandButton/Team's CommandButton ability is ready - all.",
+    "scriptDesc": "",
+    "scriptArg": "  ~'s ~ are ready to use ~ (all applicable members).",
+    "scriptTrans": "团队的命令按钮能力是现成的",
+    "commandWord": "SKIRMISH_COMMAND_BUTTON_READY_ALL",
+    "editorNumber": 68,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 42,
+        "realType": "String",
+        "exampleData": "ability"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/CommandButton/Team's CommandButton ability is ready - partial",
+    "scriptDesc": "",
+    "scriptArg": "  ~'s ~ are ready to use ~ (at least one member).",
+    "scriptTrans": "团队的命令按钮能力是现成的",
+    "commandWord": "SKIRMISH_COMMAND_BUTTON_READY_PARTIAL",
+    "editorNumber": 69,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 42,
+        "realType": "String",
+        "exampleData": "ability"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Health/Team health level compared to a value.",
+    "scriptDesc": "",
+    "scriptArg": " Does ~ have ~ ~ percent health.",
+    "scriptTrans": "团队健康水平比较值",
+    "commandWord": "EVAL_TEAM_HEALTH",
+    "editorNumber": 118,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Object Status/Team has object status - all.",
+    "scriptDesc": " (all applicable members).",
+    "scriptArg": "  ~ has ",
+    "scriptTrans": "团队拥有对象状态-所有",
+    "commandWord": "TEAM_ALL_HAS_OBJECT_STATUS",
+    "editorNumber": 60,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 41,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Object Status/Team has object status - partial.",
+    "scriptDesc": " (at least one member).",
+    "scriptArg": "  ~ has ",
+    "scriptTrans": "团队有对象状态部分",
+    "commandWord": "TEAM_SOME_HAVE_OBJECT_STATUS",
+    "editorNumber": 61,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 41,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Team/Sighted/Team has sighted a friendly, neutral, or enemy unit belonging to Player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ sees a(n) ~ unit belonging to ~.",
+    "scriptTrans": "团队发现一个属于玩家的友好、中立或敌人单位。",
+    "commandWord": "ENEMY_SIGHTED_BY_TEAM",
+    "editorNumber": 95,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 19,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Tutorial/Camera/Camera reset.",
+    "scriptDesc": "",
+    "scriptArg": " Player has reset camera",
+    "scriptTrans": "相机重置",
+    "commandWord": "CAMERA_RESET",
+    "editorNumber": 132,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Tutorial/Camera/Camera rotate distance.",
+    "scriptDesc": "",
+    "scriptArg": " Player has rotated camera ~ degrees.",
+    "scriptTrans": "相机旋转的距离",
+    "commandWord": "CAMERA_ROTATE_DISTANCE",
+    "editorNumber": 130,
+    "argumentModel": [
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Tutorial/Camera/Camera scroll distance.",
+    "scriptDesc": "",
+    "scriptArg": " Player has scrolled camera ~ units.",
+    "scriptTrans": "相机滚动距离",
+    "commandWord": "CAMERA_SCROLL_DISTANCE",
+    "editorNumber": 129,
+    "argumentModel": [
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Tutorial/Camera/Camera zoom distance.",
+    "scriptDesc": "",
+    "scriptArg": " Player has zoomed camera ~ units.",
+    "scriptTrans": "相机变焦距离",
+    "commandWord": "CAMERA_ZOOM_DISTANCE",
+    "editorNumber": 131,
+    "argumentModel": [
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Tutorial/Player/Player has issued a formation order.",
+    "scriptDesc": "",
+    "scriptArg": " Player has issued formation order",
+    "scriptTrans": "牌手已发出队形命令",
+    "commandWord": "PLAYER_ISSUED_FORMATION_ORDER",
+    "editorNumber": 134,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Tutorial/UI state proposition is true.",
+    "scriptDesc": "The condition is only guaranteed to work correctly in a tutorial game",
+    "scriptArg": "  ~ is true.",
+    "scriptTrans": "UI状态命题为真",
+    "commandWord": "UI_STATE_PROPOSITION_STATE",
+    "editorNumber": 152,
+    "argumentModel": [
+      {
+        "typeNumber": 101,
+        "realType": "String",
+        "exampleData": "AircraftBuildPageIsOpen"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Check if a gate is open. (False, if not a gate, or closed)",
+    "scriptDesc": "",
+    "scriptArg": "  The unit (presumed a gate) referenced as~ is OPEN.",
+    "scriptTrans": "检查门是否开着。 (False，如果不是门或剂量)",
+    "commandWord": "GATE_IS_OPEN",
+    "editorNumber": 97,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Check unit Webbed Status.",
+    "scriptDesc": "",
+    "scriptArg": "  Is webbed status of ~ == ",
+    "scriptTrans": "检查单元网络状态",
+    "commandWord": "IS_UNIT_WEBBED",
+    "editorNumber": 119,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Does Player have Units that are in alternate formation.",
+    "scriptDesc": "",
+    "scriptArg": "  Does ~ have ~ that is currently in alternate formation.",
+    "scriptTrans": "玩家是否拥有可替换的单位",
+    "commandWord": "UNIT_IN_ALT_FORMATION",
+    "editorNumber": 125,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Does Player have Units that have triggered auto pickup.",
+    "scriptDesc": "",
+    "scriptArg": "  Does ~ have ~ that has triggered auto pickup.",
+    "scriptTrans": "玩家是否拥有能够触发自动拾取的单位",
+    "commandWord": "UNIT_USING_AUTOPICKUP",
+    "editorNumber": 124,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "alliedsuperweaponeffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Experience/Named object is at experience level.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is at experience level ",
+    "scriptTrans": "命名对象处于经验级别",
+    "commandWord": "UNIT_IS_AT_LEVEL",
+    "editorNumber": 86,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 10,
+        "realType": "String",
+        "exampleData": "string"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/False.",
+    "scriptDesc": "",
+    "scriptArg": " False.",
+    "scriptTrans": "",
+    "commandWord": "CONDITION_FALSE",
+    "editorNumber": 0,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Is game in a skirmish or multiplayer game.",
+    "scriptDesc": "",
+    "scriptArg": "  Is the game in a skirmish or multiplayer mode == ",
+    "scriptTrans": "游戏是小规模战斗还是多人游戏",
+    "commandWord": "IS_GAME_IN_SKIRMISH_OR_MULTIPLAYER",
+    "editorNumber": 113,
+    "argumentModel": [
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Is number of units belonging to player near EVA event's last played location greater than, less than, or equal to a fixed value.",
+    "scriptDesc": "",
+    "scriptArg": "  Is the number of units belong to ~ within ~ feet of the location where ~ last played ~ ",
+    "scriptTrans": "在EVA事件的最后一次游戏地点附近，玩家的单位数量是大于，小于，还是等于一个固定值",
+    "commandWord": "IS_NUM_OF_UNITS_BELONGING_TO_PLAYER_NEAR_EVA_EVENT_LAST_PLAYED_LOCATION_COMPARISON_INT",
+    "editorNumber": 127,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      },
+      {
+        "typeNumber": 78,
+        "realType": "String",
+        "exampleData": "EVA"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Multiplayer allied defeat.",
+    "scriptDesc": "",
+    "scriptArg": " The multiplayer game has ended in defeat for the local player and his allies.",
+    "scriptTrans": "多人盟军击败",
+    "commandWord": "MULTIPLAYER_ALLIED_DEFEAT",
+    "editorNumber": 38,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Multiplayer allied victory.",
+    "scriptDesc": "",
+    "scriptArg": " The multiplayer game has ended in victory for the local player and his allies.",
+    "scriptTrans": "多人盟军的胜利",
+    "commandWord": "MULTIPLAYER_ALLIED_VICTORY",
+    "editorNumber": 37,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Named object can path into (Player's) nearest base or is already inside it.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is inside, or can path into the nearest base owned by player, ",
+    "scriptTrans": "命名对象可以进入(玩家)最近的基地，或者已经在基地内",
+    "commandWord": "UNIT_CAN_PATH_INTO_PLAYERS_NEAREST_BASE",
+    "editorNumber": 100,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Named object is rank level or above.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is veterancy ~ or above.",
+    "scriptTrans": "命名对象的级别或以上",
+    "commandWord": "NAMED_RANK_LEVEL",
+    "editorNumber": 117,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Player currently controls N or fewer bases.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ currently controls ~ or fewer bases.",
+    "scriptTrans": "玩家目前控制着N个或更少的基地",
+    "commandWord": "PLAYER_HAS_N_OR_FEWER_BASES",
+    "editorNumber": 93,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Player doesn't have units in an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has doesn't have units in ~.",
+    "scriptTrans": "玩家在某个区域没有单位",
+    "commandWord": "SKIRMISH_PLAYER_IS_OUTSIDE_AREA",
+    "editorNumber": 74,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Player has (comparison) threat level in area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has ~ ~ threat within area ",
+    "scriptTrans": "玩家在区域内拥有(比较)威胁等",
+    "commandWord": "SKIRMISH_VALUE_IN_AREA",
+    "editorNumber": 65,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Speech has completed playing.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has completed playing.",
+    "scriptTrans": "演讲结束",
+    "commandWord": "HAS_FINISHED_SPEECH",
+    "editorNumber": 42,
+    "argumentModel": [
+      {
+        "typeNumber": 21,
+        "realType": "String",
+        "exampleData": "Music"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Supplies are within specified distance.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has supplies within ~ of ~ worth at least ",
+    "scriptTrans": "供应在规定的距离内",
+    "commandWord": "SKIRMISH_SUPPLIES_VALUE_WITHIN_DISTANCE",
+    "editorNumber": 67,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "1.1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Supply source is attacked.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ supply source is under attack.",
+    "scriptTrans": "供应源被攻击",
+    "commandWord": "SUPPLY_SOURCE_ATTACKED",
+    "editorNumber": 78,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Supply source is safe.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ closest supply src with at least ~ available resources is SAFE from enemy influence.",
+    "scriptTrans": "供应源安全",
+    "commandWord": "SUPPLY_SOURCE_SAFE",
+    "editorNumber": 77,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team can path into (Player's) nearest base or is already inside it.",
+    "scriptDesc": "",
+    "scriptArg": " The first unit of team ~ is inside, or can path into the nearest base owned by player, ",
+    "scriptTrans": "队伍可以进入(玩家)最近的基地，或者已经在基地内",
+    "commandWord": "TEAM_CAN_PATH_INTO_PLAYERS_NEAREST_BASE",
+    "editorNumber": 103,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team entirely enters an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ all enter ~ (~).",
+    "scriptTrans": "整个团队进入一个区域",
+    "commandWord": "TEAM_ENTERED_AREA_ENTIRELY",
+    "editorNumber": 33,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      },
+      {
+        "typeNumber": 37,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/There are (comparison) trees in an area.",
+    "scriptDesc": "",
+    "scriptArg": " There are ~ ~ trees in the ~ .",
+    "scriptTrans": "在一个地区有(比较)树",
+    "commandWord": "COMPARISON_TREES_IN_TRIGGER_AREA",
+    "editorNumber": 96,
+    "argumentModel": [
+      {
+        "typeNumber": 6,
+        "realType": "Int32",
+        "exampleData": "2"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Unit enters an area.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ enters ",
+    "scriptTrans": "单位进入一个区域",
+    "commandWord": "NAMED_ENTERED_AREA",
+    "editorNumber": 31,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 9,
+        "realType": "String",
+        "exampleData": "Area"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Unit has been created.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ has been created.",
+    "scriptTrans": "单位已经创建",
+    "commandWord": "NAMED_CREATED",
+    "editorNumber": 20,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  }
+]

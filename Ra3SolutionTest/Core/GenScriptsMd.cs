@@ -1,21 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Web;
 using Ra3MapWiki.Core;
 using RMGlib.Core.Utility;
 
-namespace Ra3MapWiki
+namespace NewMapParser.Core
 {
-    internal class Program
+    public class GenScriptsMd
     {
-        private const string docRoot = "../../../../Ra3MapWiki/docs";
-        
-        public static void Main(string[] args)
-        {
-            GenAllScriptList();
-        }
+        private const string docRoot = "docs";
 
-        private static void GenAllScriptList()
+        public static void GenAllScriptList()
         {
             ScriptSpec.initScriptSpec();
 
@@ -48,7 +44,7 @@ namespace Ra3MapWiki
 
             using (var file = new StreamWriter(File.OpenWrite(scriptconditionMd)))
             {
-                file.WriteLine("# 地脚本条件列表    ");
+                file.WriteLine("# 地编脚本条件列表    ");
                 foreach (var conditionItem in conditionItems)
                 {
                     printScriptItem(file, conditionItem, 2);
@@ -57,7 +53,7 @@ namespace Ra3MapWiki
             
             using (var file = new StreamWriter(File.OpenWrite(scriptactionMd)))
             {
-                file.WriteLine("# 地脚本动作列表    ");
+                file.WriteLine("# 地编脚本动作列表    ");
                 foreach (var actionItem in actionItems)
                 {
                     printScriptItem(file, actionItem, 2);
@@ -68,14 +64,20 @@ namespace Ra3MapWiki
 
         private static void printScriptItem(StreamWriter sw, FileItem fileItem, int depth)
         {
+            //注意转义，否则文档会无法显示
             if (fileItem.isLeaf)
             {
-                sw.WriteLine($"{new string('#', depth)} {fileItem.name}[{fileItem.ScriptModel.editorNumber}]");
-                sw.WriteLine($"{fileItem.ScriptModel.commandWord}");
+                sw.WriteLine($"{new string('#', depth)} {HttpUtility.HtmlEncode(fileItem.name)}[{fileItem.ScriptModel.editorNumber}]");
+                
+                
+                sw.WriteLine($" 翻译：{HttpUtility.HtmlEncode(fileItem.transName)}               ");
+                sw.WriteLine($" 命令字：{fileItem.ScriptModel.commandWord}                  ");
             }
             else
             {
-                sw.WriteLine($"{new string('#', depth)} {fileItem.name}");
+                // var transSuffix = fileItem.transName.Length > 0 ? $"({HttpUtility.HtmlEncode(fileItem.transName)})" : "";
+                var transSuffix = "";
+                sw.WriteLine($"{new string('#', depth)} {fileItem.name}{transSuffix}");
                 foreach (var itemSubFile in fileItem.subFiles)
                 {
                     printScriptItem(sw, itemSubFile, depth + 1);
@@ -84,26 +86,27 @@ namespace Ra3MapWiki
         }
 
 
-        private static void insertFileItem(List<string> tokens, List<FileItem> items, ScriptModel scriptModel)
+        private static void insertFileItem(List<string> nameToken, List<FileItem> items, ScriptModel scriptModel)
         {
-            if (tokens.Count == 0)
+            if (nameToken.Count == 0)
             {
                 return;
             }
-            var findItem = items.Find(item => item.name.Equals(tokens[0]));
+            var findItem = items.Find(item => item.name.Equals(nameToken[0]));
             if (findItem == null)
             {
                 findItem = new FileItem()
                 {
-                    isLeaf = tokens.Count == 1,
-                    name = tokens[0],
-                    ScriptModel = tokens.Count == 1 ? scriptModel : null
+                    isLeaf = nameToken.Count == 1,
+                    name = nameToken[0],
+                    transName = nameToken.Count == 1 ? scriptModel.scriptTrans : "",
+                    ScriptModel = nameToken.Count == 1 ? scriptModel : null
                 };
                 items.Add(findItem);
             }
 
-            tokens.RemoveAt(0);
-            insertFileItem(tokens, findItem.subFiles, scriptModel);
+            nameToken.RemoveAt(0);
+            insertFileItem(nameToken, findItem.subFiles, scriptModel);
         }
     }
 }

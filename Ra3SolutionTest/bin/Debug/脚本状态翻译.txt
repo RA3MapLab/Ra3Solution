@@ -1,0 +1,162 @@
+-Playing Music is from Script[104]演奏音乐来自脚本
+    -Sound has completed playing. [43]声音已经播放完毕
+  -Camera entered trigger area. [94]摄像机进入触发区
+  -Camera following spline path hits specified waypoint. [87]跟随样条路径的摄像机到达指定的路径点  
+  -Camera movement finished. [7]摄像机运动完成
+   -Test a campaign flag. [137]测试一面竞选旗帜
+   -Compares the number of players in game to a value. [114]将游戏中的玩家数量与一个值进行比较  
+     -Mission hot-spot has been activated. [144]任务热点已经激活
+   -Movie in the radar has completed playing. [41]电影在雷达上已经完成播放
+     -Named object can path to named object. [99]命名对象可以路径到命名对象
+     -Named object can path to waypoint. [98]命名对象可以路径到路径点
+     -Named object exits an area. [32]命名对象退出一个区域
+     -Named object has reached the end of a specific waypoint path. (Unreliable)[28]命名对象已到达特定路径点路径的终点。 (不可靠) 
+     -Named object is inside an area. [9]命名对象在一个区域内
+     -Named object is outside an area. [10]命名对象在区域之外
+     -Evaluate if a named object is being attacked but cannot retaliate[110]评估指定对象是否正在受到攻击但无法进行报复  
+     -Named object exists and is alive. [12]命名对象存在并且是活动的
+     -Named object has been attacked by Player. [17]已命名物体被玩家攻击
+     -Named object has killed (comparison) number of object type or type list. [149]命名对象已终止（比较）对象类型或类型列表的数量 
+     -Named object is attacked by a specific object type. [15]命名对象受到特定对象类型的攻击 
+     -Named object is destroyed by a specific object type.[92]命名对象由特定的对象类型销毁  
+     -Named object is destroyed.[11]命名对象被销毁
+     -Named object is dying. (Cinematic)[47]命名对象正在死亡。(电影)
+     -Named object is finished dying. (Cinematic)[48]命名对象结束死亡。(电影)
+     -Named object's health % compared to a value. [46]命名对象的运行状况%与某个值的比较
+     -Named object's veterancy level compared to a value. [105]命名对象的经验等级与一个值的比较  
+    -Named object has gained experience level. [85]命名对象获得经验等级
+    -Evaluates if named object is currently holding passengers. [109]评估指定对象当前是否携带乘客
+    -Named building is garrisoned by object type owned by specific player. [142]命名建筑由特定玩家拥有的对象类型驻守  
+    -A specific building is empty. [58]一个特定的建筑是空的
+    -Named object has object status. [59]命名对象具有对象状态
+    -Named object is currently selected. [30]命名对象当前被选中
+    -Object Type is currently selected. [135]当前已选择对象类型
+    -Named object has model condition. [150]命名对象具有模型条件
+    -Test object flags. [136]测试对象标志
+    -Named object has sighted a type of object belonging to Player. [57] 命名对象看到了一个属于玩家的对象类型 
+    -Unit has sighted a friendly, neutral, or enemy unit belonging to Player. [45]单位发现一个属于玩家的友军、中立或敌人单位  
+    -Unit's special power is ready to fire. [139]部队的特殊力量已经准备好开火
+    -Named object is using stance. [133]命名对象正在使用姿态
+    -There are (comparison) unowned faction objects. [70]有(比较而言)无主的派系对象  
+    -Unit has upgrade. [138]单位已经升级
+    -Is game running on platform.[154]游戏是否在平台上运行
+     -Player has（comparison）completely built unit types in an area.[128]玩家在一个区域中拥有完整的单位类型  
+     -Player has （comparison）object type in an area with a specified upgrade.[80]玩家在指定的升级区域中拥有(比较)对象类型  
+     -Player has （comparison）object type in an area.[55]玩家在一个区域中拥有(比较)对象类型  
+     -Player has （comparison）object types with kind of in an area.[56]玩家有（比较）物体类型和区域中的种类 
+     -Player has units in an area[72]玩家在某个区域拥有单位
+     -Player destroyed N or more of an opponent‘s buildings.[54]玩家摧毁了N个或更多个对手的建筑  
+     -Player has been attacked by Player.[73]玩家被玩家攻击了
+     -Player has destroyed N or more objects of kindof.[90]玩家已经摧毁了N个或更多的物体。
+     -Player has destroyed N or more objects of type.[91]玩家已摧毁N个或更多类型的物体  
+     -Player has killed Named Unit[147] 玩家杀死了命名单位
+     -Player has enough command points to build a team.（May be broken.-JB）[88]玩家有足够的指挥点来组建团队。（可能损坏。-JB） 
+     -Player has enough command points to build object type.[89]玩家有足够的命令点来构建对象类型  
+     -Is player controlled by human or AI Personality.[146]玩家是受人类人格还是AI人格控制  
+     -Has EVA event played recently.[126]最近有EVA活动吗
+     -Player has object of veterancy level compared to a value.[106]玩家将对象的老练程度与价值相比较  
+     -Player is faction.[66]玩家是派系.
+     -Start Position.[79]起始位置
+     -Player has （comparison）garrisoned buildings.[71]玩家拥有驻守的建筑
+     -Player has garrisoned a specific building.[44]玩家已驻守特定建筑
+     -Does Player have objects that have Toggled Weapon sets.[123]玩家是否拥有带有“切换武器”设置的对象  
+     -Num objects has specified upgrade.[121]Num对象已指定升级
+     -Num objects leveled up during game.[120]Num对象在游戏中升级
+     -Num objects of type loaded on transport.[122]传输时加载的类型对象的数目
+     -Player has （comparison）number of credits.[22]玩家拥有(比较)数量的积分
+     -Player has （comparison）obejcts more than x distance from named object.[108]玩家与指定对象之间的距离大于x
+     -Player has （comparison）object type.[49]玩家拥有(比较)对象类型
+     -Player has （comparison）object types with kind of.[155]玩家有（比较）对象类型和类型
+     -Player has （comparison）objects with a model condition.[1071]玩家拥有带有模型条件的(比较)对象  
+     -Player has （comparison）objects with object status[140]玩家拥有带有对象状态的(比较)对象  
+     -Player has built an object type.[19]玩家创建了一个对象类型
+     -Player has lost an object of type.[76]玩家丢失了一个类型对象
+     -Player owns Team.[26]玩家拥有团队
+     -Player owns Unit.[25]玩家拥有单位
+    -Player has triggered game event[141]玩家触发游戏事件
+     -Player has （comparison）kilowatts excess power supply.[63]玩家有(比较)千瓦的过剩电力供应  
+     -Player has （comparison）percent power supply to consumption.[62]玩家的能量供给与消耗的百分比 
+     -Player‘s base currently has no power.[40]玩家的基础目前没有能量。
+     -Player‘s base currently has power.[27]玩家的基础现在拥有能量
+     -Player activated their Red Alert.[145]玩家启动了红色警报。
+     -Player has sighted another player.[75]玩家看到了另一个玩家
+     -Player has sighted named object.[23]玩家看到了命名的物体
+     -Player has sighted Team.[24]玩家看到了团队
+     -Player can perform special power on team location.[116]玩家可以在团队位置上执行特殊异能  
+     -Player completed using a special power.[51]玩家使用特殊能力完成
+     -Player has 《comparison》《n》power points.[151]玩家有“比较”“n”动力点
+     -Player has player tech.[153]玩家拥有玩家技术
+     -Player start using a special power from a named object.[52]玩家开始使用来自命名对象的特殊能力  
+     -Player starts using a special power in trigger area.[143]玩家开始在触发区域使用一种特殊能力  
+     -Player starts using a special power.[50]玩家开始使用一种特殊能力
+     -Player‘s special power is ready to fire.[64]玩家的特殊能力已准备好开火
+     -Player built an Upgrade.[53]玩家建造了一种升级
+     -Multiplayer local player defeat check.[39]多人本地玩家击败检查
+    -Compare distance between 2 named objects.[83]比较两个命名对象之间的距离
+    -Compare distance between 2 teams.[84]比较两队之间的距离
+    -Counter compared to a value.[1]计时器计算出一个值
+    -Counter compared to another Counter.[81]计数器与另一个计数器相比较
+    -Counter compared to time in seconds.[82]计数器与时间的比较，以秒为单位
+    -Flag compared to a value.[2]标记为一个值
+    -Timer expired.[4]计时器已过期
+    -True.[3]真实 真
+     -One unit from team enters an area.[34]一个小队进入一个区域
+     -One unit from team exits an area.[36]一个小队离开一个区域
+     -Team can path to named object.[102]团队可以路径到命名的对象
+     -Team can path to waypoint.[101]团队可以路径到路标
+     -Team entirely exits an area.[35]团队完全离开一个区域
+     -Team has reached the end of a specific waypoint path.（Unreliable）[29]团队已经到达特定路径点路径的终点。(不可靠) 
+     -Team has units in an area.[5]小队已经在一个区域部署了部队
+     -Team is completely inside an area.[13]团队完全在一个区域内
+     -Team is completely outside an area.[14]团队完全在一个区域之外
+     -Evaluate if all members of a team being attacked cannot retaliate[112]评估是否所有被攻击的团队成员都不能进行报复  
+     -Evaluate if any member of a team is being attacked but cannot retaliate[111]评估团队中是否有成员受到攻击但无法反击  
+     -Team has （comparison）number of objects.[148]团队有(比较)数量的对象
+     -Team has been attacked by Player.[18]球队被球员攻击
+     -Team has been created.[21]队伍被产生
+     -Team has fewer than X units left of Kindof.[115]团队剩下不到X个单位
+     -Team has units.[8]团队有单位
+     -Team is attacked by a specific object type.[16]团队受到特定对象类型的攻击
+     -Team is destroyed.[6]团队被摧毁
+     -Team‘s CommandButton ability is ready-all.[68]团队的命令按钮能力是现成的
+     -Team‘s CommandButton ability is ready-partial[69]团队的命令按钮能力是现成的  
+     -Team health level compared to a value.[118]团队健康水平比较值
+     -Team has object status-all.[60]团队拥有对象状态-所有
+     -Team has object status-partial.[61]团队有对象状态部分
+     -Team has sighted a friendly，neutral，or enemy unit belonging to Player.[95]团队发现一个属于玩家的友好、中立或敌人单位。  
+     -Camera reset.[132]相机重置
+     -Camera rotate distance.[130]相机旋转的距离
+     -Camera scroll distance.[129]相机滚动距离
+     -Camera zoom distance.[131]相机变焦距离
+     -Player has issued a formation order.[134]牌手已发出队形命令
+   -UI state proposition is true.[152]UI状态命题为真
+     -Check if a gate is open.(False,if not a gate,or dosed)[97]检查门是否开着。 (False，如果不是门或剂量)  
+     -Check unit Webbed Status.[119]检查单元网络状态
+     -Does Player have Units that are in alternate formation.[125]玩家是否拥有可替换的单位  
+     -Does Player have Units that have triggered auto pickup.[124]玩家是否拥有能够触发自动拾取的单位
+       -Named object is at experience level.[86]命名对象处于经验级别
+     -False.[0]
+     -Is game in a skirmish or multiplayer game.[113]游戏是小规模战斗还是多人游戏
+     -Is number of units belonging to player near EVA event's last played location greater than,less than,or equal to a fixed value.[127]在EVA事件的最后一次游戏地点附近，玩家的单位数量是大于，小于，还是等于一个固定值  
+     -Multiplayer allied defeat.[38]多人盟军击败
+     -Multiplayer allied victory.[37]多人盟军的胜利
+     -Named object can path into (Player's)nearest base or is already inside it.[100]命名对象可以进入(玩家)最近的基地，或者已经在基地内 
+     -Named object is rank level or above.[117]命名对象的级别或以上
+     -Player currently controls N or fewer bases.[93]玩家目前控制着N个或更少的基地
+     -Player doesn't have units in an area.[74]玩家在某个区域没有单位
+     -Player has (comparison)threat level in area.[65]玩家在区域内拥有(比较)威胁等
+     -Speech has completed playing.[42]演讲结束
+     -Supplies are within specified distance.[67]供应在规定的距离内
+     -Supply source is attacked.[78]供应源被攻击
+     -Supply source is safe.[77]供应源安全
+     -Team can path into (Player's)nearest base or is already inside it.[103]队伍可以进入(玩家)最近的基地，或者已经在基地内  
+     -Team entirely enters an area.[33]整个团队进入一个区域
+     -There are (comparison)trees in an area.[96]在一个地区有(比较)树
+     -Unit enters an area.[31]单位进入一个区域
+     -Unit has been created.[20]单位已经创建
+
+
+
+
+
+

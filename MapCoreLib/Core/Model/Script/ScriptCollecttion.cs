@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using MapCoreLib.Core;
 using MapCoreLib.Core.Asset;
 using MapCoreLib.Util;
@@ -36,8 +37,9 @@ namespace RMGlib.Core.Utility
 
             var a = 2;
             collectDoc();
-            
-            
+            // mergeTranslation();
+            mergeTranslation2();
+
             File.WriteAllText("ScriptConditonNew.json", JsonConvert.SerializeObject(conditions.Values));
             File.WriteAllText("ScriptActionNew.json", JsonConvert.SerializeObject(actions.Values));
         }
@@ -90,6 +92,127 @@ namespace RMGlib.Core.Utility
             }
             var a = 2;
         }
+
+        private static void mergeTranslation()
+        {
+            
+            LogUtil.debug($"--------------------mergeTranslation------------------");
+            var scripDocs = File.ReadAllText("脚本翻译.txt").Split(new string[] { "\r\n\r\n" }, 
+                StringSplitOptions.RemoveEmptyEntries);
+
+            var docMap = new Dictionary<string, TransItem>();
+            foreach (var scripDoc in scripDocs)
+            {
+                var tokens = scripDoc.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+                docMap.Add(tokens[0].Substring("!ACTION:".Length, tokens[0].Length- "!ACTION:".Length).Trim(),
+                    new TransItem()
+                    {
+                        trans = tokens[2].Substring("翻译名称:".Length, tokens[2].Length- "翻译名称:".Length),
+                    });
+            }
+            foreach (var action in actions.Values)
+            {
+                if (docMap.ContainsKey(action.commandWord))
+                {
+                    action.scriptTrans = docMap[action.commandWord].trans;
+                }
+                else
+                {
+                    LogUtil.debug($"{action.commandWord}  not doc");
+                }
+                
+            }
+            
+            foreach (var condition in conditions.Values)
+            {
+                if (docMap.ContainsKey(condition.commandWord))
+                {
+                    condition.scriptTrans = docMap[condition.commandWord].trans;
+                }
+                else
+                {
+                    LogUtil.debug($"{condition.commandWord}  not doc");
+                }
+                
+            }
+        }
+        
+        private static void mergeTranslation2()
+        {
+            
+            LogUtil.debug($"--------------------mergeTranslation2------------------");
+            var actionTrans = File.ReadAllText("脚本动作翻译.txt").Split(new string[] { "\r\n" }, 
+                StringSplitOptions.RemoveEmptyEntries)
+                .Select(line => line.Trim())
+                .Select(line =>
+                {
+                    var left = line.IndexOf('[');
+                    var right = line.IndexOf(']');
+                    if (left < 0 || right < 0)
+                    {
+                        LogUtil.debug($"invalid line: {line}");
+                        throw new Exception();
+                    }
+                    else
+                    {
+                        int editorNum = Convert.ToInt32(line.Substring(left + 1, right - left - 1));
+                        var trsnslation = line.Substring(right + 1, line.Length - (right + 1));
+                        return new TransItem2()
+                        {
+                            editorNumber = editorNum,
+                            trans = trsnslation
+                        };
+                    }
+                })
+                .ToDictionary(item => item.editorNumber);
+            
+            var conditionTrans = File.ReadAllText("脚本状态翻译.txt").Split(new string[] { "\r\n" }, 
+                    StringSplitOptions.RemoveEmptyEntries)
+                .Select(line => line.Trim())
+                .Select(line =>
+                {
+                    var left = line.IndexOf('[');
+                    var right = line.IndexOf(']');
+                    if (left < 0 || right < 0)
+                    {
+                        LogUtil.debug($"invalid line: {line}");
+                        throw new Exception();
+                    }
+                    else
+                    {
+                        int editorNum = Convert.ToInt32(line.Substring(left + 1, right - left - 1));
+                        var trsnslation = line.Substring(right + 1, line.Length - (right + 1));
+                        return new TransItem2()
+                        {
+                            editorNumber = editorNum,
+                            trans = trsnslation
+                        };
+                    }
+                })
+                .ToDictionary(item => item.editorNumber);
+
+            
+            foreach (var action in actions.Values)
+            {
+                action.scriptTrans = actionTrans[action.editorNumber].trans;
+
+            }
+            
+            foreach (var condition in conditions.Values)
+            {
+                if (conditionTrans.ContainsKey(condition.editorNumber))
+                {
+                    condition.scriptTrans = conditionTrans[condition.editorNumber].trans;
+                }
+                else
+                {
+                    LogUtil.debug($"mergeTranslation2 | editornumber: {condition.editorNumber} not found");
+                }
+                
+                
+            }
+
+        }
         
         public class DocItem
         {
@@ -99,6 +222,20 @@ namespace RMGlib.Core.Utility
             public string scriptDesc { get; set; }
             //参数位置参考
             public string scriptArg { get; set; }
+        }
+        
+        public class TransItem
+        {
+            //脚本翻译
+            public string trans { get; set; }
+        }
+        
+        public class TransItem2
+        {
+            public int editorNumber { get; set; }
+
+            //脚本翻译
+            public string trans { get; set; }
         }
 
         private static void traverseScript(Script script)
