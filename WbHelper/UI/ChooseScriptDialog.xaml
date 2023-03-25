@@ -1,0 +1,24 @@
+﻿<Window x:Class="WbHelper.UI.ChooseScriptDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WbHelper.UI"
+        mc:Ignorable="d"
+        Title="选择代码脚本" Height="620" Width="680" Padding="0,0,0,10" ResizeMode="NoResize">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <ListView Name="scriptList" SelectionMode="Single" Height="500" Width="300" Margin="25,10,0,0"></ListView>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" MaxHeight="500" Width="350">
+                <TextBox Name="HelpBox" TextWrapping="Wrap" IsReadOnly="True" Text="" Margin="25,10,25,0">
+                    <TextBox.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Command="Copy" />
+                        </ContextMenu>
+                    </TextBox.ContextMenu>
+                </TextBox>
+            </ScrollViewer>
+        </StackPanel>
+        <Button Width="200" Height="50" Margin="0,15,0,0" Click="onConfirm">确定</Button>
+    </StackPanel>
+</Window>

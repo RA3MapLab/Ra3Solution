@@ -6,7 +6,8 @@ namespace MapCoreLib.Core.Asset
 {
     public class HeightMapData: MajorAsset
     {
-        public ushort[,] elevations;
+        public float[,] elevations;
+        // public ushort[,] elevations;
 
         public List<HeightMapBorder> borders = new List<HeightMapBorder>();
 
@@ -35,12 +36,14 @@ namespace MapCoreLib.Core.Asset
             
             area = binaryReader.ReadInt32();
             
-            elevations = new ushort[mapWidth, mapHeight];
+            elevations = new float[mapWidth, mapHeight];
+            // elevations = new ushort[mapWidth, mapHeight];
             for (int y = 0; y < mapHeight; y++)
             {
                 for (int x = 0; x < mapWidth; x++)
                 {
-                    elevations[x, y] = binaryReader.ReadUInt16();
+                    // elevations[x, y] = binaryReader.ReadUInt16();
+                    elevations[x, y] = StreamExtension.FromSageFloat16(binaryReader.ReadUInt16());
                 }
             }
         }
@@ -60,7 +63,8 @@ namespace MapCoreLib.Core.Asset
             {
                 for (int x = 0; x < mapWidth; x++)
                 {
-                    binaryWriter.Write(elevations[x, y]);
+                    // binaryWriter.Write(elevations[x, y]);
+                    binaryWriter.Write(StreamExtension.ToSageFloat16(elevations[x, y]));
                 }
             }
         }

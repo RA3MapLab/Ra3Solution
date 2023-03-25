@@ -77,7 +77,7 @@ namespace MapCoreLib.Core.Asset
                             (ScriptActionFalse) new ScriptActionFalse().fromStream(binaryReader, context));
                         break;
                     default:
-                        LogUtil.debug($"unknown assetName: {assetName}");
+                        LogUtil.log($"unknown assetName: {assetName}");
                         break;
                 }
             }

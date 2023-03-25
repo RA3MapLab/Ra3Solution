@@ -30,7 +30,7 @@ namespace MapCoreLib.Core.Asset
             var scriptModel = ScriptSpec.actionsSpec.getOrNull(Name);
             if (scriptModel == null)
             {
-                LogUtil.debug($"OrCondition | unknown name ${Name}");
+                LogUtil.log($"OrCondition | unknown name ${Name}");
                 throw new Exception($"非法的脚本动作标签 {Name}");
             }
 

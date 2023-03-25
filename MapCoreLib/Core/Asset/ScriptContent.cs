@@ -77,13 +77,13 @@ namespace MapCoreLib.Core.Asset
             var scriptActModel = ScriptSpec.actionsSpec.getOrNull(contentName);
             if (scriptConModel != null && scriptActModel != null)
             {
-                LogUtil.debug("ScriptContent | WriteXml find two spec");
+                LogUtil.log("ScriptContent | WriteXml find two spec");
             }
 
             var model = scriptConModel == null ? scriptActModel : scriptConModel;
             if (model == null)
             {
-                LogUtil.debug("unknown arg model");
+                LogUtil.log("unknown arg model");
                 return;
             }
 

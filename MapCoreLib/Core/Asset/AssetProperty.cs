@@ -38,7 +38,7 @@ namespace MapCoreLib.Core.Asset
                     data = binaryReader.readDefaultString();
                     break;
                 default:
-                    LogUtil.debug($"unknown propertyType {propertyType}");
+                    LogUtil.log($"unknown propertyType {propertyType}");
                     break;
             }
 
@@ -70,7 +70,7 @@ namespace MapCoreLib.Core.Asset
                     binaryWriter.writeDefaultString((string) data);
                     break;
                 default:
-                    LogUtil.debug($"unknown propertyType {propertyType}");
+                    LogUtil.log($"unknown propertyType {propertyType}");
                     break;
             }
         }
@@ -110,7 +110,7 @@ namespace MapCoreLib.Core.Asset
             }
             else
             {
-                LogUtil.debug($"AssetProperty of type {data.GetType().Name}");
+                LogUtil.log($"AssetProperty of type {data.GetType().Name}");
                 assetProperty.propertyType = AssetPropertyType.intType;
             }
 

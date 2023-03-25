@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using MapCoreLib.Core.Util;
 
 namespace MapCoreLib.Core.Asset
 {
@@ -32,21 +34,34 @@ namespace MapCoreLib.Core.Asset
         
         public class AssetBlock
         {
-            private uint type;
+            public uint typeId { get; set; }
 
-            private uint id;
+            public uint instanceId { get; set; }
 
             public AssetBlock fromStream(BinaryReader binaryReader, MapDataContext context)
             {
-                type = binaryReader.ReadUInt32();
-                id = binaryReader.ReadUInt32();
+                typeId = binaryReader.ReadUInt32();
+                instanceId = binaryReader.ReadUInt32();
                 return this;
             }
 
             public void saveData(BinaryWriter binaryWriter, MapDataContext context)
             {
-                binaryWriter.Write(type);
-                binaryWriter.Write(id);
+                binaryWriter.Write(typeId);
+                binaryWriter.Write(instanceId);
+            }
+        }
+
+        public void addInstance(string typeName)
+        {
+            var instanceId = FashHash.GetHashCode(typeName);
+            if (assetBlocks.Find(block => block.instanceId == instanceId) == null)
+            {
+                assetBlocks.Add(new AssetBlock()
+                {
+                    typeId = 2486173485u,   //默认都是GameObject
+                    instanceId = instanceId
+                });
             }
         }
     }

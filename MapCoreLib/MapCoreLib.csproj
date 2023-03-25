@@ -9,8 +9,9 @@
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>MapCoreLib</RootNamespace>
         <AssemblyName>MapCoreLib</AssemblyName>
-        <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -88,11 +89,16 @@
       <Compile Include="Core\Ra3MapStruct.cs" />
       <Compile Include="Core\Ra3MapVisitImpl.cs" />
       <Compile Include="Core\Ra3MapVisitImpl2.cs" />
+      <Compile Include="Core\Scripts\ScriptFile\RandomAddTrees.cs" />
+      <Compile Include="Core\Scripts\ScriptHandler.cs" />
+      <Compile Include="Core\Scripts\ScriptInterface.cs" />
       <Compile Include="Core\ScriptXml.cs" />
+      <Compile Include="Core\Util\FashHash.cs" />
       <Compile Include="Core\Util\MapAssetExtension.cs" />
       <Compile Include="Core\Util\MapXmlUtil.Schema.cs" />
       <Compile Include="Core\Util\MapXmlUtil.ToObj.cs" />
       <Compile Include="Core\Util\MapXmlUtil.ToXml.cs" />
+      <Compile Include="Core\Util\PathUtil.cs" />
       <Compile Include="Core\Util\XmlUtils.cs" />
       <Compile Include="Util\CollectionUtil.cs" />
       <Compile Include="Util\LogUtil.cs" />
@@ -107,6 +113,8 @@
         <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       </Reference>
       <Reference Include="System" />
+      <Reference Include="System.Configuration" />
+      <Reference Include="System.Web" />
       <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>

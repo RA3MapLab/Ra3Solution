@@ -55,7 +55,7 @@ namespace MapCoreLib.Core.Asset
                 var scriptModel = ScriptSpec.conditionsSpec.getOrNull(Name);
                 if (scriptModel == null)
                 {
-                    LogUtil.debug($"OrCondition | unknown name ${Name}");
+                    LogUtil.log($"OrCondition | unknown name ${Name}");
                     continue;
                 }
         

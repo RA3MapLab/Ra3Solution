@@ -75,7 +75,7 @@ namespace MapCoreLib.Core
             PrefUtil.stop("saveMap");
         }
 
-        private void doSaveMap(string mapFile)
+        public void doSaveMap(string mapFile)
         {
             using (var memoryStream = new MemoryStream(2048 * 1024))
             {

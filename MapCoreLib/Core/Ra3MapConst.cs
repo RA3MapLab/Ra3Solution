@@ -1,7 +1,11 @@
+using System;
+using System.Diagnostics.Eventing.Reader;
+
 namespace MapCoreLib.Core
 {
-    internal static class Ra3MapConst
+    public static class Ra3MapConst
     {
+        
         public const uint UnCompressorFlag = 1884121923u;
         public const uint CompressorFlag = 5390661u;
 
@@ -35,7 +39,7 @@ namespace MapCoreLib.Core
         
         #endregion
         
-        public const string ASSET_MapObject = "MapObject";
+        public const string ASSET_MapObject = "Object";
         public const string ASSET_ScriptList = "ScriptList";
         public const string ASSET_Script = "Script";
         public const string ASSET_ScriptGroup = "ScriptGroup";

@@ -41,7 +41,7 @@ namespace MapCoreLib.Core.Asset
                         scriptGroups.Add((ScriptGroup) new ScriptGroup().fromStream(binaryReader, context));
                         break;
                     default:
-                        LogUtil.debug($"unknown assetName: {assetName}");
+                        LogUtil.log($"unknown assetName: {assetName}");
                         break;
                 }
             }

@@ -43,8 +43,6 @@ namespace MapCoreLib.Core
             serializeScript2(ra3Map);
         }
 
-        
-
         private static void serializeScript2(Ra3Map ra3Map)
         {
             MapDataContext context = ra3Map.getContext();
@@ -81,7 +79,6 @@ namespace MapCoreLib.Core
 
             string xmlPath = Path.Combine(Path.GetDirectoryName(ra3Map.mapPath),
                 ra3Map.getContext().mapName + ".edit.xml");
-            // doDeserializeScript(ra3Map, xmlPath);
             deserializeScript2(ra3Map, xmlPath);
         }
 
@@ -121,13 +118,13 @@ namespace MapCoreLib.Core
             {
                 case XmlSeverityType.Error:
                     var msg = $"Error: {e.Message} |  行：{e.Exception.LineNumber} ， 列：{e.Exception.LinePosition}";
-                    LogUtil.debug(msg);
+                    LogUtil.log(msg);
                     validXml = false;
                     //不要马上抛异常，检查所有文件内容
                     // throw new XmlSchemaValidationException(msg);
                     break;
                 case XmlSeverityType.Warning:
-                    LogUtil.debug($"Warning {e.Message} |  行：{e.Exception.LineNumber} ， 列：{e.Exception.LinePosition}");
+                    LogUtil.log($"Warning {e.Message} |  行：{e.Exception.LineNumber} ， 列：{e.Exception.LinePosition}");
                     break;
             }
         }

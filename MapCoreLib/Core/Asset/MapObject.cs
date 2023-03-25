@@ -7,6 +7,9 @@ namespace MapCoreLib.Core.Asset
     public class MapObject: MajorAsset
     {
         public Vec3D position;
+        /**
+         * 角度
+         */
         public float angle;
         public int roadOption;
         public string typeName;
@@ -45,6 +48,62 @@ namespace MapCoreLib.Core.Asset
         public override string getAssetName()
         {
             return Ra3MapConst.ASSET_MapObject;
+        }
+
+        public override short getVersion()
+        {
+            return 3;
+        }
+
+        public static MapObject ofObj(string typeName, Vec3D vec3D, float angle, string objName, MapDataContext context)
+        {
+            var mapObject = new MapObject();
+            mapObject.registerSelf(context);
+            mapObject.position = vec3D;
+            mapObject.angle = angle;
+            mapObject.roadOption = 0;
+            mapObject.typeName = typeName;
+            mapObject.assetPropertyCollection.addProperty("originalOwner", "PlyrNeutral/teamPlyrNeutral", context);
+            mapObject.assetPropertyCollection.addProperty("objectName", objName, context);
+
+            mapObject.assetPropertyCollection.addProperty("objectInitialHealth", 100, context);
+            mapObject.assetPropertyCollection.addProperty("objectEnabled", true, context);
+            mapObject.assetPropertyCollection.addProperty("objectIndestructible", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectUnsellable", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectPowered", true, context);
+            mapObject.assetPropertyCollection.addProperty("objectRecruitableAI", true, context);
+            mapObject.assetPropertyCollection.addProperty("objectTargetable", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectSleeping", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectBasePriority", 40, context);
+            mapObject.assetPropertyCollection.addProperty("objectBasePhase", 1, context);
+            mapObject.assetPropertyCollection.addProperty("objectLayer", "", context);
+
+            return mapObject;
+        }
+
+        public static MapObject ofWaypoint(Vec3D vec3D, MapDataContext context)
+        {
+            var mapObject = new MapObject();
+            mapObject.registerSelf(context);
+            mapObject.position = vec3D;
+            mapObject.angle = 0;
+            mapObject.roadOption = 0;
+            mapObject.typeName = "*Waypoints/Waypoint";
+            mapObject.assetPropertyCollection.addProperty("originalOwner", "/team", context);
+
+            mapObject.assetPropertyCollection.addProperty("objectInitialHealth", 100, context);
+            mapObject.assetPropertyCollection.addProperty("objectEnabled", true, context);
+            mapObject.assetPropertyCollection.addProperty("objectIndestructible", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectUnsellable", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectPowered", true, context);
+            mapObject.assetPropertyCollection.addProperty("objectRecruitableAI", true, context);
+            mapObject.assetPropertyCollection.addProperty("objectTargetable", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectSleeping", false, context);
+            mapObject.assetPropertyCollection.addProperty("objectBasePriority", 40, context);
+            mapObject.assetPropertyCollection.addProperty("objectBasePhase", 1, context);
+            mapObject.assetPropertyCollection.addProperty("objectLayer", "", context);
+
+            return mapObject;
         }
     }
 }

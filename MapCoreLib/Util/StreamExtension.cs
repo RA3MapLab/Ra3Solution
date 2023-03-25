@@ -198,6 +198,19 @@ namespace MapCoreLib.Util
                 }
             }
         }
-        
+
+        public static ushort ToSageFloat16(float v)
+        {
+            byte upper = (byte)((v - v % 10f) / 10f);
+            byte lower = (byte)((double)(v % 10f * 256f) / 9.96);
+            return (ushort)((upper << 8) | lower);
+        }
+
+        public static float FromSageFloat16(ushort v)
+        {
+            byte upper = (byte)(v >> 8);
+            byte lower = (byte)(v & 0xFFu);
+            return (float)(int)upper * 10f + (float)(int)lower * 9.96f / 256f;
+        }
     }
 }

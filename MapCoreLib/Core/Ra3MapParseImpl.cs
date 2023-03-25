@@ -54,36 +54,36 @@ namespace MapCoreLib.Core
                 br.BaseStream.Position -= 4;
                 switch (majorAssetName)
                 {
-                    // case Ra3MapConst.ASSET_ObjectsList:
-                    //     mapStruct.addAsset(new ObjectsList().fromStream(br, dataContext));
-                    //     break;
-                    // case Ra3MapConst.ASSET_AssetList:
-                    //     mapStruct.addAsset(new AssetList().fromStream(br, dataContext));
-                    //     break;
+                    case Ra3MapConst.ASSET_ObjectsList:
+                        mapStruct.addAsset(new ObjectsList().fromStream(br, dataContext));
+                        break;
+                    case Ra3MapConst.ASSET_AssetList:
+                        mapStruct.addAsset(new AssetList().fromStream(br, dataContext));
+                        break;
                     case Ra3MapConst.ASSET_SidesList:
                         mapStruct.addAsset(new SidesList().fromStream(br, dataContext));
                         break;
                     case Ra3MapConst.ASSET_PlayerScriptsList:
                         mapStruct.addAsset(new PlayerScriptsList().fromStream(br, dataContext));
                         break;
-                    // case Ra3MapConst.ASSET_Teams:
-                    //     mapStruct.addAsset(new Teams().fromStream(br, dataContext));
-                    //     break;
-                    // case Ra3MapConst.ASSET_HeightMapData:
-                    //     mapStruct.addAsset(new HeightMapData().fromStream(br, dataContext));
-                    //     break;
+                    case Ra3MapConst.ASSET_Teams:
+                        mapStruct.addAsset(new Teams().fromStream(br, dataContext));
+                        break;
+                    case Ra3MapConst.ASSET_HeightMapData:
+                        mapStruct.addAsset(new HeightMapData().fromStream(br, dataContext));
+                        break;
                     // case Ra3MapConst.ASSET_BlendTileData:
                     //     mapStruct.addAsset(new BlendTileData().fromStream(br, dataContext));
                     //     break;
-                    // case Ra3MapConst.ASSET_WorldInfo:
-                    //     mapStruct.addAsset(new WorldInfo().fromStream(br, dataContext));
-                    //     break;
+                    case Ra3MapConst.ASSET_WorldInfo:
+                        mapStruct.addAsset(new WorldInfo().fromStream(br, dataContext));
+                        break;
                     // case Ra3MapConst.ASSET_StandingWaterAreas:
                     //     mapStruct.addAsset(new StandingWaterAreas().fromStream(br, dataContext));
                     //     break;
-                    // case Ra3MapConst.ASSET_GlobalLighting:
-                    //     mapStruct.addAsset(new GlobalLighting().fromStream(br, dataContext));
-                    //     break;
+                    case Ra3MapConst.ASSET_GlobalLighting:
+                        mapStruct.addAsset(new GlobalLighting().fromStream(br, dataContext));
+                        break;
                     default:
                         mapStruct.addAsset(new DefaultMajorAsset().fromStream(br, dataContext));
                         break;

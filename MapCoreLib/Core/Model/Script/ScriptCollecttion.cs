@@ -71,7 +71,7 @@ namespace RMGlib.Core.Utility
                 }
                 else
                 {
-                    LogUtil.debug($"{action.commandWord}  not doc");
+                    LogUtil.log($"{action.commandWord}  not doc");
                 }
                 
             }
@@ -86,7 +86,7 @@ namespace RMGlib.Core.Utility
                 }
                 else
                 {
-                    LogUtil.debug($"{condition.commandWord}  not doc");
+                    LogUtil.log($"{condition.commandWord}  not doc");
                 }
                 
             }
@@ -96,7 +96,7 @@ namespace RMGlib.Core.Utility
         private static void mergeTranslation()
         {
             
-            LogUtil.debug($"--------------------mergeTranslation------------------");
+            LogUtil.log($"--------------------mergeTranslation------------------");
             var scripDocs = File.ReadAllText("脚本翻译.txt").Split(new string[] { "\r\n\r\n" }, 
                 StringSplitOptions.RemoveEmptyEntries);
 
@@ -118,7 +118,7 @@ namespace RMGlib.Core.Utility
                 }
                 else
                 {
-                    LogUtil.debug($"{action.commandWord}  not doc");
+                    LogUtil.log($"{action.commandWord}  not doc");
                 }
                 
             }
@@ -131,7 +131,7 @@ namespace RMGlib.Core.Utility
                 }
                 else
                 {
-                    LogUtil.debug($"{condition.commandWord}  not doc");
+                    LogUtil.log($"{condition.commandWord}  not doc");
                 }
                 
             }
@@ -140,7 +140,7 @@ namespace RMGlib.Core.Utility
         private static void mergeTranslation2()
         {
             
-            LogUtil.debug($"--------------------mergeTranslation2------------------");
+            LogUtil.log($"--------------------mergeTranslation2------------------");
             var actionTrans = File.ReadAllText("脚本动作翻译.txt").Split(new string[] { "\r\n" }, 
                 StringSplitOptions.RemoveEmptyEntries)
                 .Select(line => line.Trim())
@@ -150,7 +150,7 @@ namespace RMGlib.Core.Utility
                     var right = line.IndexOf(']');
                     if (left < 0 || right < 0)
                     {
-                        LogUtil.debug($"invalid line: {line}");
+                        LogUtil.log($"invalid line: {line}");
                         throw new Exception();
                     }
                     else
@@ -175,7 +175,7 @@ namespace RMGlib.Core.Utility
                     var right = line.IndexOf(']');
                     if (left < 0 || right < 0)
                     {
-                        LogUtil.debug($"invalid line: {line}");
+                        LogUtil.log($"invalid line: {line}");
                         throw new Exception();
                     }
                     else
@@ -206,7 +206,7 @@ namespace RMGlib.Core.Utility
                 }
                 else
                 {
-                    LogUtil.debug($"mergeTranslation2 | editornumber: {condition.editorNumber} not found");
+                    LogUtil.log($"mergeTranslation2 | editornumber: {condition.editorNumber} not found");
                 }
                 
                 

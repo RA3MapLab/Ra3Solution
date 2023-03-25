@@ -10,12 +10,12 @@ namespace MapCoreLib.Log
 
         public static void start(string tag)
         {
-            record.put(tag, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds());
+            record.put(tag, DateTime.Now.Millisecond);
         }
 
         public static void stop(string tag)
         {
-            LogUtil.debug($"{tag} | consume time: {DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - record[tag]}ms");
+            LogUtil.log($"{tag} | consume time: {DateTime.Now.Millisecond - record[tag]}ms");
         }
     }
 }
