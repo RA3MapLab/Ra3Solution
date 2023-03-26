@@ -53,5 +53,16 @@ namespace MapCoreLib.Core.Asset
         {
             return Ra3MapConst.ASSET_SidesList;
         }
+
+        public int findPlayerIndex(string playerName)
+        {
+            Player p = players.Find(player => (player.assetPropertyCollection.getProperty("playerName").data as string) == playerName);
+            if (p == null)
+            {
+                return -1;
+            }
+
+            return players.IndexOf(p);
+        }
     }
 }

@@ -68,5 +68,10 @@ namespace WbHelper
         {
             MessageBox.Show(msg, "错误", MessageBoxButton.OK, MessageBoxImage.Error);
         }
+
+        private void OnHelp(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

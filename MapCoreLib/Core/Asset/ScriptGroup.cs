@@ -80,5 +80,13 @@ namespace MapCoreLib.Core.Asset
         {
             return 3;
         }
+
+        public static ScriptGroup of(MapDataContext mapDataContext, string newName)
+        {
+            var scriptGroup = new ScriptGroup();
+            scriptGroup.Name = newName;
+            scriptGroup.registerSelf(mapDataContext);
+            return scriptGroup;
+        }
     }
 }

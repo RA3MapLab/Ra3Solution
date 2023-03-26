@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using MapCoreLib.Core;
+using MapCoreLib.Core.Asset;
+using MapCoreLib.Util;
 using Newtonsoft.Json;
 
 namespace RMGlib.Core.Utility
@@ -16,6 +19,11 @@ namespace RMGlib.Core.Utility
         public static Dictionary<string, ScriptModel> actionsSpec = new Dictionary<string, ScriptModel>();
         
         public static Dictionary<string, ScriptModel> conditionsSpec = new Dictionary<string, ScriptModel>();
+
+        static ScriptSpec()
+        {
+            initScriptSpec();
+        }
         
         public static void initScriptSpec()
         {
@@ -33,22 +41,35 @@ namespace RMGlib.Core.Utility
         }
 
 
-        public static bool checkScriptAction(string commandWord, params object[] args)
+        public static bool checkScriptAction(string commandWord, List<object> args)
         {
             return checkScriptInternal(actionsSpec, commandWord, args);
         }
         
-        public static bool checkScriptCondition(string commandWord, params object[] args)
+        public static bool checkScriptCondition(string commandWord, List<object> args)
         {
             return checkScriptInternal(conditionsSpec, commandWord, args);
         }
 
-        public static bool checkScriptInternal(Dictionary<string, ScriptModel> dict, string commandWord, params object[] args)
+        public static bool checkScriptInternal(Dictionary<string, ScriptModel> dict, string commandWord, List<object> args)
         {
             if (dict.ContainsKey(commandWord))
             {
                 ScriptModel scriptModel = dict[commandWord];
-                for (int i = 0; i < args.Length; i++)
+                if (scriptModel.argumentModel.Count > 0 && args == null)
+                {
+                    throw new Exception($"ScriptCondition of | 命令字{commandWord} 需要参数，但未提供");
+                }
+                if (scriptModel.argumentModel.Count == 0 && args == null)
+                {
+                    return true;
+                }
+                
+                if (args != null && scriptModel.argumentModel.Count != args.Count)
+                {
+                    throw new Exception($"ScriptCondition of | 命令字{commandWord} 提供的参数不足");
+                }
+                for (int i = 0; i < args.Count; i++)
                 {
                     var argi = args[i];
                     if (args[i].GetType().Name == "Boolean")
@@ -72,6 +93,49 @@ namespace RMGlib.Core.Utility
             }
 
             throw new Exception($"unknown commandWord {commandWord}");
+        }
+        
+        public static ScriptContent generateScriptContent(MapDataContext mapDataContext, Dictionary<string, ScriptModel> dict, string commandWord, List<object> args)
+        {
+            ScriptModel scriptModel = dict[commandWord];
+            var scriptContent = new ScriptContent();
+            scriptContent.contentType = scriptModel.editorNumber;
+            scriptContent.nameIndex = mapDataContext.MapStruct.RegisterString(commandWord);
+            scriptContent.assetPropertyType = AssetPropertyType.stringType;
+            scriptContent.contentName = commandWord;
+            if (args == null)
+            {
+                return scriptContent;
+            }
+            for (var i = 0; i < args.Count; i++)
+            {
+                var scriptArgument = new ScriptArgument();
+                if (scriptModel.argumentModel[i].realType == INT)
+                {
+                    if (args[i].GetType().Name == "Boolean")
+                    {
+                        scriptArgument.intValue = (bool)args[i] ? 1 : 0;
+                    }
+                    else
+                    {
+                        scriptArgument.intValue = (int) Math.Floor(float.Parse(args[i].ToString()));
+                    }
+                } else if (scriptModel.argumentModel[i].realType == FLOAT)
+                {
+                    scriptArgument.floatValue = float.Parse(args[i].ToString());
+                } else if (scriptModel.argumentModel[i].realType == STRING)
+                {
+                    scriptArgument.stringValue = (string) args[i];
+                } else if (scriptModel.argumentModel[i].realType == POSITION)
+                {
+                    scriptArgument.position = (Vec3D) args[i];
+                }
+
+                scriptArgument.argumentType = scriptModel.argumentModel[i].typeNumber;
+                scriptContent.arguments.Add(scriptArgument);
+            }
+
+            return scriptContent;
         }
     }
 }

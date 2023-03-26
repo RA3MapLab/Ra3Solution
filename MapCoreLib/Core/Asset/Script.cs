@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -136,9 +137,61 @@ namespace MapCoreLib.Core.Asset
         public override void registerSelf(MapDataContext context)
         {
             base.registerSelf(context);
+            //TODO 注册还需要补齐scriptContent的
             scriptOrConditions.ForEach(item => item.registerSelf(context));
             ScriptActionOnTrue.ForEach(item => item.registerSelf(context));
             ScriptActionOnFalse.ForEach(item => item.registerSelf(context));
+        }
+        
+        public static void addTo(MapDataContext context, Script script, string path = "")
+        {
+            PlayerScriptsList playerScriptsList = context.getAsset<PlayerScriptsList>(Ra3MapConst.ASSET_PlayerScriptsList);
+            SidesList sidesList = context.getAsset<SidesList>(Ra3MapConst.ASSET_SidesList);
+            if (path == "")
+            {
+                playerScriptsList.scriptLists[0].scripts.Add(script);
+                script.registerSelf(context);
+                return;
+            }
+            var dirs = path.Trim().Split('/');
+            int index = sidesList.findPlayerIndex(dirs[0]);
+            if (index < 0)
+            {
+                throw new Exception($"addTo | 脚本路径的第一个文件夹名称有错误 --- {path}");
+            }
+
+            if (dirs.Length == 1)
+            {
+                var scripts = playerScriptsList.scriptLists[index].scripts;
+                scripts.Add(script);
+            }
+            else
+            {
+                var scriptGroups = playerScriptsList.scriptLists[index].scriptGroups;
+
+                ScriptGroup group = null;
+                for (var i = 1; i < dirs.Length; i++)
+                {
+                    var dirName = dirs[i];
+                    if (dirName == "")
+                    {
+                        throw new Exception($"addTo | 文件夹名字不能为空，检查你是不是多写了斜杠 --- {path}");
+                    }
+
+                    group = scriptGroups.Find(scriptGroup => scriptGroup.Name == dirName);
+                    if (group == null)
+                    {
+                        group = ScriptGroup.of(context, dirName);
+                        scriptGroups.Add(group);
+                    }
+
+                    scriptGroups = group.scriptGroups;
+                }
+                
+                group?.scripts.Add(script);
+            }
+            
+            script.registerSelf(context);
         }
     }
 }

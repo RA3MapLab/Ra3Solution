@@ -217,6 +217,7 @@ namespace MapCoreLib.Core.Asset
         public void registerSelf2(MapDataContext context, short ver, string realname)
         {
             id = context.MapStruct.RegisterString(realname);
+            nameIndex = context.MapStruct.RegisterString(contentName);
             base.version = ver;
         }
     }

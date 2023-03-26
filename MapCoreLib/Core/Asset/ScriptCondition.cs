@@ -68,5 +68,18 @@ namespace MapCoreLib.Core.Asset
         {
             scriptContent.registerSelf2(context, 6, "Condition");
         }
+
+        public static ScriptCondition of(MapDataContext mapDataContext, string commandWord, List<object> args = null, bool IsInverted = false)
+        {
+            var scriptCondition = new ScriptCondition();
+            if (!ScriptSpec.checkScriptCondition(commandWord, args))
+            {
+                throw new Exception($"ScriptCondition of | 脚本条件参数有误 --- {commandWord}");
+            }
+            
+            scriptCondition.scriptContent = ScriptSpec.generateScriptContent(mapDataContext, ScriptSpec.conditionsSpec, commandWord, args);
+            scriptCondition.IsInverted = IsInverted;
+            return scriptCondition;
+        }
     }
 }

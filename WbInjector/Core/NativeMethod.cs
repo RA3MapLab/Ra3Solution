@@ -29,5 +29,8 @@ namespace wbInject.Core
 
         [DllImport("user32.dll")]
         public static extern int UnhookWindowsHookEx(IntPtr hookHandle);
+        
+        [DllImport("kernel32.dll")]
+        public static extern uint GetLastError();
     }
 }

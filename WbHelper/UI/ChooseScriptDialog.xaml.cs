@@ -28,5 +28,10 @@ namespace WbHelper.UI
             selectScriptName = scriptList.SelectedItem as string;
             Close();
         }
+
+        private void OnItemSelected(object sender, RoutedEventArgs e)
+        {
+            HelpBox.Text = scriptDescs[scriptList.SelectedItem as string];
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace NewMapParser
         private const string userName = "29972";
         public static void Main(string[] args)
         {
-            new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\Mission32432\\Mission32432.map").parse();
+            new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\City_Chaos_2.0\\City_Chaos_2.0.map").parse();
             // new Ra3Map("chuangguan_xq/chuangguan_xq.map").parse();
             
             // ScriptXml.serialize($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\the_last_tial\\the_last_tial.map");

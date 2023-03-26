@@ -170,6 +170,7 @@ namespace wbInject
             catch (Exception e)
             {
                 Logger.log(e.Message);
+                commandListener.showErrorBox(e.Message);
             }
             
             refreshMap(mapName);

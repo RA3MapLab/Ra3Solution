@@ -55,6 +55,7 @@
             <Generator>MSBuild:Compile</Generator>
             <SubType>Designer</SubType>
         </ApplicationDefinition>
+        <Compile Include="bin\Debug\Data\Scripts\OnlyInfantry\Main.cs" />
         <Compile Include="UI\ChooseScriptDialog.xaml.cs">
           <DependentUpon>ChooseScriptDialog.xaml</DependentUpon>
         </Compile>
@@ -99,6 +100,12 @@
         <Project>{d7355a65-2c55-4c33-bf97-a94aecccd940}</Project>
         <Name>WbInjector</Name>
       </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="bin\Debug\Ra3MapSchema.xsd" />
+      <Content Include="bin\Debug\ScriptActionNew.json" />
+      <Content Include="bin\Debug\ScriptConditonNew.json" />
+      <Content Include="bin\Debug\scriptContent.xsd" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

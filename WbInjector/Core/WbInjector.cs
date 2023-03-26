@@ -28,31 +28,31 @@ namespace wbInject.Core
 
             if (threadId == 0)
             {
-                throw new Exception("线程获取失败");
+                throw new Exception($"线程获取失败 {NativeMethod.GetLastError()}");
             }
 
             IntPtr dllHandle = NativeMethod.LoadLibrary(dllPath);
 
             if (dllHandle == IntPtr.Zero)
             {
-                throw new Exception("dll加载失败");
+                throw new Exception($"dll加载失败 {NativeMethod.GetLastError()}");
             }
 
             IntPtr procAddress = NativeMethod.GetProcAddress(dllHandle, MouseHookFunc);
             if (procAddress == IntPtr.Zero)
             {
-                throw new Exception("dll鼠标钩子函数获取失败");
+                throw new Exception($"dll钩子函数获取失败 {NativeMethod.GetLastError()}");
             }
 
             // hookHandle = NativeMethod.SetWindowsHookEx(HookType.WH_MSGFILTER, procAddress, dllHandle, threadId);
             MouseHookHandle = NativeMethod.SetWindowsHookEx(HookType.WH_GETMESSAGE, procAddress, dllHandle, threadId);
             if (MouseHookHandle == IntPtr.Zero)
             {
-                throw new Exception("dll鼠标钩子函数注入失败");
+                throw new Exception($"dll钩子函数注入失败 {NativeMethod.GetLastError()}");
             }
             else
             {
-                Logger.log("dll鼠标钩子函数注入成功");
+                Logger.log("dll钩子函数注入成功");
             }
 
         }

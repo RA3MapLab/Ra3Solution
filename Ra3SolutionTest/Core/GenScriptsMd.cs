@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Web;
+using MapCoreLib.Core.Asset;
 using Ra3MapWiki.Core;
 using RMGlib.Core.Utility;
 
@@ -72,6 +73,19 @@ namespace NewMapParser.Core
                 
                 sw.WriteLine($" 翻译：{HttpUtility.HtmlEncode(fileItem.transName)}               ");
                 sw.WriteLine($" 命令字：{fileItem.ScriptModel.commandWord}                  ");
+
+                var xmlCode = $"<{fileItem.ScriptModel.commandWord}>\n";
+                for (int i = 0; i < fileItem.ScriptModel.argumentModel.Count; i++)
+                {
+                    var arg = ((ScriptArgumentType)fileItem.ScriptModel.argumentModel[i].typeNumber).ToString();
+                    xmlCode += $"    <{arg}_{i} value=\"{fileItem.ScriptModel.argumentModel[i].exampleData}\"/>\n";
+                }
+                xmlCode += $@"</{fileItem.ScriptModel.commandWord}>";
+                
+                sw.WriteLine($@" xml代码使用：
+```xml 
+{xmlCode}     
+```            ");
             }
             else
             {

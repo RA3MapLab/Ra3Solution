@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Xml;
 using MapCoreLib.Core.Interface;
 using MapCoreLib.Core.Util;
@@ -40,6 +41,26 @@ namespace MapCoreLib.Core.Asset
         public override void registerSelf(MapDataContext context)
         {
             registerSelf2(context, 3, Ra3MapConst.ASSET_ScriptAction);
+        }
+        
+        public static ScriptAction of(MapDataContext mapDataContext, string commandWord, List<object> args = null)
+        {
+            if (!ScriptSpec.checkScriptAction(commandWord, args))
+            {
+                throw new Exception($"ScriptCondition of | 脚本动作参数有误 --- {commandWord}");
+            }
+
+            var scriptContent = ScriptSpec.generateScriptContent(mapDataContext, ScriptSpec.actionsSpec, commandWord, args);
+            ScriptAction scriptAction = new ScriptAction()
+            {
+                contentType = scriptContent.contentType,
+                assetPropertyType = scriptContent.assetPropertyType,
+                contentName = scriptContent.contentName,
+                nameIndex = scriptContent.nameIndex,
+                enable = scriptContent.enable,
+                arguments = scriptContent.arguments,
+            };
+            return scriptAction;
         }
     }
 }

@@ -8,7 +8,7 @@
         Title="选择代码脚本" Height="620" Width="680" Padding="0,0,0,10" ResizeMode="NoResize">
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal">
-            <ListView Name="scriptList" SelectionMode="Single" Height="500" Width="300" Margin="25,10,0,0"></ListView>
+            <ListView Name="scriptList" SelectionMode="Single" Height="500" Width="300" Margin="25,10,0,0" SelectionChanged="OnItemSelected"></ListView>
             <ScrollViewer VerticalScrollBarVisibility="Auto" MaxHeight="500" Width="350">
                 <TextBox Name="HelpBox" TextWrapping="Wrap" IsReadOnly="True" Text="" Margin="25,10,25,0">
                     <TextBox.ContextMenu>

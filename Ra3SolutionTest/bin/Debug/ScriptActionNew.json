@@ -19,7 +19,7 @@
       {
         "typeNumber": 99,
         "realType": "String",
-        "exampleData": "CommandMenuButton"
+        "exampleData": "commandmenubutton"
       },
       {
         "typeNumber": 8,
@@ -113,7 +113,7 @@
       {
         "typeNumber": 15,
         "realType": "String",
-        "exampleData": "AlliedSuperWeaponEffect"
+        "exampleData": "alliedsuperweaponeffect"
       },
       {
         "typeNumber": 8,
@@ -133,7 +133,7 @@
       {
         "typeNumber": 31,
         "realType": "String",
-        "exampleData": "SpecialPower"
+        "exampleData": "specialpower"
       },
       {
         "typeNumber": 8,
@@ -177,7 +177,7 @@
       {
         "typeNumber": 99,
         "realType": "String",
-        "exampleData": "CommandMenuButton"
+        "exampleData": "commandmenubutton"
       },
       {
         "typeNumber": 8,
@@ -262,7 +262,7 @@
       {
         "typeNumber": 15,
         "realType": "String",
-        "exampleData": "AlliedSuperWeaponEffect"
+        "exampleData": "alliedsuperweaponeffect"
       },
       {
         "typeNumber": 8,
@@ -282,7 +282,7 @@
       {
         "typeNumber": 31,
         "realType": "String",
-        "exampleData": "SpecialPower"
+        "exampleData": "specialpower"
       },
       {
         "typeNumber": 8,
@@ -605,6 +605,1761 @@
     ]
   },
   {
+    "scriptName": " Unused or Obsolete/Base/Allow or Disallow all buildings",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is allowed to build ALL buildings is ~ . ",
+    "scriptTrans": "允许或禁止所有建筑",
+    "commandWord": "ALLOW_DISALLOW_ALL_BUILDINGS",
+    "editorNumber": 284,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Camera/Move/Restrict camera movement to area -- REMOVE.",
+    "scriptDesc": "",
+    "scriptArg": " Restrict camera movement to area -- REMOVE.",
+    "scriptTrans": "限制摄像机移动到区域-移除",
+    "commandWord": "CAMERA_REMOVE_AREA_RESTRICTION",
+    "editorNumber": 366,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Camera/Terrain/Enable or Disable Terrain Render.",
+    "scriptDesc": "",
+    "scriptArg": " Disable terrain render ~ (True to disable.)",
+    "scriptTrans": "启用或禁用地形渲染",
+    "commandWord": "TERRAIN_RENDER_DISABLE",
+    "editorNumber": 274,
+    "argumentModel": [
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Fog or Reveal/Toggle Fog of War.",
+    "scriptDesc": "",
+    "scriptArg": " Set presence of Fog of War to ~. (Default true.)",
+    "scriptTrans": "切换战争迷雾",
+    "commandWord": "SET_LOGIC_FOG_STATE",
+    "editorNumber": 364,
+    "argumentModel": [
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Interface/Objectives/Hide mission objective",
+    "scriptDesc": "",
+    "scriptArg": " Hide mission objective '~'.",
+    "scriptTrans": "隐藏任务目标",
+    "commandWord": "HIDE_MISSION_OBJECTIVE",
+    "editorNumber": 404,
+    "argumentModel": [
+      {
+        "typeNumber": 91,
+        "realType": "String",
+        "exampleData": "MissionObj"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Interface/Objectives/Show mission objective",
+    "scriptDesc": "",
+    "scriptArg": " Make mission objective '~' visible.",
+    "scriptTrans": "显示任务目标",
+    "commandWord": "SHOW_MISSION_OBJECTIVE",
+    "editorNumber": 403,
+    "argumentModel": [
+      {
+        "typeNumber": 91,
+        "realType": "String",
+        "exampleData": "MissionObj"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Map/Gameplay/Force ChooseVictim to ignore game difficulty and always use Normal setting.",
+    "scriptDesc": "",
+    "scriptArg": " Force ChooseVictim to ignore game difficulty and always use Normal setting ~ (true to enable, false to disable).",
+    "scriptTrans": "强制选择受害者忽略游戏难度，总是使用普通设置",
+    "commandWord": "CHOOSE_VICTIM_ALWAYS_USES_NORMAL",
+    "editorNumber": 252,
+    "argumentModel": [
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Map/Gameplay/Supply Source -- set cash value.",
+    "scriptDesc": "",
+    "scriptArg": " Warehouse named ~ is set to having ~ dollars worth of boxes. ",
+    "scriptTrans": "供应来源——设定现金价值",
+    "commandWord": "WAREHOUSE_SET_VALUE",
+    "editorNumber": 171,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Map/Gameplay/Turn off scoring.",
+    "scriptDesc": "",
+    "scriptArg": " Turn off scoring.",
+    "scriptTrans": "关掉得分",
+    "commandWord": "DISABLE_SCORING",
+    "editorNumber": 239,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Map/Gameplay/Turn on scoring.",
+    "scriptDesc": "",
+    "scriptArg": " Turn on scoring.",
+    "scriptTrans": "打开得分",
+    "commandWord": "ENABLE_SCORING",
+    "editorNumber": 238,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Map/Modify/Change the speed of the CloudEffect.",
+    "scriptDesc": "",
+    "scriptArg": "  Modify the default CloudEffect speed to be ~ ",
+    "scriptTrans": "修改“CloudEffect”的运行速度",
+    "commandWord": "MAP_CHANGE_CLOUD_SPEED",
+    "editorNumber": 273,
+    "argumentModel": [
+      {
+        "typeNumber": 52,
+        "realType": "Double",
+        "exampleData": "0.09999999"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Map/Shroud or Reveal/Reveal the entire map for Player.",
+    "scriptDesc": "",
+    "scriptArg": " The world is revealed for ~.",
+    "scriptTrans": "为玩家揭示整个地图",
+    "commandWord": "MAP_REVEAL_ALL",
+    "editorNumber": 89,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Map/Shroud or Reveal/Shroud the entire map for Player.",
+    "scriptDesc": "",
+    "scriptArg": " The world is shrouded for ~.",
+    "scriptTrans": "覆盖玩家的整个地图",
+    "commandWord": "MAP_SHROUD_ALL",
+    "editorNumber": 120,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Music/Reset music scripting system.",
+    "scriptDesc": "",
+    "scriptArg": " Reset the music scripting system, as if the level had just started, fading out (~) the music scripting system's current music.",
+    "scriptTrans": "重置音乐脚本系统",
+    "commandWord": "MUSIC_RESET_MUSIC_SCRIPTING_SYSTEM",
+    "editorNumber": 351,
+    "argumentModel": [
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Music/Return to music scripting.",
+    "scriptDesc": "",
+    "scriptArg": " Resume use of (turn on) the music scripting system, fading out (~) the current music track and fading in (~) the music scripting system's music.",
+    "scriptTrans": "回到音乐脚本",
+    "commandWord": "MUSIC_RETURN_TO_MUSIC_SCRIPTING",
+    "editorNumber": 350,
+    "argumentModel": [
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Music/Turn off music scripting.",
+    "scriptDesc": "",
+    "scriptArg": " Turn off the music scripting system, fading out (~) the music scripting system's current music.",
+    "scriptTrans": "关闭音乐脚本",
+    "commandWord": "MUSIC_TURN_OFF_MUSIC_SCRIPTING",
+    "editorNumber": 349,
+    "argumentModel": [
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Effect/Disable object's ambient sound",
+    "scriptDesc": "",
+    "scriptArg": " Disable ~'s ambient sound.",
+    "scriptTrans": "禁用对象的环境声音",
+    "commandWord": "DISABLE_OBJECT_SOUND",
+    "editorNumber": 256,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Effect/Enable object's ambient sound",
+    "scriptDesc": "",
+    "scriptArg": " Enable (or trigger) ~'s ambient sound.",
+    "scriptTrans": "启用对象的环境声音",
+    "commandWord": "ENABLE_OBJECT_SOUND",
+    "editorNumber": 255,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file as if it were an EVA event, and subtitle it.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ plays as if it was an EVA event, while displaying military briefing ~ for ~ seconds.",
+    "scriptTrans": "播放一个语音文件，就像它是一个EVA事件，并为其添加字幕",
+    "commandWord": "PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE",
+    "editorNumber": 499,
+    "argumentModel": [
+      {
+        "typeNumber": 21,
+        "realType": "String",
+        "exampleData": "Music"
+      },
+      {
+        "typeNumber": 25,
+        "realType": "String",
+        "exampleData": "string"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file as if it were an EVA event.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ plays as if it was an EVA event",
+    "scriptTrans": "播放一个语音文件，就像EVA事件一样",
+    "commandWord": "PLAY_SPEECH_AS_IF_IT_WAS_AN_EVA_EVENT",
+    "editorNumber": 498,
+    "argumentModel": [
+      {
+        "typeNumber": 21,
+        "realType": "String",
+        "exampleData": "Music"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Effect/Play a speech file.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ plays, allowing overlap ~ (true to allow, false to disallow).",
+    "scriptTrans": "播放语音文件",
+    "commandWord": "SPEECH_PLAY",
+    "editorNumber": 75,
+    "argumentModel": [
+      {
+        "typeNumber": 21,
+        "realType": "String",
+        "exampleData": "Music"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- override volume -- type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ play at ~% of full volume.",
+    "scriptTrans": "声音事件——覆盖卷类型",
+    "commandWord": "AUDIO_OVERRIDE_VOLUME_TYPE",
+    "editorNumber": 178,
+    "argumentModel": [
+      {
+        "typeNumber": 59,
+        "realType": "String",
+        "exampleData": "Audio"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- remove type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is removed.",
+    "scriptTrans": "声音事件——删除类型",
+    "commandWord": "SOUND_REMOVE_TYPE",
+    "editorNumber": 245,
+    "argumentModel": [
+      {
+        "typeNumber": 59,
+        "realType": "String",
+        "exampleData": "Audio"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- restore volume -- all.",
+    "scriptDesc": "",
+    "scriptArg": " All sound events play at normal volume.",
+    "scriptTrans": "声音事件——恢复卷",
+    "commandWord": "AUDIO_RESTORE_VOLUME_ALL_TYPE",
+    "editorNumber": 180,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Sound Events/Sound Events -- restore volume -- type.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ play at normal volume.",
+    "scriptTrans": "声音事件——恢复卷类型",
+    "commandWord": "AUDIO_RESTORE_VOLUME_TYPE",
+    "editorNumber": 179,
+    "argumentModel": [
+      {
+        "typeNumber": 59,
+        "realType": "String",
+        "exampleData": "Audio"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Media/Audio/Volume/Set the current speech volume.",
+    "scriptDesc": "",
+    "scriptArg": " Set the desired speech volume to ~%. (0-100)",
+    "scriptTrans": "设置当前语音音量",
+    "commandWord": "SPEECH_SET_VOLUME",
+    "editorNumber": 241,
+    "argumentModel": [
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/CommandButton/Build thing at waypoint.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ build ~ at angle ~ at ~.",
+    "scriptTrans": "在路标处建造东西",
+    "commandWord": "NAMED_BUILD_STRUCTURE_AT_WAYPOINT",
+    "editorNumber": 431,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      },
+      {
+        "typeNumber": 17,
+        "realType": "Double",
+        "exampleData": "0.7853982"
+      },
+      {
+        "typeNumber": 7,
+        "realType": "String",
+        "exampleData": "Waypoint"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/CommandButton/Team set CommandButton auto ability to on or off.",
+    "scriptDesc": "",
+    "scriptArg": " Have Team ~ set auto ability ~ to ",
+    "scriptTrans": "团队设置命令按钮自动开关能力",
+    "commandWord": "NAME_SET_AUTO_ABILITY",
+    "editorNumber": 362,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 39,
+        "realType": "String",
+        "exampleData": "Command"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Damage or Remove/Kill off a percentage of the Horde",
+    "scriptDesc": "",
+    "scriptArg": "  Horde ~ kill off  ~ percent. ",
+    "scriptTrans": "杀死一定百分比的部落",
+    "commandWord": "KILL_HORDE_MEMBERS",
+    "editorNumber": 331,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Damage or Remove/Shock a specific unit.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ will be shocked dir (0-360) ~, force ~, zMult ~, with FX named ~ .",
+    "scriptTrans": "电击一个特定单位",
+    "commandWord": "NAMED_SHOCK",
+    "editorNumber": 66,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      },
+      {
+        "typeNumber": 10,
+        "realType": "String",
+        "exampleData": "string"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Experience/Gives a unit an experience level.",
+    "scriptDesc": "",
+    "scriptArg": " Gives ~ experience level ~.",
+    "scriptTrans": "给予一个单位一定的经验值",
+    "commandWord": "UNIT_GIVE_EXPERIENCE_LEVEL",
+    "editorNumber": 268,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 79,
+        "realType": "String",
+        "exampleData": "assetId"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Experience/Sets the unit's maximum level.",
+    "scriptDesc": "",
+    "scriptArg": " Sets ~ maximum level to ~.",
+    "scriptTrans": "设置单位的最大等级",
+    "commandWord": "UNIT_SET_MAX_LEVEL",
+    "editorNumber": 441,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/gate/ close a gate",
+    "scriptDesc": "",
+    "scriptArg": "  Close gate.",
+    "scriptTrans": "剂量门",
+    "commandWord": "GATE_CLOSE",
+    "editorNumber": 354,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/gate/ Delay a sequential script until the gate is ready again",
+    "scriptDesc": "",
+    "scriptArg": "  ~ delay until it is ready again.",
+    "scriptTrans": "延迟一个顺序脚本，直到门再次准备好",
+    "commandWord": "GATE_READY",
+    "editorNumber": 373,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/gate/open a gate",
+    "scriptDesc": "",
+    "scriptArg": " Open gate ",
+    "scriptTrans": "开放一个门",
+    "commandWord": "GATE_OPEN",
+    "editorNumber": 353,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/SequentialScript/Set a specific unit to execute a looping sequential script.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ executes ~ sequentially, ~ times. (0=forever)",
+    "scriptTrans": "设置一个特定的单元来执行一个循环顺序脚本",
+    "commandWord": "UNIT_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING",
+    "editorNumber": 152,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 2,
+        "realType": "String",
+        "exampleData": "Script"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/SequentialScript/Set a specific unit to execute a script sequentially.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ executes ~ sequentially.",
+    "scriptTrans": "设置一个特定的单元来按顺序执行脚本",
+    "commandWord": "UNIT_EXECUTE_SEQUENTIAL_SCRIPT",
+    "editorNumber": 151,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 2,
+        "realType": "String",
+        "exampleData": "script"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/SequentialScript/Set to guard for some number of frames.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ guards for ~ frames.",
+    "scriptTrans": "设置为某些帧数的保护",
+    "commandWord": "UNIT_GUARD_FOR_FRAMECOUNT",
+    "editorNumber": 157,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/SequentialScript/Set to guard for some number of seconds.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ guards for ~ seconds.",
+    "scriptTrans": "设置为守卫数秒",
+    "commandWord": "UNIT_GUARD_FOR_SECONDS",
+    "editorNumber": 306,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Settings/Camera fading -- enable or disable.",
+    "scriptDesc": "",
+    "scriptArg": " Set ~ camera fading to ~.",
+    "scriptTrans": "相机衰落——启用或禁用",
+    "commandWord": "NAMED_SET_CAMERA_FADING",
+    "editorNumber": 402,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Settings/Ignite or quench aflame status.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is now on fire (T-F) ~ .",
+    "scriptTrans": "点燃或熄灭火焰状态",
+    "commandWord": "UNIT_SET_FLAME_STATUS",
+    "editorNumber": 260,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Settings/Set stopping distance for current locomotor.",
+    "scriptDesc": "",
+    "scriptArg": " Set stopping distance for ~ to ~.",
+    "scriptTrans": "设置当前运动器停止距离",
+    "commandWord": "NAMED_SET_STOPPING_DISTANCE",
+    "editorNumber": 118,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Settings/Set the sleep status of a specific unit.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ changes his sleep status to ",
+    "scriptTrans": "设置指定单元的休眠状态",
+    "commandWord": "NAMED_SET_SLEEP_STATUS",
+    "editorNumber": 453,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Settings/Set unit to be held in place, ignoring Physics, Locomotors, etc.",
+    "scriptDesc": "",
+    "scriptArg": " Set Held status for ~ to ~.",
+    "scriptTrans": "设置要保持的单位，忽略物理，运动等",
+    "commandWord": "NAMED_SET_HELD",
+    "editorNumber": 181,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Settings/Strict control -- enable or disable.",
+    "scriptDesc": "",
+    "scriptArg": " Set ~ strict control to ~.",
+    "scriptTrans": "严格控制——启用或禁用",
+    "commandWord": "NAMED_SET_STRICT_CONTROL_ENABLED",
+    "editorNumber": 325,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": "",
+    "scriptDesc": "",
+    "scriptArg": "",
+    "scriptTrans": "刷出——团队中指定方位的物体",
+    "commandWord": "UNIT_SPAWN_NAMED_LOCATION_ORIENTATION",
+    "editorNumber": 235,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 16,
+        "realType": "Vec3D",
+        "exampleData": "(1,2,3)"
+      },
+      {
+        "typeNumber": 17,
+        "realType": "Double",
+        "exampleData": "0.7853982"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Spawn/Spawn -- named unit on Team at an object type with specified orientation.",
+    "scriptDesc": "",
+    "scriptArg": " Spawn ~ of type ~ on ~ at type ~, rotated ~.",
+    "scriptTrans": "刷出——团队中指定方向和对象类型的命名单位",
+    "commandWord": "CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE_WITH_ORIENTATION",
+    "editorNumber": 468,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      },
+      {
+        "typeNumber": 17,
+        "realType": "Double",
+        "exampleData": "0.7853982"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Spawn/Spawn -- named unit on Team at an object type.",
+    "scriptDesc": "",
+    "scriptArg": " Spawn ~ of type ~ on ~ at type ",
+    "scriptTrans": "刷出——团队中指定单位的对象类型",
+    "commandWord": "CREATE_NAMED_ON_TEAM_AT_OBJECTTYPE",
+    "editorNumber": 440,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Spawn/Spawn object.",
+    "scriptDesc": "",
+    "scriptArg": " Spawn object ~ in ~ at position (~), rotated ~ .",
+    "scriptTrans": "产生对象",
+    "commandWord": "CREATE_OBJECT",
+    "editorNumber": 23,
+    "argumentModel": [
+      {
+        "typeNumber": 15,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 16,
+        "realType": "Vec3D",
+        "exampleData": "(1,2,3)"
+      },
+      {
+        "typeNumber": 17,
+        "realType": "Double",
+        "exampleData": "0.7853982"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Status/Team Set Stand Ground Status.",
+    "scriptDesc": "",
+    "scriptArg": " Set Stand Ground Status of ~ to ",
+    "scriptTrans": "团队设置站位地面状态…",
+    "commandWord": "TEAM_STAND_GROUND",
+    "editorNumber": 377,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Status/Unit Set Stand Ground Status.",
+    "scriptDesc": "",
+    "scriptArg": " Set Stand Ground Status of ~ to ",
+    "scriptTrans": "Unit Set Stand地面状态",
+    "commandWord": "UNIT_STAND_GROUND",
+    "editorNumber": 376,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Transport/Transport -- load unit into specific.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ loads into ",
+    "scriptTrans": "运输——装载单位成具体",
+    "commandWord": "NAMED_ENTER_NAMED",
+    "editorNumber": 45,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Object Type/Transport/Transport -- unload units from specific.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ unloads.",
+    "scriptTrans": "运输——从特定单位卸下",
+    "commandWord": "NAMED_EXIT_ALL",
+    "editorNumber": 47,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Player/Build/Turn on or off a player's structures that auto build units.  (Starts ON)",
+    "scriptDesc": "",
+    "scriptArg": "  ~ toggle auto build ",
+    "scriptTrans": "开启或关闭玩家能够自动建造单位的建筑。 (开始)",
+    "commandWord": "TOGGLE_AUTO_BUILD",
+    "editorNumber": 313,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Player/Upgrades and Sciences/AI Player build an Upgrade.",
+    "scriptDesc": "",
+    "scriptArg": " Have AI ~ build this upgrade: ",
+    "scriptTrans": "AI玩家建立一个升级",
+    "commandWord": "AI_PLAYER_BUILD_UPGRADE",
+    "editorNumber": 215,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 33,
+        "realType": "String",
+        "exampleData": "Upgrade"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Player/Upgrades and Sciences/Set the skillset for an AI Player.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ uses skillset number ~ (1-5).",
+    "scriptTrans": "为AI玩家设置技能",
+    "commandWord": "PLAYER_SELECT_SKILLSET",
+    "editorNumber": 228,
+    "argumentModel": [
+      {
+        "typeNumber": 11,
+        "realType": "String",
+        "exampleData": "Player"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/PlayMovie/Plays a movie in game.",
+    "scriptDesc": "",
+    "scriptArg": " Play Movie named ~ allow cancel ~ .",
+    "scriptTrans": "在游戏中播放电影",
+    "commandWord": "PLAY_MOVIE_IN_GAME",
+    "editorNumber": 272,
+    "argumentModel": [
+      {
+        "typeNumber": 23,
+        "realType": "String",
+        "exampleData": "Movie"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Scripting/Reference/ Set reference to another team reference.",
+    "scriptDesc": "",
+    "scriptArg": " Set ~ to reference another team reference ",
+    "scriptTrans": "设置引用到另一个团队引用",
+    "commandWord": "SET_TEAM_REFERENCE_TO_REFERNECE",
+    "editorNumber": 281,
+    "argumentModel": [
+      {
+        "typeNumber": 55,
+        "realType": "String",
+        "exampleData": "TeamRef"
+      },
+      {
+        "typeNumber": 55,
+        "realType": "String",
+        "exampleData": "TeamRef"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Scripting/Reference/Set reference to a team.",
+    "scriptDesc": "",
+    "scriptArg": " Set ~ to reference team ",
+    "scriptTrans": "设置引用到一个团队",
+    "commandWord": "SET_TEAM_REFERENCE",
+    "editorNumber": 279,
+    "argumentModel": [
+      {
+        "typeNumber": 55,
+        "realType": "String",
+        "exampleData": "TeamRef"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Scripting/Reference/Set reference to a unit.",
+    "scriptDesc": "",
+    "scriptArg": " Set ~ to reference unit ",
+    "scriptTrans": "设置一个单位的引用",
+    "commandWord": "SET_UNIT_REFERENCE",
+    "editorNumber": 278,
+    "argumentModel": [
+      {
+        "typeNumber": 54,
+        "realType": "String",
+        "exampleData": "ObjRef"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Scripting/Reference/Set reference to another unit reference.",
+    "scriptDesc": "",
+    "scriptArg": " Set ~ to reference another unit reference ",
+    "scriptTrans": "设置引用到另一个单位引用",
+    "commandWord": "SET_UNIT_REFERENCE_TO_REFERENCE",
+    "editorNumber": 280,
+    "argumentModel": [
+      {
+        "typeNumber": 54,
+        "realType": "String",
+        "exampleData": "ObjRef"
+      },
+      {
+        "typeNumber": 54,
+        "realType": "String",
+        "exampleData": "ObjRef"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Win & Loss/End the mission in victory if the user chooses to",
+    "scriptDesc": "",
+    "scriptArg": " End game in victory if the user indicates that they wish to.",
+    "scriptTrans": "如果用户选择胜利结束任务",
+    "commandWord": "OPTIONAL_VICTORY",
+    "editorNumber": 79,
+    "argumentModel": []
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Attack/Harvest around waypoint.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ begins harvesting around ~.",
+    "scriptTrans": "收获在路标",
+    "commandWord": "TEAM_HARVEST",
+    "editorNumber": 355,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 7,
+        "realType": "String",
+        "exampleData": "Waypoint"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Capture-Recruit/Team recruits from another specific team.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ will recruit ~ units of type ~ from ~ .",
+    "scriptTrans": " 从另一个特定团队招募的团队成员",
+    "commandWord": "TEAM_RECRUIT_UNITS_FROM_TEAM",
+    "editorNumber": 294,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Capture-Recruit/Team recruits from same player and nearby allied AI teams.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ will recruit ~ units of type ~ from nearby recruitable allied teams.",
+    "scriptTrans": "从同一玩家和附近的盟军AI队伍中招募团队成员",
+    "commandWord": "TEAM_RECRUIT_UNITS",
+    "editorNumber": 293,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      },
+      {
+        "typeNumber": 61,
+        "realType": "String",
+        "exampleData": "AlliedSuperWeaponEffect"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/CommandButton/Team set auto ability to on or off.",
+    "scriptDesc": "",
+    "scriptArg": " Have Team ~ set auto ability ~ to ",
+    "scriptTrans": "团队设置自动能力开启或关闭",
+    "commandWord": "TEAM_SET_AUTO_ABILITY",
+    "editorNumber": 363,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 39,
+        "realType": "String",
+        "exampleData": "Command"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Experience/Gives the team an experience level.",
+    "scriptDesc": "",
+    "scriptArg": " Gives ~ experience level ~.",
+    "scriptTrans": "给团队一个经验水平",
+    "commandWord": "TEAM_GIVE_EXPERIENCE_LEVEL",
+    "editorNumber": 265,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 79,
+        "realType": "String",
+        "exampleData": "assetid"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Guard/Guard -- from inside tunnel network.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ Enter and guard from tunnel network.",
+    "scriptTrans": "保安，来自隧道网络内部",
+    "commandWord": "TEAM_GUARD_IN_TUNNEL_NETWORK",
+    "editorNumber": 246,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Misc/Set or clear a team-needs-gate open flag ",
+    "scriptDesc": "",
+    "scriptArg": " Team ~ wants gate ~ open is ",
+    "scriptTrans": "设置或关闭一个团队需要大门的旗帜",
+    "commandWord": "TEAM_NEEDS_OPEN_GATE",
+    "editorNumber": 374,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Move/Team follow approach path.",
+    "scriptDesc": "",
+    "scriptArg": " Have ~ approach the enemy using path ~, as a team is ",
+    "scriptTrans": "团队遵循进场路径",
+    "commandWord": "SKIRMISH_FOLLOW_APPROACH_PATH",
+    "editorNumber": 196,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 43,
+        "realType": "String",
+        "exampleData": "Flank"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Move/Team move to approach path.",
+    "scriptDesc": "",
+    "scriptArg": " Have ~ move to the start of enemy path ~.",
+    "scriptTrans": "团队移至进场路径",
+    "commandWord": "SKIRMISH_MOVE_TO_APPROACH_PATH",
+    "editorNumber": 199,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 43,
+        "realType": "String",
+        "exampleData": "Flank"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Repair/Repair nearest building that needs it.",
+    "scriptDesc": "",
+    "scriptArg": " Have Team ~ repair the nearest building within the radius ",
+    "scriptTrans": "修理最近的需要它的建筑物",
+    "commandWord": "TEAM_REPAIR_NEREST",
+    "editorNumber": 361,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/SequentialScript/Execute script sequentially -- looping.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ executes ~ sequentially, ~ times. (0=forever)",
+    "scriptTrans": "按顺序执行脚本——循环",
+    "commandWord": "TEAM_EXECUTE_SEQUENTIAL_SCRIPT_LOOPING",
+    "editorNumber": 155,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 2,
+        "realType": "String",
+        "exampleData": "script"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "4"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/SequentialScript/Execute script sequentially -- start.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ executes ~ sequentially.",
+    "scriptTrans": "执行脚本sequentially-start",
+    "commandWord": "TEAM_EXECUTE_SEQUENTIAL_SCRIPT",
+    "editorNumber": 154,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 2,
+        "realType": "String",
+        "exampleData": "scirpt"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/SequentialScript/Guard -- number of frames.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ guards for ~ frames.",
+    "scriptTrans": "警卫队的帧数",
+    "commandWord": "TEAM_GUARD_FOR_FRAMECOUNT",
+    "editorNumber": 159,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/SequentialScript/Guard -- number of seconds.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ guards for ~ seconds.",
+    "scriptTrans": "警卫队的秒数",
+    "commandWord": "TEAM_GUARD_FOR_SECONDS",
+    "editorNumber": 308,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 0,
+        "realType": "Int32",
+        "exampleData": "3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Settings/Ignite or quench aflame status - all.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ is now on fire (T-F) ~ .",
+    "scriptTrans": "点燃或熄灭火焰状态-所有",
+    "commandWord": "TEAM_SET_FLAME_STATUS",
+    "editorNumber": 261,
+    "argumentModel": [
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Settings/Set a model condition flag on a team (and horde members) for duration. % specifies # of members in team that get this.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ sets model condition ~ for ~ seconds. Percentage ~.",
+    "scriptTrans": "在团队(和部落成员)上设置一个持续时间的模型状态标志。 指定团队中的成员得到这个",
+    "commandWord": "TEAM_SET_MODELCONDITION_FOR_DURATION",
+    "editorNumber": 329,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 58,
+        "realType": "String",
+        "exampleData": "AFLAME"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      },
+      {
+        "typeNumber": 52,
+        "realType": "Double",
+        "exampleData": "0.09999999"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Settings/Set stopping distance for each unit's current locomotor.",
+    "scriptDesc": "",
+    "scriptArg": " Set stopping distances for ~ to ~.",
+    "scriptTrans": "设置每个单元当前移动装置的停止距离",
+    "commandWord": "SET_STOPPING_DISTANCE",
+    "editorNumber": 117,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Settings/Set the Sleep status of Team.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ change their sleep status to ",
+    "scriptTrans": "设置团队的睡眠状态",
+    "commandWord": "TEAM_SET_SLEEP_STATUS",
+    "editorNumber": 454,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Spawn, Build, or Merge/Change priority by Failure Priority Decrease amount.",
+    "scriptDesc": "",
+    "scriptArg": " Reduce the AI priority for~  by its Failure Priority Decrease amount.",
+    "scriptTrans": "Change priority by Failure priority减少数量",
+    "commandWord": "TEAM_DECREASE_PRIORITY",
+    "editorNumber": 187,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Spawn, Build, or Merge/Change priority by Success Priority Increase amount.",
+    "scriptDesc": "",
+    "scriptArg": " Increase the AI priority for~  by its Success Priority Increase amount.",
+    "scriptTrans": "Change priority by Success priority增加数量",
+    "commandWord": "TEAM_INCREASE_PRIORITY",
+    "editorNumber": 186,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Spawn, Build, or Merge/Recruit Team at location of another team.",
+    "scriptDesc": "",
+    "scriptArg": " Recruit an instance of ~, maximum recruiting distance (feet):~ from the team ~.",
+    "scriptTrans": "在另一队地点招募一队",
+    "commandWord": "RECRUIT_TEAM_AT_TEAM",
+    "editorNumber": 144,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Spawn, Build, or Merge/Recruit Team.",
+    "scriptDesc": "",
+    "scriptArg": " Recruit an instance of ~, maximum recruiting distance (feet):~.",
+    "scriptTrans": "招聘团队",
+    "commandWord": "RECRUIT_TEAM",
+    "editorNumber": 143,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 1,
+        "realType": "Double",
+        "exampleData": "3.3"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Status/Strict Control set enabled or disabled.",
+    "scriptDesc": "",
+    "scriptArg": " Set ~ strict control to ~.",
+    "scriptTrans": "启用或禁用严格控制设置",
+    "commandWord": "TEAM_SET_STRICT_CONTROL_ENABLED",
+    "editorNumber": 326,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 8,
+        "realType": "Int32",
+        "exampleData": "1"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Transport/Transport -- automatically load.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ load into transports.",
+    "scriptTrans": "把——自动加载",
+    "commandWord": "TEAM_LOAD_TRANSPORTS",
+    "editorNumber": 44,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Transport/Transport -- load team into specific.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ attempt to load into ",
+    "scriptTrans": "运输-装载小组到特定的",
+    "commandWord": "TEAM_ENTER_NAMED",
+    "editorNumber": 46,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 14,
+        "realType": "String",
+        "exampleData": "Object"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Transport/Transport -- unload team from all.",
+    "scriptDesc": "",
+    "scriptArg": "  ~ unload.",
+    "scriptTrans": "运输，将所有队伍撤离",
+    "commandWord": "TEAM_EXIT_ALL",
+    "editorNumber": 48,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Upgrades/Team will give nearest team upgrade (Giving Team must have upgrade)",
+    "scriptDesc": "",
+    "scriptArg": "  ~ will give nearest team upgrade",
+    "scriptTrans": "队伍会给最近的队伍升级(给予队伍必须有升级)",
+    "commandWord": "TEAM_GIVE_NEAREST_TEAM_UPGRADE",
+    "editorNumber": 282,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
+    "scriptName": " Unused or Obsolete/Team/Upgrades/Team will give team upgrade (Giving Team must have upgrade)",
+    "scriptDesc": "",
+    "scriptArg": "  ~ will give ~ upgrade ",
+    "scriptTrans": "团队会给予团队升级(给予团队必须有升级)",
+    "commandWord": "TEAM_GIVE_TEAM_UPGRADE",
+    "editorNumber": 298,
+    "argumentModel": [
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      },
+      {
+        "typeNumber": 3,
+        "realType": "String",
+        "exampleData": "Team"
+      }
+    ]
+  },
+  {
     "scriptName": " Team/Allegiance/Override Team's relationship to a Player.",
     "scriptDesc": "",
     "scriptArg": "  ~ considers ~ to be ~ (rather than using the the player relationship).",
@@ -760,7 +2515,7 @@
       {
         "typeNumber": 61,
         "realType": "String",
-        "exampleData": "AlliedSuperWeaponEffect"
+        "exampleData": "alliedsuperweaponeffect"
       },
       {
         "typeNumber": 11,
@@ -785,7 +2540,7 @@
       {
         "typeNumber": 15,
         "realType": "String",
-        "exampleData": "AlliedSuperWeaponEffect"
+        "exampleData": "alliedsuperweaponeffect"
       }
     ]
   },
@@ -1045,7 +2800,7 @@
       {
         "typeNumber": 15,
         "realType": "String",
-        "exampleData": "AlliedSuperWeaponEffect"
+        "exampleData": "alliedsuperweaponeffect"
       }
     ]
   },
@@ -1820,7 +3575,7 @@
       {
         "typeNumber": 61,
         "realType": "String",
-        "exampleData": "AlliedSuperWeaponEffect"
+        "exampleData": "alliedsuperweaponeffect"
       },
       {
         "typeNumber": 11,
@@ -1865,7 +3620,7 @@
       {
         "typeNumber": 61,
         "realType": "String",
-        "exampleData": "AlliedSuperWeaponEffect"
+        "exampleData": "alliedsuperweaponeffect"
       }
     ]
   },
@@ -2074,8 +3829,8 @@
       },
       {
         "typeNumber": 41,
-        "realType": "String",
-        "exampleData": "CAN_ATTACK"
+        "realType": "Int32",
+        "exampleData": "1"
       },
       {
         "typeNumber": 8,
@@ -2295,7 +4050,7 @@
       {
         "typeNumber": 33,
         "realType": "String",
-        "exampleData": "Upgrade"
+        "exampleData": "upgrade"
       }
     ]
   },

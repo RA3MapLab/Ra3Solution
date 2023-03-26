@@ -64,7 +64,8 @@ namespace MapCoreLib.Core
         public void save(BinaryWriter bw, MapDataContext context)
         {
             bw.Write(stringPool.Count);
-            foreach (var pair in stringPool)
+            var sortedStringPool = stringPool.OrderByDescending(item => item.Value);
+            foreach (var pair in sortedStringPool)
             {
                 bw.Write(pair.Key);
                 bw.Write(pair.Value);

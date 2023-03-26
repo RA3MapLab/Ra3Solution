@@ -18,13 +18,12 @@ namespace MapCoreLib.Core.Scripts
             ra3Map.parse();
             // testRunScript(ra3Map.getContext());
             doRunScript(ra3Map, scriptName);
-            // ra3Map.save("test", "testMap");
             ra3Map.doSaveMap(ra3Map.mapPath);
         }
 
         private static void testRunScript(MapDataContext mapDataContext)
         {
-            new RandomAddTrees().Apply(mapDataContext);
+            new OnlyInfantry().Apply(mapDataContext);
         }
 
         public static List<CsScriptDesc> getScriptDescs()
@@ -76,11 +75,15 @@ namespace MapCoreLib.Core.Scripts
 
             if (results.Errors.HasErrors)
             {
-                LogUtil.log("doRunScript", "编译错误:");
+                string msg = "";
+                msg = "编译错误: ";
                 foreach (CompilerError error in results.Errors)
                 {
-                    LogUtil.log($"\t{error.ErrorNumber}: {error.ErrorText}");
+                    msg += $"\t{error.ErrorNumber}: {error.ErrorText}";
                 }
+
+                LogUtil.log(msg);
+                throw new Exception(msg);
             }
             else
             {
@@ -110,14 +113,14 @@ namespace MapCoreLib.Core.Scripts
                     }
                     catch (Exception e)
                     {
-                        LogUtil.log($"脚本代码运行错误: {e.Message} | {e.StackTrace}");
-                        throw;
+                        var msg = $"脚本代码运行错误: {e.Message} | {e.StackTrace}";
+                        throw new Exception(msg);
                     }
                     
                 }
                 else
                 {
-                    LogUtil.log("未找到实现了ScriptInterface接口的类");
+                    throw new Exception("未找到实现了ScriptInterface接口的类");
                 }
             }
         }

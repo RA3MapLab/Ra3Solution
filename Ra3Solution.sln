@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ra3SolutionTest", "Ra3Solut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapCoreLib", "MapCoreLib\MapCoreLib.csproj", "{4F2CE623-5AA2-46BD-9A78-5EB1522C09B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ra3ModMaker", "Ra3ModMaker\Ra3ModMaker.csproj", "{38A4BF95-57B8-4D29-BB7E-53C9D7085A1D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ra3ModBuilder", "Ra3ModBuilder\Ra3ModBuilder.csproj", "{D3CACEE7-C9E5-4C7D-85C7-AD0593793074}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampaignBuilder", "CampaignBuilder\CampaignBuilder.csproj", "{A6DC8A74-E82C-4684-B62B-EF246E649BB0}"
