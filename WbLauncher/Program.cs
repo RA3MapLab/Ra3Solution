@@ -154,10 +154,11 @@ namespace WbLauncher
             
             if (res1)
             {
-                startEvent.Set();
+                // startEvent.Set();
                 var res2 = EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_complete", EventWaitHandleRights.Synchronize, out var notificationEvent);
                 if (res2)
                 {
+                    startEvent.Set();
                     notificationEvent.WaitOne();
                     startEvent.Dispose();
                     notificationEvent.Dispose();
