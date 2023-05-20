@@ -49,8 +49,7 @@ namespace WbLauncher
             var environmentVariable = Environment.GetEnvironmentVariable("RA3_NEW_WB_DIR");
             if (string.IsNullOrEmpty(environmentVariable) || Directory.GetCurrentDirectory() != environmentVariable)
             {
-                Environment.SetEnvironmentVariable("NEW_RA3_WB_DIR", Directory.GetCurrentDirectory(), EnvironmentVariableTarget.User);
-
+                Environment.SetEnvironmentVariable("RA3_NEW_WB_DIR", Directory.GetCurrentDirectory(), EnvironmentVariableTarget.User);
             }
 
             var needWaitEvent = true;
