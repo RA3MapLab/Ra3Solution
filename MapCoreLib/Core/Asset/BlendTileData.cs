@@ -180,5 +180,27 @@ namespace MapCoreLib.Core.Asset
         {
             return Ra3MapConst.ASSET_BlendTileData;
         }
+
+        public bool[,] getImpassible()
+        {
+            bool[,] res = new bool[mapWidth, mapHeight];
+            for (int y = 0; y < mapHeight; y++)
+            {
+                for (int x = 0; x < mapWidth; x++)
+                {
+                    switch (passability[x, y])
+                    {
+                        case Passability.Impassable:
+                            res[x, y] = true;
+                            break;
+                        default:
+                            res[x, y] = false;
+                            break;
+                    }
+                }
+            }
+
+            return res;
+        }
     }
 }

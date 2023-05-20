@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using MapCoreLib.Core.Util;
-using Microsoft.Win32;
-using wbInject.Core;
 
-namespace WbInjector.Core
+namespace MapCoreLib.Core.Util
 {
     public static class EditorHelper
     {

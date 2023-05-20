@@ -41,7 +41,6 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Core\EditorHelper.cs" />
         <Compile Include="Core\HookType.cs" />
         <Compile Include="Core\IpcData.cs" />
         <Compile Include="Core\Logger.cs" />

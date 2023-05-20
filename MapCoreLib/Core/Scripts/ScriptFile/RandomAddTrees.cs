@@ -10,6 +10,7 @@ namespace MapCoreLib.Core.Scripts.ScriptFile
         {
             ObjectsList objectsList = mapDataContext.getAsset<ObjectsList>(Ra3MapConst.ASSET_ObjectsList);
 
+            
             var random = new Random();
             for (int i = 0; i < 700; i++)
             {

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using MapCoreLib.Core;
 using MapCoreLib.Core.Asset;
+using MapCoreLib.Core.Util;
 using MapCoreLib.Util;
 using Newtonsoft.Json;
 
@@ -22,22 +23,24 @@ namespace RMGlib.Core.Utility
 
         static ScriptSpec()
         {
-            initScriptSpec();
+            // initScriptSpec();
         }
         
         public static void initScriptSpec()
         {
             if (actionsSpec.Count == 0)
             {
-                actionsSpec = JsonConvert.DeserializeObject<List<ScriptModel>>(File.ReadAllText("ScriptActionNew.json"))
+                actionsSpec = JsonConvert.DeserializeObject<List<ScriptModel>>(File.ReadAllText(Path.Combine(PathUtil.configDir, "ScriptActionNew.json")))
                     .ToDictionary(item => item.commandWord, item => item);
             }
             
             if (conditionsSpec.Count == 0)
             {
-                conditionsSpec = JsonConvert.DeserializeObject<List<ScriptModel>>(File.ReadAllText("ScriptConditonNew.json"))
+                conditionsSpec = JsonConvert.DeserializeObject<List<ScriptModel>>(File.ReadAllText(Path.Combine(PathUtil.configDir,"ScriptConditonNew.json")))
                     .ToDictionary(item => item.commandWord, item => item);
             }
+
+            var a = 2;
         }
 
 

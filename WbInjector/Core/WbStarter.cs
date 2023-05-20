@@ -10,7 +10,6 @@ using MapCoreLib.Core.Scripts;
 using MapCoreLib.Core.Util;
 using WbInject;
 using wbInject.Core;
-using WbInjector.Core;
 
 namespace wbInject
 {
@@ -20,6 +19,8 @@ namespace wbInject
 
         private BlockingCollection<IpcData> messageQueue = new BlockingCollection<IpcData>();
         private Core.WbInjector wbInjector = new Core.WbInjector();
+        private Thread writeThread;
+        private Thread readThread;
 
         public ICommandListener commandListener { get; set; }
 
@@ -34,17 +35,19 @@ namespace wbInject
             
             initPipe();
             
-            await Task.Delay(500);
+            await Task.Delay(1000);
 
             try
             { 
-                wbInjector.injectDll2Wb();
+                wbInjector.startWBAndInject();
                 Running = true;
             }
             catch (Exception e)
             {
+                Logger.log($"{e.Message} | {e.StackTrace}");
                 Running = false;
-                closeInjector();
+                writeThread.Interrupt();
+                writeThread.Interrupt();
                 commandListener.showErrorBox(e.Message);
             }
 
@@ -78,8 +81,10 @@ namespace wbInject
 
         private void initPipe()
         {
-            new Thread(PipeWriteProc).Start();
-            new Thread(PipeReadProc).Start();
+            writeThread = new Thread(PipeWriteProc);
+            writeThread.Start();
+            readThread = new Thread(PipeReadProc);
+            readThread.Start();
         }
 
         private void PipeReadProc(object data)
@@ -88,44 +93,52 @@ namespace wbInject
             {
                 using (var readStream = new PipeReaderWriter(readPipe))
                 {
-                    Logger.log("write pipe waiting");
-                    readPipe.WaitForConnection();
-                    Logger.log("write pipe connect");
-
                     try
                     {
-                        //TODO pipe关闭监听
-                        while (true)
+                        Logger.log("read pipe waiting");
+                        readPipe.WaitForConnection();
+                        Logger.log("read pipe connect");
+
+                        try
                         {
-                            IpcData ipcData = readStream.ReceiveCommand();
+                            //TODO pipe关闭监听
+                            while (true)
+                            {
+                                IpcData ipcData = readStream.ReceiveCommand();
 
-                            if (ipcData == null)
-                            {
-                                continue;
-                            }
+                                if (ipcData == null)
+                                {
+                                    continue;
+                                }
 
-                            Logger.log($"readCommand: {ipcData}");
-                            if (ipcData.command.Equals("quit"))
-                            {
-                                closeInjector();
-                                break;
-                            }
-                            else
-                            {
-                                onWbCommand(ipcData);
+                                Logger.log($"readCommand: {ipcData}");
+                                if (ipcData.command.Equals("quit"))
+                                {
+                                    closeInjector();
+                                    break;
+                                }
+                                else
+                                {
+                                    onWbCommand(ipcData);
+                                }
                             }
                         }
+                        catch (InvalidOperationException e)
+                        {
+                        }
+                        catch (Exception e)
+                        {
+                            Logger.log(e.Message + "  " + e.StackTrace);
+                            // readPipe.Close();
+                            closeInjector();
+                            Running = false;
+                        }
                     }
-                    catch (InvalidOperationException e)
+                    catch (ThreadInterruptedException e)
                     {
+                        Logger.log("ThreadInterruptedException");
                     }
-                    catch (Exception e)
-                    {
-                        Logger.log(e.Message + "  " + e.StackTrace);
-                        // readPipe.Close();
-                        closeInjector();
-                        Running = false;
-                    }
+                    
                 }
                 
                 
@@ -166,14 +179,13 @@ namespace wbInject
             try
             { 
                 ScriptHandler.runScript(mapName, scriptName);
+                refreshMap(mapName);
             }
             catch (Exception e)
             {
                 Logger.log(e.Message);
                 commandListener.showErrorBox(e.Message);
             }
-            
-            refreshMap(mapName);
         }
 
         private bool CheckMapExist(string mapName)
@@ -226,41 +238,49 @@ namespace wbInject
             {
                 using (var writeStream = new PipeReaderWriter(pipeServer))
                 {
-                    Logger.log("read pipe waiting");
-                    pipeServer.WaitForConnection();
-                    Logger.log("read pipe connect");
-                    writeStream.SendCommand(new IpcData()
-                    {
-                        command = "init",
-                        param = new List<string>()
-                        {
-                            wbInjector.wbHWND.ToString()
-                        }
-                    });
-
                     try
                     {
-                        //TODO pipe关闭监听
-                        while (true)
+                        Logger.log("read pipe waiting");
+                        pipeServer.WaitForConnection();
+                        Logger.log("read pipe connect");
+                        // writeStream.SendCommand(new IpcData()
+                        // {
+                        //     command = "init",
+                        //     param = new List<string>()
+                        //     {
+                        //         wbInjector.wbHWND.ToString()
+                        //     }
+                        // });
+
+                        try
                         {
-                            var ipcData = messageQueue.Take();
-                            Logger.log($"write pipe msg: {ipcData.command}");
-                            writeStream.SendCommand(ipcData);
-                            pipeServer.WaitForPipeDrain();
-                            if (ipcData.command.Equals("quit"))
+                            //TODO pipe关闭监听
+                            while (true)
                             {
-                                break;
+                                var ipcData = messageQueue.Take();
+                                Logger.log($"write pipe msg: {ipcData.command}");
+                                writeStream.SendCommand(ipcData);
+                                pipeServer.WaitForPipeDrain();
+                                if (ipcData.command.Equals("quit"))
+                                {
+                                    break;
+                                }
                             }
                         }
+                        catch (InvalidOperationException e)
+                        {
+                        }
+                        catch (Exception e)
+                        {
+                            Logger.log(e.Message + "  " + e.StackTrace);
+                            pipeServer.Close();
+                        }
                     }
-                    catch (InvalidOperationException e)
+                    catch (ThreadInterruptedException e)
                     {
+                        Logger.log("ThreadInterruptedException");
                     }
-                    catch (Exception e)
-                    {
-                        Logger.log(e.Message + "  " + e.StackTrace);
-                        pipeServer.Close();
-                    }
+                    
                 }
                 
             }

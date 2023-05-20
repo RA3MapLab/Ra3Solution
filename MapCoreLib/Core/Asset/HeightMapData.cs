@@ -26,7 +26,7 @@ namespace MapCoreLib.Core.Asset
         {
             context.mapWidth = mapWidth = binaryReader.ReadInt32();
             context.mapHeight = mapHeight = binaryReader.ReadInt32();
-            borderWidth = binaryReader.ReadInt32();
+            context.border = borderWidth = binaryReader.ReadInt32();
             
             int borderCount = binaryReader.ReadInt32();
             for (int i = 0; i < borderCount; i++)

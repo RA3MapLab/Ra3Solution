@@ -36,6 +36,25 @@ namespace MapCoreLib.Core.Asset
         [XmlArray("Then")] public List<ScriptAction> ScriptActionOnTrue = new List<ScriptAction>();
         [XmlArray("Else")] public List<ScriptActionFalse> ScriptActionOnFalse = new List<ScriptActionFalse>();
 
+
+        public Script()
+        {
+            Conmment = "";
+            ConditionComment = "";
+            ActionComment = "";
+            IsSubroutine = false;
+            isActive = true;
+            DeactivateUponSuccess = true;
+            ActiveInEasy = true;
+            ActiveInMedium = true;
+            ActiveInHard = true;
+            EvaluationInterval = 0;
+            ActionsFireSequentially = false;
+            LoopActions = false;
+            LoopCount = 0;
+            SequentialTargetType = 1;
+            SequentialTargetName = "";
+        }
         public override MajorAsset fromStream(BinaryReader binaryReader, MapDataContext context)
         {
             base.fromStream(binaryReader, context);

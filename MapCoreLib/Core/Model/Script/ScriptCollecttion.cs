@@ -38,7 +38,7 @@ namespace RMGlib.Core.Utility
             var a = 2;
             collectDoc();
             // mergeTranslation();
-            mergeTranslation2();
+            mergeTranslation3();
 
             File.WriteAllText("ScriptConditonNew.json", JsonConvert.SerializeObject(conditions.Values));
             File.WriteAllText("ScriptActionNew.json", JsonConvert.SerializeObject(actions.Values));
@@ -182,6 +182,83 @@ namespace RMGlib.Core.Utility
                     {
                         int editorNum = Convert.ToInt32(line.Substring(left + 1, right - left - 1));
                         var trsnslation = line.Substring(right + 1, line.Length - (right + 1));
+                        return new TransItem2()
+                        {
+                            editorNumber = editorNum,
+                            trans = trsnslation
+                        };
+                    }
+                })
+                .ToDictionary(item => item.editorNumber);
+
+            
+            foreach (var action in actions.Values)
+            {
+                action.scriptTrans = actionTrans[action.editorNumber].trans;
+
+            }
+            
+            foreach (var condition in conditions.Values)
+            {
+                if (conditionTrans.ContainsKey(condition.editorNumber))
+                {
+                    condition.scriptTrans = conditionTrans[condition.editorNumber].trans;
+                }
+                else
+                {
+                    LogUtil.log($"mergeTranslation2 | editornumber: {condition.editorNumber} not found");
+                }
+                
+                
+            }
+
+        }
+        
+        private static void mergeTranslation3()
+        {
+            
+            LogUtil.log($"--------------------mergeTranslation2------------------");
+            var actionTrans = File.ReadAllText("脚本动作翻译.csv").Split(new string[] { "\r\n" }, 
+                StringSplitOptions.RemoveEmptyEntries)
+                .Select(line => line.Trim())
+                .Select(line =>
+                {
+                    var left = line.IndexOf('[');
+                    var right = line.IndexOf(']');
+                    if (left < 0 || right < 0)
+                    {
+                        LogUtil.log($"invalid line: {line}");
+                        throw new Exception();
+                    }
+                    else
+                    {
+                        int editorNum = Convert.ToInt32(line.Substring(left + 1, right - left - 1));
+                        var trsnslation = line.Substring(0, left);
+                        return new TransItem2()
+                        {
+                            editorNumber = editorNum,
+                            trans = trsnslation
+                        };
+                    }
+                })
+                .ToDictionary(item => item.editorNumber);
+            
+            var conditionTrans = File.ReadAllText("脚本条件翻译.csv").Split(new string[] { "\r\n" }, 
+                    StringSplitOptions.RemoveEmptyEntries)
+                .Select(line => line.Trim())
+                .Select(line =>
+                {
+                    var left = line.IndexOf('[');
+                    var right = line.IndexOf(']');
+                    if (left < 0 || right < 0)
+                    {
+                        LogUtil.log($"invalid line: {line}");
+                        throw new Exception();
+                    }
+                    else
+                    {
+                        int editorNum = Convert.ToInt32(line.Substring(left + 1, right - left - 1));
+                        var trsnslation = line.Substring(0, left);
                         return new TransItem2()
                         {
                             editorNumber = editorNum,

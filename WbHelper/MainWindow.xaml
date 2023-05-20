@@ -9,9 +9,10 @@
     <StackPanel>
         <Menu>
             <MenuItem Header="选项">
-                <MenuItem Header="帮助" Click="OnHelp"/>
+                <MenuItem Header="加入官方qq群" Click="JoinQQ"/>
+                <MenuItem Header="更新链接" Click="UpdateLink"/>
             </MenuItem>
         </Menu>
-        <Button Width="200" Height="50" Margin="0,30,0,0" Click="LoadPlugin">启动</Button>
+        <Button Name="LaunchBtn" Width="200" Height="50" Margin="0,30,0,0" Click="LoadPlugin">启动</Button>
     </StackPanel>
 </Window>

@@ -1,129 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{4F2CE623-5AA2-46BD-9A78-5EB1522C09B3}</ProjectGuid>
-        <OutputType>Library</OutputType>
-        <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>MapCoreLib</RootNamespace>
-        <AssemblyName>MapCoreLib</AssemblyName>
-        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-        <FileAlignment>512</FileAlignment>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>full</DebugType>
-        <Optimize>false</Optimize>
-        <OutputPath>bin\Debug\</OutputPath>
-        <DefineConstants>DEBUG;TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugType>pdbonly</DebugType>
-        <Optimize>true</Optimize>
-        <OutputPath>bin\Release\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <ItemGroup>
-      <Compile Include="Compress\ByteHelpers.cs" />
-      <Compile Include="Compress\Compression.cs" />
-      <Compile Include="Compress\RefpackComrpessor.cs" />
-      <Compile Include="Compress\StreamHelpers.cs" />
-      <Compile Include="Core\Asset\AssetList.cs" />
-      <Compile Include="Core\Asset\AssetProperty.cs" />
-      <Compile Include="Core\Asset\AssetPropertyCollection.cs" />
-      <Compile Include="Core\Asset\AssetPropertyType.cs" />
-      <Compile Include="Core\Asset\BlendDirection.cs" />
-      <Compile Include="Core\Asset\BlendInfo.cs" />
-      <Compile Include="Core\Asset\BlendTileData.cs" />
-      <Compile Include="Core\Asset\BuildListItem.cs" />
-      <Compile Include="Core\Asset\DefaultMajorAsset.cs" />
-      <Compile Include="Core\Asset\GlobalLight.cs" />
-      <Compile Include="Core\Asset\GlobalLighting.cs" />
-      <Compile Include="Core\Asset\GlobalLightingConfiguration.cs" />
-      <Compile Include="Core\Asset\HeightMapBorder.cs" />
-      <Compile Include="Core\Asset\HeightMapData.cs" />
-      <Compile Include="Core\Asset\MajorAsset.cs" />
-      <Compile Include="Core\Asset\MapObject.cs" />
-      <Compile Include="Core\Asset\NamedCameras.cs" />
-      <Compile Include="Core\Asset\ObjectsList.cs" />
-      <Compile Include="Core\Asset\OrCondition.cs" />
-      <Compile Include="Core\Asset\Passability.cs" />
-      <Compile Include="Core\Asset\Player.cs" />
-      <Compile Include="Core\Asset\PlayerScriptsList.cs" />
-      <Compile Include="Core\Asset\Script.cs" />
-      <Compile Include="Core\Asset\ScriptAction.cs" />
-      <Compile Include="Core\Asset\ScriptActionFalse.cs" />
-      <Compile Include="Core\Asset\ScriptArgument.cs" />
-      <Compile Include="Core\Asset\ScriptArgumentType.cs" />
-      <Compile Include="Core\Asset\ScriptCondition.cs" />
-      <Compile Include="Core\Asset\ScriptContent.cs" />
-      <Compile Include="Core\Asset\ScriptGroup.cs" />
-      <Compile Include="Core\Asset\ScriptList.cs" />
-      <Compile Include="Core\Asset\SidesList.cs" />
-      <Compile Include="Core\Asset\StandingWaterArea.cs" />
-      <Compile Include="Core\Asset\StandingWaterAreas.cs" />
-      <Compile Include="Core\Asset\Team.cs" />
-      <Compile Include="Core\Asset\Teams.cs" />
-      <Compile Include="Core\Asset\Texture.cs" />
-      <Compile Include="Core\Asset\WorldInfo.cs" />
-      <Compile Include="Core\Interface\ICustomXml.cs" />
-      <Compile Include="Core\MapDataContext.cs" />
-      <Compile Include="Core\MapListener.cs" />
-      <Compile Include="Core\Mixer\MapMixer.cs" />
-      <Compile Include="Core\Model\Script\ArgumentModel.cs" />
-      <Compile Include="Core\Model\Script\ScriptCollecttion.cs" />
-      <Compile Include="Core\Model\Script\ScriptModel.cs" />
-      <Compile Include="Core\Model\Script\ScriptSpec.cs" />
-      <Compile Include="Core\Ra3Map.cs" />
-      <Compile Include="Core\Ra3MapConst.cs" />
-      <Compile Include="Core\Ra3MapParseImpl.cs" />
-      <Compile Include="Core\Ra3MapStruct.cs" />
-      <Compile Include="Core\Ra3MapVisitImpl.cs" />
-      <Compile Include="Core\Ra3MapVisitImpl2.cs" />
-      <Compile Include="Core\Scripts\ScriptFile\CircleTerrain.cs" />
-      <Compile Include="Core\Scripts\ScriptFile\RandomAddTrees.cs" />
-      <Compile Include="Core\Scripts\ScriptFile\OnlyInfantry.cs" />
-      <Compile Include="Core\Scripts\ScriptHandler.cs" />
-      <Compile Include="Core\Scripts\ScriptInterface.cs" />
-      <Compile Include="Core\ScriptXml.cs" />
-      <Compile Include="Core\Util\FashHash.cs" />
-      <Compile Include="Core\Util\MapAssetExtension.cs" />
-      <Compile Include="Core\Util\MapXmlUtil.Schema.cs" />
-      <Compile Include="Core\Util\MapXmlUtil.ToObj.cs" />
-      <Compile Include="Core\Util\MapXmlUtil.ToXml.cs" />
-      <Compile Include="Core\Util\PathUtil.cs" />
-      <Compile Include="Core\Util\XmlUtils.cs" />
-      <Compile Include="Util\CollectionUtil.cs" />
-      <Compile Include="Util\LogUtil.cs" />
-      <Compile Include="Util\PrefUtil.cs" />
-      <Compile Include="Util\Result.cs" />
-      <Compile Include="Util\StreamExtension.cs" />
-      <Compile Include="Util\Vec2D.cs" />
-      <Compile Include="Util\Vec3D.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-        <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-      </Reference>
-      <Reference Include="System" />
-      <Reference Include="System.Configuration" />
-      <Reference Include="System.Web" />
-      <Reference Include="System.Xml" />
-    </ItemGroup>
-    <ItemGroup>
-      <None Include="packages.config" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F2CE623-5AA2-46BD-9A78-5EB1522C09B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapCoreLib</RootNamespace>
+    <AssemblyName>MapCoreLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Compress\ByteHelpers.cs" />
+    <Compile Include="Compress\Compression.cs" />
+    <Compile Include="Compress\RefpackComrpessor.cs" />
+    <Compile Include="Compress\StreamHelpers.cs" />
+    <Compile Include="Core\Asset\AssetList.cs" />
+    <Compile Include="Core\Asset\AssetProperty.cs" />
+    <Compile Include="Core\Asset\AssetPropertyCollection.cs" />
+    <Compile Include="Core\Asset\AssetPropertyType.cs" />
+    <Compile Include="Core\Asset\BlendDirection.cs" />
+    <Compile Include="Core\Asset\BlendInfo.cs" />
+    <Compile Include="Core\Asset\BlendTileData.cs" />
+    <Compile Include="Core\Asset\BuildListItem.cs" />
+    <Compile Include="Core\Asset\DefaultMajorAsset.cs" />
+    <Compile Include="Core\Asset\GlobalLight.cs" />
+    <Compile Include="Core\Asset\GlobalLighting.cs" />
+    <Compile Include="Core\Asset\GlobalLightingConfiguration.cs" />
+    <Compile Include="Core\Asset\HeightMapBorder.cs" />
+    <Compile Include="Core\Asset\HeightMapData.cs" />
+    <Compile Include="Core\Asset\MajorAsset.cs" />
+    <Compile Include="Core\Asset\MapObject.cs" />
+    <Compile Include="Core\Asset\NamedCameras.cs" />
+    <Compile Include="Core\Asset\ObjectsList.cs" />
+    <Compile Include="Core\Asset\OrCondition.cs" />
+    <Compile Include="Core\Asset\Passability.cs" />
+    <Compile Include="Core\Asset\Player.cs" />
+    <Compile Include="Core\Asset\PlayerScriptsList.cs" />
+    <Compile Include="Core\Asset\Script.cs" />
+    <Compile Include="Core\Asset\ScriptAction.cs" />
+    <Compile Include="Core\Asset\ScriptActionFalse.cs" />
+    <Compile Include="Core\Asset\ScriptArgument.cs" />
+    <Compile Include="Core\Asset\ScriptArgumentType.cs" />
+    <Compile Include="Core\Asset\ScriptCondition.cs" />
+    <Compile Include="Core\Asset\ScriptContent.cs" />
+    <Compile Include="Core\Asset\ScriptGroup.cs" />
+    <Compile Include="Core\Asset\ScriptList.cs" />
+    <Compile Include="Core\Asset\SidesList.cs" />
+    <Compile Include="Core\Asset\StandingWaterArea.cs" />
+    <Compile Include="Core\Asset\StandingWaterAreas.cs" />
+    <Compile Include="Core\Asset\Team.cs" />
+    <Compile Include="Core\Asset\Teams.cs" />
+    <Compile Include="Core\Asset\Texture.cs" />
+    <Compile Include="Core\Asset\WorldInfo.cs" />
+    <Compile Include="Core\Interface\ICustomXml.cs" />
+    <Compile Include="Core\MapDataContext.cs" />
+    <Compile Include="Core\MapListener.cs" />
+    <Compile Include="Core\MiniMap.cs" />
+    <Compile Include="Core\Mixer\MapMixer.cs" />
+    <Compile Include="Core\Model\Script\ArgumentModel.cs" />
+    <Compile Include="Core\Model\Script\ScriptCollecttion.cs" />
+    <Compile Include="Core\Model\Script\ScriptModel.cs" />
+    <Compile Include="Core\Model\Script\ScriptSpec.cs" />
+    <Compile Include="Core\Ra3Map.cs" />
+    <Compile Include="Core\Ra3MapConst.cs" />
+    <Compile Include="Core\Ra3MapParseImpl.cs" />
+    <Compile Include="Core\Ra3MapStruct.cs" />
+    <Compile Include="Core\Ra3MapVisitImpl.cs" />
+    <Compile Include="Core\Ra3MapVisitImpl2.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\CircleTerrain.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\RandomAddTrees.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\OnlyInfantry.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\TerrainLevelUp.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\TerrainNoiseOver.cs" />
+    <Compile Include="Core\Scripts\ScriptHandler.cs" />
+    <Compile Include="Core\Scripts\ScriptInterface.cs" />
+    <Compile Include="Core\ScriptXml.cs" />
+    <Compile Include="Core\Util\EditorHelper.cs" />
+    <Compile Include="Core\Util\FashHash.cs" />
+    <Compile Include="Core\Util\MapAssetExtension.cs" />
+    <Compile Include="Core\Util\MapXmlUtil.Schema.cs" />
+    <Compile Include="Core\Util\MapXmlUtil.ToObj.cs" />
+    <Compile Include="Core\Util\MapXmlUtil.ToXml.cs" />
+    <Compile Include="Core\Util\PathUtil.cs" />
+    <Compile Include="Core\Util\XmlUtils.cs" />
+    <Compile Include="Util\CollectionUtil.cs" />
+    <Compile Include="Util\LogUtil.cs" />
+    <Compile Include="Util\PrefUtil.cs" />
+    <Compile Include="Util\Result.cs" />
+    <Compile Include="Util\StreamExtension.cs" />
+    <Compile Include="Util\Vec2D.cs" />
+    <Compile Include="Util\Vec3D.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Conari">
+      <Version>1.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="ilmerge">
+      <Version>3.0.29</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
     <Target Name="BeforeBuild">
     </Target>

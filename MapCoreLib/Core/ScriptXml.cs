@@ -28,6 +28,7 @@ namespace MapCoreLib.Core
         public static string ra3MapNsUri = "uri:wu.com:ra3map";
         public static XmlNamespaceManager ra3Ns = new XmlNamespaceManager(new NameTable());
         private static bool validXml = true;
+        private static string validErrorMsg = "";
 
         static ScriptXml()
         {
@@ -85,7 +86,7 @@ namespace MapCoreLib.Core
         private static void deserializeScript2(Ra3Map ra3Map, string xmlPath)
         {
             XmlReaderSettings settings = new XmlReaderSettings();
-            settings.Schemas.Add("uri:wu.com:ra3map", "Ra3MapSchema.xsd");
+            settings.Schemas.Add("uri:wu.com:ra3map", Path.Combine(PathUtil.configDir, "Ra3MapSchema.xsd"));
             settings.ValidationType = ValidationType.Schema;
             settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessInlineSchema;
             settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessSchemaLocation;
@@ -93,23 +94,36 @@ namespace MapCoreLib.Core
             settings.ValidationEventHandler += ValidationEventHandler;
 
             validXml = true;
+            validErrorMsg = "";
             //验证xml
             XmlReader reader = XmlReader.Create(xmlPath, settings);
-            XmlDocument document = new XmlDocument();
-            document.Load(reader);
-            if (!validXml)
+            try
             {
-                throw new Exception("xml文件有错误，请修改");
+                XmlDocument document = new XmlDocument();
+                document.Load(reader);
+                if (!validXml)
+                {
+                    throw new Exception($"xml文件有错误\n{validErrorMsg}");
+                }
+
+                //TODO 用schema验证合法性
+                XmlNode MapScriptNode = document.SelectSingleNode($"//ra3Ns:{Ra3MapConst.ELEM_NAME_MapScript}", ra3Ns);
+                var playerScriptsList = new PlayerScriptsList();
+                MapXmlUtil.xml2obj(document, MapScriptNode as XmlElement, ra3Map.getContext(), playerScriptsList);
+                ra3Map.replaceMajorAsset(Ra3MapConst.ASSET_PlayerScriptsList, playerScriptsList);
+
+                // ra3Map.save("Test", ra3Map.getContext().mapName);
+                ra3Map.modifyMap();
             }
-
-            //TODO 用schema验证合法性
-            XmlNode MapScriptNode = document.SelectSingleNode($"//ra3Ns:{Ra3MapConst.ELEM_NAME_MapScript}", ra3Ns);
-            var playerScriptsList = new PlayerScriptsList();
-            MapXmlUtil.xml2obj(document, MapScriptNode as XmlElement, ra3Map.getContext(), playerScriptsList);
-            ra3Map.replaceMajorAsset(Ra3MapConst.ASSET_PlayerScriptsList, playerScriptsList);
-
-            // ra3Map.save("Test", ra3Map.getContext().mapName);
-            ra3Map.modifyMap();
+            catch (Exception e)
+            {
+                throw;
+            }
+            finally
+            {
+                reader.Close();
+            }
+            
         }
 
         static void ValidationEventHandler(object sender, ValidationEventArgs e)
@@ -117,9 +131,10 @@ namespace MapCoreLib.Core
             switch (e.Severity)
             {
                 case XmlSeverityType.Error:
-                    var msg = $"Error: {e.Message} |  行：{e.Exception.LineNumber} ， 列：{e.Exception.LinePosition}";
-                    LogUtil.log(msg);
+                    var msg = $"Error: {e.Message} |  行：{e.Exception.LineNumber} ， 列：{e.Exception.LinePosition}\n";
+                    // LogUtil.log(msg);
                     validXml = false;
+                    validErrorMsg += msg;
                     //不要马上抛异常，检查所有文件内容
                     // throw new XmlSchemaValidationException(msg);
                     break;

@@ -72,9 +72,10 @@ namespace MapCoreLib.Core
                     case Ra3MapConst.ASSET_HeightMapData:
                         mapStruct.addAsset(new HeightMapData().fromStream(br, dataContext));
                         break;
-                    // case Ra3MapConst.ASSET_BlendTileData:
-                    //     mapStruct.addAsset(new BlendTileData().fromStream(br, dataContext));
-                    //     break;
+                    
+                    case Ra3MapConst.ASSET_BlendTileData:
+                        mapStruct.addAsset(new BlendTileData().fromStream(br, dataContext));
+                        break;
                     case Ra3MapConst.ASSET_WorldInfo:
                         mapStruct.addAsset(new WorldInfo().fromStream(br, dataContext));
                         break;

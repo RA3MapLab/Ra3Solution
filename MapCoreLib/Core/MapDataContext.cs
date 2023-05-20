@@ -11,6 +11,7 @@ namespace MapCoreLib.Core
 
         public int mapWidth = Int32.MinValue;
         public int mapHeight = Int32.MinValue;
+        public int border = Int32.MinValue;
         public string mapName = "";
 
         // public SidesList sideList
