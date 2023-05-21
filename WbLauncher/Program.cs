@@ -49,36 +49,48 @@ namespace WbLauncher
             var environmentVariable = Environment.GetEnvironmentVariable("RA3_NEW_WB_DIR");
             if (string.IsNullOrEmpty(environmentVariable) || Directory.GetCurrentDirectory() != environmentVariable)
             {
-                Environment.SetEnvironmentVariable("NEW_RA3_WB_DIR", Directory.GetCurrentDirectory(), EnvironmentVariableTarget.User);
-
+                Environment.SetEnvironmentVariable("RA3_NEW_WB_DIR", Directory.GetCurrentDirectory(), EnvironmentVariableTarget.User);
             }
 
             var needWaitEvent = true;
-            MessageBox.Show("test2");
             if (needWaitEvent)
             {
                 var loading = new LoadingDialog("等待初始化中");
-                Task.Run(() =>
+                loading.Load += (object sender, EventArgs e) =>
                 {
-                    bool res = WaitEvent();
-                    loading.Invoke((MethodInvoker)delegate
+                    Task.Run(() =>
                     {
-                        loading.Close();
-                        if (!res)
+                        bool result = false;
+                        try
                         {
-                            MessageBox.Show("在等待初始化期间出现错误");
+                            result = WaitEvent();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                        loading.Invoke(new Action(() =>
+                        {
+                            // 用于停止下面的 Application.Run
                             Application.Exit();
-                        }
-                        else
-                        {
-                            launcherWb(Path.Combine(ra3root, "Data"));
-                        }
+                            if (!result)
+                            {
+                                MessageBox.Show("在等待初始化期间出现错误");
+                            }
+                            else
+                            {
+                                launcherWb(Path.Combine(ra3root, "Data"));
+                            }
+                        }));
                     });
-                });
-                
-                loading.ShowDialog();
-                
-                
+                };
+                // 这里必须是 Application.Run 而不是 loading.ShowDialog，
+                // 因为上面的代码在使用 Application.Exit 来关闭窗口。
+                // 之所以不使用 loading.Close() 来关闭窗口，而是使用 Application.Exit 来关闭窗口，
+                // 是因为窗口在自己被关闭的时候，需要知道为什么被关闭。
+                // Close() 会被视为用户的操作，而 Application.Exit 则是被视为程序的操作。
+                // 这样就能根据“谁想关闭窗口”做出区分。
+                Application.Run(loading);
             }
             else
             {
@@ -149,32 +161,23 @@ namespace WbLauncher
             var rule = new EventWaitHandleAccessRule(everyone, EventWaitHandleRights.FullControl, AccessControlType.Allow);
             security.AddAccessRule(rule);
             // var notificationEvent = EventWaitHandleAcl.Create(false, EventResetMode.AutoReset, eventName, out _, security);
-            var res1 = EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_start", EventWaitHandleRights.Modify, out var startEvent);
-            
-            
-            if (res1)
-            {
-                // startEvent.Set();
-                var res2 = EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_complete", EventWaitHandleRights.Synchronize, out var notificationEvent);
-                if (res2)
-                {
-                    startEvent.Set();
-                    notificationEvent.WaitOne();
-                    startEvent.Dispose();
-                    notificationEvent.Dispose();
-                    return true;
-                }
-                else
-                {
-                    startEvent.Dispose();
-                    return false;
-                }
-            }
-            else
+            if (!EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_start", EventWaitHandleRights.Modify, out var startWaitEvent))
             {
                 return false;
             }
-            
+            using (startWaitEvent)
+            {
+                if (!EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_complete", EventWaitHandleRights.Synchronize, out var notificationEvent))
+                {
+                    return false;
+                }
+                using (notificationEvent)
+                {
+                    startWaitEvent.Set();
+                    notificationEvent.WaitOne();
+                    return true;
+                }
+            }
         }
     }
 }
