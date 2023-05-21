@@ -31,7 +31,8 @@ namespace NewMapParser
             // ObjectListTrans.Run();
             
             // GetObjectCatogory.Run();
-            GenScriptConfig.genScriptTransMap();
+            // GenScriptConfig.genScriptTransMap();
+            ImageToXyz.Run();
         }
 
         private static void printTrans()

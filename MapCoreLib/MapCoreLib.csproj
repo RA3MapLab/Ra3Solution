@@ -92,6 +92,7 @@
     <Compile Include="Core\Ra3MapStruct.cs" />
     <Compile Include="Core\Ra3MapVisitImpl.cs" />
     <Compile Include="Core\Ra3MapVisitImpl2.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\BadApple.cs" />
     <Compile Include="Core\Scripts\ScriptFile\CircleTerrain.cs" />
     <Compile Include="Core\Scripts\ScriptFile\RandomAddTrees.cs" />
     <Compile Include="Core\Scripts\ScriptFile\OnlyInfantry.cs" />

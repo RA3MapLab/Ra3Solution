@@ -9,7 +9,7 @@ namespace NewMapParser.Core
         {
             foreach (var image in Directory.EnumerateFiles(Path.Combine(Directory.GetCurrentDirectory(), "Capture"), "*.png", SearchOption.AllDirectories))
             {
-                using (var sw = new StreamWriter(File.OpenWrite(Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileNameWithoutExtension(image) + ".xyz"))))
+                using (var sw = new StreamWriter(File.OpenWrite(Path.Combine(Directory.GetCurrentDirectory(), "Capture2", Path.GetFileNameWithoutExtension(image) + ".xyz"))))
                 {
                     using (var bitmap = new Bitmap(image))
                     {
@@ -17,7 +17,7 @@ namespace NewMapParser.Core
                         {
                             for (int j = 0; j < bitmap.Height; j++)
                             {
-                                sw.WriteLine($"{i},{j},{bitmap.GetPixel(i,j)}");
+                                sw.WriteLine($"{i},{j},{(bitmap.GetPixel(i,j).R == 255 ? 1 : 0)}");
                             }
                         }
                     }
