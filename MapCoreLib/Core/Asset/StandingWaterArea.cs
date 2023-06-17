@@ -30,19 +30,19 @@ namespace MapCoreLib.Core.Asset
             
         }
         
-        public StandingWaterArea(int height, params Vec2D[] Points)
-        {
-            id = 1;
-            name = "";
-            UVScrollSpeed = 0.0600000024f;
-            additiveBlending = false;
-            bumpmapTexture = "WaterRippleBump";
-            skyTexture = "SkyEnv";
-            points = Points;
-            waterHeight = height;
-            fxShader = "FXOceanRA3";
-            depthColors = "LUTDepthTint.tga";
-        }
+        // public StandingWaterArea(int height, params Vec2D[] Points)
+        // {
+        //     id = 1;
+        //     name = "";
+        //     UVScrollSpeed = 0.0600000024f;
+        //     additiveBlending = false;
+        //     bumpmapTexture = "WaterRippleBump";
+        //     skyTexture = "SkyEnv";
+        //     points = Points;
+        //     waterHeight = height;
+        //     fxShader = "FXOceanRA3";
+        //     depthColors = "LUTDepthTint.tga";
+        // }
         
         public StandingWaterArea fromStream(BinaryReader binaryReader, MapDataContext context)
         {
@@ -83,6 +83,28 @@ namespace MapCoreLib.Core.Asset
             binaryWriter.Write(waterHeight);
             binaryWriter.writeDefaultString(fxShader);
             binaryWriter.writeDefaultString(depthColors);
+        }
+
+        public static StandingWaterArea newInstance(MapDataContext context, int width, int height)
+        {
+            var standingWaterArea = new StandingWaterArea();
+            standingWaterArea.id = 1;
+            standingWaterArea.name = "";
+            standingWaterArea.UVScrollSpeed = 0.0600000024f;
+            standingWaterArea.additiveBlending = false;
+            standingWaterArea.bumpmapTexture = "WaterRippleBump";
+            standingWaterArea.skyTexture = "SkyEnv";
+            standingWaterArea.points = new []
+            {
+                new Vec2D(-context.border * 10, -context.border * 10),
+                new Vec2D(-context.border * 10, (height + context.border) * 10),
+                new Vec2D((width + context.border) * 10, (height + context.border) * 10), new Vec2D((width + context.border) * 10, -context.border * 10)
+            };
+            standingWaterArea.waterHeight = 200;
+            standingWaterArea.fxShader = "FXOceanRA3";
+            standingWaterArea.depthColors = "LUTDepthTint.tga";
+
+            return standingWaterArea;
         }
     }
 }

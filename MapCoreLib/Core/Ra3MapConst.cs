@@ -18,8 +18,10 @@ namespace MapCoreLib.Core
         public const string ASSET_BlendTileData = "BlendTileData";
         public const string ASSET_WorldInfo = "WorldInfo";
         public const string ASSET_MPPositionList = "MPPositionList";
+        public const string ASSET_MPPositionInfo = "MPPositionInfo";
         public const string ASSET_SidesList = "SidesList";
         public const string ASSET_LibraryMapLists = "LibraryMapLists";
+        public const string ASSET_LibraryMaps = "LibraryMaps";
         public const string ASSET_Teams = "Teams";
         public const string ASSET_PlayerScriptsList = "PlayerScriptsList";
         public const string ASSET_BuildLists = "BuildLists";

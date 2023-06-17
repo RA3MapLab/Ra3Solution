@@ -26,5 +26,15 @@ namespace MapCoreLib.Core.Asset
             binaryWriter.Write(Corner2X);
             binaryWriter.Write(Corner2Y);
         }
+
+        public static HeightMapBorder newInstance(int Corner1X, int Corner1Y, int Corner2X, int Corner2Y)
+        {
+            var heightMapBorder = new HeightMapBorder();
+            heightMapBorder.Corner1X = Corner1X;
+            heightMapBorder.Corner1Y = Corner1Y;
+            heightMapBorder.Corner2X = Corner2X;
+            heightMapBorder.Corner2Y = Corner2Y;
+            return heightMapBorder;
+        }
     }
 }

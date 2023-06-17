@@ -75,5 +75,19 @@ namespace MapCoreLib.Core.Asset
         {
             return 1;
         }
+
+        public static PlayerScriptsList newInstance(MapDataContext context, int playersCount)
+        {
+            var playerScriptsList = new PlayerScriptsList();
+            playerScriptsList.name = Ra3MapConst.ASSET_PlayerScriptsList;
+            playerScriptsList.id = context.MapStruct.RegisterString(playerScriptsList.name);
+            playerScriptsList.version = playerScriptsList.getVersion();
+            for (int i = 0; i < playersCount; i++)
+            {
+                playerScriptsList.scriptLists.Add(ScriptList.newInstance(context));
+            }
+
+            return playerScriptsList;
+        }
     }
 }

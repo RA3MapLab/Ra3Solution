@@ -50,5 +50,15 @@ namespace MapCoreLib.Core.Asset
 
             return propertyMap[name];
         }
+        
+        public void setProperty(string name, object data)
+        {
+            if (!propertyMap.ContainsKey(name))
+            {
+                return;
+            }
+
+            propertyMap[name].data = data;
+        }
     }
 }

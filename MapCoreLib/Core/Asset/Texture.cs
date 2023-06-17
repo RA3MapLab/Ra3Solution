@@ -33,5 +33,16 @@ namespace MapCoreLib.Core.Asset
             binaryWriter.Write(magicValue);
             binaryWriter.writeDefaultString(name);
         }
+
+        public static Texture newInstance(int start, string name)
+        {
+            var texture = new Texture();
+            texture.cellStart = start;
+            texture.cellCount = 16;
+            texture.cellSize = 4;
+            texture.magicValue = 0;
+            texture.name = name;
+            return texture;
+        }
     }
 }

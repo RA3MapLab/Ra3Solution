@@ -4,7 +4,7 @@ namespace MapCoreLib.Core.Asset
 {
     public class DefaultMajorAsset: MajorAsset
     {
-        private byte[] data;
+        public byte[] data;
         public override MajorAsset fromStream(BinaryReader binaryReader, MapDataContext context)
         {
             base.fromStream(binaryReader, context);

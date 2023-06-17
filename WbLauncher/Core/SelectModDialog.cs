@@ -40,7 +40,7 @@ namespace WbLauncher.Core
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
-            ShowInTaskbar = false;
+            ShowInTaskbar = true;
             Text = "选择要加载的mod";
             Size = new Size(300, 400);
             StartPosition = FormStartPosition.CenterScreen;

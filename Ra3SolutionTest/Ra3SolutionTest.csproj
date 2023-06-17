@@ -35,6 +35,9 @@
         <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
           <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
         </Reference>
+        <Reference Include="PinYinConverterCore, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>..\packages\PinYinConverterCore.1.0.2\lib\net45\PinYinConverterCore.dll</HintPath>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
@@ -43,11 +46,14 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Core\CollectObjNames.cs" />
         <Compile Include="Core\FileItem.cs" />
+        <Compile Include="Core\GenerateObjNames.cs" />
         <Compile Include="Core\GenScriptConfig.cs" />
         <Compile Include="Core\GenScriptsMd.cs" />
         <Compile Include="Core\GetObjectCatogory.cs" />
         <Compile Include="Core\ImageToXyz.cs" />
+        <Compile Include="Core\MsPinYinHelper.cs" />
         <Compile Include="Core\ObjectListTrans.cs" />
         <Compile Include="Core\PeAddImport.cs" />
         <Compile Include="Core\ScriptTranslation.cs" />

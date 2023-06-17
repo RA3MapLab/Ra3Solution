@@ -67,5 +67,14 @@ namespace MapCoreLib.Core.Asset
         {
             return 1;
         }
+
+        public static ScriptList newInstance(MapDataContext context)
+        {
+            var scriptList = new ScriptList();
+            scriptList.name = Ra3MapConst.ASSET_ScriptList;
+            scriptList.id = context.MapStruct.RegisterString(scriptList.name);
+            scriptList.version = scriptList.getVersion();
+            return scriptList;
+        }
     }
 }

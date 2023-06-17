@@ -50,6 +50,14 @@ namespace MapCoreLib.Core.Asset
                 binaryWriter.Write(typeId);
                 binaryWriter.Write(instanceId);
             }
+
+            public static AssetBlock newInstance(uint typeId, uint instanceId)
+            {
+                var assetBlock = new AssetBlock();
+                assetBlock.typeId = typeId;
+                assetBlock.instanceId = instanceId;
+                return assetBlock;
+            }
         }
 
         public void addInstance(string typeName)
@@ -63,6 +71,24 @@ namespace MapCoreLib.Core.Asset
                     instanceId = instanceId
                 });
             }
+        }
+
+        public override short getVersion()
+        {
+            return 1;
+        }
+
+        public static AssetList newInstance(MapDataContext context)
+        {
+            var assetList = new AssetList();
+            assetList.name = Ra3MapConst.ASSET_AssetList;
+            assetList.id = context.MapStruct.RegisterString(assetList.name);
+            assetList.version = assetList.getVersion();
+            assetList.assetBlocks.Add( AssetBlock.newInstance(568797146u, 864929218u));
+            assetList.assetBlocks.Add(  AssetBlock.newInstance(568797146u, 2206724476u));
+            assetList.assetBlocks.Add(  AssetBlock.newInstance(568797146u, 2782672656u));
+            assetList.assetBlocks.Add(  AssetBlock.newInstance(2407383451u, 3048591129u));
+            return assetList;
         }
     }
 }

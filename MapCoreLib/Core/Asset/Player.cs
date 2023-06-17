@@ -7,7 +7,7 @@ namespace MapCoreLib.Core.Asset
     public class Player
     {
         
-        public AssetPropertyCollection assetPropertyCollection;
+        public AssetPropertyCollection assetPropertyCollection = new AssetPropertyCollection();
         public List<BuildListItem> buildListItems = new List<BuildListItem>();
         public Player fromStream(BinaryReader binaryReader, MapDataContext context)
         {

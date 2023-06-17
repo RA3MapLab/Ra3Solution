@@ -3,6 +3,8 @@ using System.Linq;
 using Compress;
 using MapCoreLib.Core.Asset;
 using MapCoreLib.Log;
+using MapCoreLib.Util;
+using Newtonsoft.Json;
 
 namespace MapCoreLib.Core
 {
@@ -16,6 +18,17 @@ namespace MapCoreLib.Core
         public Ra3Map(string mapPath)
         {
             this.mapPath = mapPath;
+        }
+
+        public static Ra3Map newMap(NewMapConfig newMapConfig)
+        {
+            // var newMapConfig = JsonConvert.DeserializeObject<NewMapConfig>(config);
+            LogUtil.log("Ra3Map newMap");
+            var ra3Map = new Ra3Map(newMapConfig.mapPath);
+            ra3Map.context = new MapDataContext(new Ra3MapStruct());
+            new Ra3MapBuilder(ra3Map, newMapConfig).build();
+
+            return ra3Map;
         }
 
         public void parse()
@@ -72,6 +85,18 @@ namespace MapCoreLib.Core
             Directory.CreateDirectory(mapDir);
 
             doSaveMap(mapFile);
+            PrefUtil.stop("saveMap");
+        }
+
+        public void save(string mapPath)
+        {
+            PrefUtil.start("saveMap");
+            var mapDir = Path.GetDirectoryName(this.mapPath);
+            if (!Directory.Exists(mapDir))
+            {
+                Directory.CreateDirectory(mapDir);
+            }
+            doSaveMap(mapPath);
             PrefUtil.stop("saveMap");
         }
 

@@ -54,6 +54,11 @@ namespace MapCoreLib.Core.Asset
             return Ra3MapConst.ASSET_SidesList;
         }
 
+        public override short getVersion()
+        {
+            return 6;
+        }
+
         public int findPlayerIndex(string playerName)
         {
             Player p = players.Find(player => (player.assetPropertyCollection.getProperty("playerName").data as string) == playerName);
@@ -63,6 +68,34 @@ namespace MapCoreLib.Core.Asset
             }
 
             return players.IndexOf(p);
+        }
+
+        public static SidesList newInstance(MapDataContext context)
+        {
+            var sidesList = new SidesList();
+            sidesList.name = Ra3MapConst.ASSET_SidesList;
+            sidesList.id = context.MapStruct.RegisterString(sidesList.name);
+            sidesList.version = sidesList.getVersion();
+            sidesList.players.Add(Player.of(context));
+            sidesList.players.Add(Player.of(context, "Player_1"));
+            sidesList.players.Add(Player.of(context, "Player_2"));
+            sidesList.players.Add(Player.of(context, "Player_3"));
+            sidesList.players.Add(Player.of(context, "Player_4"));
+            sidesList.players.Add(Player.of(context, "Player_5"));
+            sidesList.players.Add(Player.of(context, "Player_6"));
+            sidesList.players.Add(Player.of(context, "PlyrCivilian"));
+            sidesList.players.Add(Player.of(context, "PlyrCreeps"));
+            sidesList.players.Add(Player.of(context, "PlyrNeutral"));
+            //TODO 根据不同mod的阵营添加新增加的Skirmish玩家
+            sidesList.players.Add(Player.of(context, "SkirmishCivilian"));
+            sidesList.players.Add(Player.of(context, "SkirmishRandom"));
+            sidesList.players.Add(Player.of(context, "SkirmishSoviet"));
+            sidesList.players.Add(Player.of(context, "SkirmishAllies"));
+            sidesList.players.Add(Player.of(context, "SkirmishJapan"));
+            sidesList.players.Add(Player.of(context, "SkirmishNull"));
+            sidesList.players.Add(Player.of(context, "SkirmishObserver"));
+
+            return sidesList;
         }
     }
 }

@@ -71,6 +71,32 @@ namespace NetNativeBridge
         }
 
         [DllExport]
+        public static IntPtr createNewMap(IntPtr newMapConfigPtr)
+        {
+            string newMapConfigStr = (string)(CharPtr)newMapConfigPtr;
+            LogUtil.log($"createNewMap {newMapConfigStr}");
+            try
+            {
+                var newMapConfig = JsonConvert.DeserializeObject<NewMapConfig>(newMapConfigStr);
+                var mapDir = Path.GetDirectoryName(newMapConfig.mapPath);
+                if (Directory.Exists(mapDir))
+                {
+                    Directory.Delete(mapDir, true);
+                }
+                Ra3Map.newMap(newMapConfig)
+                    .save(newMapConfig.mapPath);
+            }
+            catch (Exception e)
+            {
+                var msg = $"{e.Message}";
+                LogUtil.log($"{e.Message} | {e.StackTrace}");
+                return CppStr(Result.defaultErrorJson(msg));
+            }
+
+            return CppStr(Result.successJson());
+        }
+
+        [DllExport]
         public static IntPtr GetCodeScriptList()
         {
             var csScriptDescs = ScriptHandler.getScriptDescs();

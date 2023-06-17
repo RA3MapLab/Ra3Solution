@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml;
 using MapCoreLib.Core.Interface;
 using MapCoreLib.Core.Util;
@@ -45,6 +46,27 @@ namespace MapCoreLib.Core.Asset
         
         public static ScriptAction of(MapDataContext mapDataContext, string commandWord, List<object> args = null)
         {
+            if (!ScriptSpec.checkScriptAction(commandWord, args))
+            {
+                throw new Exception($"ScriptCondition of | 脚本动作参数有误 --- {commandWord}");
+            }
+
+            var scriptContent = ScriptSpec.generateScriptContent(mapDataContext, ScriptSpec.actionsSpec, commandWord, args);
+            ScriptAction scriptAction = new ScriptAction()
+            {
+                contentType = scriptContent.contentType,
+                assetPropertyType = scriptContent.assetPropertyType,
+                contentName = scriptContent.contentName,
+                nameIndex = scriptContent.nameIndex,
+                enable = scriptContent.enable,
+                arguments = scriptContent.arguments,
+            };
+            return scriptAction;
+        }
+        
+        public static ScriptAction of(MapDataContext mapDataContext, string commandWord, params object[] argsArr)
+        {
+            var args = argsArr.ToList();
             if (!ScriptSpec.checkScriptAction(commandWord, args))
             {
                 throw new Exception($"ScriptCondition of | 脚本动作参数有误 --- {commandWord}");

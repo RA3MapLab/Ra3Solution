@@ -56,5 +56,14 @@ namespace MapCoreLib.Core.Asset
         {
             return 3;
         }
+
+        public static ObjectsList newInstance(MapDataContext context)
+        {
+            var objectsList = new ObjectsList();
+            objectsList.name = Ra3MapConst.ASSET_ObjectsList;
+            objectsList.id = context.MapStruct.RegisterString(objectsList.name);
+            objectsList.version = objectsList.getVersion();
+            return objectsList;
+        }
     }
 }

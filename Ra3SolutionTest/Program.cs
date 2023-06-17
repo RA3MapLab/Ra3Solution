@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using MapCoreLib.Core;
+using MapCoreLib.Core.Asset;
+using MapCoreLib.Core.NewMap;
 using MapCoreLib.Core.Util;
 using MapCoreLib.Util;
 using NewMapParser.Core;
@@ -32,7 +35,39 @@ namespace NewMapParser
             
             // GetObjectCatogory.Run();
             // GenScriptConfig.genScriptTransMap();
-            ImageToXyz.Run();
+            // ImageToXyz.Run();
+            // GenerateObjNames.Run();
+
+            // var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\CreateMap\\CreateMap.map");
+            // ra3Map.parse();
+            // var majorAssets = ra3Map.getContext().MapStruct.getAssets();
+            // var heightmapData = majorAssets[2] as DefaultMajorAsset;
+            // var blendTitleData = majorAssets[3] as DefaultMajorAsset;
+            // File.WriteAllBytes("heightmapData_2.bin", heightmapData.data);
+            // File.WriteAllBytes("blendTitleData_2.bin", blendTitleData.data);
+            // var a = 2;
+            
+            // ScriptXml.serialize(PathUtil.defaultMapPath("[MRZYQH"));
+            // ScriptXml.deserialize(PathUtil.defaultMapPath("[MRZYQH"));
+            // MsPinYinHelper.Run();
+            
+            // var mapPath = PathUtil.defaultMapPath("CreateMap");
+            // Ra3Map.newMap(mapPath, new NewMapConfig()
+            // {
+            //     width = 500,
+            //     height = 500,
+            //     options = new Dictionary<string, NewMapHandlerOption>()
+            //     {
+            //         {"RandomTerrain", new RandomTerrainOption()
+            //         {
+            //             seed = 12312,
+            //             passCount = 7
+            //         }}
+            //         
+            //     }
+            // }).save(PathUtil.RA3MapFolder, "CreateMap");
+            
+            MiniMap.genMiniMap("City_Chaos_2.0", 0, false);
         }
 
         private static void printTrans()

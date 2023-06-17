@@ -73,5 +73,35 @@ namespace MapCoreLib.Core.Asset
         {
             return Ra3MapConst.ASSET_HeightMapData;
         }
+
+        public override short getVersion()
+        {
+            return 6;
+        }
+
+        public static HeightMapData newInstance(MapDataContext context, int width, int height)
+        {
+            var heightMapData = new HeightMapData();
+            heightMapData.name = Ra3MapConst.ASSET_HeightMapData;
+            heightMapData.id = context.MapStruct.RegisterString(heightMapData.name);
+            heightMapData.version = heightMapData.getVersion();
+            context.mapWidth = heightMapData.mapWidth = width + 2 * 50;
+            context.mapHeight = heightMapData.mapHeight = height + 2 * 50;
+            context.border = heightMapData.borderWidth = 50;
+            heightMapData.playableHeight = height;
+            heightMapData.playableWidth = width;
+            heightMapData.area = heightMapData.mapWidth * heightMapData.mapHeight;
+            heightMapData.elevations = new float[heightMapData.mapWidth, heightMapData.mapHeight];
+            for (int y = 0; y < heightMapData.mapHeight; y++)
+            {
+                for (int x = 0; x < heightMapData.mapWidth; x++)
+                {
+                    heightMapData.elevations[x, y] = 210;
+                }
+            }
+            heightMapData.borders.Add(HeightMapBorder.newInstance(0, 0, 
+                width, height));
+            return heightMapData;
+        }
     }
 }

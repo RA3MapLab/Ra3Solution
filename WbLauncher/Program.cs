@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Security.AccessControl;
 using System.Security.Principal;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,8 +18,15 @@ namespace WbLauncher
 {
     internal class Program
     {
-        private static string ra3root = "";
+        // private static string ra3root = "";
         private static string modConfigPath = "";
+        private static List<string> oldBigFiles = new List<string>()
+        {
+            "WBData_12.big",
+            "WBGlobal_12.big",
+            "WBStatic_12.big",
+            "WBStringHashes_12.big"
+        };
 
         [STAThread]
         public static void Main(string[] args)
@@ -51,8 +61,24 @@ namespace WbLauncher
             {
                 Environment.SetEnvironmentVariable("RA3_NEW_WB_DIR", Directory.GetCurrentDirectory(), EnvironmentVariableTarget.User);
             }
+            
+            if (!checkPath(ra3root))
+            {
+                return;
+            }
 
-            var needWaitEvent = true;
+            if (!checkNeededFiles(ra3root))
+            {
+                return;
+            }
+            
+            //TODO 检测是否已经启动了地编
+            
+            var needWaitEvent =false;
+            if (args.Length > 0)
+            {
+                needWaitEvent = args[0] == "-needwaitevent";
+            }
             if (needWaitEvent)
             {
                 var loading = new LoadingDialog("等待初始化中");
@@ -104,7 +130,46 @@ namespace WbLauncher
             }
 
         }
+
+        private static bool checkPath(string ra3Root)
+        {
+            if (ra3Root.Any(z => IsChinese(z)))
+            {
+                MessageBox.Show($"游戏根目录包含中文，请修改 {ra3Root}");
+                return false;
+            }
+            if (Directory.GetCurrentDirectory().Any(z => IsChinese(z)))
+            {
+                MessageBox.Show($"新地编根目录包含中文，请修改 {Directory.GetCurrentDirectory()}");
+                return false;
+            }
+
+            return true;
+        }
         
+        private static readonly Regex cjkCharRegex = new Regex(@"\p{IsCJKUnifiedIdeographs}");
+        public static bool IsChinese(char c)
+        {
+            return cjkCharRegex.IsMatch(c.ToString());
+        }
+
+        private static bool checkNeededFiles(string ra3Root)
+        {
+            var gameDataDir = Path.Combine(ra3Root, "Data");
+            foreach (var file in oldBigFiles)
+            {
+                var bigPath = Path.Combine(gameDataDir, file);
+                if (!File.Exists(bigPath))
+                {
+                    //TODO 下载big压缩包
+                    MessageBox.Show("还没下载老地编文件，请先下载安装老地编");
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         class CommandArg {
             string rootDir;
             string gameDataDir;

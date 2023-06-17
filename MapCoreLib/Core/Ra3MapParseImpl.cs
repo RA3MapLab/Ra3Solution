@@ -85,6 +85,9 @@ namespace MapCoreLib.Core
                     case Ra3MapConst.ASSET_GlobalLighting:
                         mapStruct.addAsset(new GlobalLighting().fromStream(br, dataContext));
                         break;
+                    // case Ra3MapConst.ASSET_MPPositionList:
+                    //     mapStruct.addAsset(new MPPositionList().fromStream(br, dataContext));
+                    //     break;
                     default:
                         mapStruct.addAsset(new DefaultMajorAsset().fromStream(br, dataContext));
                         break;

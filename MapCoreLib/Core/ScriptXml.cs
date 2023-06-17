@@ -77,7 +77,7 @@ namespace MapCoreLib.Core
             ScriptSpec.initScriptSpec();
             var ra3Map = new Ra3Map(mapPath);
             ra3Map.parse();
-
+            
             string xmlPath = Path.Combine(Path.GetDirectoryName(ra3Map.mapPath),
                 ra3Map.getContext().mapName + ".edit.xml");
             deserializeScript2(ra3Map, xmlPath);
@@ -110,6 +110,14 @@ namespace MapCoreLib.Core
                 XmlNode MapScriptNode = document.SelectSingleNode($"//ra3Ns:{Ra3MapConst.ELEM_NAME_MapScript}", ra3Ns);
                 var playerScriptsList = new PlayerScriptsList();
                 MapXmlUtil.xml2obj(document, MapScriptNode as XmlElement, ra3Map.getContext(), playerScriptsList);
+                
+                // var playerScriptsListOriginal = ra3Map
+                //     .getAsset<PlayerScriptsList>(Ra3MapConst.ASSET_PlayerScriptsList);
+                // for (var i = 0; i < playerScriptsListOriginal.scriptLists.Count; i++)
+                // {
+                //     playerScriptsListOriginal.scriptLists[i] = playerScriptsListOriginal.scriptLists[i];
+                // }
+                //TODO 先不考虑增加玩家的情况
                 ra3Map.replaceMajorAsset(Ra3MapConst.ASSET_PlayerScriptsList, playerScriptsList);
 
                 // ra3Map.save("Test", ra3Map.getContext().mapName);
