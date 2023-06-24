@@ -2,7 +2,11 @@
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using CodeHollow.FeedReader;
+using SharpCompress.Archives;
+using SharpCompress.Archives.Zip;
+using SharpCompress.Common;
 
 namespace Downloader.Core;
 
@@ -14,69 +18,133 @@ public class Updater
     public VersionData VersionData;
     public string LogFolderPath { get; set; }
     public string TempFolderPath { get; set; }
-    // Must be a format string such as "launcher"
-    public string LauncherRemoteParentPath { get; set; }
-    // Must be a format string such as "RA3BattleNet_Setup_{0}.exe"
-    public string LauncherRemoteName { get; set; }
     public string CurrentAppRoot { get; set; }
+    
+    public string GameDataPath { get; set; }
     public Version? ProgramVersion { get; set; }
     
     public Updater(
         string logFolderPath,
         string tempFolderPath,
-        string launcherRemotePath,
-        string launcherRemoteName,
         string currentAppRoot,
+        string gameDataPath,
         Version programVersion)
     {
         LogFolderPath = logFolderPath;
         TempFolderPath = tempFolderPath;
-        LauncherRemoteParentPath = launcherRemotePath;
-        LauncherRemoteName = launcherRemoteName;
         CurrentAppRoot = currentAppRoot;
+        GameDataPath = gameDataPath;
         ProgramVersion = programVersion;
     }
     
-    public async Task UpdateLauncherAsync(IProgress<int?> downloadProgress,
-                                          IProgress<string?> speedProgress,
-                                          CancellationToken cancel)
+    public async Task DownloadBigAsync(IProgress<int?> downloadProgress,
+        IProgress<string?> speedProgress,
+        CancellationToken cancel)
     {
-
-        var launcherFileName = string.Format(LauncherRemoteName, VersionData.LauncherVersion);
-        var rssData = await ReadRSSAsync(FeedUrl,
-                                         "ra3battlenet",
-                                         $"{LauncherRemoteParentPath}/{launcherFileName}",
-                                         downloadProgress,
-                                         speedProgress,
-                                         LogFolderPath,
-                                         TempFolderPath,
-                                         cancel);
-        if (rssData is null)
+        try
         {
-            throw new FileNotFoundException("Failed to retrieve RSS mod data for live content");
-        }
-        var downloadedFile = Path.Combine(TempFolderPath, launcherFileName);
+            var zipFileName = "WorldBuilderBig.zip";
+            speedProgress.Report("downloading config...");
+            var rssData = await ReadRSSAsync(FeedUrl,
+                "RandomMapGenerator",
+                zipFileName,
+                downloadProgress,
+                speedProgress,
+                LogFolderPath,
+                TempFolderPath,
+                cancel);
+            if (rssData is null)
+            {
+                throw new FileNotFoundException("Failed to retrieve RSS mod data for live content");
+            }
 
-        if (File.Exists(downloadedFile))
+            var downloadedFile = Path.Combine(TempFolderPath, zipFileName);
+
+            if (File.Exists(downloadedFile))
+            {
+                File.Delete(downloadedFile);
+            }
+
+            await Aria2BTDownload.DownloadAsync($"{rssData.DirectLink}.torrent",
+                TempFolderPath,
+                zipFileName,
+                downloadProgress,
+                speedProgress,
+                LogFolderPath,
+                cancel);
+
+            await Task.Delay(1500);
+            speedProgress.Report("unzipping...");
+            await Task.Run(new Action(() =>
+            { 
+                UnpackZip(downloadedFile, GameDataPath);
+            }));
+            speedProgress.Report("Done");
+            
+        }
+        catch (Exception e)
         {
-            File.Delete(downloadedFile);
+            _logger.Error(e);
+            MessageBox.Show($"Fail to download WB Big Files: {e.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            throw;
         }
-        await Aria2BTDownload.DownloadAsync($"{rssData.DirectLink}.torrent",
-                                            TempFolderPath,
-                                            launcherFileName,
-                                            downloadProgress,
-                                            speedProgress,
-                                            LogFolderPath,
-                                            cancel);
-
-        UnpackZip(downloadedFile, CurrentAppRoot);
+        
     }
-
+    
     private void UnpackZip(string temporaryZipPath, string targetPath)
     {
-        ZipFile.ExtractToDirectory(temporaryZipPath, targetPath);
-        File.Delete(temporaryZipPath);
+        //unzip temporaryZipPath to targetPath recursively
+        using var archive = ZipArchive.Open(temporaryZipPath);
+        foreach (var entry in archive.Entries)
+        {
+            if (!entry.IsDirectory)
+            {
+                _logger.Info("UnpackZip: entry");
+                entry.WriteToDirectory(targetPath, new ExtractionOptions()
+                {
+                    ExtractFullPath = true,
+                    Overwrite = true
+                });
+            }
+        }
+        //TODO check files and delete temporaryZipPath in WbLauncher
     }
+
+    // public async Task UpdateLauncherAsync(IProgress<int?> downloadProgress,
+    //                                       IProgress<string?> speedProgress,
+    //                                       CancellationToken cancel)
+    // {
+    //
+    //     var launcherFileName = string.Format(LauncherRemoteName, VersionData.LauncherVersion);
+    //     var rssData = await ReadRSSAsync(FeedUrl,
+    //                                      "ra3battlenet",
+    //                                      $"{LauncherRemoteParentPath}/{launcherFileName}",
+    //                                      downloadProgress,
+    //                                      speedProgress,
+    //                                      LogFolderPath,
+    //                                      TempFolderPath,
+    //                                      cancel);
+    //     if (rssData is null)
+    //     {
+    //         throw new FileNotFoundException("Failed to retrieve RSS mod data for live content");
+    //     }
+    //     var downloadedFile = Path.Combine(TempFolderPath, launcherFileName);
+    //
+    //     if (File.Exists(downloadedFile))
+    //     {
+    //         File.Delete(downloadedFile);
+    //     }
+    //     await Aria2BTDownload.DownloadAsync($"{rssData.DirectLink}.torrent",
+    //                                         TempFolderPath,
+    //                                         launcherFileName,
+    //                                         downloadProgress,
+    //                                         speedProgress,
+    //                                         LogFolderPath,
+    //                                         cancel);
+    //
+    //     UnpackZip(downloadedFile, CurrentAppRoot);
+    // }
+    
 
     public static async Task<RssData?> ReadRSSAsync(string feedUrl,
         string id,

@@ -36,6 +36,7 @@ public sealed class Aria2BTDownload : Aria2DownloadBase
     {
         var torrentFileName = Path.GetFileName(new Uri(link).AbsolutePath);
         _logger.Info("torrent file download begin");
+        speedProgress.Report("Downloading torrent...");
         await DoDownloadAsync(link,
                               outputDirectory,
                               torrentFileName,
@@ -71,7 +72,7 @@ public sealed class Aria2BTDownload : Aria2DownloadBase
                                               bool followTorrent,
                                               CancellationToken cancel)
     {
-        var toolPath = Path.Combine("aria2c.exe");
+        var toolPath = Path.Combine(Directory.GetCurrentDirectory(), "aria2c.exe");
         using var process = new Aria2BTDownload(toolPath,
                                                 link,
                                                 outputDirectory,
@@ -82,6 +83,7 @@ public sealed class Aria2BTDownload : Aria2DownloadBase
                                                 followTorrent);
         _logger.Info($"Launching Aria2 Process (follow torrent: {followTorrent}) for BT download...");
         await process.ExecuteProcessParseProcessOutput(cancel);
+        downloadProgress.Report(100);
         _logger.Info("Download complete!");
     }
 

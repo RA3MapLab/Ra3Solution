@@ -41,7 +41,7 @@ namespace MapCoreLib.Core
         {
             mapStruct.addAsset(AssetList.newInstance(context));
             mapStruct.addAsset(GlobalVersion.newInstance(context));
-            mapStruct.addAsset(HeightMapData.newInstance(context, newMapConfig.width, newMapConfig.height));
+            mapStruct.addAsset(HeightMapData.newInstance(context, newMapConfig));
             mapStruct.addAsset(BlendTileData.newInstance(context, newMapConfig));
             mapStruct.addAsset(WorldInfo.newInstance(context, newMapConfig));
             mapStruct.addAsset(MPPositionList.newInstance(context));

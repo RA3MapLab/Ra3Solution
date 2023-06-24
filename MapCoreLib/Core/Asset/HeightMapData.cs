@@ -79,17 +79,17 @@ namespace MapCoreLib.Core.Asset
             return 6;
         }
 
-        public static HeightMapData newInstance(MapDataContext context, int width, int height)
+        public static HeightMapData newInstance(MapDataContext context, NewMapConfig config)
         {
             var heightMapData = new HeightMapData();
             heightMapData.name = Ra3MapConst.ASSET_HeightMapData;
             heightMapData.id = context.MapStruct.RegisterString(heightMapData.name);
             heightMapData.version = heightMapData.getVersion();
-            context.mapWidth = heightMapData.mapWidth = width + 2 * 50;
-            context.mapHeight = heightMapData.mapHeight = height + 2 * 50;
-            context.border = heightMapData.borderWidth = 50;
-            heightMapData.playableHeight = height;
-            heightMapData.playableWidth = width;
+            context.mapWidth = heightMapData.mapWidth = config.width + 2 * config.border;
+            context.mapHeight = heightMapData.mapHeight = config.height + 2 * config.border;
+            context.border = heightMapData.borderWidth = config.border;
+            heightMapData.playableHeight = config.height;
+            heightMapData.playableWidth = config.width;
             heightMapData.area = heightMapData.mapWidth * heightMapData.mapHeight;
             heightMapData.elevations = new float[heightMapData.mapWidth, heightMapData.mapHeight];
             for (int y = 0; y < heightMapData.mapHeight; y++)
@@ -100,7 +100,7 @@ namespace MapCoreLib.Core.Asset
                 }
             }
             heightMapData.borders.Add(HeightMapBorder.newInstance(0, 0, 
-                width, height));
+                config.width, config.height));
             return heightMapData;
         }
     }

@@ -20,6 +20,8 @@ namespace WbLauncher
     {
         // private static string ra3root = "";
         private static string modConfigPath = "";
+        private static string language = "en";
+
         private static List<string> oldBigFiles = new List<string>()
         {
             "WBData_12.big",
@@ -52,16 +54,22 @@ namespace WbLauncher
                             MessageBox.Show("这不是一个正确的路径！");
                             return;
                         }
+                    } 
+                    else
+                    {
+                        return;
                     }
                 }
             }
+
             File.WriteAllText(configPath, ra3root);
             var environmentVariable = Environment.GetEnvironmentVariable("RA3_NEW_WB_DIR");
             if (string.IsNullOrEmpty(environmentVariable) || Directory.GetCurrentDirectory() != environmentVariable)
             {
-                Environment.SetEnvironmentVariable("RA3_NEW_WB_DIR", Directory.GetCurrentDirectory(), EnvironmentVariableTarget.User);
+                Environment.SetEnvironmentVariable("RA3_NEW_WB_DIR", Directory.GetCurrentDirectory(),
+                    EnvironmentVariableTarget.User);
             }
-            
+
             if (!checkPath(ra3root))
             {
                 return;
@@ -71,16 +79,23 @@ namespace WbLauncher
             {
                 return;
             }
-            
-            //TODO 检测是否已经启动了地编
-            
-            var needWaitEvent =false;
+
+
+            var needWaitEvent = false;
             if (args.Length > 0)
             {
                 needWaitEvent = args[0] == "-needwaitevent";
             }
+
             if (needWaitEvent)
             {
+                //TODO 日冕启动的选择语言
+                var normalStartupDialog = new NormalStartupDialog((modconfig, lan) =>
+                {
+                    modConfigPath = modconfig;
+                    language = lan;
+                }, true);
+                normalStartupDialog.ShowDialog();
                 var loading = new LoadingDialog("等待初始化中");
                 loading.Load += (object sender, EventArgs e) =>
                 {
@@ -95,6 +110,7 @@ namespace WbLauncher
                         {
                             MessageBox.Show(ex.Message);
                         }
+
                         loading.Invoke(new Action(() =>
                         {
                             // 用于停止下面的 Application.Run
@@ -120,15 +136,19 @@ namespace WbLauncher
             }
             else
             {
-                var selectModDialog = new SelectModDialog(path => { modConfigPath = path; });
-                var dialogResult = selectModDialog.ShowDialog();
+                var normalStartupDialog = new NormalStartupDialog((modconfig, lan) =>
+                {
+                    modConfigPath = modconfig;
+                    language = lan;
+                });
+                var dialogResult = normalStartupDialog.ShowDialog();
                 if (dialogResult != DialogResult.OK)
                 {
                     return;
                 }
+
                 launcherWb(Path.Combine(ra3root, "Data"));
             }
-
         }
 
         private static bool checkPath(string ra3Root)
@@ -138,6 +158,7 @@ namespace WbLauncher
                 MessageBox.Show($"游戏根目录包含中文，请修改 {ra3Root}");
                 return false;
             }
+
             if (Directory.GetCurrentDirectory().Any(z => IsChinese(z)))
             {
                 MessageBox.Show($"新地编根目录包含中文，请修改 {Directory.GetCurrentDirectory()}");
@@ -146,8 +167,9 @@ namespace WbLauncher
 
             return true;
         }
-        
+
         private static readonly Regex cjkCharRegex = new Regex(@"\p{IsCJKUnifiedIdeographs}");
+
         public static bool IsChinese(char c)
         {
             return cjkCharRegex.IsMatch(c.ToString());
@@ -156,46 +178,90 @@ namespace WbLauncher
         private static bool checkNeededFiles(string ra3Root)
         {
             var gameDataDir = Path.Combine(ra3Root, "Data");
+            bool hasAllFiles = true;
             foreach (var file in oldBigFiles)
             {
                 var bigPath = Path.Combine(gameDataDir, file);
                 if (!File.Exists(bigPath))
                 {
-                    //TODO 下载big压缩包
-                    MessageBox.Show("还没下载老地编文件，请先下载安装老地编");
-                    return false;
+                    hasAllFiles = false;
+                    break;
                 }
             }
 
-            return true;
+            if (hasAllFiles)
+            {
+                return true;
+            }
+            else
+            {
+                return downloadBigFiles(ra3Root);
+            }
         }
 
-        class CommandArg {
+        private static bool downloadBigFiles(string ra3Root)
+        {
+            //use Downloader.exe in tool directory to download and wait for it and get process exit code
+            var currentDirectory = Directory.GetCurrentDirectory();
+            var processStartInfo = new ProcessStartInfo()
+            {
+                FileName = Path.Combine(currentDirectory, "tool", "Downloader.exe"),
+                WorkingDirectory = Path.Combine(currentDirectory, "tool"),
+                CreateNoWindow = true,
+                UseShellExecute = false
+            };
+            var process = Process.Start(processStartInfo);
+            process.WaitForExit();
+            if (process.ExitCode == 0)
+            {
+                //check if all big files are downloaded
+                var gameDataDir = Path.Combine(ra3Root, "Data");
+                foreach (var file in oldBigFiles)
+                {
+                    var bigPath = Path.Combine(gameDataDir, file);
+                    if (!File.Exists(bigPath))
+                    {
+                        MessageBox.Show($"下载或解压big压缩包失败，请重试");
+                        return false;
+                    }
+                }
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        class CommandArg
+        {
             string rootDir;
             string gameDataDir;
         };
+
         private static void launcherWb(string ra3Root)
         {
             // var gameDataPath = Registry.GetGameDataPath();
             var gameDataPath = ra3Root;
             var currentDirectory = Directory.GetCurrentDirectory();
-            
+
             string pathvar = System.Environment.GetEnvironmentVariable("PATH");
             var newEnvPath = pathvar + $";{Path.Combine(currentDirectory, "bin")};";
-            
+
 
             var processStartInfo = new ProcessStartInfo()
             {
                 FileName = Path.Combine(currentDirectory, "bin", "WorldBuilder_Mod_1.12.exe"),
                 WorkingDirectory = gameDataPath,
-                Arguments = $@"--rootDir=""{currentDirectory}"" --gameDataPath=""{ra3Root}"" --modConfig=""{modConfigPath.Trim()}""",
+                Arguments =
+                    $@"--lan=""{language}"" --rootDir=""{currentDirectory}"" --gameDataPath=""{ra3Root}"" --modConfig=""{modConfigPath.Trim()}""",
                 UseShellExecute = false
             };
             // Environment.SetEnvironmentVariable("PATH", newEnvPath, EnvironmentVariableTarget.Process);
             processStartInfo.EnvironmentVariables["PATH"] = newEnvPath;
             Process.Start(processStartInfo);
         }
-        
+
         public static bool IsAdministrator()
         {
             var identity = WindowsIdentity.GetCurrent();
@@ -209,33 +275,38 @@ namespace WbLauncher
             {
                 StartInfo =
                 {
-                    FileName = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName, 
-                    UseShellExecute = true, 
+                    FileName = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName,
+                    UseShellExecute = true,
                     Verb = "runas"
                 }
             };
 
             proc.Start();
         }
-        
+
         private static bool WaitEvent()
         {
             var security = new EventWaitHandleSecurity();
             // 为了尽可能的避免权限问题，这个事件被设为任何人都有设置的权限
             var everyone = new SecurityIdentifier(WellKnownSidType.WorldSid, null);
-            var rule = new EventWaitHandleAccessRule(everyone, EventWaitHandleRights.FullControl, AccessControlType.Allow);
+            var rule = new EventWaitHandleAccessRule(everyone, EventWaitHandleRights.FullControl,
+                AccessControlType.Allow);
             security.AddAccessRule(rule);
             // var notificationEvent = EventWaitHandleAcl.Create(false, EventResetMode.AutoReset, eventName, out _, security);
-            if (!EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_start", EventWaitHandleRights.Modify, out var startWaitEvent))
+            if (!EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_start", EventWaitHandleRights.Modify,
+                    out var startWaitEvent))
             {
                 return false;
             }
+
             using (startWaitEvent)
             {
-                if (!EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_complete", EventWaitHandleRights.Synchronize, out var notificationEvent))
+                if (!EventWaitHandle.TryOpenExisting("ra3_wu_wb_wait_complete", EventWaitHandleRights.Synchronize,
+                        out var notificationEvent))
                 {
                     return false;
                 }
+
                 using (notificationEvent)
                 {
                     startWaitEvent.Set();

@@ -414,8 +414,8 @@ namespace MapCoreLib.Core.Asset
             blendTileData.name = Ra3MapConst.ASSET_BlendTileData;
             blendTileData.id = context.MapStruct.RegisterString(blendTileData.name);
             blendTileData.version = blendTileData.getVersion();
-            blendTileData.mapWidth = config.width + 2 * 50;
-            blendTileData.mapHeight = config.height + 2 * 50;
+            blendTileData.mapWidth = config.width + 2 * config.border;
+            blendTileData.mapHeight = config.height + 2 * config.border;
             blendTileData.area = blendTileData.mapWidth * blendTileData.mapHeight;
             blendTileData.textureCellCount = 0;  //TODO 这里不太确定
             var texture = Texture.newInstance(blendTileData.textureCellCount, config.defaultTexture);

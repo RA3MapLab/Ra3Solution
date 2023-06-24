@@ -120,6 +120,7 @@
     <Compile Include="Core\ScriptXml.cs" />
     <Compile Include="Core\Util\EditorHelper.cs" />
     <Compile Include="Core\Util\FashHash.cs" />
+    <Compile Include="Core\Util\FNVHash.cs" />
     <Compile Include="Core\Util\IOUtility.cs" />
     <Compile Include="Core\Util\MapAssetExtension.cs" />
     <Compile Include="Core\Util\MapXmlUtil.Schema.cs" />

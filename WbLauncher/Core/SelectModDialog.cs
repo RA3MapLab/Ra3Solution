@@ -83,5 +83,33 @@ namespace WbLauncher.Core
             public string skudefPath;
             public string label;
         }
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 12;
+            this.listBox1.Location = new System.Drawing.Point(-1, 79);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(296, 364);
+            this.listBox1.TabIndex = 0;
+            // 
+            // SelectModDialog
+            // 
+            this.ClientSize = new System.Drawing.Size(294, 443);
+            this.Controls.Add(this.listBox1);
+            this.Name = "SelectModDialog";
+            this.ResumeLayout(false);
+        }
+
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

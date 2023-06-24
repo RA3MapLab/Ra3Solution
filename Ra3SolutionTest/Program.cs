@@ -8,6 +8,7 @@ using MapCoreLib.Core.NewMap;
 using MapCoreLib.Core.Util;
 using MapCoreLib.Util;
 using NewMapParser.Core;
+using Newtonsoft.Json;
 using RMGlib.Core.Utility;
 
 namespace NewMapParser
@@ -67,7 +68,21 @@ namespace NewMapParser
             //     }
             // }).save(PathUtil.RA3MapFolder, "CreateMap");
             
-            MiniMap.genMiniMap("City_Chaos_2.0", 0, false);
+            // MiniMap.genMiniMap("City_Chaos_2.0", 0, false);
+            
+            
+            // var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\MAP\\MAP.map");
+            // ra3Map.parse();
+            // var sidesList = ra3Map.getAsset<SidesList>(Ra3MapConst.ASSET_SidesList);
+            // sidesList.players[12].assetPropertyCollection.setProperty("aiPersonality", "AIPersonalityDefinition:1JapanBalanced");
+            // ra3Map.save(Path.Combine(Directory.GetCurrentDirectory(), "test"), "MAP");
+            // var a = 2;
+            foreach (var file in Directory.EnumerateFiles(
+                         @"D:\file\yule\RA3_MODSDK-X_1.3\source\GenEvo_WB_Expansion\WBfiles\ColorCorrection",
+                         "*.tga"))
+            {
+                Console.WriteLine(Path.GetFileNameWithoutExtension(file));
+            }
         }
 
         private static void printTrans()

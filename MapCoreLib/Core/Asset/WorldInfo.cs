@@ -245,7 +245,7 @@ namespace MapCoreLib.Core.Asset
             worldInfo.properties.addProperty("cameraGroundMinHeight", 0f, context);
             worldInfo.properties.addProperty("cameraGroundMaxHeight", 2500f, context);
             worldInfo.properties.addProperty("cameraMinHeight", 40f, context);
-            worldInfo.properties.addProperty("cameraMaxHeight", 800f, context);
+            worldInfo.properties.addProperty("cameraMaxHeight", 550f, context);
             worldInfo.properties.addProperty("isScenarioMultiplayer", false, context);
             return worldInfo;
         }

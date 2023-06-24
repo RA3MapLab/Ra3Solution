@@ -34,7 +34,7 @@ public class Aria2Download : Aria2DownloadBase
                                            string logFolderPath,
                                            CancellationToken cancel)
     {
-        var toolPath = Path.Combine("aria2c.exe");
+        var toolPath = Path.Combine(Directory.GetCurrentDirectory(), "aria2c.exe");
         using var process = new Aria2Download(toolPath,
                                               link,
                                               outputDirectory,

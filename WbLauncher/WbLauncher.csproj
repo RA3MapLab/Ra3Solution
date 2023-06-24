@@ -44,7 +44,14 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Core\Config.cs" />
+        <Compile Include="Core\LauncherConfig.cs" />
         <Compile Include="Core\LoadingDialog.cs" />
+        <Compile Include="Core\NormalStartupDialog.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Core\NormalStartupDialog.Designer.cs">
+          <DependentUpon>NormalStartupDialog.cs</DependentUpon>
+        </Compile>
         <Compile Include="Core\Registry.cs" />
         <Compile Include="Core\SelectModDialog.cs" />
         <Compile Include="Program.cs" />
@@ -52,6 +59,14 @@
     </ItemGroup>
     <ItemGroup>
       <Content Include="app.manifest" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="Core\NormalStartupDialog.resx">
+        <DependentUpon>NormalStartupDialog.cs</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Core\SelectModDialog.resx">
+        <DependentUpon>SelectModDialog.cs</DependentUpon>
+      </EmbeddedResource>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

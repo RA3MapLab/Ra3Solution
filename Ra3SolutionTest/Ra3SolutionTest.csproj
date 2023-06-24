@@ -49,6 +49,7 @@
         <Compile Include="Core\CollectObjNames.cs" />
         <Compile Include="Core\FileItem.cs" />
         <Compile Include="Core\GenerateObjNames.cs" />
+        <Compile Include="Core\GenFrames.cs" />
         <Compile Include="Core\GenScriptConfig.cs" />
         <Compile Include="Core\GenScriptsMd.cs" />
         <Compile Include="Core\GetObjectCatogory.cs" />
