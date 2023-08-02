@@ -444,6 +444,20 @@ namespace MapCoreLib.Core.Asset
             blendTileData.blendsCount = 0;
             blendTileData.cliffBlendsCount = 0;
             return blendTileData;
+            
+            // void *unk60;
+            // void *unk61;
+            // void *unk62;
+            // void *unk63;
+            // void *unk64;
+            // void *unk65;
+            // void *unk66;
+            // void *unk67;
+            // void *unk68;
+            // void *unk69;
+
+
+
         }
     }
 }

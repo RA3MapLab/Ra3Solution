@@ -105,11 +105,17 @@ namespace WbLauncher.Core
 
         private List<ModInfo> getMods()
         {
+            var ModsDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                "Red Alert 3",
+                "Mods"
+            );
+            if (!Directory.Exists(ModsDir))
+            {
+                //如果mods文件夹不存在，创建mods文件夹
+                Directory.CreateDirectory(ModsDir);
+            }
             var mods =  Directory.EnumerateFiles(
-                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
-                        "Red Alert 3",
-                        "Mods"
-                    ), "*.skudef", SearchOption.AllDirectories)
+                    ModsDir, "*.skudef", SearchOption.AllDirectories)
                 .Select(path =>
                 {
                     return new ModInfo()

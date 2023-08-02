@@ -70,6 +70,11 @@ namespace WbLauncher
                     EnvironmentVariableTarget.User);
             }
 
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("RA3_Root_Dir")))
+            {
+                Environment.SetEnvironmentVariable("RA3_Root_Dir", ra3root, EnvironmentVariableTarget.User);
+            }
+
             if (!checkPath(ra3root))
             {
                 return;

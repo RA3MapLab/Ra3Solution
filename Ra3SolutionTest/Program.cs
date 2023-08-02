@@ -39,19 +39,20 @@ namespace NewMapParser
             // ImageToXyz.Run();
             // GenerateObjNames.Run();
 
-            // var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\CreateMap\\CreateMap.map");
-            // ra3Map.parse();
+            var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\NewMap11\\NewMap11.map");
+            ra3Map.parse();
+            var a = 2;
             // var majorAssets = ra3Map.getContext().MapStruct.getAssets();
             // var heightmapData = majorAssets[2] as DefaultMajorAsset;
             // var blendTitleData = majorAssets[3] as DefaultMajorAsset;
             // File.WriteAllBytes("heightmapData_2.bin", heightmapData.data);
             // File.WriteAllBytes("blendTitleData_2.bin", blendTitleData.data);
             // var a = 2;
-            
+
             // ScriptXml.serialize(PathUtil.defaultMapPath("[MRZYQH"));
             // ScriptXml.deserialize(PathUtil.defaultMapPath("[MRZYQH"));
             // MsPinYinHelper.Run();
-            
+
             // var mapPath = PathUtil.defaultMapPath("CreateMap");
             // Ra3Map.newMap(mapPath, new NewMapConfig()
             // {
@@ -67,22 +68,24 @@ namespace NewMapParser
             //         
             //     }
             // }).save(PathUtil.RA3MapFolder, "CreateMap");
-            
-            // MiniMap.genMiniMap("City_Chaos_2.0", 0, false);
-            
-            
+
+            // MiniMap.genMiniMap("The_Battle_of_New_York", 0, false);
+
+
             // var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\MAP\\MAP.map");
             // ra3Map.parse();
             // var sidesList = ra3Map.getAsset<SidesList>(Ra3MapConst.ASSET_SidesList);
             // sidesList.players[12].assetPropertyCollection.setProperty("aiPersonality", "AIPersonalityDefinition:1JapanBalanced");
             // ra3Map.save(Path.Combine(Directory.GetCurrentDirectory(), "test"), "MAP");
             // var a = 2;
-            foreach (var file in Directory.EnumerateFiles(
-                         @"D:\file\yule\RA3_MODSDK-X_1.3\source\GenEvo_WB_Expansion\WBfiles\ColorCorrection",
-                         "*.tga"))
-            {
-                Console.WriteLine(Path.GetFileNameWithoutExtension(file));
-            }
+            // foreach (var file in Directory.EnumerateFiles(
+            //              @"D:\file\yule\RA3_MODSDK-X_1.3\source\GenEvo_WB_Expansion\WBfiles\ColorCorrection",
+            //              "*.tga"))
+            // {
+            //     Console.WriteLine(Path.GetFileNameWithoutExtension(file));
+            // }
+
+            // ExtractAllScriptActions.Run();
         }
 
         private static void printTrans()
