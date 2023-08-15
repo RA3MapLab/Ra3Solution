@@ -29,6 +29,8 @@ namespace WbLauncher
             "WBStatic_12.big",
             "WBStringHashes_12.big"
         };
+        
+        //TODO 下载TerrainFix
 
         [STAThread]
         public static void Main(string[] args)
@@ -36,6 +38,16 @@ namespace WbLauncher
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
             var configPath = Path.Combine(Directory.GetCurrentDirectory(), "data", "config", "_config");
             var ra3root = File.ReadAllText(configPath);
+            if (string.IsNullOrEmpty(ra3root))
+            {
+                //看看环境变量有没有
+                var ra3EnvDir = Environment.GetEnvironmentVariable("RA3_Root_Dir");
+                //存在路径，且路径有效
+                if (!string.IsNullOrEmpty(ra3EnvDir) && Registry.IsGamePathValid(ra3root))
+                {
+                    ra3root = ra3EnvDir;
+                }
+            }
             if (string.IsNullOrEmpty(ra3root) || !Registry.IsGamePathValid(Path.Combine(ra3root)))
             {
                 using (var openFileDialog = new OpenFileDialog())
@@ -84,8 +96,18 @@ namespace WbLauncher
             {
                 return;
             }
-
-
+            
+            checkOptionFiles(ra3root);
+            
+            bool isRunning = Process.GetProcessesByName("WorldBuilder_Mod_1.12")
+                .FirstOrDefault(p => p.MainModule.FileName.StartsWith(Path.Combine(Directory.GetCurrentDirectory(), "bin"), StringComparison.InvariantCultureIgnoreCase)) != default(Process);
+            if (isRunning)
+            {
+                MessageBox.Show("新地编正在运行中，如果你没看到新地编窗口，请去任务管理器中结束掉 WorldBuilder_Mod_1.12 进程\n如果你想多开新地编，请手动复制一份新地编到其他目录然后打开",
+                    "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            
             var needWaitEvent = false;
             if (args.Length > 0)
             {
@@ -156,6 +178,25 @@ namespace WbLauncher
             }
         }
 
+        private static void checkOptionFiles(string ra3Root)
+        {
+            var gameDataDir = Path.Combine(ra3Root, "Data");
+            if (!File.Exists(Path.Combine(gameDataDir, "TerrainFix.big")))
+            {
+                var currentDirectory = Directory.GetCurrentDirectory();
+                var processStartInfo = new ProcessStartInfo()
+                {
+                    FileName = Path.Combine(currentDirectory, "tool", "Downloader.exe"),
+                    WorkingDirectory = Path.Combine(currentDirectory, "tool"),
+                    Arguments = "--type=1",
+                    CreateNoWindow = true,
+                    UseShellExecute = false
+                };
+                var process = Process.Start(processStartInfo);
+                process.WaitForExit();
+            }
+        }
+
         private static bool checkPath(string ra3Root)
         {
             if (ra3Root.Any(z => IsChinese(z)))
@@ -183,18 +224,18 @@ namespace WbLauncher
         private static bool checkNeededFiles(string ra3Root)
         {
             var gameDataDir = Path.Combine(ra3Root, "Data");
-            bool hasAllFiles = true;
+            bool hasAllWbBigFiles = true;
             foreach (var file in oldBigFiles)
             {
                 var bigPath = Path.Combine(gameDataDir, file);
                 if (!File.Exists(bigPath))
                 {
-                    hasAllFiles = false;
+                    hasAllWbBigFiles = false;
                     break;
                 }
             }
 
-            if (hasAllFiles)
+            if (hasAllWbBigFiles)
             {
                 return true;
             }
@@ -212,6 +253,7 @@ namespace WbLauncher
             {
                 FileName = Path.Combine(currentDirectory, "tool", "Downloader.exe"),
                 WorkingDirectory = Path.Combine(currentDirectory, "tool"),
+                Arguments = "--type=0",
                 CreateNoWindow = true,
                 UseShellExecute = false
             };

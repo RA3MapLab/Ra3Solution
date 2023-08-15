@@ -49,5 +49,11 @@ namespace MapCoreLib.Core.Util
             // string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             return Path.Combine(WorkingDir, "data", "scripts", scriptName);
         }
+
+        public static string CorrespondScriptXmlPath(string mapPath)
+        {
+            var mapName = Path.GetFileNameWithoutExtension(mapPath);
+            return Path.Combine(Path.GetDirectoryName(mapPath), mapName + ".edit.xml");
+        }
     }
 }

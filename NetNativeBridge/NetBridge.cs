@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using MapCoreLib.Core;
@@ -16,13 +18,13 @@ namespace NetNativeBridge
     {
         //TODO 4.7.2
         [DllExport]
-        public static IntPtr ExportXmlScript(IntPtr mpName)
+        public static IntPtr ExportXmlScript(IntPtr mpPath)
         {
-            string mapName = (string)(CharPtr)mpName;
-            LogUtil.log($"ExportXmlScript {mapName}");
-            if (!CheckMapExist(mapName))
+            string mapPath = (string)(CharPtr)mpPath;
+            LogUtil.log($"ExportXmlScript {mapPath}");
+            if (!File.Exists(mapPath))
             {
-                var msg = $"map {mapName} not found";
+                var msg = $"map {mapPath} not found";
                 LogUtil.log(msg);
 
                 return CppStr(Result.defaultErrorJson(msg));
@@ -30,8 +32,8 @@ namespace NetNativeBridge
 
             try
             {
-                ScriptXml.serialize(PathUtil.defaultMapPath(mapName));
-                EditorHelper.openEditor4XmlScript(mapName);
+                ScriptXml.serialize(mapPath);
+                EditorHelper.openEditor4XmlScript(mapPath);
             }
             catch (Exception e)
             {
@@ -41,17 +43,17 @@ namespace NetNativeBridge
             }
 
             return CppStr(Result.successJson());
-            ;
+            
         }
 
         [DllExport]
-        public static IntPtr ImportXmlScript(IntPtr mpName)
+        public static IntPtr ImportXmlScript(IntPtr mpPath)
         {
-            string mapName = (string)(CharPtr)mpName;
-            LogUtil.log($"ImportXmlScript {mapName}");
-            if (!CheckMapExist(mapName))
+            string mapPath = (string)(CharPtr)mpPath;
+            LogUtil.log($"ImportXmlScript {mapPath}");
+            if (!File.Exists(mapPath))
             {
-                var msg = $"map {mapName} not found";
+                var msg = $"map {mapPath} not found";
                 LogUtil.log(msg);
                 return CppStr(Result.defaultErrorJson(msg));
             }
@@ -59,7 +61,7 @@ namespace NetNativeBridge
             try
             {
                 // throw new Exception("测试中文");
-                ScriptXml.deserialize(PathUtil.defaultMapPath(mapName));
+                ScriptXml.deserialize(mapPath);
             }
             catch (Exception e)
             {
@@ -80,6 +82,10 @@ namespace NetNativeBridge
             {
                 var newMapConfig = JsonConvert.DeserializeObject<NewMapConfig>(newMapConfigStr);
                 var mapDir = Path.GetDirectoryName(newMapConfig.mapPath);
+                if (Path.GetFileName(mapDir).Any(z => Util.IsChinese(z)))
+                {
+                    throw new Exception("地图名字不能包含中文");
+                }
                 if (Directory.Exists(mapDir))
                 {
                     Directory.Delete(mapDir, true);
@@ -105,21 +111,21 @@ namespace NetNativeBridge
         }
 
         [DllExport]
-        public static IntPtr executeCodeScript(IntPtr mpName, IntPtr scriptNamePtr)
+        public static IntPtr executeCodeScript(IntPtr mpPath, IntPtr scriptNamePtr)
         {
-            string mapName = (string)(CharPtr)mpName;
+            string mapPath = (string)(CharPtr)mpPath;
             string scriptName = (string)(CharPtr)scriptNamePtr;
-            LogUtil.log($"executeCodeScript {mapName} {scriptName}");
-            if (!CheckMapExist(mapName))
+            LogUtil.log($"executeCodeScript {mapPath} {scriptName}");
+            if (!File.Exists(mapPath))
             {
-                var msg = $"map {mapName} not found";
+                var msg = $"map {mapPath} not found";
                 LogUtil.log("exeScript", msg);
                 return CppStr(Result.defaultErrorJson(msg));
             }
 
             try
             {
-                ScriptHandler.runScript(mapName, scriptName);
+                ScriptHandler.runScript(mapPath, scriptName);
             }
             catch (Exception e)
             {
@@ -157,6 +163,20 @@ namespace NetNativeBridge
 
             return CppStr(Result.successJson());
         }
+        
+        [DllExport]
+        public static IntPtr test2(IntPtr mpPath)
+        {
+            
+            string mapPath = (string)(CharPtr)mpPath;
+            // LogUtil.log("test2");
+            if (!File.Exists(mapPath))
+            {
+                var msg = $"map {mapPath} not found";
+                return CppStr(Result.defaultErrorJson(msg));
+            }
+            return CppStr("test2");
+        }
 
         [DllExport]
         public static void init(IntPtr ptr)
@@ -164,9 +184,9 @@ namespace NetNativeBridge
             string workingDir = (string)(CharPtr)ptr;
             PathUtil.WorkingDir = workingDir;
             LogUtil.init(workingDir);
-            LogUtil.log("init");
+            LogUtil.log("inited");
         }
-        
+
         //TODO 释放字符串函数
         [DllExport]
         public static void releaseCppString(IntPtr ptr)
@@ -330,6 +350,78 @@ namespace NetNativeBridge
             }
 
             return null;
+        }
+        
+        
+        [DllExport]
+        public static IntPtr GetMapInfo(IntPtr mpPath)
+        {
+            string mapPath = (string)(CharPtr)mpPath;
+            LogUtil.log($"GetMapInfo {mapPath}");
+            if (!File.Exists(mapPath))
+            {
+                var msg = $"map {mapPath} not found";
+                LogUtil.log(msg);
+
+                return CppStr(Result.defaultErrorJson(msg));
+            }
+
+            List<Position> startPos = new List<Position>();
+            bool valid = true;
+            int mapWidth = 0;
+            int mapHeight = 0;
+            int startCount = 0;
+            try
+            {
+                var ra3Map = new Ra3Map(mapPath);
+                ra3Map.parse();
+                startPos = MapInfoHelper.getStartPos(ra3Map);
+                //需要获取的是不包括边界的地图大小
+                mapWidth = ra3Map.getContext().mapWidth - 2 * ra3Map.getContext().border;
+                mapHeight = ra3Map.getContext().mapHeight - 2 * ra3Map.getContext().border;
+                
+                valid = true;
+                int i = 0;
+                for (; i < 6; i++)
+                {
+                    if (startPos[i].x != Int32.MinValue && startPos[i].y != Int32.MinValue)
+                    {
+                        startCount++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                
+                if (startCount <= 1)
+                {
+                    //出生点少于2个，不合法
+                    valid = false;
+                }
+                
+                // return CppStr(Result.successJson(JsonConvert.SerializeObject(startPos)));
+            }
+            catch (Exception e)
+            {
+                var msg = $"{e.Message}";
+                LogUtil.log(msg);
+                return CppStr(Result.defaultErrorJson(msg));
+            }
+
+            var mapInfo = new MapInfo()
+            {
+                mapWidth = mapWidth,
+                mapHeight = mapHeight,
+                StartPos = startPos,
+                Valid = valid,
+                maxPlayerCount = startCount
+            };
+            var resMsg = JsonConvert.SerializeObject(mapInfo);
+            LogUtil.log("resMsg: " + resMsg);
+            return CppStr(Result.successJson(resMsg));
+
+
         }
         
         private static IntPtr CppStr(string str)

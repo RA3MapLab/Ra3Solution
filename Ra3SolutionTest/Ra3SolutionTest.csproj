@@ -47,6 +47,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Core\CollectObjNames.cs" />
+        <Compile Include="Core\CsfMerger.cs" />
         <Compile Include="Core\ExtractAllScriptActions.cs" />
         <Compile Include="Core\FileItem.cs" />
         <Compile Include="Core\GenerateObjNames.cs" />
@@ -67,6 +68,10 @@
       <ProjectReference Include="..\MapCoreLib\MapCoreLib.csproj">
         <Project>{4f2ce623-5aa2-46bd-9a78-5eb1522c09b3}</Project>
         <Name>MapCoreLib</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Ra3ModBuilder\Ra3ModBuilder.csproj">
+        <Project>{d3cacee7-c9e5-4c7d-85c7-ad0593793074}</Project>
+        <Name>Ra3ModBuilder</Name>
       </ProjectReference>
     </ItemGroup>
     <ItemGroup>

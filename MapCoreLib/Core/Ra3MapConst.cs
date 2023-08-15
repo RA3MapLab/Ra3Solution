@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 
 namespace MapCoreLib.Core
@@ -65,5 +66,15 @@ namespace MapCoreLib.Core
         public const string ATTR_ActiveIn_Hard = "ActiveInHard";
         public const string ELEMENT_OR_CONDITION = "OrCondition";
         public const string ELEM_NAME_MapScript = "MapScript";
+
+        public static List<string> startPos = new List<string>()
+        {
+            "Player_1_Start",
+            "Player_2_Start",
+            "Player_3_Start",
+            "Player_4_Start",
+            "Player_5_Start",
+            "Player_6_Start",
+        };
     }
 }

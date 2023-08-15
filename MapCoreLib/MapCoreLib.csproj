@@ -110,6 +110,7 @@
     <Compile Include="Core\Scripts\ScriptFile\CircleTerrain.cs" />
     <Compile Include="Core\Scripts\ScriptFile\CoronaPostEffect.cs" />
     <Compile Include="Core\Scripts\ScriptFile\ImportXYZ.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\P2AsGiles.cs" />
     <Compile Include="Core\Scripts\ScriptFile\RandomAddTrees.cs" />
     <Compile Include="Core\Scripts\ScriptFile\OnlyInfantry.cs" />
     <Compile Include="Core\Scripts\ScriptFile\TerrainLevelUp.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Core\Util\IOUtility.cs" />
     <Compile Include="Core\Util\MapAssetExtension.cs" />
     <Compile Include="Core\Util\MapCompiler.cs" />
+    <Compile Include="Core\Util\MapInfoHelper.cs" />
     <Compile Include="Core\Util\MapXmlUtil.Schema.cs" />
     <Compile Include="Core\Util\MapXmlUtil.ToObj.cs" />
     <Compile Include="Core\Util\MapXmlUtil.ToXml.cs" />

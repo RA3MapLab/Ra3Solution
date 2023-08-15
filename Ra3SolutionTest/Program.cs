@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -39,9 +39,10 @@ namespace NewMapParser
             // ImageToXyz.Run();
             // GenerateObjNames.Run();
 
-            var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\NewMap11\\NewMap11.map");
-            ra3Map.parse();
-            var a = 2;
+            // var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\[COR]a_little_field_corona_2.04_MH\\[COR]a_little_field_corona_2.04_MH.map");
+            // // var ra3Map = new Ra3Map(Path.Combine(Directory.GetCurrentDirectory(), "dump.dat"));
+            // ra3Map.parse();
+            // var a = 2;
             // var majorAssets = ra3Map.getContext().MapStruct.getAssets();
             // var heightmapData = majorAssets[2] as DefaultMajorAsset;
             // var blendTitleData = majorAssets[3] as DefaultMajorAsset;
@@ -72,12 +73,12 @@ namespace NewMapParser
             // MiniMap.genMiniMap("The_Battle_of_New_York", 0, false);
 
 
-            // var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\MAP\\MAP.map");
-            // ra3Map.parse();
-            // var sidesList = ra3Map.getAsset<SidesList>(Ra3MapConst.ASSET_SidesList);
-            // sidesList.players[12].assetPropertyCollection.setProperty("aiPersonality", "AIPersonalityDefinition:1JapanBalanced");
-            // ra3Map.save(Path.Combine(Directory.GetCurrentDirectory(), "test"), "MAP");
-            // var a = 2;
+            var ra3Map = new Ra3Map($"C:\\Users\\{userName}\\AppData\\Roaming\\Red Alert 3\\Maps\\MAP_COOP_YR_A1_Time_Lapse\\MAP_COOP_YR_A1_Time_Lapse.map");
+            ra3Map.parse();
+            var sidesList = ra3Map.getAsset<SidesList>(Ra3MapConst.ASSET_SidesList);
+            sidesList.players[11].assetPropertyCollection.setProperty("aiPersonality", "AIPersonalityDefinition:2AlliedSquadronLeader");
+            ra3Map.save(Path.Combine(Directory.GetCurrentDirectory(), "test"), "MAP");
+            var a = 2;
             // foreach (var file in Directory.EnumerateFiles(
             //              @"D:\file\yule\RA3_MODSDK-X_1.3\source\GenEvo_WB_Expansion\WBfiles\ColorCorrection",
             //              "*.tga"))

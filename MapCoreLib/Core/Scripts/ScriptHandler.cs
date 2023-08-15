@@ -13,10 +13,10 @@ namespace MapCoreLib.Core.Scripts
 {
     public class ScriptHandler
     {
-        public static void runScript(string mapName, string scriptName)
+        public static void runScript(string mapPath, string scriptName)
         {
             ScriptSpec.initScriptSpec();
-            var ra3Map = new Ra3Map(Path.Combine(PathUtil.RA3MapFolder, mapName, mapName + ".map"));
+            var ra3Map = new Ra3Map(mapPath);
             ra3Map.parse();
             // testRunScript(ra3Map.getContext());
             doRunScript(ra3Map, scriptName);
