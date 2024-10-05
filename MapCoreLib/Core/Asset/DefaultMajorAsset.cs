@@ -19,7 +19,7 @@ namespace MapCoreLib.Core.Asset
 
         public override string getAssetName()
         {
-            return "DefaultMajorAsset";
+            return name;
         }
     }
 }

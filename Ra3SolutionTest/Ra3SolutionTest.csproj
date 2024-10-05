@@ -11,6 +11,7 @@
         <AssemblyName>Ra3SolutionTest</AssemblyName>
         <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,10 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+      <OutputPath>bin\x86\Debug\</OutputPath>
+      <PlatformTarget>x86</PlatformTarget>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
           <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -47,17 +52,26 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Core\CollectObjNames.cs" />
+        <Compile Include="Core\CsfMerger.cs" />
+        <Compile Include="Core\ExtractAllScriptActions.cs" />
         <Compile Include="Core\FileItem.cs" />
         <Compile Include="Core\GenerateObjNames.cs" />
         <Compile Include="Core\GenFrames.cs" />
         <Compile Include="Core\GenScriptConfig.cs" />
         <Compile Include="Core\GenScriptsMd.cs" />
+        <Compile Include="Core\GetAllModelBits.cs" />
         <Compile Include="Core\GetObjectCatogory.cs" />
         <Compile Include="Core\ImageToXyz.cs" />
+        <Compile Include="Core\IncludePathTest.cs" />
+        <Compile Include="Core\LoadLIbTest.cs" />
+        <Compile Include="Core\MapAssetSplit.cs" />
+        <Compile Include="Core\MapDetailsGenerator.cs" />
+        <Compile Include="Core\ModStudioTest.cs" />
         <Compile Include="Core\MsPinYinHelper.cs" />
         <Compile Include="Core\ObjectListTrans.cs" />
         <Compile Include="Core\PeAddImport.cs" />
         <Compile Include="Core\ScriptTranslation.cs" />
+        <Compile Include="Core\TestVCRedist.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
@@ -65,6 +79,10 @@
       <ProjectReference Include="..\MapCoreLib\MapCoreLib.csproj">
         <Project>{4f2ce623-5aa2-46bd-9a78-5eb1522c09b3}</Project>
         <Name>MapCoreLib</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\Ra3ModBuilder\Ra3ModBuilder.csproj">
+        <Project>{d3cacee7-c9e5-4c7d-85c7-ad0593793074}</Project>
+        <Name>Ra3ModBuilder</Name>
       </ProjectReference>
     </ItemGroup>
     <ItemGroup>

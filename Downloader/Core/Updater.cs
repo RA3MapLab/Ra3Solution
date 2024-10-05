@@ -37,7 +37,7 @@ public class Updater
         ProgramVersion = programVersion;
     }
     
-    public async Task DownloadBigAsync(IProgress<int?> downloadProgress,
+    public async Task DownloadWbBigsAsync(IProgress<int?> downloadProgress,
         IProgress<string?> speedProgress,
         CancellationToken cancel)
     {
@@ -79,6 +79,56 @@ public class Updater
             { 
                 UnpackZip(downloadedFile, GameDataPath);
             }));
+            speedProgress.Report("Done");
+            
+        }
+        catch (Exception e)
+        {
+            _logger.Error(e);
+            MessageBox.Show($"Fail to download WB Big Files: {e.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            throw;
+        }
+        
+    }
+    
+    public async Task DownloadTerrainFixAsync(IProgress<int?> downloadProgress,
+        IProgress<string?> speedProgress,
+        CancellationToken cancel)
+    {
+        try
+        {
+            var targetFileName = "TerrainFix.big";
+            speedProgress.Report("downloading config...");
+            var rssData = await ReadRSSAsync(FeedUrl,
+                "RandomMapGenerator",
+                targetFileName,
+                downloadProgress,
+                speedProgress,
+                LogFolderPath,
+                TempFolderPath,
+                cancel);
+            if (rssData is null)
+            {
+                throw new FileNotFoundException("Failed to retrieve RSS mod data for live content");
+            }
+
+            var downloadedFile = Path.Combine(TempFolderPath, targetFileName);
+
+            if (File.Exists(downloadedFile))
+            {
+                File.Delete(downloadedFile);
+            }
+
+            await Aria2BTDownload.DownloadAsync($"{rssData.DirectLink}.torrent",
+                TempFolderPath,
+                targetFileName,
+                downloadProgress,
+                speedProgress,
+                LogFolderPath,
+                cancel);
+            
+            
+            File.Copy(downloadedFile, Path.Combine(GameDataPath, targetFileName), true);
             speedProgress.Report("Done");
             
         }

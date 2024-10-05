@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace MapCoreLib.Core.Asset
@@ -240,7 +241,7 @@ namespace MapCoreLib.Core.Asset
             worldInfo.properties.addProperty("weather", WeatherType.Normal, context);
             worldInfo.properties.addProperty("terrainTextureStrings", $"{textures[config.defaultTexture]}", context);  //TODO 这个需要额外管理起来，避免重复
             worldInfo.properties.addProperty("mapName", "", context);
-            worldInfo.properties.addProperty("mapDescription", "map created with ra3 map core lib by wu", context);
+            worldInfo.properties.addProperty("mapDescription", $"by {Environment.UserName}", context);
             worldInfo.properties.addProperty("compression", CompressionType.RefPack, context);
             worldInfo.properties.addProperty("cameraGroundMinHeight", 0f, context);
             worldInfo.properties.addProperty("cameraGroundMaxHeight", 2500f, context);

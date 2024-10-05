@@ -5,10 +5,10 @@ namespace MapCoreLib.Core.Util
 {
     public static class EditorHelper
     {
-        public static void openEditor4XmlScript(string mapName)
+        public static void openEditor4XmlScript(string mapPath)
         {
             // 文件路径
-            string filePath = PathUtil.defaultScriptXmlPath(mapName);
+            string filePath = PathUtil.CorrespondScriptXmlPath(mapPath);
 
 
             Process fileopener = new Process();

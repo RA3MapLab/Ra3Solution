@@ -99,15 +99,17 @@ namespace Ra3ModBuilder.Core
 
         private void MergeAssets()
         {
-            executeCmdSync(String.Format("/V:ON /C (@echo off) & (cd /D \"{0}\")"
-                                         + " & (for /R \"{1}\" %I in (\"\") do ("
-                                         + "(set assets=%~dpI)"
-                                         + " & (if exist \"!assets!*.asset\" (\"{2}\" \"{3}\\mod\" \"!assets:~0,-1!\"))"
-                                         + "))",
+            var command = String.Format("/V:ON /C  & (cd /D \"{0}\")"
+                                        + " & (for /R \"{1}\" %I in (\"\") do ("
+                                        + "(set assets=%~dpI)"
+                                        + " & (if exist \"!assets!*.asset\" (\"{2}\" \"{3}\\mod\" \"!assets:~0,-1!\"))"
+                                        + "))",
                 context.config.mSDKDirectory, 
                 context.config.mModAssetsPath, 
                 context.config.mAssetMerger, 
-                context.config.mBuiltModDataPath));
+                context.config.mBuiltModDataPath);
+            Console.WriteLine($"MergeAssets {command}");
+            executeCmdSync(command);
         }
 
         private void CopyingAdditionalFiles()

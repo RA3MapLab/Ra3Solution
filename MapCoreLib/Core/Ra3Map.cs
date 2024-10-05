@@ -58,10 +58,17 @@ namespace MapCoreLib.Core
                             BinaryWriter bWriter = new BinaryWriter(new MemoryStream((int)br.BaseStream.Length));
                             br.BaseStream.Position = 8L;
                             RefpackComrpessor.Decompress(br, bWriter);
+                            // save decompressed map
                             using (var resFile = File.OpenWrite(Path.Combine("map", Path.GetFileNameWithoutExtension(mapPath) + "_un.map")))
                             {
-                                resFile.CopyTo(File.OpenWrite($"map/{Path.GetFileNameWithoutExtension(mapPath)}_un.map"));
+                                bWriter.BaseStream.Position = 0;
+                                bWriter.BaseStream.CopyTo(resFile);
                             }
+                            
+                            // using (var resFile = File.OpenWrite(Path.Combine("map", Path.GetFileNameWithoutExtension(mapPath) + "_un.map")))
+                            // {
+                            //     resFile.CopyTo(File.OpenWrite($"map/{Path.GetFileNameWithoutExtension(mapPath)}_un.map"));
+                            // }
                             break;
                         }
                         default:
@@ -86,6 +93,46 @@ namespace MapCoreLib.Core
 
             doSaveMap(mapFile);
             PrefUtil.stop("saveMap");
+        }
+        
+        public void saveMix()
+        {
+            var oldMapName = Path.GetFileNameWithoutExtension(mapPath);
+            var newMapName = $"{oldMapName}_mix";
+            var outputDir = Path.GetDirectoryName(Path.GetDirectoryName(mapPath));
+            var newmapDir = Path.Combine(outputDir, newMapName);
+            var newmapFile = Path.Combine(newmapDir, $"{newMapName}.map");
+            if (newmapDir.Length == 0)
+            {
+                return;
+            }
+            if (Directory.Exists(newmapDir))
+            {
+                new DirectoryInfo(newmapDir).Delete(true);
+            }
+            Directory.CreateDirectory(newmapDir);
+
+            doSaveMap(newmapFile);
+            var minimapFile = Path.Combine(outputDir, oldMapName, $"{oldMapName}_art.tga");
+            if (File.Exists(minimapFile))
+            {
+                File.Copy(minimapFile, Path.Combine(outputDir, newMapName, $"{newMapName}_art.tga"));
+            }
+            var minimapFile2 = Path.Combine(outputDir, oldMapName, $"{oldMapName}.tga");
+            if (File.Exists(minimapFile2))
+            {
+                File.Copy(minimapFile2, Path.Combine(outputDir, newMapName, $"{newMapName}.tga"));
+            }
+            var strFile = Path.Combine(outputDir, oldMapName, "map.str");
+            if (File.Exists(strFile))
+            {
+                File.Copy(strFile, Path.Combine(outputDir, newMapName, "map.str"));
+            }
+            var uploadInfoFile = Path.Combine(outputDir, oldMapName, $"{oldMapName}_info.json");
+            if (File.Exists(uploadInfoFile))
+            {
+                File.Copy(uploadInfoFile, Path.Combine(outputDir, newMapName, $"{newMapName}_info.json"));
+            }
         }
 
         public void save(string mapPath)

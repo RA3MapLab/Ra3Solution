@@ -143,7 +143,7 @@ namespace MapCoreLib.Core
 
             bool[,] impassableGenRaw = ra3Map.getAsset<BlendTileData>(Ra3MapConst.ASSET_BlendTileData).getImpassible();
 
-            var heightMapData = new float[mapHeight - 2 * border, mapHeight - 2 * border];
+            var heightMapData = new float[mapWidth - 2 * border, mapHeight - 2 * border];
             for (int y = 0; y < heightMapData.GetLength(1); y++)
             {
                 for (int x = 0; x < heightMapData.GetLength(0); x++)
@@ -152,7 +152,7 @@ namespace MapCoreLib.Core
                 }
             }
 
-            var impassableGen = new bool[mapHeight - 2 * border, mapHeight - 2 * border];
+            var impassableGen = new bool[mapWidth - 2 * border, mapHeight - 2 * border];
             for (int y = 0; y < impassableGen.GetLength(1); y++)
             {
                 for (int x = 0; x < impassableGen.GetLength(0); x++)
@@ -175,26 +175,26 @@ namespace MapCoreLib.Core
             {
                 throw new Exception("陆地高度有问题,海面高度必须是200,陆地高度必须高于200");
             }
-            for (int i = 0; i < playableHeight; i++)
+            for (int i = 0; i < playableWidth; i++)
             {
-                for (int j = 0; j < playableWidth; j++)
+                for (int j = 0; j < playableHeight; j++)
                 {
                     if (heightMapData[i, j] - waterHeight < 0.00001)
                     {
-                        bitmap.SetPixel(j, playableHeight - i - 1, water);
+                        bitmap.SetPixel(i, playableHeight - j - 1, water);
                         continue;
                     }
 
                     if (impassableGen[i, j])
                     {
-                        bitmap.SetPixel(j, playableHeight - i - 1, Color.Black);
+                        bitmap.SetPixel(i, playableHeight - j - 1, Color.Black);
                         continue;
                     }
 
                     //一些超高最高陆地层的特殊情况
                     if (heightMapData[i, j].CompareTo(heights[heights.Length - 1]) == 1)
                     {
-                        bitmap.SetPixel(j, playableHeight - i - 1, colors[Math.Min(heights.Length - 1, colors.Length - 1)]);
+                        bitmap.SetPixel(i, playableHeight - j - 1, colors[Math.Min(heights.Length - 1, colors.Length - 1)]);
                         continue;
                     }
 
@@ -204,7 +204,7 @@ namespace MapCoreLib.Core
                     {
                         if (heightMapData[i, j].Equals(heights[k]))
                         {
-                            bitmap.SetPixel(j, playableHeight - i - 1, colors[k]);
+                            bitmap.SetPixel(i, playableHeight - j - 1, colors[k]);
                             notColored = false;
                             break;
                         }
@@ -225,7 +225,7 @@ namespace MapCoreLib.Core
                             {
                                 Color median = interpolateColor(heightMapData[i, j], heights[index], heights[index + 1],
                                     colors[index], colors[index + 1]);
-                                bitmap.SetPixel(j, playableHeight - i - 1, median);
+                                bitmap.SetPixel(i, playableHeight - j- 1, median);
                                 notColored = false;
                                 break;
                             }
@@ -234,14 +234,14 @@ namespace MapCoreLib.Core
 
                     if (notColored)
                     {
-                        bitmap.SetPixel(j, playableHeight - i - 1, Color.White);
+                        bitmap.SetPixel(i, playableHeight - j - 1, Color.White);
                     }
                 }
             }
 
 
-            bitmap.RotateFlip(RotateFlipType.Rotate90FlipNone);
-            bitmap.RotateFlip(RotateFlipType.RotateNoneFlipY);
+            // bitmap.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            // bitmap.RotateFlip(RotateFlipType.RotateNoneFlipY);
             return bitmap;
         }
 

@@ -35,6 +35,12 @@ namespace MapCoreLib.Core
             return (T)res;
         }
         
+        public T? getAsset<T>() where T : MajorAsset
+        {
+            var res = MapStruct.getAssets().Find(asset => asset is T);
+            return (T?)res;
+        }
+        
         public MapDataContext(Ra3MapStruct mapStruct)
         {
             MapStruct = mapStruct;

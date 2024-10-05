@@ -41,7 +41,7 @@ namespace MapCoreLib.Core.Asset
             propertyMap.Add(property.name, property);
         }
         
-        public AssetProperty getProperty(string name)
+        public AssetProperty? getProperty(string name)
         {
             if (!propertyMap.ContainsKey(name))
             {

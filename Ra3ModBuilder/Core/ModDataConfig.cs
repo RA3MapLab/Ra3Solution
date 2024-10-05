@@ -53,6 +53,8 @@ namespace Ra3ModBuilder.Core
 
         public void configMod(string modName, string version)
         {
+            mModName = modName;
+            mVersion = version;
             mModPath = mSDKDirectory + "\\mods\\" + mModName;
             mModAdditionalFilesPath = mModPath + "\\additional";
             mModAssetsPath = mModPath + "\\assets";

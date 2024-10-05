@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>8</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +32,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
     <PlatformTarget>x86</PlatformTarget>
@@ -110,6 +116,8 @@
     <Compile Include="Core\Scripts\ScriptFile\CircleTerrain.cs" />
     <Compile Include="Core\Scripts\ScriptFile\CoronaPostEffect.cs" />
     <Compile Include="Core\Scripts\ScriptFile\ImportXYZ.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\Mix.cs" />
+    <Compile Include="Core\Scripts\ScriptFile\P2AsGiles.cs" />
     <Compile Include="Core\Scripts\ScriptFile\RandomAddTrees.cs" />
     <Compile Include="Core\Scripts\ScriptFile\OnlyInfantry.cs" />
     <Compile Include="Core\Scripts\ScriptFile\TerrainLevelUp.cs" />
@@ -123,6 +131,8 @@
     <Compile Include="Core\Util\FNVHash.cs" />
     <Compile Include="Core\Util\IOUtility.cs" />
     <Compile Include="Core\Util\MapAssetExtension.cs" />
+    <Compile Include="Core\Util\MapCompiler.cs" />
+    <Compile Include="Core\Util\MapInfoHelper.cs" />
     <Compile Include="Core\Util\MapXmlUtil.Schema.cs" />
     <Compile Include="Core\Util\MapXmlUtil.ToObj.cs" />
     <Compile Include="Core\Util\MapXmlUtil.ToXml.cs" />

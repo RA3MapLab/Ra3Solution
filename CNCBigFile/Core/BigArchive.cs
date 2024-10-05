@@ -41,6 +41,9 @@ namespace CNCBigFile.Core
 
                 bigFileEntries.Add(entry);
             }
+
+            //TODO 
+            return null;
         }
     }
     

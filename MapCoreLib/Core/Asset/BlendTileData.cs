@@ -31,6 +31,8 @@ namespace MapCoreLib.Core.Asset
 
         public Passability[,] passability;
 
+        public bool[,] impassable;
+        
         private bool[,] passageWidth;
 
         public bool[,] visibility;
@@ -64,7 +66,7 @@ namespace MapCoreLib.Core.Asset
 			singleEdgeBlends = IOUtility.ReadArray<ushort>(br, mapWidth, mapHeight);
 			cliffBlends = IOUtility.ReadArray<ushort>(br, mapWidth, mapHeight);
 			passability = new Passability[mapWidth, mapHeight];
-			bool[,] impassable = IOUtility.ReadArray<bool>(br, mapWidth, mapHeight);
+			impassable = IOUtility.ReadArray<bool>(br, mapWidth, mapHeight);
 			bool[,] impassableToPlayers = IOUtility.ReadArray<bool>(br, mapWidth, mapHeight);
 			passageWidth = IOUtility.ReadArray<bool>(br, mapWidth, mapHeight);
 			bool[,] extraPassable = IOUtility.ReadArray<bool>(br, mapWidth, mapHeight);
@@ -352,6 +354,21 @@ namespace MapCoreLib.Core.Asset
 		        worldInfo.properties.getProperty("terrainTextureStrings") + WorldInfo.textures[textureName]);
         }
         
+        public ushort GetTexture(int x, int y)
+        {
+	        int rowFirst = y % 8 / 2 * 16 + y % 2 * 2;
+	        int current = x % 8 / 2 * 4 + x % 2 + rowFirst;
+	        return (ushort)((tiles[x, y] - current) / 64);
+        }
+        
+        public string GetTextureName(int x, int y)
+        {
+	        int rowFirst = y % 8 / 2 * 16 + y % 2 * 2;
+	        int current = x % 8 / 2 * 4 + x % 2 + rowFirst;
+	        ushort tile =  (ushort)((tiles[x, y] - current) / 64);
+	        return textures[tile].name;
+        }
+        
         public void UpdatePassabilityMap(MapDataContext context)
         {
 	        float[,] elev = context.getAsset<HeightMapData>(Ra3MapConst.ASSET_HeightMapData).elevations;
@@ -444,6 +461,20 @@ namespace MapCoreLib.Core.Asset
             blendTileData.blendsCount = 0;
             blendTileData.cliffBlendsCount = 0;
             return blendTileData;
+            
+            // void *unk60;
+            // void *unk61;
+            // void *unk62;
+            // void *unk63;
+            // void *unk64;
+            // void *unk65;
+            // void *unk66;
+            // void *unk67;
+            // void *unk68;
+            // void *unk69;
+
+
+
         }
     }
 }

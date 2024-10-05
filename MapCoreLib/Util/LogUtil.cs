@@ -34,8 +34,8 @@ namespace MapCoreLib.Util
         
         public static void log(string tag, string msg)
         {
-            sw.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss-fff")} | {tag} | {msg}");
-            sw.Flush();
+            // sw.WriteLine($"{DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss-fff")} | {tag} | {msg}");
+            // sw.Flush();
         }
 
         public static void close()

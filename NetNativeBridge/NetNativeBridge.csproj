@@ -30,6 +30,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
   <PropertyGroup Label="8337224c9ad9e356:PreProc">
     <CopyLocalLockFileAssemblies Condition="$(TargetFramework.StartsWith('netc')) Or $(TargetFramework.StartsWith('nets'))" Label="8337224c9ad9e356:PreProc">true</CopyLocalLockFileAssemblies>
     <DebugType Condition="'$(DebugType)'!='full' And '$(DebugType)'!='pdbonly'" Label="8337224c9ad9e356:PreProc">pdbonly</DebugType>
@@ -61,6 +65,7 @@
   <ItemGroup>
     <Compile Include="NetBridge.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapCoreLib\MapCoreLib.csproj">

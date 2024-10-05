@@ -56,14 +56,14 @@ namespace MapCoreLib.Core.Asset
             binaryWriter.Write(unknown4);
         }
 
-        public void inits()
+        public void inits(string encodedString)
         {
             // var random = new Random();
             // BuildingName = System.Guid.NewGuid().ToString().Substring(0,4);
             // Name = System.Guid.NewGuid().ToString().Substring(0,4);
             // position = new Vec3D(random.NextDouble(), random.NextDouble());
             
-            BuildingName = "wqewesd";
+            BuildingName = encodedString;
             Name = "SovietAirfield_Collapse";
             position = new Vec3D(-100,-100,0);
             angle = 0;
@@ -71,7 +71,7 @@ namespace MapCoreLib.Core.Asset
             unknown1 = true;
             
             rebuilds = 2;
-            script = "";
+            script = "wu";
             startingHealth = 100;
             
             unknown2 = true;

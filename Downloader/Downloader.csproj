@@ -9,7 +9,7 @@
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>Downloader</RootNamespace>
         <AssemblyName>Downloader</AssemblyName>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
         <LangVersion>11</LangVersion>
@@ -34,9 +34,16 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+      <OutputPath>bin\x86\Debug\</OutputPath>
+      <PlatformTarget>x86</PlatformTarget>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="CodeHollow.FeedReader, Version=1.2.6.0, Culture=neutral, PublicKeyToken=66d870f2b3d70f48, processorArchitecture=MSIL">
           <HintPath>..\packages\CodeHollow.FeedReader.1.2.6\lib\net452\CodeHollow.FeedReader.dll</HintPath>
+        </Reference>
+        <Reference Include="CommandLine, Version=2.9.1.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
+          <HintPath>..\packages\CommandLineParser.2.9.1\lib\net461\CommandLine.dll</HintPath>
         </Reference>
         <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
           <HintPath>..\packages\NLog.5.1.4\lib\net45\NLog.dll</HintPath>

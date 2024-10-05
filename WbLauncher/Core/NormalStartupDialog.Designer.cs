@@ -37,6 +37,8 @@ namespace WbLauncher.Core
             this.label1 = new System.Windows.Forms.Label();
             this.selectModTv = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.qqgroup = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // modList
@@ -87,11 +89,31 @@ namespace WbLauncher.Core
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Launch_Click);
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(5, 533);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "作者：物w  地编问题请加群";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // qqgroup
+            // 
+            this.qqgroup.Location = new System.Drawing.Point(184, 533);
+            this.qqgroup.Name = "qqgroup";
+            this.qqgroup.Size = new System.Drawing.Size(93, 16);
+            this.qqgroup.TabIndex = 6;
+            this.qqgroup.TabStop = true;
+            this.qqgroup.Text = "613550502";
+            // 
             // NormalStartupDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 520);
+            this.ClientSize = new System.Drawing.Size(380, 558);
+            this.Controls.Add(this.qqgroup);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.selectModTv);
             this.Controls.Add(this.label1);
@@ -109,6 +131,10 @@ namespace WbLauncher.Core
             this.Load += new System.EventHandler(this.NormalStartupDialog_Load);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.LinkLabel qqgroup;
+
+        private System.Windows.Forms.Label label2;
 
         private System.Windows.Forms.Button button1;
 

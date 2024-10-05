@@ -14,6 +14,9 @@ namespace MapCoreLib.Core.Asset
         public int roadOption;
         public string typeName;
         public AssetPropertyCollection assetPropertyCollection = new AssetPropertyCollection();
+        
+        public string? originalOwner => assetPropertyCollection.getProperty("originalOwner")?.data.ToString();
+        public string? uniqueID => assetPropertyCollection.getProperty("uniqueID")?.data.ToString();
 
         protected override void parseData(BinaryReader binaryReader, MapDataContext context)
         {

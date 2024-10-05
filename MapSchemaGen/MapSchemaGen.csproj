@@ -32,6 +32,10 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+      <OutputPath>bin\x86\Debug\</OutputPath>
+      <PlatformTarget>x86</PlatformTarget>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="Microsoft.AspNetCore.Razor, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
           <HintPath>..\packages\Microsoft.AspNetCore.Razor.1.1.2\lib\net451\Microsoft.AspNetCore.Razor.dll</HintPath>

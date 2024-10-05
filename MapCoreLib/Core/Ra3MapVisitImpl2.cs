@@ -20,7 +20,7 @@ namespace MapCoreLib.Core
             if (num == 1)
             {
                 var buildListItem = new BuildListItem();
-                buildListItem.inits();
+                // buildListItem.inits();
                 player.buildListItems.Add(buildListItem);
                 num++;
             }

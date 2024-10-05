@@ -12,7 +12,7 @@
         <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-        <ApplicationIcon>tubiao.ico</ApplicationIcon>
+        <ApplicationIcon>tubiao2.ico</ApplicationIcon>
 <!--        <ApplicationManifest>app.manifest</ApplicationManifest>-->
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -34,6 +34,10 @@
       <OutputPath>bin\Release\</OutputPath>
 <!--        <ApplicationManifest>app.manifest</ApplicationManifest>-->
     </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+      <OutputPath>bin\x86\Debug\</OutputPath>
+      <PlatformTarget>x86</PlatformTarget>
+    </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
         <Reference Include="System.Core" />
@@ -44,6 +48,13 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Core\Config.cs" />
+        <Compile Include="Core\CoronaLaunchImpl.cs" />
+        <Compile Include="Core\InputNameID.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Core\InputNameID.Designer.cs">
+          <DependentUpon>InputNameID.cs</DependentUpon>
+        </Compile>
         <Compile Include="Core\LauncherConfig.cs" />
         <Compile Include="Core\LoadingDialog.cs" />
         <Compile Include="Core\NormalStartupDialog.cs">
@@ -52,8 +63,9 @@
         <Compile Include="Core\NormalStartupDialog.Designer.cs">
           <DependentUpon>NormalStartupDialog.cs</DependentUpon>
         </Compile>
-        <Compile Include="Core\Registry.cs" />
+        <Compile Include="Core\MyRegistry.cs" />
         <Compile Include="Core\SelectModDialog.cs" />
+        <Compile Include="Core\VCRedistChecker.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
@@ -61,6 +73,9 @@
       <Content Include="app.manifest" />
     </ItemGroup>
     <ItemGroup>
+      <EmbeddedResource Include="Core\InputNameID.resx">
+        <DependentUpon>InputNameID.cs</DependentUpon>
+      </EmbeddedResource>
       <EmbeddedResource Include="Core\NormalStartupDialog.resx">
         <DependentUpon>NormalStartupDialog.cs</DependentUpon>
       </EmbeddedResource>
