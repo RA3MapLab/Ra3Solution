@@ -351,7 +351,7 @@ namespace MapCoreLib.Core.Asset
 	        textureCellCount += newTexture.cellCount;
 	        var worldInfo = context.getAsset<WorldInfo>(Ra3MapConst.ASSET_WorldInfo);
 	        worldInfo.properties.setProperty("terrainTextureStrings", 
-		        worldInfo.properties.getProperty("terrainTextureStrings") + WorldInfo.textures[textureName]);
+		        worldInfo.properties.getProperty("terrainTextureStrings").data + WorldInfo.textures[textureName]);
         }
         
         public ushort GetTexture(int x, int y)
