@@ -80,6 +80,8 @@ namespace MapCoreLib.Core.Asset
             mapObject.assetPropertyCollection.addProperty("objectBasePriority", 40, context);
             mapObject.assetPropertyCollection.addProperty("objectBasePhase", 1, context);
             mapObject.assetPropertyCollection.addProperty("objectLayer", "", context);
+            mapObject.assetPropertyCollection.addProperty("objectInitialStance", 0, context);
+            mapObject.assetPropertyCollection.addProperty("objectExperienceLevel", 1, context);
 
             return mapObject;
         }
