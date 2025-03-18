@@ -39,7 +39,7 @@ namespace MapCoreLib.Core.Asset
         public void AddWaypoint(MapDataContext context, string name, Vec3D pos)
         {
             MapObject o = MapObject.ofWaypoint(pos, context);
-            o.assetPropertyCollection.addProperty("uniqueID", "_WaypointObj" + mapObjects.Count + 1000, context);
+            o.assetPropertyCollection.addProperty("uniqueID", name, context);
             o.assetPropertyCollection.addProperty("waypointID", mapObjects.Count + 1000, context);
             o.assetPropertyCollection.addProperty("waypointName", name, context);
             o.assetPropertyCollection.addProperty("waypointTypeOption", "", context);
